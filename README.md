@@ -9,8 +9,8 @@
     * название name=Белоруснефть №[номер]
     * brand=Белоруснефть (зашито)
     * operator=* (название организации со страницы детальной информации о заправке)
-    * телефон contact_phone=+375[пробел][код города][пробел][местный номер] (скобки и тире удаляются)
-    
+    * телефон contact:phone=+375[пробел][код города][пробел][местный номер] (скобки и тире удаляются)
+    * вебсайт contact:website=https://azs.belorusneft.by/beloil-map/station?id=[guid]
     * виды топлива fuel:*=yes (поддерживаются diesel, octane_92, octane_95, octane_98, adblue)
     * магазин shop=convenience
     * пылесос vacuum_cleaner=yes
