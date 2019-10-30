@@ -43,15 +43,15 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть</h1>
-    <p>Дата генерации файла 30.10.2019 02:06:42</p>
+    <p>Дата генерации файла 30.10.2019 09:27:05</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
-    <font color=red>Not found</font> (6) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
-    <font color=orange>Найден, но нет Guid</font> (330) у автозаправки не проставлен ключ <b>guid:belorusneft</b><br />
-    OK (343) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
+    <font color=red>Not found</font> (4) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
+    <font color=orange>Найден, но нет Guid</font> (329) у автозаправки не проставлен ключ <b>guid:belorusneft</b><br />
+    OK (346) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
 		const notFoundColour = 'Red'
@@ -130,16 +130,12 @@ const iconNormal = L.divIcon({
         }).addTo(mymap);
         var marker = L.marker([52.116784,23.635304],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС №Пионерская,52</b><br/><a href=#station875BC22E31C27A65E053BF0BA8C017AE>Перейти</a>");
-var marker = L.marker([54.5816,30.6707],{icon:iconNotFound}).addTo(mymap);
-marker.bindPopup("<b>АЗС №57</b><br/><a href=#station57>Перейти</a>");
 var marker = L.marker([53.897044,27.550231],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС №032</b><br/><a href=#station92E4D6E2A198681BE053BF0BA8C0AEAD>Перейти</a>");
 var marker = L.marker([53.89709,27.555977],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС №034</b><br/><a href=#station951579A7E7B22091E053BF0BA8C0FEAF>Перейти</a>");
 var marker = L.marker([52.429847,30.91513],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>АЗС №30</b><br/><a href=#station30>Перейти</a>");
-var marker = L.marker([53.922931,25.272133],{icon:iconNotFound}).addTo(mymap);
-marker.bindPopup("<b>АЗС №50</b><br/><a href=#station50>Перейти</a>");
 var marker = L.marker([52.092992,23.667049],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС №ГОБК,13</b><br/><a href=#station875BD80305417B31E053BF0BA8C036CA>Перейти</a>");
 var marker = L.marker([52.153637,26.021507],{icon:iconNotLinked}).addTo(mymap);
@@ -630,8 +626,6 @@ var marker = L.marker([54.390837,26.123375],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №31</b><br/><a href=#station31>Перейти</a>");
 var marker = L.marker([53.25701,24.42056],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №49</b><br/><a href=#stationB89F84F7E4284F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([53.64871,23.83651],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>АЗС №41</b><br/><a href=#station41>Перейти</a>");
 var marker = L.marker([52.711399,30.335729],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №60</b><br/><a href=#stationB89F84F7E42D4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.648611,25.310833],{icon:iconNotLinked}).addTo(mymap);
@@ -1010,6 +1004,8 @@ var marker = L.marker([55.682926,26.907256],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №15</b><br/><a href=#station15>Перейти</a>");
 var marker = L.marker([54.7635,28.138184],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №2</b><br/><a href=#station2>Перейти</a>");
+var marker = L.marker([54.5816,30.6707],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС №57</b><br/><a href=#station57>Перейти</a>");
 var marker = L.marker([54.910376,30.374741],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>ААЗС №4</b><br/><a href=#station4>Перейти</a>");
 var marker = L.marker([54.910197,30.376956],{icon:iconNormal}).addTo(mymap);
@@ -1308,8 +1304,12 @@ var marker = L.marker([53.14347,24.48105],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №25</b><br/><a href=#stationB89F84F7E35D4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.458611,26.452222],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №27</b><br/><a href=#stationB89F84F7E3984F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.64871,23.83651],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС №41</b><br/><a href=#station41>Перейти</a>");
 var marker = L.marker([53.66915,23.87608],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №36</b><br/><a href=#station36>Перейти</a>");
+var marker = L.marker([53.922931,25.272133],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС №50</b><br/><a href=#station50>Перейти</a>");
 var marker = L.marker([53.637222,23.878333],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №72</b><br/><a href=#stationBF7FDDD5502D246CE043BF0BA8C07763>Перейти</a>");
 var marker = L.marker([54.595278,25.912222],{icon:iconNormal}).addTo(mymap);
@@ -1507,27 +1507,6 @@ operator=
 
 </div><hr/>
 
-<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="station57" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=57"> №57</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.5816/30.6707">Витебская область, Дубровенский р-н,
- г. Дубровно, ул. Вокзальная, 79</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-<font color=red>name=Газпромнефть №57</font>
-<font color=red>brand=Газпромнефть</font>
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>fuel:octane_95=yes</font>
-<font color=red>fuel:octane_92=yes</font>
-<font color=red>fuel:diesel=yes</font>
-contact:phone=+375 17 2390609
-<font color=red>contact:website=https://gpnbonus.by/</font>
-<font color=red>opening_hours=24/7</font>
-ref=57
-</pre></div>
-
-</div><hr/>
-
 <div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="station92E4D6E2A198681BE053BF0BA8C0AEAD" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=92E4D6E2A198681BE053BF0BA8C0AEAD">ЭЗС №032</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.897044/27.550231">г. Минск, пр. Независимости, 11</a>
     <br /><br/>
@@ -1594,45 +1573,6 @@ contact:phone=+375 17 2390609
 <div id="sidebar"><h4>Автомойка автоматическая</h4><pre>
 amenity=car_wash
 automated=yes
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>opening_hours=24/7</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="station50" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=50"> №50</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.922931/25.272133">Гродненская область, г. Лида, ул. Свердлова, 187а</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-<font color=red>name=Газпромнефть №50</font>
-<font color=red>brand=Газпромнефть</font>
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>fuel:octane_95=yes</font>
-<font color=red>fuel:octane_92=yes</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:HGV_diesel=yes</font>
-contact:phone=+375 17 2390609
-<font color=red>contact:website=https://gpnbonus.by/</font>
-<font color=red>opening_hours=24/7</font>
-ref=50
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-contact:phone=+375 17 2390609
-<font color=red>opening_hours=24/7</font>
-</pre></div>
-<div id="sidebar"><h4>Автомойка автоматическая</h4><pre>
-amenity=car_wash
-automated=yes
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>opening_hours=24/7</font>
-</pre></div>
-<div id="sidebar"><h4>Кафе</h4><pre>
-amenity=fast_food
-cuisine=hot_dog
 <font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 <font color=red>opening_hours=24/7</font>
 </pre></div>
@@ -1782,6 +1722,15 @@ operator=РУП \"Белоруснефть-Брестоблнефтепроду�
 <font color=red>ref=МАЗС 22</font>
 <font color=red>guid:belorusneft=B89F84F7E2A64F70E043BF0BA8C03722</font>
 </pre></div>
+<div id="sidebar"><h4>Газ</h4><pre>
+amenity=fuel
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Брестоблнефтепродукт\"
+fuel:lpg=yes
+opening_hours=Проверить по ссылке
+<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2A64F70E043BF0BA8C03722</font>
+<font color=red>contact:phone=+375 163 641631</font>
+</pre></div>
 <div id="sidebar"><h4>Магазин</h4><pre>
 shop=convenience
 operator=РУП \"Белоруснефть-Брестоблнефтепродукт\"
@@ -1845,6 +1794,15 @@ operator=РУП \"Белоруснефть-Брестоблнефтепроду�
 <font color=red>shop=convenience</font>
 <font color=red>ref=МАЗС 4</font>
 <font color=red>guid:belorusneft=B89F84F7E2934F70E043BF0BA8C03722</font>
+</pre></div>
+<div id="sidebar"><h4>Газ</h4><pre>
+amenity=fuel
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Брестоблнефтепродукт\"
+fuel:lpg=yes
+opening_hours=Проверить по ссылке
+<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2934F70E043BF0BA8C03722</font>
+<font color=red>contact:phone=+375 162 506422</font>
 </pre></div>
 <div id="sidebar"><h4>Продажа шин</h4><pre>
 shop=tyres
@@ -2025,6 +1983,15 @@ operator=РУП \"Белоруснефть-Брестоблнефтепроду�
 <font color=red>self_service=yes</font>
 <font color=red>ref=МАЗС 61</font>
 <font color=red>guid:belorusneft=B89F84F7E2C34F70E043BF0BA8C03722</font>
+</pre></div>
+<div id="sidebar"><h4>Газ</h4><pre>
+amenity=fuel
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Брестоблнефтепродукт\"
+fuel:lpg=yes
+opening_hours=Проверить по ссылке
+<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2C34F70E043BF0BA8C03722</font>
+<font color=red>contact:phone=+375 165 365474</font>
 </pre></div>
 <div id="sidebar"><h4>Продажа шин</h4><pre>
 shop=tyres
@@ -2697,6 +2664,15 @@ operator=РУП \"Белоруснефть-Брестоблнефтепроду�
 <font color=red>compressed_air=yes</font>
 <font color=red>ref=МАЗС 19</font>
 <font color=red>guid:belorusneft=B89F84F7E2A24F70E043BF0BA8C03722</font>
+</pre></div>
+<div id="sidebar"><h4>Газ</h4><pre>
+amenity=fuel
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Брестоблнефтепродукт\"
+fuel:lpg=yes
+opening_hours=Проверить по ссылке
+<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2A24F70E043BF0BA8C03722</font>
+<font color=red>contact:phone=+375 1651 21607</font>
 </pre></div>
 <div id="sidebar"><h4>Кафе</h4><pre>
 amenity=fast_food
@@ -4295,6 +4271,15 @@ operator=РУП \"Белоруснефть-Брестоблнефтепроду�
 <font color=red>self_service=yes</font>
 <font color=red>ref=МАЗС 11</font>
 <font color=red>guid:belorusneft=B89F84F7E29A4F70E043BF0BA8C03722</font>
+</pre></div>
+<div id="sidebar"><h4>Газ</h4><pre>
+amenity=fuel
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Брестоблнефтепродукт\"
+fuel:lpg=yes
+opening_hours=Проверить по ссылке
+<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E29A4F70E043BF0BA8C03722</font>
+<font color=red>contact:phone=+375 162 205785</font>
 </pre></div>
 
 </div><hr/>
@@ -9227,7 +9212,6 @@ operator=ОАО \"Лиданефтепродукт\"
 <font color=red>compressed_air=yes</font>
 <font color=red>internet_access=wlan</font>
 <font color=red>internet_access:fee=no</font>
-<font color=red>self_service=yes</font>
 <font color=red>shop=convenience</font>
 <font color=red>ref=МАЗС 11</font>
 <font color=red>guid:belorusneft=B89F84F7E37F4F70E043BF0BA8C03722</font>
@@ -11101,53 +11085,6 @@ operator=РУП \"Белоруснефть-Гроднооблнефтепрод�
 
 </div><hr/>
 
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station41" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=41"> №41</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.64871/23.83651">Гродненская область, г. Гродно, пр-т Клецкова, 2А</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-<font color=red>name=Газпромнефть №41</font>
-<font color=red>brand=Газпромнефть</font>
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>fuel:octane_95=yes</font>
-<font color=red>fuel:octane_92=yes</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:HGV_diesel=yes</font>
-<font color=red>vacuum_cleaner=yes</font>
-<font color=red>compressed_air=yes</font>
-contact:phone=+375 17 2390609
-<font color=red>contact:website=https://gpnbonus.by/</font>
-<font color=red>opening_hours=24/7</font>
-ref=41
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-contact:phone=+375 17 2390609
-<font color=red>opening_hours=24/7</font>
-</pre></div>
-<div id="sidebar"><h4>Автомойка ручная</h4><pre>
-amenity=car_wash
-automated=no
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>opening_hours=24/7</font>
-</pre></div>
-<div id="sidebar"><h4>Автомойка автоматическая</h4><pre>
-amenity=car_wash
-automated=yes
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>opening_hours=24/7</font>
-</pre></div>
-<div id="sidebar"><h4>Кафе</h4><pre>
-amenity=fast_food
-cuisine=hot_dog
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>opening_hours=24/7</font>
-</pre></div>
-
-</div><hr/>
-
 <div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationB89F84F7E42D4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E42D4F70E043BF0BA8C03722">АЗС №60</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.711399/30.335729">Губичский с/с., вблизи д. Наспа</a>
     <br /><br/>
@@ -11204,7 +11141,6 @@ operator=ОАО \"Лиданефтепродукт\"
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
 <font color=red>fuel:octane_95=yes</font>
-<font color=red>self_service=yes</font>
 <font color=red>ref=АЗС 14</font>
 <font color=red>guid:belorusneft=B89F84F7E3814F70E043BF0BA8C03722</font>
 </pre></div>
@@ -15092,10 +15028,10 @@ opening_hours=24/7
 amenity=fuel
 name=Белоруснефть №28
 brand=Белоруснефть
-operator=РУП \"Белоруснефть-Минскавтозаправка\"
+operator=
 contact:phone=+375 17 5066759
 contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4014F70E043BF0BA8C03722
-opening_hours=24/7
+<font color=red>opening_hours=</font>
 fuel:diesel=yes
 fuel:octane_92=yes
 fuel:octane_95=yes
@@ -15110,15 +15046,15 @@ guid:belorusneft=B89F84F7E4014F70E043BF0BA8C03722
 </pre></div>
 <div id="sidebar"><h4>Магазин</h4><pre>
 shop=convenience
-operator=РУП \"Белоруснефть-Минскавтозаправка\"
-opening_hours=24/7
+operator=
+<font color=red>opening_hours=</font>
 contact:phone=+375 17 5066759
 </pre></div>
 <div id="sidebar"><h4>Кафе</h4><pre>
 amenity=fast_food
 brand=Белоруснефть
 cuisine=hot_dog
-opening_hours=24/7
+<font color=red>opening_hours=</font>
 contact:phone=+375 17 5066759
 </pre></div>
 <div id="sidebar"><h4>Зарядка</h4><pre>
@@ -15126,7 +15062,7 @@ amenity=charging_station
 brand=Белоруснефть
 contact:phone=+375 17 5066759
 contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4014F70E043BF0BA8C03722
-opening_hours=24/7
+<font color=red>opening_hours=</font>
 socket:type2_combo=1
 </pre></div>
 
@@ -15805,7 +15741,6 @@ vacuum_cleaner=yes
 compressed_air=yes
 internet_access=wlan
 internet_access:fee=no
-self_service=yes
 shop=convenience
 ref=МАЗС 6
 guid:belorusneft=B89F84F7E3BD4F70E043BF0BA8C03722
@@ -15864,7 +15799,6 @@ vacuum_cleaner=yes
 compressed_air=yes
 internet_access=wlan
 internet_access:fee=no
-<font color=red>self_service=yes</font>
 shop=convenience
 ref=АЗС 7
 guid:belorusneft=B89F84F7E4724F70E043BF0BA8C03722
@@ -17071,6 +17005,15 @@ internet_access=wlan
 internet_access:fee=no
 ref=МАЗС 9
 guid:belorusneft=B89F84F7E2984F70E043BF0BA8C03722
+</pre></div>
+<div id="sidebar"><h4>Газ</h4><pre>
+amenity=fuel
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Брестоблнефтепродукт\"
+fuel:lpg=yes
+opening_hours=Основная заправка уже содержит газ в списке топлива. Добавлять отдельной точкой только если время работы отличается.
+contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2984F70E043BF0BA8C03722
+contact:phone=+375 162 285179
 </pre></div>
 <div id="sidebar"><h4>Продажа шин</h4><pre>
 shop=tyres
@@ -18740,6 +18683,27 @@ operator=ИООО \"Татбелнефтепродукт\"
 amenity=cafe
 cuisine=coffee_shop
 operator=ИООО \"Татбелнефтепродукт\"
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="station57" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=57"> №57</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.5816/30.6707">Витебская область, Дубровенский р-н,
+ г. Дубровно, ул. Вокзальная, 79</a>
+    <br /><a href="https://www.openstreetmap.org/way/424021473">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Газпромнефть №57
+brand=Газпромнефть
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+fuel:octane_95=yes
+fuel:octane_92=yes
+fuel:diesel=yes
+contact:phone=+375 17 2390609
+contact:website=https://gpnbonus.by/
+opening_hours=24/7
+ref=57
 </pre></div>
 
 </div><hr/>
@@ -22706,7 +22670,6 @@ operator=РУП \"Белоруснефть-Минскоблнефтепроду�
 <font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3FF4F70E043BF0BA8C03722</font>
 opening_hours=24/7
 fuel:diesel=yes
-fuel:octane_92=yes
 fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
@@ -23387,6 +23350,7 @@ contact:phone=+375 212 267549
 contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2D84F70E043BF0BA8C03722
 opening_hours=Mo-Su 07:00-19:00
 fuel:diesel=yes
+fuel:octane_92=yes
 ref=АЗС 15
 guid:belorusneft=B89F84F7E2D84F70E043BF0BA8C03722
 </pre></div>
@@ -24248,6 +24212,53 @@ contact:phone=+375 1596 23169
 
 </div><hr/>
 
+<div class="station" id="container"><b>OK</b>  <a id="station41" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=41"> №41</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.64871/23.83651">Гродненская область, г. Гродно, пр-т Клецкова, 2А</a>
+    <br /><a href="https://www.openstreetmap.org/way/543395370">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Газпромнефть №41</font>
+brand=Газпромнефть
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+fuel:octane_95=yes
+fuel:octane_92=yes
+fuel:diesel=yes
+fuel:HGV_diesel=yes
+vacuum_cleaner=yes
+compressed_air=yes
+contact:phone=+375 17 2390609
+contact:website=https://gpnbonus.by/
+opening_hours=24/7
+ref=41
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+contact:phone=+375 17 2390609
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Автомойка ручная</h4><pre>
+amenity=car_wash
+automated=no
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Автомойка автоматическая</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+cuisine=hot_dog
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b>OK</b>  <a id="station36" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=36"> №36</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.66915/23.87608">Гродненская область, г. Гродно, ул. Белуша, 60</a>
     <br /><a href="https://www.openstreetmap.org/node/320409780">Объект на карте</a><br/>
@@ -24265,6 +24276,45 @@ contact:phone=+375 17 2390609
 contact:website=https://gpnbonus.by/
 opening_hours=24/7
 ref=36
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+contact:phone=+375 17 2390609
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Автомойка автоматическая</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+cuisine=hot_dog
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="station50" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=50"> №50</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.922931/25.272133">Гродненская область, г. Лида, ул. Свердлова, 187а</a>
+    <br /><a href="https://www.openstreetmap.org/way/378441938">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Газпромнефть №50
+brand=Газпромнефть
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+fuel:octane_95=yes
+fuel:octane_92=yes
+fuel:diesel=yes
+fuel:HGV_diesel=yes
+contact:phone=+375 17 2390609
+contact:website=https://gpnbonus.by/
+opening_hours=24/7
+ref=50
 </pre></div>
 <div id="sidebar"><h4>Магазин</h4><pre>
 shop=convenience
@@ -24415,7 +24465,6 @@ operator=ОАО \"Лиданефтепродукт\"
 opening_hours=Mo-Su 08:00-22:00
 fuel:diesel=yes
 fuel:octane_92=yes
-self_service=yes
 <font color=red>shop=convenience</font>
 <font color=red>ref=АЗС 15</font>
 guid:belorusneft=B89F84F7E3824F70E043BF0BA8C03722
