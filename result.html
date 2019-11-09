@@ -43,15 +43,15 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть</h1>
-    <p>Дата генерации файла 09.11.2019 20:00:30</p>
+    <p>Дата генерации файла 10.11.2019 00:28:07</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
-    <font color=red>Not found</font> (3) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
-    <font color=orange>Найден, но нет Guid</font> (279) у автозаправки не проставлен ключ <b>guid:belorusneft</b><br />
-    OK (398) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
+    <font color=red>Not found</font> (8) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
+    <font color=orange>Найден, но нет Guid</font> (309) у автозаправки не проставлен ключ <b>guid:belorusneft</b><br />
+    OK (406) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
 		const notFoundColour = 'Red'
@@ -130,12 +130,28 @@ const iconNormal = L.divIcon({
         }).addTo(mymap);
         var marker = L.marker([53.931666,25.770833],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС №г.Ивье</b><br/><a href=#station873152EABCAC6B2FE053BF0BA8C03AE2>Перейти</a>");
+var marker = L.marker([53.1642,26.0248],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>АЗС №20</b><br/><a href=#station20>Перейти</a>");
+var marker = L.marker([53.1287,29.2007],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>АЗС №77</b><br/><a href=#station77>Перейти</a>");
 var marker = L.marker([53.897044,27.550231],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС №032</b><br/><a href=#station92E4D6E2A198681BE053BF0BA8C0AEAD>Перейти</a>");
 var marker = L.marker([53.89709,27.555977],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС №034</b><br/><a href=#station951579A7E7B22091E053BF0BA8C0FEAF>Перейти</a>");
+var marker = L.marker([53.1456,29.2147],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>АЗС №78</b><br/><a href=#station78>Перейти</a>");
+var marker = L.marker([54.4442,25.9169],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>МАЗС №47</b><br/><a href=#station47>Перейти</a>");
+var marker = L.marker([53.8793,30.3139],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>МАЗС №29</b><br/><a href=#station29>Перейти</a>");
 var marker = L.marker([52.092992,23.667049],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС №ГОБК,13</b><br/><a href=#station875BD80305417B31E053BF0BA8C036CA>Перейти</a>");
+var marker = L.marker([52.1181,26.0635],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>МАЗС №25</b><br/><a href=#station25>Перейти</a>");
+var marker = L.marker([54.0398,26.827],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС №6</b><br/><a href=#station6>Перейти</a>");
+var marker = L.marker([52.7943,27.5163],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>МАЗС №10</b><br/><a href=#station10>Перейти</a>");
 var marker = L.marker([52.153637,26.021507],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>ААЗС №70</b><br/><a href=#station45BD9615BC212494E053BF0BA8C099B1>Перейти</a>");
 var marker = L.marker([52.473056,25.1825],{icon:iconNotLinked}).addTo(mymap);
@@ -220,6 +236,8 @@ var marker = L.marker([52.063611,27.773611],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №41</b><br/><a href=#stationB89F84F7E32C4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.290241,31.130398],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>КАЗС №52</b><br/><a href=#stationB89F84F7E30E4F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([54.3142,26.8575],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС №72</b><br/><a href=#station72>Перейти</a>");
 var marker = L.marker([55.1883,30.0941],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №10</b><br/><a href=#station10>Перейти</a>");
 var marker = L.marker([55.176049,30.250685],{icon:iconNotLinked}).addTo(mymap);
@@ -560,6 +578,8 @@ var marker = L.marker([52.37554,31.029704],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №65</b><br/><a href=#station65>Перейти</a>");
 var marker = L.marker([52.3676,31.003],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №83</b><br/><a href=#stationEF72423D62853AA8E043BF0BA8C0C086>Перейти</a>");
+var marker = L.marker([53.8355,30.3599],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС №30</b><br/><a href=#station30>Перейти</a>");
 var marker = L.marker([53.25701,24.42056],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №49</b><br/><a href=#stationB89F84F7E4284F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.711399,30.335729],{icon:iconNotLinked}).addTo(mymap);
@@ -584,6 +604,14 @@ var marker = L.marker([52.333611,30.440277],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №69</b><br/><a href=#stationB89F84F7E4194F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.181326,29.865517],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №68</b><br/><a href=#stationB89F84F7E4184F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([52.1263,26.1114],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС №19</b><br/><a href=#station19>Перейти</a>");
+var marker = L.marker([53.8924,27.5048],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС №73</b><br/><a href=#station73>Перейти</a>");
+var marker = L.marker([53.8628,27.6415],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС №66</b><br/><a href=#station66>Перейти</a>");
+var marker = L.marker([53.9411,27.6555],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС №63</b><br/><a href=#station63>Перейти</a>");
 var marker = L.marker([53.758882,32.242202],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №53</b><br/><a href=#stationB89F84F7E3DB4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.585528,31.973866],{icon:iconNotLinked}).addTo(mymap);
@@ -596,10 +624,20 @@ var marker = L.marker([51.431388,30.558888],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>КАЗС №61</b><br/><a href=#stationB89F84F7E33C4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.615278,30.853611],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №9</b><br/><a href=#stationB89F84F7E3104F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([54.4913,26.365],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>МАЗС №60</b><br/><a href=#station60>Перейти</a>");
+var marker = L.marker([54.2805,26.2954],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС №58</b><br/><a href=#station58>Перейти</a>");
 var marker = L.marker([52.470128,30.942349],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №26</b><br/><a href=#stationB89F84F7E3124F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.684222,31.687111],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №41</b><br/><a href=#stationB89F84F7E3D54F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.046,27.6119],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС №76</b><br/><a href=#station76>Перейти</a>");
+var marker = L.marker([53.1323,26.0379],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС №18</b><br/><a href=#station18>Перейти</a>");
+var marker = L.marker([53.9074,27.4541],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС №1</b><br/><a href=#station1>Перейти</a>");
 var marker = L.marker([53.540333,23.695395],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №16</b><br/><a href=#stationB89F84F7E3544F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.923028,27.742625],{icon:iconNotLinked}).addTo(mymap);
@@ -608,6 +646,8 @@ var marker = L.marker([52.853409,27.206893],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №43</b><br/><a href=#station3AE644078893232BE053BF0BA8C01030>Перейти</a>");
 var marker = L.marker([52.730206,27.444553],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №46</b><br/><a href=#stationB89F84F7E3A24F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.53,26.7445],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>МАЗС №71</b><br/><a href=#station71>Перейти</a>");
 var marker = L.marker([52.971666,26.69937],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №26</b><br/><a href=#stationBC257E0D324E61DDE043BF0BA8C003FC>Перейти</a>");
 var marker = L.marker([52.665654,28.225555],{icon:iconNotLinked}).addTo(mymap);
@@ -636,6 +676,8 @@ var marker = L.marker([53.356381,26.46666],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №11</b><br/><a href=#station11>Перейти</a>");
 var marker = L.marker([52.804722,27.510833],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №42</b><br/><a href=#stationB89F84F7E39F4F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([54.1944,27.8337],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>МАЗС №74</b><br/><a href=#station74>Перейти</a>");
 var marker = L.marker([53.827759,27.579093],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №18</b><br/><a href=#stationB89F84F7E46E4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.854722,27.694722],{icon:iconNotLinked}).addTo(mymap);
@@ -660,6 +702,8 @@ var marker = L.marker([53.808883,30.22025],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №72</b><br/><a href=#station1799B393A2725CDEE053BF0BA8C0D940>Перейти</a>");
 var marker = L.marker([53.85717,30.25392],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №4</b><br/><a href=#stationB89F84F7E3C04F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.9331,27.5556],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС №68</b><br/><a href=#station68>Перейти</a>");
 var marker = L.marker([53.485555,28.364166],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №30</b><br/><a href=#stationB89F84F7E3E54F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.454966,28.404016],{icon:iconNotLinked}).addTo(mymap);
@@ -670,6 +714,12 @@ var marker = L.marker([52.34,30.353889],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №1</b><br/><a href=#stationB89F84F7E32F4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.266944,30.254444],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №2</b><br/><a href=#stationB89F84F7E3304F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.9439,27.6692],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>МАЗС №61</b><br/><a href=#station61>Перейти</a>");
+var marker = L.marker([53.8761,27.6518],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС №2</b><br/><a href=#station2>Перейти</a>");
+var marker = L.marker([54.446192,25.899968],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС №85</b><br/><a href=#station85>Перейти</a>");
 var marker = L.marker([53.83108,27.60733],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №89</b><br/><a href=#stationB89F84F7E3B74F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.617778,29.694444],{icon:iconNotLinked}).addTo(mymap);
@@ -678,6 +728,16 @@ var marker = L.marker([53.836388,27.513333],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №77</b><br/><a href=#stationB89F84F7E4764F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.127874,29.421591],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №5</b><br/><a href=#stationB89F84F7E3294F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.1072,25.951],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>МАЗС №17</b><br/><a href=#station17>Перейти</a>");
+var marker = L.marker([52.1018,26.1123],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС №81</b><br/><a href=#station81>Перейти</a>");
+var marker = L.marker([53.2178,29.0332],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС №80</b><br/><a href=#station80>Перейти</a>");
+var marker = L.marker([54.2973,26.8807],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС №8</b><br/><a href=#station8>Перейти</a>");
+var marker = L.marker([53.1246,26.089],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>МАЗС №16</b><br/><a href=#station16>Перейти</a>");
 var marker = L.marker([52.382764,31.347252],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №4</b><br/><a href=#stationB89F84F7E3074F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.239839,27.607698],{icon:iconNotLinked}).addTo(mymap);
@@ -688,10 +748,20 @@ var marker = L.marker([52.929722,30.016111],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №8</b><br/><a href=#stationB89F84F7E33E4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.492828,30.687603],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №59</b><br/><a href=#stationB89F84F7E33B4F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([54.0614,26.5331],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>МАЗС №7</b><br/><a href=#station7>Перейти</a>");
 var marker = L.marker([52.3475,27.452222],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС №13</b><br/><a href=#stationB89F84F7E3204F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.878,27.5968],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>МАЗС №5</b><br/><a href=#station5>Перейти</a>");
 var marker = L.marker([52.458771,30.800321],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>КАЗС №64</b><br/><a href=#stationB89F84F7E31D4F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.889,30.2819],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>МАЗС №28</b><br/><a href=#station28>Перейти</a>");
+var marker = L.marker([53.9493,27.599],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС №62</b><br/><a href=#station62>Перейти</a>");
+var marker = L.marker([53.9131,27.6833],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>МАЗС №69</b><br/><a href=#station69>Перейти</a>");
 var marker = L.marker([52.086524,23.682281],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС №Асстор-Вест</b><br/><a href=#station875BCF5C0CFF7AD9E053BF0BA8C0BBAB>Перейти</a>");
 var marker = L.marker([52.086784,23.667582],{icon:iconNormal}).addTo(mymap);
@@ -732,6 +802,8 @@ var marker = L.marker([53.723056,27.505278],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №28</b><br/><a href=#stationB89F84F7E4014F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.723726,27.504024],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №14</b><br/><a href=#stationB89F84F7E3FC4F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.4469,26.5977],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС №75</b><br/><a href=#station75>Перейти</a>");
 var marker = L.marker([54.624752,30.453122],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №53</b><br/><a href=#stationB89F84F7E3004F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.50978,30.343077],{icon:iconNormal}).addTo(mymap);
@@ -888,10 +960,14 @@ var marker = L.marker([52.189597,24.233864],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №13</b><br/><a href=#station13>Перейти</a>");
 var marker = L.marker([52.0758,27.3704],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №56</b><br/><a href=#station56>Перейти</a>");
+var marker = L.marker([53.8743,27.5275],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>МАЗС №4</b><br/><a href=#station4>Перейти</a>");
 var marker = L.marker([53.525444,30.341389],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №15</b><br/><a href=#stationB89F84F7E3C94F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.516111,29.542222],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №55</b><br/><a href=#stationB89F84F7E3374F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.8945,27.6428],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС №3</b><br/><a href=#station3>Перейти</a>");
 var marker = L.marker([52.374722,30.825556],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №35</b><br/><a href=#stationB89F84F7E30D4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([55.755272,27.955751],{icon:iconNormal}).addTo(mymap);
@@ -1308,6 +1384,10 @@ var marker = L.marker([53.595,24.992222],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>ПАЗС №83(1)</b><br/><a href=#station0ECAEA5090CB2E36E053BF0BA8C09A43>Перейти</a>");
 var marker = L.marker([54.012042,25.901757],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №10</b><br/><a href=#stationB89F84F7E37E4F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.8589,27.5374],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>МАЗС №67</b><br/><a href=#station67>Перейти</a>");
+var marker = L.marker([53.8383,27.5326],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>МАЗС №65</b><br/><a href=#station65>Перейти</a>");
 var marker = L.marker([53.5525,23.864444],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №64</b><br/><a href=#stationB89F84F7E46F4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.844658,25.183266],{icon:iconNormal}).addTo(mymap);
@@ -1394,6 +1474,8 @@ var marker = L.marker([53.97928,27.536322],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №21</b><br/><a href=#station0CBE15E8D7313C90E053BF0BA8C09E10>Перейти</a>");
 var marker = L.marker([53.987777,27.535],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №25</b><br/><a href=#stationBF7FDDD5514F246CE043BF0BA8C07763>Перейти</a>");
+var marker = L.marker([53.9331,30.2584],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>МАЗС №27</b><br/><a href=#station27>Перейти</a>");
 var marker = L.marker([55.54123,28.206126],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №45</b><br/><a href=#stationB89F84F7E2F84F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.11625,31.128766],{icon:iconNormal}).addTo(mymap);
@@ -1434,6 +1516,8 @@ var marker = L.marker([54.43327,27.89042],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №55</b><br/><a href=#stationB89F84F7E3A74F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.755833,25.948611],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №51</b><br/><a href=#stationB89F84F7E4294F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.8408,27.4679],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>МАЗС №64</b><br/><a href=#station64>Перейти</a>");
 var marker = L.marker([53.861702,27.903167],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №16</b><br/><a href=#stationB89F84F7E3FD4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.690833,23.889444],{icon:iconNormal}).addTo(mymap);
@@ -1478,6 +1562,8 @@ var marker = L.marker([54.7006,29.13909],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №62</b><br/><a href=#stationB89F84F7E2DA4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.585889,31.352083],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №44</b><br/><a href=#stationB89F84F7E4474F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.09,29.12],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС №9</b><br/><a href=#station9>Перейти</a>");
 var marker = L.marker([52.662544,29.625556],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №14</b><br/><a href=#stationB89F84F7E3324F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.218889,30.451056],{icon:iconNormal}).addTo(mymap);
@@ -1490,7 +1576,7 @@ var marker = L.marker([53.663408,27.084123],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №70</b><br/><a href=#stationB89F84F7E3AA4F70E043BF0BA8C03722>Перейти</a>");
 
     </script>
-    <h4>Список  станций (680 шт.):</h4>
+    <h4>Список  станций (723 шт.):</h4>
     <div id="station_list">
         <div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="station873152EABCAC6B2FE053BF0BA8C03AE2" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=873152EABCAC6B2FE053BF0BA8C03AE2">ЭЗС №г.Ивье</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.931666/25.770833">не указан</a>
@@ -1505,6 +1591,61 @@ operator=
 <font color=red>opening_hours=</font>
 <font color=red>ref=ЭЗС г.Ивье</font>
 <font color=red>guid:belorusneft=873152EABCAC6B2FE053BF0BA8C03AE2</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="station20" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=20"> №20</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.1642/26.0248">Барановичский р-н, д. Малая Колпеница</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №20
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:HGV_diesel=yes</font>
+<font color=red>contact:phone=+375 163415659</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6060</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=20</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 163415659
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="station77" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=77"> №77</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.1287/29.2007">Бахарова, 269 a, 213800, Бобруйск</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №77
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>contact:phone=+375 225473877</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=7408</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=77</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 225473877
+opening_hours=Mo-Su 00:10-23:40
 </pre></div>
 
 </div><hr/>
@@ -1547,6 +1688,91 @@ socket:type2=1
 
 </div><hr/>
 
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="station78" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=78"> №78</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.1456/29.2147">Гоголя, 181 a, 213800, Бобруйск</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №78
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>contact:phone=+375 225728256</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=7973</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=78</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 225728256
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="station47" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=47"> №47</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.4442/25.9169">Кольчунский с/с, М7, 131 km, Ошмянский р-н</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №47
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:lpg=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>contact:phone=+375 159344876</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6038</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=47</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 159344876
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="station29" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=29"> №29</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.8793/30.3139">пр. Шмидта, 2, Могилев</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №29
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:lpg=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>contact:phone=+375 222477850</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6047</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=29</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 222477850
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station875BD80305417B31E053BF0BA8C036CA" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=875BD80305417B31E053BF0BA8C036CA">ЭЗС №ГОБК,13</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.092992/23.667049">не указан</a>
     <br /><br/>
@@ -1561,6 +1787,91 @@ operator=
 socket:type2=2
 <font color=red>ref=ЭЗС ГОБК,13</font>
 <font color=red>guid:belorusneft=875BD80305417B31E053BF0BA8C036CA</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station25" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=25"> №25</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.1181/26.0635">60-летия Октября, Пинск</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №25
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:lpg=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>contact:phone=+375 165349043</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=7372</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=25</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 165349043
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station6" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=6"> №6</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.0398/26.827">а/д Минск-Гродно, М6, 53 km, 222365, Воложинский р-н</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №6
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>contact:phone=+375 177264104</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6007</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=6</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 177264104
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station10" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=10"> №10</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.7943/27.5163">а/д Радково-Солигорск, 8 km, Солигорский р-н</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №10
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:lpg=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>contact:phone=+375 174262645</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6034</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=10</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 174262645
+opening_hours=Mo-Su 00:10-23:40
 </pre></div>
 
 </div><hr/>
@@ -3113,6 +3424,34 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>fuel:octane_92=yes</font>
 <font color=red>ref=КАЗС 52</font>
 <font color=red>guid:belorusneft=B89F84F7E30E4F70E043BF0BA8C03722</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station72" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=72"> №72</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.3142/26.8575">Виленская, Молодечно</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №72
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:HGV_diesel=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>contact:phone=+375 176737950</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6019</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=72</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 176737950
+opening_hours=Mo-Su 00:10-23:40
 </pre></div>
 
 </div><hr/>
@@ -7476,7 +7815,6 @@ contact:phone=+375 17 2390609
 amenity=car_wash
 automated=yes
 <font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 <font color=red>opening_hours=24/7</font>
 </pre></div>
 <div id="sidebar"><h4>Кафе</h4><pre>
@@ -9647,7 +9985,6 @@ contact:phone=+375 17 2390609
 amenity=car_wash
 automated=yes
 <font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 <font color=red>opening_hours=24/7</font>
 </pre></div>
 <div id="sidebar"><h4>Кафе</h4><pre>
@@ -9801,6 +10138,33 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 <font color=red>opening_hours=24/7</font>
 <font color=red>contact:phone=+375 232 250694</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station30" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=30"> №30</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.8355/30.3599">Гомельское шоссе, 213105, п/о Вейна</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №30
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>contact:phone=+375 222202417</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6969</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=30</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 222202417
+opening_hours=Mo-Su 00:10-23:40
 </pre></div>
 
 </div><hr/>
@@ -10198,6 +10562,122 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 
 </div><hr/>
 
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station19" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=19"> №19</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.1263/26.1114">Интернациональная, 55, Пинск</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №19
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>contact:phone=+375 165330820</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6022</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=19</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 165330820
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station73" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=73"> №73</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.8924/27.5048">К. Либкнехта, 128A, Минск</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №73
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>contact:phone=+375 172136169</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6016</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=73</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 172136169
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station66" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=66"> №66</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.8628/27.6415">Кабушкина, 48, Минск</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №66
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:HGV_diesel=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>contact:phone=+375 172855048</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6012</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=66</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 172855048
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station63" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=63"> №63</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.9411/27.6555">Калиновского, 115b, Минск</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №63
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:lpg=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:octane_98=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>contact:phone=+375 173699150</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6010</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=63</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 173699150
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationB89F84F7E3DB4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E3DB4F70E043BF0BA8C03722">АЗС №53</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.758882/32.242202">Климовичский р-н Киселево-Будский с/с, 2,4 км Р-43</a>
     <br /><br/>
@@ -10408,6 +10888,59 @@ fuel:lpg=yes
 
 </div><hr/>
 
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station60" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=60"> №60</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.4913/26.365">Кореневский с/с, р-н Сморгонский, д. Ореховка, Беларусь</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №60
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:lpg=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>contact:phone=+375 159245391</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6040</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=60</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 159245391
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station58" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=58"> №58</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.2805/26.2954">Кореневский с/с, Сморгонский р-н, д. Раковцы</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №58
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>contact:phone=+375 159245793</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6026</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=58</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 159245793
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationB89F84F7E3124F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E3124F70E043BF0BA8C03722">МАЗС №26</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.470128/30.942349">Красненский с/с., 10, вблизи аг. Красное</a>
     <br /><br/>
@@ -10487,6 +11020,81 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 <font color=red>opening_hours=24/7</font>
 <font color=red>contact:phone=+375 2241 51667</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station76" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=76"> №76</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.046/27.6119">Ленина, 294 a, Слуцк</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №76
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>contact:phone=+375 179561537</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6032</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=76</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 179561537
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station18" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=18"> №18</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.1323/26.0379">Ленина, Барановичи</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №18
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:HGV_diesel=yes</font>
+<font color=red>contact:phone=+375 163454666</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6051</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=18</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 163454666
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station1" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=1"> №1</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.9074/27.4541">Лещинского, 2, Минск, Беларусь</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №1
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:HGV_diesel=yes</font>
+<font color=red>contact:phone=+375 173902024</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6061</font>
+opening_hours=Mo-Su 00:00-24:00
+<font color=red>ref=1</font>
 </pre></div>
 
 </div><hr/>
@@ -10660,6 +11268,41 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 <font color=red>opening_hours=24/7</font>
 <font color=red>contact:phone=+375 174 296653</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station71" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=71"> №71</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.53/26.7445">Минская обл., Столбцовский р-н, 286 км автострады Брест-Москва, граница РФ</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №71
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:lpg=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>contact:phone=+375 171739648</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6008</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=71</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 171739648
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+cuisine=hot_dog
+opening_hours=Mo-Su 00:10-23:40
 </pre></div>
 
 </div><hr/>
@@ -10919,7 +11562,6 @@ contact:phone=+375 17 2390609
 amenity=car_wash
 automated=yes
 <font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 <font color=red>opening_hours=24/7</font>
 </pre></div>
 
@@ -10955,7 +11597,6 @@ contact:phone=+375 17 2390609
 <div id="sidebar"><h4>Автомойка автоматическая</h4><pre>
 amenity=car_wash
 automated=yes
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 <font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 <font color=red>opening_hours=24/7</font>
 </pre></div>
@@ -11026,7 +11667,6 @@ brand=Газпромнефть
 <div id="sidebar"><h4>Автомойка автоматическая</h4><pre>
 amenity=car_wash
 automated=yes
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 <font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 <font color=red>opening_hours=24/7</font>
 </pre></div>
@@ -11150,6 +11790,34 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 <font color=red>opening_hours=24/7</font>
 <font color=red>contact:phone=+375 1742 80666</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station74" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=74"> №74</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.1944/27.8337">Минская, 8, Логойск</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №74
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:lpg=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>contact:phone=+375 177453873</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6044</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=74</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 177453873
+opening_hours=Mo-Su 00:10-23:40
 </pre></div>
 
 </div><hr/>
@@ -11666,6 +12334,40 @@ operator=РУП \"Белоруснефть-Могилевоблнефтепро�
 
 </div><hr/>
 
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station68" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=68"> №68</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.9331/27.5556">Орловская, 38, Минск</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №68
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:octane_98=yes</font>
+<font color=red>fuel:HGV_diesel=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>contact:phone=+375 173348366</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6021</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=68</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 173348366
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationB89F84F7E3E54F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E3E54F70E043BF0BA8C03722">АЗС №30</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.485555/28.364166">Осиповичский р-н , М-5, 74-й км.,1</a>
     <br /><br/>
@@ -11873,6 +12575,90 @@ contact:website=https://www.belorusneft.by/catalog/category/850/
 
 </div><hr/>
 
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station61" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=61"> №61</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.9439/27.6692">пр-т. Независимости, 169a, Минск</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №61
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:lpg=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>contact:phone=+375 172376198</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6014</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=61</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 172376198
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station2" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=2"> №2</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.8761/27.6518">Радиальная, 7, Минск</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №2
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:HGV_diesel=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>contact:phone=+375 172174838</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6013</font>
+opening_hours=Mo-Su 00:00-24:00
+<font color=red>ref=2</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 172174838
+opening_hours=Mo-Su 00:00-24:00
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station85" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=85"> №85</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.446192/25.899968">РБ, Гродненская обл., Ошмянский р-н, М-7, 131-й км, 1 (лево)</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №85
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:octane_98=yes</font>
+<font color=red>contact:phone=+375 159378314</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=85206</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=85</font>
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationB89F84F7E3B74F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E3B74F70E043BF0BA8C03722">МАЗС №89</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.83108/27.60733">Республика Беларусь, Минская обл., Минский р-н, Новодворский с/с, 79, район 16-го км МКАД</a>
     <br /><br/>
@@ -12026,6 +12812,148 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>internet_access:fee=no</font>
 <font color=red>ref=АЗС 5</font>
 <font color=red>guid:belorusneft=B89F84F7E3294F70E043BF0BA8C03722</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station17" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=17"> №17</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.1072/25.951">Слонимское шоссе, 27А, Барановичи</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №17
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:lpg=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:HGV_diesel=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>contact:phone=+375 163419247</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6053</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=17</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 163419247
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station81" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=81"> №81</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.1018/26.1123">Столинская, 24, 225710, Пинск</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №81
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:lpg=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>contact:phone=+375 165316361</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=8751</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=81</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 165316361
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station80" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=80"> №80</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.2178/29.0332">Сычковский с/с, трасса Минск-Гомель, 127 km, 213848, Бобруйский р-н, д. Бояры,</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №80
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>contact:phone=+375 225712434</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=8263</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=80</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 225712434
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station8" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=8"> №8</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.2973/26.8807">Т. Дудко, Молодечно</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №8
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>contact:phone=+375 176743059</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6018</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=8</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 176743059
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station16" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=16"> №16</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.1246/26.089">Тельмана, 164, Барановичи</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №16
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:lpg=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:HGV_diesel=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>contact:phone=+375 163459114</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6064</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=16</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 163459114
+opening_hours=Mo-Su 00:10-23:40
 </pre></div>
 
 </div><hr/>
@@ -12252,6 +13180,33 @@ cuisine=hot_dog;burger
 
 </div><hr/>
 
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station7" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=7"> №7</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.0614/26.5331">трасса Минск-Гродно, 74 km, Воложин</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №7
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:lpg=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>contact:phone=+375 177254336</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6011</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=7</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 177254336
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationB89F84F7E3204F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E3204F70E043BF0BA8C03722">АЗС №13</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.3475/27.452222">трасса Р-23, 183-й. км., 1</a>
     <br /><br/>
@@ -12283,6 +13238,41 @@ contact:website=https://www.belorusneft.by/catalog/category/850/
 
 </div><hr/>
 
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station5" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=5"> №5</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.878/27.5968">Тростенецкая, 27, Минск</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №5
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:lpg=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:HGV_diesel=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>contact:phone=+375 173677058</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6033</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=5</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 173677058
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationB89F84F7E31D4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E31D4F70E043BF0BA8C03722">КАЗС №64</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.458771/30.800321">Урицкий с/с., вблизи аг. Урицкое, 12</a>
     <br /><br/>
@@ -12301,6 +13291,91 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>ref=КАЗС 64</font>
 <font color=red>guid:belorusneft=B89F84F7E31D4F70E043BF0BA8C03722</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station28" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=28"> №28</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.889/30.2819">Челюскинцев, 92, Могилев</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №28
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:lpg=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>contact:phone=+375 222315181</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6121</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=28</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 222315181
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station62" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=62"> №62</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.9493/27.599">Широкая, 40b, Минск</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №62
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:HGV_diesel=yes</font>
+<font color=red>contact:phone=+375 172884751</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6062</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=62</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 172884751
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="station69" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=69"> №69</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.9131/27.6833">Южная, 39, Минск</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №69
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:lpg=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>contact:phone=+375 172875864</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6067</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=69</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 172875864
+opening_hours=Mo-Su 00:10-23:40
 </pre></div>
 
 </div><hr/>
@@ -13150,6 +14225,34 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 opening_hours=24/7
 contact:phone=+375 17 5114256
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="station75" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=75"> №75</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.4469/26.5977">а/д Брест-Минск, 263 km, Столбцы</a>
+    <br /><a href="https://www.openstreetmap.org/node/4156385890">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №75
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+fuel:diesel=yes
+fuel:octane_92=yes
+fuel:octane_95=yes
+vacuum_cleaner=yes
+compressed_air=yes
+<font color=red>contact:phone=+375 171737666</font>
+contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6006
+opening_hours=Mo-Su 00:10-23:40
+ref=75
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 171737666
+opening_hours=Mo-Su 00:10-23:40
 </pre></div>
 
 </div><hr/>
@@ -14191,7 +15294,6 @@ opening_hours=24/7
 <div id="sidebar"><h4>Автомойка автоматическая</h4><pre>
 amenity=car_wash
 automated=yes
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 <font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 opening_hours=24/7
 </pre></div>
@@ -16436,6 +17538,42 @@ ref=56
 
 </div><hr/>
 
+<div class="station" id="container"><b>OK</b>  <a id="station4" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=4"> №4</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.8743/27.5275">Брилевская, 28, Минск</a>
+    <br /><a href="https://www.openstreetmap.org/node/1784633747">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №4
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+fuel:lpg=yes
+fuel:diesel=yes
+fuel:octane_92=yes
+fuel:octane_95=yes
+<font color=red>fuel:octane_98=yes</font>
+<font color=red>fuel:HGV_diesel=yes</font>
+vacuum_cleaner=yes
+compressed_air=yes
+<font color=red>contact:phone=+375 172220381</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6063</font>
+opening_hours=Mo-Su 00:10-23:40
+ref=4
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 172220381
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b>OK</b>  <a id="stationB89F84F7E3C94F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E3C94F70E043BF0BA8C03722">МАЗС №15</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.525444/30.341389">Быховский р-н, Следюковский с/с,3</a>
     <br /><a href="https://www.openstreetmap.org/node/3781614350">Объект на карте</a><br/>
@@ -16524,6 +17662,36 @@ fuel:lpg=yes
 <font color=red>opening_hours=Основная заправка уже содержит газ в списке топлива. Добавлять отдельной точкой только если время работы отличается.</font>
 contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3374F70E043BF0BA8C03722
 contact:phone=+375 2342 64106
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="station3" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=3"> №3</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.8945/27.6428">Ваупшасова, 7, Минск</a>
+    <br /><a href="https://www.openstreetmap.org/node/3503073895">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №3
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+fuel:diesel=yes
+fuel:octane_92=yes
+fuel:octane_95=yes
+<font color=red>fuel:octane_98=yes</font>
+<font color=red>fuel:HGV_diesel=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>contact:phone=+375 173988904</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6050</font>
+opening_hours=Mo-Su 00:10-23:40
+ref=3
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 173988904
+opening_hours=Mo-Su 00:10-23:40
 </pre></div>
 
 </div><hr/>
@@ -16775,7 +17943,6 @@ opening_hours=24/7
 <div id="sidebar"><h4>Автомойка автоматическая</h4><pre>
 amenity=car_wash
 automated=yes
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 <font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 opening_hours=24/7
 </pre></div>
@@ -22817,7 +23984,6 @@ opening_hours=24/7
 amenity=car_wash
 automated=yes
 <font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 opening_hours=24/7
 </pre></div>
 
@@ -23568,7 +24734,6 @@ opening_hours=24/7
 amenity=car_wash
 automated=yes
 <font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 opening_hours=24/7
 </pre></div>
 <div id="sidebar"><h4>Кафе</h4><pre>
@@ -23608,7 +24773,6 @@ opening_hours=24/7
 amenity=car_wash
 automated=yes
 <font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 opening_hours=24/7
 </pre></div>
 <div id="sidebar"><h4>Кафе</h4><pre>
@@ -23647,7 +24811,6 @@ opening_hours=24/7
 <div id="sidebar"><h4>Автомойка автоматическая</h4><pre>
 amenity=car_wash
 automated=yes
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 <font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 opening_hours=24/7
 </pre></div>
@@ -24220,6 +25383,69 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 opening_hours=24/7
 <font color=red>contact:phone=+375 1595 71469</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="station67" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=67"> №67</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.8589/27.5374">Кижеватова, 44, Минск</a>
+    <br /><a href="https://www.openstreetmap.org/node/287872352">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №67
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+fuel:lpg=yes
+fuel:diesel=yes
+fuel:octane_92=yes
+fuel:octane_95=yes
+vacuum_cleaner=yes
+compressed_air=yes
+<font color=red>contact:phone=+375 173659010</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6077</font>
+opening_hours=Mo-Su 00:10-23:40
+ref=67
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 173659010
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="station65" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=65"> №65</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.8383/27.5326">Кижеватова, 88, Минск, Беларусь</a>
+    <br /><a href="https://www.openstreetmap.org/node/278522500">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №65
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+fuel:lpg=yes
+fuel:diesel=yes
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_98=yes</font>
+vacuum_cleaner=yes
+compressed_air=yes
+<font color=red>contact:phone=+375 172019916</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6052</font>
+opening_hours=Mo-Su 00:10-23:40
+ref=65
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 172019916
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
 </pre></div>
 
 </div><hr/>
@@ -25678,7 +26904,6 @@ opening_hours=24/7
 amenity=car_wash
 automated=yes
 <font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 opening_hours=24/7
 </pre></div>
 <div id="sidebar"><h4>Кафе</h4><pre>
@@ -25884,6 +27109,35 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 opening_hours=24/7
 contact:phone=+375 17 3800031
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="station27" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=27"> №27</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.9331/30.2584">Минское шоссе, 27, 212039, Могилев</a>
+    <br /><a href="https://www.openstreetmap.org/way/183453834">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №27
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+fuel:lpg=yes
+fuel:diesel=yes
+fuel:octane_92=yes
+fuel:octane_95=yes
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>contact:phone=+375 222746357</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6970</font>
+opening_hours=Mo-Su 00:10-23:40
+ref=27
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 222746357
+opening_hours=Mo-Su 00:10-23:40
 </pre></div>
 
 </div><hr/>
@@ -26750,6 +28004,47 @@ opening_hours=24/7
 
 </div><hr/>
 
+<div class="station" id="container"><b>OK</b>  <a id="station64" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=64"> №64</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.8408/27.4679">пр. Дзержинского, 165, Минск</a>
+    <br /><a href="https://www.openstreetmap.org/node/255020776">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №64
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+fuel:lpg=yes
+fuel:diesel=yes
+fuel:octane_92=yes
+fuel:octane_95=yes
+<font color=red>fuel:HGV_diesel=yes</font>
+vacuum_cleaner=yes
+compressed_air=yes
+<font color=red>contact:phone=+375 173982932</font>
+<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6065</font>
+opening_hours=Mo-Su 00:10-23:40
+ref=64
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 173982932
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+cuisine=hot_dog
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b>OK</b>  <a id="stationB89F84F7E3FD4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E3FD4F70E043BF0BA8C03722">АЗС №16</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.861702/27.903167">РБ, Минская обл., Смолевичский р-н, М-1, 376-й км,1</a>
     <br /><a href="https://www.openstreetmap.org/node/288990980">Объект на карте</a><br/>
@@ -27094,9 +28389,9 @@ socket:chademo=1
 amenity=fuel
 name=Белоруснефть №73
 brand=Белоруснефть
-operator=
+operator=РУП \"Белоруснефть-Витебскоблнефтепродукт\"
 contact:website=https://azs.belorusneft.by/beloil-map/station?id=403EE95BE64933ACE053BF0BA8C02466
-<font color=red>opening_hours=</font>
+<font color=red>opening_hours=Mo-Su 10:30-17:00</font>
 fuel:diesel=yes
 fuel:octane_92=yes
 <font color=red>ref=ПАЗС 73</font>
@@ -27740,6 +29035,33 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 opening_hours=24/7
 contact:phone=+375 2243 71516
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="station9" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=9"> №9</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.09/29.12">Чехова, 30, Бобруйск</a>
+    <br /><a href="https://www.openstreetmap.org/way/174391810">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №9
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+fuel:diesel=yes
+fuel:octane_92=yes
+fuel:octane_95=yes
+vacuum_cleaner=yes
+contact:phone=+375 225726766
+contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6025
+opening_hours=Mo-Su 00:10-23:40
+ref=9
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 225726766
+opening_hours=Mo-Su 00:10-23:40
 </pre></div>
 
 </div><hr/>
