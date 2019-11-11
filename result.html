@@ -43,15 +43,15 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 11.11.2019 09:47:24</p>
+    <p>Дата генерации файла 11.11.2019 10:39:22</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
-    <font color=red>Not found</font> (11) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
+    <font color=red>Not found</font> (10) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
     <font color=orange>Найден, но нет Guid</font> (339) у автозаправки не проставлен ключ <b>guid:belorusneft</b><br />
-    OK (413) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
+    OK (414) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
 		const notFoundColour = 'Red'
@@ -132,8 +132,6 @@ const iconNormal = L.divIcon({
 marker.bindPopup("<b>ЭЗС №г.Ивье</b><br/><a href=#station873152EABCAC6B2FE053BF0BA8C03AE2>Перейти</a>");
 var marker = L.marker([54.080591,25.292437],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>АЗС №84</b><br/><a href=#station84>Перейти</a>");
-var marker = L.marker([54.8846,28.729],{icon:iconNotFound}).addTo(mymap);
-marker.bindPopup("<b>АЗС №79</b><br/><a href=#station79>Перейти</a>");
 var marker = L.marker([53.1287,29.2007],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>АЗС №77</b><br/><a href=#station77>Перейти</a>");
 var marker = L.marker([53.897044,27.550231],{icon:iconNotFound}).addTo(mymap);
@@ -876,6 +874,8 @@ var marker = L.marker([54.50978,30.343077],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №50</b><br/><a href=#stationB89F84F7E2FD4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.400476,30.897745],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №87</b><br/><a href=#station231504CA12ED0FF8E053BF0BA8C07BE0>Перейти</a>");
+var marker = L.marker([54.8846,28.729],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС №79</b><br/><a href=#station79>Перейти</a>");
 var marker = L.marker([53.9034,27.406136],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №19</b><br/><a href=#stationC8CA261BF1714013E043BF0BA8C0A7AE>Перейти</a>");
 var marker = L.marker([53.910277,27.404722],{icon:iconNormal}).addTo(mymap);
@@ -1700,34 +1700,6 @@ opening_hours=Mo-Su 00:10-23:40
 shop=convenience
 <font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
 contact:phone=+375 159440587
-opening_hours=Mo-Su 00:10-23:40
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="station79" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=79"> №79</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.8846/28.729">а/д М3, 155 km, 211180, Лепельский р-н</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Лукойл №79
-brand=Лукойл
-<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:octane_92=yes</font>
-<font color=red>fuel:octane_95=yes</font>
-<font color=red>vacuum_cleaner=yes</font>
-<font color=red>compressed_air=yes</font>
-<font color=red>contact:phone=+375 213246948</font>
-<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=7940</font>
-opening_hours=Mo-Su 00:10-23:40
-<font color=red>ref=79</font>
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
-contact:phone=+375 213246948
 opening_hours=Mo-Su 00:10-23:40
 </pre></div>
 
@@ -15375,6 +15347,34 @@ shop=convenience
 operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
 opening_hours=24/7
 contact:phone=+375 232 271781
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="station79" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=79"> №79</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.8846/28.729">а/д М3, 155 km, 211180, Лепельский р-н</a>
+    <br /><a href="https://www.openstreetmap.org/way/274780844">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №79
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+fuel:diesel=yes
+fuel:octane_92=yes
+fuel:octane_95=yes
+vacuum_cleaner=yes
+compressed_air=yes
+contact:phone=+375 213246948
+contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=7940
+opening_hours=Mo-Su 00:10-23:40
+ref=79
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 213246948
+opening_hours=Mo-Su 00:10-23:40
 </pre></div>
 
 </div><hr/>
