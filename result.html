@@ -43,15 +43,15 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть</h1>
-    <p>Дата генерации файла 10.11.2019 00:28:07</p>
+    <p>Дата генерации файла 11.11.2019 08:30:34</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
-    <font color=red>Not found</font> (8) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
+    <font color=red>Not found</font> (7) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
     <font color=orange>Найден, но нет Guid</font> (309) у автозаправки не проставлен ключ <b>guid:belorusneft</b><br />
-    OK (406) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
+    OK (407) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
 		const notFoundColour = 'Red'
@@ -130,8 +130,6 @@ const iconNormal = L.divIcon({
         }).addTo(mymap);
         var marker = L.marker([53.931666,25.770833],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС №г.Ивье</b><br/><a href=#station873152EABCAC6B2FE053BF0BA8C03AE2>Перейти</a>");
-var marker = L.marker([53.1642,26.0248],{icon:iconNotFound}).addTo(mymap);
-marker.bindPopup("<b>АЗС №20</b><br/><a href=#station20>Перейти</a>");
 var marker = L.marker([53.1287,29.2007],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>АЗС №77</b><br/><a href=#station77>Перейти</a>");
 var marker = L.marker([53.897044,27.550231],{icon:iconNotFound}).addTo(mymap);
@@ -840,6 +838,8 @@ var marker = L.marker([53.12035,29.570633],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №26</b><br/><a href=#stationB89F84F7E3E14F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.929783,31.461417],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>КАЗС №50</b><br/><a href=#stationB89F84F7E3D84F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.1642,26.0248],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС №20</b><br/><a href=#station20>Перейти</a>");
 var marker = L.marker([54.610868,27.909917],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №69</b><br/><a href=#stationCD6C586C3FED3818E043BF0BA8C04310>Перейти</a>");
 var marker = L.marker([54.338392,26.20816],{icon:iconNormal}).addTo(mymap);
@@ -1591,33 +1591,6 @@ operator=
 <font color=red>opening_hours=</font>
 <font color=red>ref=ЭЗС г.Ивье</font>
 <font color=red>guid:belorusneft=873152EABCAC6B2FE053BF0BA8C03AE2</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="station20" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=20"> №20</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.1642/26.0248">Барановичский р-н, д. Малая Колпеница</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Лукойл №20
-brand=Лукойл
-<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:octane_92=yes</font>
-<font color=red>fuel:octane_95=yes</font>
-<font color=red>fuel:HGV_diesel=yes</font>
-<font color=red>contact:phone=+375 163415659</font>
-<font color=red>contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6060</font>
-opening_hours=Mo-Su 00:10-23:40
-<font color=red>ref=20</font>
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
-contact:phone=+375 163415659
-opening_hours=Mo-Su 00:10-23:40
 </pre></div>
 
 </div><hr/>
@@ -6008,7 +5981,6 @@ operator=РУП \"Белоруснефть-Минскавтозаправка\"
 <font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4714F70E043BF0BA8C03722</font>
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:octane_92=yes</font>
 <font color=red>fuel:octane_95=yes</font>
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
@@ -15072,6 +15044,33 @@ guid:belorusneft=B89F84F7E3D84F70E043BF0BA8C03722
 
 </div><hr/>
 
+<div class="station" id="container"><b>OK</b>  <a id="station20" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=20"> №20</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.1642/26.0248">Барановичский р-н, д. Малая Колпеница</a>
+    <br /><a href="https://www.openstreetmap.org/node/306069322">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл №20
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+fuel:diesel=yes
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:HGV_diesel=yes
+contact:phone=+375 163415659
+contact:website=http://lukoil.by/LUKOIL-Belarus/ru/ForMotorists/PetrolStation?type=gasStation&id=6060
+opening_hours=Mo-Su 00:10-23:40
+ref=20
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 163415659
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b>OK</b>  <a id="stationCD6C586C3FED3818E043BF0BA8C04310" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=CD6C586C3FED3818E043BF0BA8C04310">АЗС №69</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.610868/27.909917">Бегомльский с/с, М3, 88-й км, 2</a>
     <br /><a href="https://www.openstreetmap.org/way/224326750">Объект на карте</a><br/>
@@ -18319,7 +18318,6 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4664F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
-fuel:octane_92=yes
 fuel:octane_95=yes
 fuel:octane_98=yes
 vacuum_cleaner=yes
