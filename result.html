@@ -43,15 +43,15 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 22.11.2019 01:20:33</p>
+    <p>Дата генерации файла 25.11.2019 08:33:01</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
-    <font color=red>Not found</font> (5) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
-    <font color=orange>Найден, но нет Guid</font> (293) у автозаправки не проставлен ключ <b>guid:belorusneft</b><br />
-    OK (469) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
+    <font color=red>Not found</font> (3) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
+    <font color=orange>Найден, но нет Guid</font> (292) у автозаправки не проставлен ключ <b>guid:belorusneft</b><br />
+    OK (472) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
 		const notFoundColour = 'Red'
@@ -134,10 +134,6 @@ var marker = L.marker([53.897044,27.550231],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС №032</b><br/><a href=#stationbelorus92E4D6E2A198681BE053BF0BA8C0AEAD>Перейти</a>");
 var marker = L.marker([53.89709,27.555977],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС №034</b><br/><a href=#stationbelorus951579A7E7B22091E053BF0BA8C0FEAF>Перейти</a>");
-var marker = L.marker([52.424876,31.015411],{icon:iconNotFound}).addTo(mymap);
-marker.bindPopup("<b>ЭЗС №Зарядная станция для электромобилей площадь Ленина</b><br/><a href=#stationbelorus8B1FB7DD8D605741E053BF0BA8C01172>Перейти</a>");
-var marker = L.marker([52.423996,30.99855],{icon:iconNotFound}).addTo(mymap);
-marker.bindPopup("<b>ЭЗС №Зарядная станция для электромобилей по ул.Крестьянской</b><br/><a href=#stationbelorus81B0C62D937B6C73E053BF0BA8C03FDC>Перейти</a>");
 var marker = L.marker([52.092992,23.667049],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС №ГОБК,13</b><br/><a href=#stationbelorus875BD80305417B31E053BF0BA8C036CA>Перейти</a>");
 var marker = L.marker([52.1181,26.0635],{icon:iconNotLinked}).addTo(mymap);
@@ -514,8 +510,6 @@ var marker = L.marker([53.311389,25.283889],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>ААЗС №35</b><br/><a href=#stationbelorusB89F84F7E3674F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.3075,28.8025],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>КАЗС №63</b><br/><a href=#stationbelorusB89F84F7E3264F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([53.136630,30.802693],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>АЗС №36</b><br/><a href=#stationbelorusB89F84F7E3414F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([51.801667,28.328611],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №66</b><br/><a href=#stationbelorusB89F84F7E3284F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.465883,25.580444],{icon:iconNotLinked}).addTo(mymap);
@@ -1252,8 +1246,12 @@ var marker = L.marker([53.16634,29.16002],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №33</b><br/><a href=#stationbelorusB89F84F7E3E84F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.121287,23.671321],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №92</b><br/><a href=#stationbelorus8510ADFED3DB6BD8E053BF0BA8C0EC07>Перейти</a>");
+var marker = L.marker([52.424876,31.015411],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>ЭЗС №Зарядная станция для электромобилей площадь Ленина</b><br/><a href=#stationbelorus8B1FB7DD8D605741E053BF0BA8C01172>Перейти</a>");
 var marker = L.marker([52.427017,31.016831],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС №Зарядная станция для электромобилей по ул.Билецкого</b><br/><a href=#stationbelorus8628E6A7F31B693EE053BF0BA8C0354D>Перейти</a>");
+var marker = L.marker([52.423996,30.99855],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>ЭЗС №Зарядная станция для электромобилей по ул.Крестьянской</b><br/><a href=#stationbelorus81B0C62D937B6C73E053BF0BA8C03FDC>Перейти</a>");
 var marker = L.marker([52.401204,30.957771],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>ААЗС №62</b><br/><a href=#stationbelorus79EB024514A72920E053BF0BA8C034FB>Перейти</a>");
 var marker = L.marker([53.620833,23.866111],{icon:iconNormal}).addTo(mymap);
@@ -1290,6 +1288,8 @@ var marker = L.marker([53.902573,26.756546],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №34</b><br/><a href=#stationbelorusB89F84F7E39B4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.553611,26.1525],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС №52</b><br/><a href=#stationbelorusB89F84F7E42F4F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.136630,30.802693],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС №36</b><br/><a href=#stationbelorusB89F84F7E3414F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.348752,31.418528],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС №49</b><br/><a href=#stationbelorusB89F84F7E3D74F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.240425,29.805787],{icon:iconNormal}).addTo(mymap);
@@ -1717,42 +1717,6 @@ operator=РУП \"Белоруснефть-Минскавтозаправка\"
 socket:type2=1
 <font color=red>ref=ЭЗС 034</font>
 <font color=red>guid:belorusneft=951579A7E7B22091E053BF0BA8C0FEAF</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationbelorus8B1FB7DD8D605741E053BF0BA8C01172" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=8B1FB7DD8D605741E053BF0BA8C01172">ЭЗС №Зарядная станция для электромобилей площадь Ленина</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.424876/31.015411">г.Гомель, площадь Ленина</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Зарядка</h4><pre>
-amenity=charging_station
-name=Белоруснефть №Зарядная станция для электромобилей площадь Ленина
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=8B1FB7DD8D605741E053BF0BA8C01172</font>
-<font color=red>opening_hours=24/7</font>
-socket:type2=1
-<font color=red>ref=ЭЗС Зарядная станция для электромобилей площадь Ленина</font>
-<font color=red>guid:belorusneft=8B1FB7DD8D605741E053BF0BA8C01172</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationbelorus81B0C62D937B6C73E053BF0BA8C03FDC" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=81B0C62D937B6C73E053BF0BA8C03FDC">ЭЗС №Зарядная станция для электромобилей по ул.Крестьянской</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.423996/30.99855">г.Гомель, ул.Крестьянская, 43</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Зарядка</h4><pre>
-amenity=charging_station
-name=Белоруснефть №Зарядная станция для электромобилей по ул.Крестьянской
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=81B0C62D937B6C73E053BF0BA8C03FDC</font>
-<font color=red>opening_hours=24/7</font>
-socket:type2=1
-<font color=red>ref=ЭЗС Зарядная станция для электромобилей по ул.Крестьянской</font>
-<font color=red>guid:belorusneft=81B0C62D937B6C73E053BF0BA8C03FDC</font>
 </pre></div>
 
 </div><hr/>
@@ -4460,6 +4424,13 @@ contact:website=https://www.belorusneft.by/catalog/category/850/
 <div id="sidebar"><h4>Магазин</h4><pre>
 shop=convenience
 operator=РУП \"Белоруснефть-Гроднооблнефтепродукт\"
+<font color=red>opening_hours=24/7</font>
+<font color=red>contact:phone=+375 1512 67746</font>
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+brand=Белоруснефть
+cuisine=hot_dog;burger
 <font color=red>opening_hours=24/7</font>
 <font color=red>contact:phone=+375 1512 67746</font>
 </pre></div>
@@ -7768,7 +7739,6 @@ operator=РУП \"Белоруснефть-Могилевоблнефтепро�
 <font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3D24F70E043BF0BA8C03722</font>
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:octane_92=yes</font>
 <font color=red>fuel:octane_95=yes</font>
 <font color=red>fuel:octane_98=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
@@ -8908,37 +8878,6 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 contact:website=https://www.belorusneft.by/catalog/category/850/
 <font color=red>contact:phone=+375 2350 42659</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorusB89F84F7E3414F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E3414F70E043BF0BA8C03722">АЗС №36</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.136630/30.802693">г.п. Корма, ул. Ленина, 51</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Белоруснефть №36
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-<font color=red>contact:phone=+375 2337 22890</font>
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3414F70E043BF0BA8C03722</font>
-<font color=red>opening_hours=24/7</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:octane_92=yes</font>
-<font color=red>fuel:octane_95=yes</font>
-<font color=red>vacuum_cleaner=yes</font>
-<font color=red>compressed_air=yes</font>
-<font color=red>ref=АЗС 36</font>
-<font color=red>guid:belorusneft=B89F84F7E3414F70E043BF0BA8C03722</font>
-</pre></div>
-<div id="sidebar"><h4>Продажа шин</h4><pre>
-shop=tyres
-brand=Белшина
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-<font color=red>opening_hours=24/7</font>
-contact:website=https://www.belorusneft.by/catalog/category/850/
-<font color=red>contact:phone=+375 2337 22890</font>
 </pre></div>
 
 </div><hr/>
@@ -12911,7 +12850,6 @@ contact:phone=+375 1591 20531
 contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E36C4F70E043BF0BA8C03722
 opening_hours=24/7
 fuel:diesel=yes
-fuel:octane_92=yes
 fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -15110,7 +15048,6 @@ contact:phone=+375 225 710134
 contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3DF4F70E043BF0BA8C03722
 opening_hours=24/7
 fuel:diesel=yes
-fuel:octane_92=yes
 fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -22998,6 +22935,24 @@ socket:chademo=1
 
 </div><hr/>
 
+<div class="station" id="container"><b>OK</b>  <a id="stationbelorus8B1FB7DD8D605741E053BF0BA8C01172" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=8B1FB7DD8D605741E053BF0BA8C01172">ЭЗС №Зарядная станция для электромобилей площадь Ленина</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.424876/31.015411">г.Гомель, площадь Ленина</a>
+    <br /><a href="https://www.openstreetmap.org/node/7001360508">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Зарядка</h4><pre>
+amenity=charging_station
+name=Белоруснефть №Зарядная станция для электромобилей площадь Ленина
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
+contact:website=https://azs.belorusneft.by/beloil-map/station?id=8B1FB7DD8D605741E053BF0BA8C01172
+opening_hours=24/7
+socket:type2=1
+ref=ЭЗС Зарядная станция для электромобилей площадь Ленина
+guid:belorusneft=8B1FB7DD8D605741E053BF0BA8C01172
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b>OK</b>  <a id="stationbelorus8628E6A7F31B693EE053BF0BA8C0354D" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=8628E6A7F31B693EE053BF0BA8C0354D">ЭЗС №Зарядная станция для электромобилей по ул.Билецкого</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.427017/31.016831">г.Гомель, ул.Билецкого, 7</a>
     <br /><a href="https://www.openstreetmap.org/node/6681245085">Объект на карте</a><br/>
@@ -23012,6 +22967,24 @@ opening_hours=24/7
 socket:type2=1
 <font color=red>ref=ЭЗС Зарядная станция для электромобилей по ул.Билецкого</font>
 guid:belorusneft=8628E6A7F31B693EE053BF0BA8C0354D
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationbelorus81B0C62D937B6C73E053BF0BA8C03FDC" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=81B0C62D937B6C73E053BF0BA8C03FDC">ЭЗС №Зарядная станция для электромобилей по ул.Крестьянской</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.423996/30.99855">г.Гомель, ул.Крестьянская, 43</a>
+    <br /><a href="https://www.openstreetmap.org/node/7001356421">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Зарядка</h4><pre>
+amenity=charging_station
+name=Белоруснефть №Зарядная станция для электромобилей по ул.Крестьянской
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
+contact:website=https://azs.belorusneft.by/beloil-map/station?id=81B0C62D937B6C73E053BF0BA8C03FDC
+opening_hours=24/7
+socket:type2=1
+ref=ЭЗС Зарядная станция для электромобилей по ул.Крестьянской
+guid:belorusneft=81B0C62D937B6C73E053BF0BA8C03FDC
 </pre></div>
 
 </div><hr/>
@@ -23699,6 +23672,37 @@ shop=convenience
 operator=РУП \"Белоруснефть-Гроднооблнефтепродукт\"
 opening_hours=24/7
 contact:phone=+375 159 620022
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E3414F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E3414F70E043BF0BA8C03722">АЗС №36</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.136630/30.802693">г.п. Корма, ул. Ленина, 51</a>
+    <br /><a href="https://www.openstreetmap.org/node/7003913166">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Белоруснефть №36
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
+contact:phone=+375 2337 22890
+contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3414F70E043BF0BA8C03722
+opening_hours=24/7
+fuel:diesel=yes
+fuel:octane_92=yes
+fuel:octane_95=yes
+vacuum_cleaner=yes
+compressed_air=yes
+ref=АЗС 36
+guid:belorusneft=B89F84F7E3414F70E043BF0BA8C03722
+</pre></div>
+<div id="sidebar"><h4>Продажа шин</h4><pre>
+shop=tyres
+brand=Белшина
+operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
+opening_hours=24/7
+contact:website=https://www.belorusneft.by/catalog/category/850/
+contact:phone=+375 2337 22890
 </pre></div>
 
 </div><hr/>
