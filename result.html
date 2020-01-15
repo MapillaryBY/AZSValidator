@@ -43,15 +43,15 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 1/14/20 11:09:17 PM</p>
+    <p>Дата генерации файла 1/15/20 11:29:28 AM</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (4) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
-    <font color=orange>Найден, но нет Guid</font> (217) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (548) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
+    <font color=orange>Найден, но нет Guid</font> (216) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
+    OK (549) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
 		const notFoundColour = 'Red'
@@ -508,8 +508,6 @@ var marker = L.marker([53.035277,28.285555],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 47</b><br/><a href=#stationbelorusB89F84F7E3A34F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.99925,27.58995],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 44</b><br/><a href=#stationbelorusB89F84F7E3A04F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([53.96882,27.745556],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>АЗС № 71</b><br/><a href=#stationgazprom71>Перейти</a>");
 var marker = L.marker([52.804722,27.510833],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 42</b><br/><a href=#stationbelorusB89F84F7E39F4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.827759,27.579093],{icon:iconNotLinked}).addTo(mymap);
@@ -1502,6 +1500,8 @@ var marker = L.marker([52.80888,28.01179],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 23</b><br/><a href=#stationgazprom23>Перейти</a>");
 var marker = L.marker([53.84559,27.44352],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 24</b><br/><a href=#stationgazprom24>Перейти</a>");
+var marker = L.marker([53.96882,27.745556],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 71</b><br/><a href=#stationgazprom71>Перейти</a>");
 var marker = L.marker([53.200657,26.69137],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АСЗ № 12</b><br/><a href=#stationtatneft12>Перейти</a>");
 var marker = L.marker([53.356381,26.46666],{icon:iconNormal}).addTo(mymap);
@@ -8801,32 +8801,6 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 <font color=red>opening_hours=24/7</font>
 <font color=red>contact:phone=+375 1795 59502</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationgazprom71" href="https://www.gpnbonus.by/nashiazs"> № 71</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.96882/27.745556">Минская область, Минский район, Колодищанский с/с, автодорога Минск-аэропорт  Минск-2</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Газпромнефть № 71
-brand=Газпромнефть
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>fuel:octane_95=yes</font>
-<font color=red>fuel:octane_92=yes</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>contact:phone=+375 17 2390609</font>
-<font color=red>contact:website=https://gpnbonus.by/</font>
-<font color=red>opening_hours=24/7</font>
-<font color=red>ref=71</font>
-</pre></div>
-<div id="sidebar"><h4>Автомойка автоматическая</h4><pre>
-amenity=car_wash
-automated=yes
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>opening_hours=24/7</font>
 </pre></div>
 
 </div><hr/>
@@ -27912,6 +27886,32 @@ opening_hours=24/7
 amenity=fast_food
 <font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationgazprom71" href="https://www.gpnbonus.by/nashiazs"> № 71</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.96882/27.745556">Минская область, Минский район, Колодищанский с/с, автодорога Минск-аэропорт  Минск-2</a>
+    <br /><a href="https://www.openstreetmap.org/node/306069754">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Газпромнефть № 71
+brand=Газпромнефть
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+fuel:octane_95=yes
+fuel:octane_92=yes
+fuel:diesel=yes
+contact:phone=+375 17 2390609
+contact:website=https://gpnbonus.by/
+opening_hours=24/7
+ref=71
+</pre></div>
+<div id="sidebar"><h4>Автомойка автоматическая</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 opening_hours=24/7
 </pre></div>
 
