@@ -43,15 +43,15 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 1/23/20 11:11:45 PM</p>
+    <p>Дата генерации файла 1/24/20 11:10:14 AM</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (4) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
-    <font color=orange>Найден, но нет Guid</font> (192) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (574) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
+    <font color=orange>Найден, но нет Guid</font> (193) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
+    OK (573) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
 		const notFoundColour = 'Red'
@@ -468,6 +468,8 @@ var marker = L.marker([53.035277,28.285555],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 47</b><br/><a href=#stationbelorusB89F84F7E3A34F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.99925,27.58995],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 44</b><br/><a href=#stationbelorusB89F84F7E3A04F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([54.51044,27.22033],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 45</b><br/><a href=#stationbelorus9BC59E857D70776EE053BF0BA8C03336>Перейти</a>");
 var marker = L.marker([52.804722,27.510833],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 42</b><br/><a href=#stationbelorusB89F84F7E39F4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([51.907778,29.311111],{icon:iconNotLinked}).addTo(mymap);
@@ -872,8 +874,6 @@ var marker = L.marker([53.509722,30.223611],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 9</b><br/><a href=#stationbelorusB89F84F7E3C44F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.510676,26.958977],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 12</b><br/><a href=#stationbelorusB89F84F7E38C4F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([54.488694,26.88747],{icon:iconNormal}).addTo(mymap);
-marker.bindPopup("<b>КАЗС № 13</b><br/><a href=#stationbelorusB89F84F7E38D4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([55.203964,30.269865],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 77</b><br/><a href=#stationbelorus5E8C9E7960D8753EE053BF0BA8C0FD07>Перейти</a>");
 var marker = L.marker([55.152046,30.127077],{icon:iconNormal}).addTo(mymap);
@@ -1671,27 +1671,27 @@ marker.bindPopup("<b>АЗС № 22</b><br/><a href=#stationlukoil22>Перейт
 
     </script>
     <h4>История изменений:</h4>
-    <div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil86">Лукойл АЗС № 86</a> <a href="https://www.openstreetmap.org/node/5532129637">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil84">Лукойл АЗС № 84</a> <a href="https://www.openstreetmap.org/node/4105478597">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil54">Лукойл АЗС № 54</a> <a href="https://www.openstreetmap.org/node/3444378938">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil82">Лукойл АЗС № 82</a> <a href="https://www.openstreetmap.org/node/1256743426">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil81">Лукойл АЗС № 81</a> </div>
-<div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil83">Лукойл АЗС № 83</a> </div>
-<div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil80">Лукойл АЗС № 80</a> </div>
-<div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil44">Лукойл АЗС № 44</a> <a href="https://www.openstreetmap.org/node/815566279">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil78">Лукойл АЗС № 78</a> <a href="https://www.openstreetmap.org/node/6676655066">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil79">Лукойл АЗС № 79</a> <a href="https://www.openstreetmap.org/way/274780844">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil26">Лукойл МАЗС № 26</a> <a href="https://www.openstreetmap.org/node/4484393435">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil23">Лукойл АЗС № 23</a> <a href="https://www.openstreetmap.org/node/1838560524">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil77">Лукойл АЗС № 77</a> <a href="https://www.openstreetmap.org/way/338442785">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil45">Лукойл МАЗС № 45</a> </div>
-<div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil25">Лукойл МАЗС № 25</a> <a href="https://www.openstreetmap.org/node/746251496">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil13">Лукойл АЗС № 13</a> </div>
-<div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil27">Лукойл МАЗС № 27</a> <a href="https://www.openstreetmap.org/way/183453834">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil30">Лукойл АЗС № 30</a> <a href="https://www.openstreetmap.org/node/3720943844">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil46">Лукойл МАЗС № 46</a> <a href="https://www.openstreetmap.org/node/1125070658">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil28">Лукойл МАЗС № 28</a> <a href="https://www.openstreetmap.org/node/3669011396">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-23 Новая заправка <a href="#stationlukoil67">Лукойл МАЗС № 67</a> <a href="https://www.openstreetmap.org/node/287872352">Объект на карте</a></div>
+    <div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil85">Лукойл АЗС № 85</a> <a href="https://www.openstreetmap.org/node/3944768690">Объект на карте</a></div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil84">Лукойл АЗС № 84</a> <a href="https://www.openstreetmap.org/node/4105478597">Объект на карте</a></div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil54">Лукойл АЗС № 54</a> <a href="https://www.openstreetmap.org/node/3444378938">Объект на карте</a></div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil82">Лукойл АЗС № 82</a> <a href="https://www.openstreetmap.org/node/1256743426">Объект на карте</a></div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil81">Лукойл АЗС № 81</a> </div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil83">Лукойл АЗС № 83</a> </div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil80">Лукойл АЗС № 80</a> </div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil44">Лукойл АЗС № 44</a> <a href="https://www.openstreetmap.org/node/815566279">Объект на карте</a></div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil78">Лукойл АЗС № 78</a> <a href="https://www.openstreetmap.org/node/6676655066">Объект на карте</a></div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil79">Лукойл АЗС № 79</a> <a href="https://www.openstreetmap.org/way/274780844">Объект на карте</a></div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil26">Лукойл МАЗС № 26</a> <a href="https://www.openstreetmap.org/node/4484393435">Объект на карте</a></div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil23">Лукойл АЗС № 23</a> <a href="https://www.openstreetmap.org/node/1838560524">Объект на карте</a></div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil77">Лукойл АЗС № 77</a> <a href="https://www.openstreetmap.org/way/338442785">Объект на карте</a></div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil45">Лукойл МАЗС № 45</a> </div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil25">Лукойл МАЗС № 25</a> <a href="https://www.openstreetmap.org/node/746251496">Объект на карте</a></div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil13">Лукойл АЗС № 13</a> </div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil27">Лукойл МАЗС № 27</a> <a href="https://www.openstreetmap.org/way/183453834">Объект на карте</a></div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil30">Лукойл АЗС № 30</a> <a href="https://www.openstreetmap.org/node/3720943844">Объект на карте</a></div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil46">Лукойл МАЗС № 46</a> <a href="https://www.openstreetmap.org/node/1125070658">Объект на карте</a></div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil28">Лукойл МАЗС № 28</a> <a href="https://www.openstreetmap.org/node/3669011396">Объект на карте</a></div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil67">Лукойл МАЗС № 67</a> <a href="https://www.openstreetmap.org/node/287872352">Объект на карте</a></div>
 br>и еще больше...
 
     <h4>Список  станций (770 шт.):</h4>
@@ -2358,7 +2358,6 @@ operator=РУП \"Белоруснефть-Брестоблнефтепроду�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
-<font color=red>fuel:octane_95=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
 <font color=red>self_service=yes</font>
@@ -8030,6 +8029,27 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 <font color=red>opening_hours=24/7</font>
 <font color=red>contact:phone=+375 1795 59502</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorus9BC59E857D70776EE053BF0BA8C03336" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=9BC59E857D70776EE053BF0BA8C03336">АЗС № 45</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.51044/27.22033">Минская область, Вилейский район, д. Сосенка, ул. Васильковая, 1"Б"</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Белоруснефть № 45
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Минскоблнефтепродукт\"
+<font color=red>contact:phone=+375 1771 36599</font>
+<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=9BC59E857D70776EE053BF0BA8C03336</font>
+<font color=red>opening_hours=24/7</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>ref=АЗС 45</font>
+<font color=red>guid:belorusneft=9BC59E857D70776EE053BF0BA8C03336</font>
 </pre></div>
 
 </div><hr/>
@@ -16027,29 +16047,6 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 opening_hours=24/7
 contact:phone=+375 1771 22209
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E38D4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E38D4F70E043BF0BA8C03722">КАЗС № 13</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.488694/26.88747">г. Вилейка, ул. 1 Мая, 92</a>
-    <br /><a href="https://www.openstreetmap.org/way/199307890">Объект на карте</a><br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Белоруснефть № 13
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Минскоблнефтепродукт\"
-contact:phone=+375 1771 35376
-contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E38D4F70E043BF0BA8C03722
-opening_hours=24/7
-fuel:diesel=yes
-fuel:octane_92=yes
-fuel:octane_95=yes
-internet_access=yes
-internet_access:fee=no
-ref=КАЗС 13
-guid:belorusneft=B89F84F7E38D4F70E043BF0BA8C03722
 </pre></div>
 
 </div><hr/>
