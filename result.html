@@ -43,14 +43,14 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 1/27/20 11:15:45 PM</p>
+    <p>Дата генерации файла 1/28/20 11:12:31 AM</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
-    <font color=red>Not found</font> (4) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
-    <font color=orange>Найден, но нет Guid</font> (188) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
+    <font color=red>Not found</font> (6) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
+    <font color=orange>Найден, но нет Guid</font> (192) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
     OK (577) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
@@ -132,6 +132,10 @@ const iconNormal = L.divIcon({
 marker.bindPopup("<b>ЭЗС № г.Ивье</b><br/><a href=#stationbelorus873152EABCAC6B2FE053BF0BA8C03AE2>Перейти</a>");
 var marker = L.marker([52.109940,23.716494],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 44</b><br/><a href=#stationgazprom44>Перейти</a>");
+var marker = L.marker([53.710792,23.815589],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>ЭЗС № ЭЗС ИООО Корона ул. Горького, 91</b><br/><a href=#stationbelorus9D2026C34D673F48E053BF0BA8C035CB>Перейти</a>");
+var marker = L.marker([53.686941,23.846805],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>ЭЗС № ЭЗС ЖД-вокзал</b><br/><a href=#stationbelorus9CE33F78893F4F78E053BF0BA8C046A1>Перейти</a>");
 var marker = L.marker([53.897044,27.550231],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС № 032</b><br/><a href=#stationbelorus92E4D6E2A198681BE053BF0BA8C0AEAD>Перейти</a>");
 var marker = L.marker([53.89709,27.555977],{icon:iconNotFound}).addTo(mymap);
@@ -232,8 +236,16 @@ var marker = L.marker([52.486316,30.996427],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 15</b><br/><a href=#stationbelorusB89F84F7E3084F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.443638,31.023259],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 20</b><br/><a href=#stationbelorusB89F84F7E3114F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.654255,23.849679],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>ЭЗС № ЭЗС ТЦ Евроопт  пр-т Я. Купалы</b><br/><a href=#stationbelorus9D1FB8E538703B7AE053BF0BA8C02974>Перейти</a>");
+var marker = L.marker([53.65053,23.853833],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>ЭЗС № ТРЦ «Тринити»</b><br/><a href=#stationbelorus9CE28D29704D49E2E053BF0BA8C04718>Перейти</a>");
+var marker = L.marker([53.688837,23.826229],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>ЭЗС № ЭЗС Моde-3 ул. Коммунальная, 3 Гродно</b><br/><a href=#stationbelorus85C9D31A70E0479FE053BF0BA8C0C1E0>Перейти</a>");
 var marker = L.marker([53.665278,23.784167],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 46</b><br/><a href=#stationbelorusB89F84F7E4174F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.694603,23.838124],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>ЭЗС № ЭЗС ТЦ Рублевский</b><br/><a href=#stationbelorus9D1FB8E5385B3B7AE053BF0BA8C02974>Перейти</a>");
 var marker = L.marker([53.675556,23.805833],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 63</b><br/><a href=#stationbelorusB89F84F7E46C4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.68166,23.836093],{icon:iconNotLinked}).addTo(mymap);
@@ -1669,7 +1681,13 @@ marker.bindPopup("<b>АЗС № 22</b><br/><a href=#stationlukoil22>Перейт
 
     </script>
     <h4>История изменений:</h4>
-    <div class="history_item" id="container">2020-01-27 Заправка демонтирована <a href="#stationbelorusB89F84F7E3614F70E043BF0BA8C03722">Белоруснефть АЗС № 29</a> </div>
+    <div class="history_item" id="container">2020-01-28 Новая заправка <a href="#stationbelorus9D2026C34D673F48E053BF0BA8C035CB">Белоруснефть ЭЗС № ЭЗС ИООО Корона ул. Горького, 91</a> </div>
+<div class="history_item" id="container">2020-01-28 Новая заправка <a href="#stationbelorus9D1FB8E538703B7AE053BF0BA8C02974">Белоруснефть ЭЗС № ЭЗС ТЦ Евроопт  пр-т Я. Купалы</a> </div>
+<div class="history_item" id="container">2020-01-28 Новая заправка <a href="#stationbelorus9D1FB8E5385B3B7AE053BF0BA8C02974">Белоруснефть ЭЗС № ЭЗС ТЦ Рублевский</a> </div>
+<div class="history_item" id="container">2020-01-28 Новая заправка <a href="#stationbelorus9CE33F78893F4F78E053BF0BA8C046A1">Белоруснефть ЭЗС № ЭЗС ЖД-вокзал</a> </div>
+<div class="history_item" id="container">2020-01-28 Новая заправка <a href="#stationbelorus9CE28D29704D49E2E053BF0BA8C04718">Белоруснефть ЭЗС № ТРЦ «Тринити»</a> </div>
+<div class="history_item" id="container">2020-01-28 Новая заправка <a href="#stationbelorus85C9D31A70E0479FE053BF0BA8C0C1E0">Белоруснефть ЭЗС № ЭЗС Моde-3 ул. Коммунальная, 3 Гродно</a> </div>
+<div class="history_item" id="container">2020-01-27 Заправка демонтирована <a href="#stationbelorusB89F84F7E3614F70E043BF0BA8C03722">Белоруснефть АЗС № 29</a> </div>
 <div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil86">Лукойл АЗС № 86</a> <a href="https://www.openstreetmap.org/node/5532129637">Объект на карте</a></div>
 <div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil84">Лукойл АЗС № 84</a> <a href="https://www.openstreetmap.org/node/4105478597">Объект на карте</a></div>
 <div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil54">Лукойл АЗС № 54</a> <a href="https://www.openstreetmap.org/node/3444378938">Объект на карте</a></div>
@@ -1684,15 +1702,9 @@ marker.bindPopup("<b>АЗС № 22</b><br/><a href=#stationlukoil22>Перейт
 <div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil23">Лукойл АЗС № 23</a> <a href="https://www.openstreetmap.org/node/1838560524">Объект на карте</a></div>
 <div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil77">Лукойл АЗС № 77</a> <a href="https://www.openstreetmap.org/way/338442785">Объект на карте</a></div>
 <div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil45">Лукойл МАЗС № 45</a> </div>
-<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil25">Лукойл МАЗС № 25</a> <a href="https://www.openstreetmap.org/node/746251496">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil13">Лукойл АЗС № 13</a> </div>
-<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil27">Лукойл МАЗС № 27</a> <a href="https://www.openstreetmap.org/way/183453834">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil30">Лукойл АЗС № 30</a> <a href="https://www.openstreetmap.org/node/3720943844">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil46">Лукойл МАЗС № 46</a> <a href="https://www.openstreetmap.org/node/1125070658">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil28">Лукойл МАЗС № 28</a> <a href="https://www.openstreetmap.org/node/3669011396">Объект на карте</a></div>
 и еще больше...
 
-    <h4>Список  станций (769 шт.):</h4>
+    <h4>Список  станций (775 шт.):</h4>
     <div id="station_list">
         <div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationbelorus873152EABCAC6B2FE053BF0BA8C03AE2" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=873152EABCAC6B2FE053BF0BA8C03AE2">ЭЗС № г.Ивье</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.931666/25.770833">не указан</a>
@@ -1744,6 +1756,44 @@ amenity=fast_food
 <font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 cuisine=hot_dog
 <font color=red>opening_hours=24/7</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationbelorus9D2026C34D673F48E053BF0BA8C035CB" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=9D2026C34D673F48E053BF0BA8C035CB">ЭЗС № ЭЗС ИООО Корона ул. Горького, 91</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.710792/23.815589">г. Гродно ул. Горького, 91</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Зарядка</h4><pre>
+amenity=charging_station
+name=Белоруснефть № ЭЗС ИООО Корона ул. Горького, 91
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Гроднооблнефтепродукт\"
+<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=9D2026C34D673F48E053BF0BA8C035CB</font>
+<font color=red>opening_hours=24/7</font>
+socket:type2_combo=1
+socket:chademo=1
+<font color=red>ref=ЭЗС ЭЗС ИООО Корона ул. Горького, 91</font>
+<font color=red>guid:belorusneft=9D2026C34D673F48E053BF0BA8C035CB</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationbelorus9CE33F78893F4F78E053BF0BA8C046A1" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=9CE33F78893F4F78E053BF0BA8C046A1">ЭЗС № ЭЗС ЖД-вокзал</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.686941/23.846805">г. Гродно ул. Ожешко, 42</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Зарядка</h4><pre>
+amenity=charging_station
+name=Белоруснефть № ЭЗС ЖД-вокзал
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Гроднооблнефтепродукт\"
+<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=9CE33F78893F4F78E053BF0BA8C046A1</font>
+<font color=red>opening_hours=24/7</font>
+socket:type2_combo=1
+socket:chademo=1
+<font color=red>ref=ЭЗС ЭЗС ЖД-вокзал</font>
+<font color=red>guid:belorusneft=9CE33F78893F4F78E053BF0BA8C046A1</font>
 </pre></div>
 
 </div><hr/>
@@ -3709,6 +3759,63 @@ cuisine=hot_dog;burger
 
 </div><hr/>
 
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorus9D1FB8E538703B7AE053BF0BA8C02974" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=9D1FB8E538703B7AE053BF0BA8C02974">ЭЗС № ЭЗС ТЦ Евроопт  пр-т Я. Купалы</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.654255/23.849679">г. Гродно пр-т Я. Купалы, 82-а</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Зарядка</h4><pre>
+amenity=charging_station
+name=Белоруснефть № ЭЗС ТЦ Евроопт  пр-т Я. Купалы
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Гроднооблнефтепродукт\"
+<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=9D1FB8E538703B7AE053BF0BA8C02974</font>
+<font color=red>opening_hours=24/7</font>
+socket:type2_combo=1
+socket:chademo=1
+<font color=red>ref=ЭЗС ЭЗС ТЦ Евроопт  пр-т Я. Купалы</font>
+<font color=red>guid:belorusneft=9D1FB8E538703B7AE053BF0BA8C02974</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorus9CE28D29704D49E2E053BF0BA8C04718" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=9CE28D29704D49E2E053BF0BA8C04718">ЭЗС № ТРЦ «Тринити»</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.65053/23.853833">г. Гродно пр-т Я. Купалы, 87</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Зарядка</h4><pre>
+amenity=charging_station
+name=Белоруснефть № ТРЦ «Тринити»
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Гроднооблнефтепродукт\"
+<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=9CE28D29704D49E2E053BF0BA8C04718</font>
+<font color=red>opening_hours=24/7</font>
+socket:type2_combo=1
+socket:chademo=1
+<font color=red>ref=ЭЗС ТРЦ «Тринити»</font>
+<font color=red>guid:belorusneft=9CE28D29704D49E2E053BF0BA8C04718</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorus85C9D31A70E0479FE053BF0BA8C0C1E0" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=85C9D31A70E0479FE053BF0BA8C0C1E0">ЭЗС № ЭЗС Моde-3 ул. Коммунальная, 3 Гродно</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.688837/23.826229">г. Гродно ул. Коммунальная, 3</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Зарядка</h4><pre>
+amenity=charging_station
+name=Белоруснефть № ЭЗС Моde-3 ул. Коммунальная, 3 Гродно
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Гроднооблнефтепродукт\"
+<font color=red>contact:phone=+375 29 6431431</font>
+<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=85C9D31A70E0479FE053BF0BA8C0C1E0</font>
+<font color=red>opening_hours=24/7</font>
+socket:type2=2
+<font color=red>ref=ЭЗС ЭЗС Моde-3 ул. Коммунальная, 3 Гродно</font>
+<font color=red>guid:belorusneft=85C9D31A70E0479FE053BF0BA8C0C1E0</font>
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorusB89F84F7E4174F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E4174F70E043BF0BA8C03722">АЗС № 46</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.665278/23.784167">г. Гродно ул.О.Соломовой 109</a>
     <br /><br/>
@@ -3754,6 +3861,25 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 <font color=red>opening_hours=24/7</font>
 <font color=red>contact:phone=+375 152 531790</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorus9D1FB8E5385B3B7AE053BF0BA8C02974" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=9D1FB8E5385B3B7AE053BF0BA8C02974">ЭЗС № ЭЗС ТЦ Рублевский</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.694603/23.838124">г. Гродно, ул. Дзержинского,54</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Зарядка</h4><pre>
+amenity=charging_station
+name=Белоруснефть № ЭЗС ТЦ Рублевский
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Гроднооблнефтепродукт\"
+<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=9D1FB8E5385B3B7AE053BF0BA8C02974</font>
+<font color=red>opening_hours=24/7</font>
+socket:type2_combo=1
+socket:chademo=1
+<font color=red>ref=ЭЗС ЭЗС ТЦ Рублевский</font>
+<font color=red>guid:belorusneft=9D1FB8E5385B3B7AE053BF0BA8C02974</font>
 </pre></div>
 
 </div><hr/>
@@ -12831,7 +12957,6 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2CF4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
-fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
