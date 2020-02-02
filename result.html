@@ -43,15 +43,15 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2/1/20 11:08:52 PM</p>
+    <p>Дата генерации файла 2/2/20 11:09:20 AM</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (4) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
-    <font color=orange>Найден, но нет Guid</font> (183) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (588) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
+    <font color=orange>Найден, но нет Guid</font> (182) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
+    OK (589) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
 		const notFoundColour = 'Red'
@@ -478,8 +478,6 @@ var marker = L.marker([53.1072,25.951],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 17</b><br/><a href=#stationlukoil17>Перейти</a>");
 var marker = L.marker([53.8994,25.2979],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 45</b><br/><a href=#stationlukoil45>Перейти</a>");
-var marker = L.marker([52.1018,26.1123],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>АЗС № 81</b><br/><a href=#stationlukoil81>Перейти</a>");
 var marker = L.marker([53.2178,29.0332],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 80</b><br/><a href=#stationlukoil80>Перейти</a>");
 var marker = L.marker([53.1246,26.089],{icon:iconNotLinked}).addTo(mymap);
@@ -1626,6 +1624,8 @@ var marker = L.marker([54.02245,27.93065],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 57</b><br/><a href=#stationbelorusB89F84F7E3A94F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.1172,23.9405],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 59</b><br/><a href=#stationlukoil59>Перейти</a>");
+var marker = L.marker([52.1018,26.1123],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 81</b><br/><a href=#stationlukoil81>Перейти</a>");
 var marker = L.marker([52.0708,23.7631],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 15</b><br/><a href=#stationlukoil15>Перейти</a>");
 var marker = L.marker([54.2973,26.8807],{icon:iconNormal}).addTo(mymap);
@@ -1692,7 +1692,7 @@ marker.bindPopup("<b>АЗС № 22</b><br/><a href=#stationlukoil22>Перейт
 <div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil84">Лукойл АЗС № 84</a> <a href="https://www.openstreetmap.org/node/4105478597">Объект на карте</a></div>
 <div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil54">Лукойл АЗС № 54</a> <a href="https://www.openstreetmap.org/node/3444378938">Объект на карте</a></div>
 <div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil82">Лукойл АЗС № 82</a> <a href="https://www.openstreetmap.org/node/1256743426">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil81">Лукойл АЗС № 81</a> </div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil81">Лукойл АЗС № 81</a> <a href="https://www.openstreetmap.org/node/3412137648">Объект на карте</a></div>
 <div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil83">Лукойл АЗС № 83</a> </div>
 <div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil80">Лукойл АЗС № 80</a> </div>
 <div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil44">Лукойл АЗС № 44</a> <a href="https://www.openstreetmap.org/node/815566279">Объект на карте</a></div>
@@ -8184,35 +8184,6 @@ opening_hours=Mo-Su 00:10-23:40
 
 </div><hr/>
 
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationlukoil81" href="http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=8751"> № 81</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.1018/26.1123">Столинская, 24, 225710, Пинск</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Лукойл № 81
-brand=Лукойл
-<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
-<font color=red>fuel:lpg=yes</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:octane_92=yes</font>
-<font color=red>fuel:octane_95=yes</font>
-<font color=red>vacuum_cleaner=yes</font>
-<font color=red>compressed_air=yes</font>
-<font color=red>contact:phone=+375 165 316361</font>
-<font color=red>contact:website=http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=8751</font>
-opening_hours=Mo-Su 00:10-23:40
-<font color=red>ref=81</font>
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
-contact:phone=+375 165 316361
-opening_hours=Mo-Su 00:10-23:40
-</pre></div>
-
-</div><hr/>
-
 <div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationlukoil80" href="http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=8263"> № 80</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.2178/29.0332">Сычковский с/с, трасса Минск-Гомель, 127 km, 213848, Бобруйский р-н, д. Бояры,</a>
     <br /><br/>
@@ -11540,7 +11511,6 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=EECF4F07493A70A
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
-fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -30440,6 +30410,35 @@ ref=59
 shop=convenience
 <font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
 contact:phone=+375 1511 34895
+opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationlukoil81" href="http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=8751"> № 81</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.1018/26.1123">Столинская, 24, 225710, Пинск</a>
+    <br /><a href="https://www.openstreetmap.org/node/3412137648">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл № 81
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:lpg=yes</font>
+fuel:diesel=yes
+fuel:octane_92=yes
+fuel:octane_95=yes
+vacuum_cleaner=yes
+compressed_air=yes
+contact:phone=+375 165 316361
+contact:website=http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=8751
+opening_hours=Mo-Su 00:10-23:40
+ref=81
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 165 316361
 opening_hours=Mo-Su 00:10-23:40
 </pre></div>
 
