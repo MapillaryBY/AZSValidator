@@ -43,15 +43,15 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2/2/20 11:08:45 PM</p>
+    <p>Дата генерации файла 2/3/20 11:08:56 AM</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (4) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
-    <font color=orange>Найден, но нет Guid</font> (182) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (589) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
+    <font color=orange>Найден, но нет Guid</font> (181) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
+    OK (590) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
 		const notFoundColour = 'Red'
@@ -428,8 +428,6 @@ var marker = L.marker([52.1325,23.7687],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 21</b><br/><a href=#stationlukoil21>Перейти</a>");
 var marker = L.marker([52.615278,30.853611],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 9</b><br/><a href=#stationbelorusB89F84F7E3104F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([53.5538,23.8722],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>АЗС № 83</b><br/><a href=#stationlukoil83>Перейти</a>");
 var marker = L.marker([53.6775,23.8419],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 55</b><br/><a href=#stationlukoil55>Перейти</a>");
 var marker = L.marker([53.046,27.6119],{icon:iconNotLinked}).addTo(mymap);
@@ -1384,6 +1382,8 @@ var marker = L.marker([55.5168,28.6711],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 37</b><br/><a href=#stationlukoil37>Перейти</a>");
 var marker = L.marker([53.5525,23.864444],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 64</b><br/><a href=#stationbelorusB89F84F7E46F4F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.5538,23.8722],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 83</b><br/><a href=#stationlukoil83>Перейти</a>");
 var marker = L.marker([54.4913,26.365],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 60</b><br/><a href=#stationlukoil60>Перейти</a>");
 var marker = L.marker([54.2805,26.2954],{icon:iconNormal}).addTo(mymap);
@@ -1693,7 +1693,7 @@ marker.bindPopup("<b>АЗС № 22</b><br/><a href=#stationlukoil22>Перейт
 <div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil54">Лукойл АЗС № 54</a> <a href="https://www.openstreetmap.org/node/3444378938">Объект на карте</a></div>
 <div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil82">Лукойл АЗС № 82</a> <a href="https://www.openstreetmap.org/node/1256743426">Объект на карте</a></div>
 <div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil81">Лукойл АЗС № 81</a> <a href="https://www.openstreetmap.org/node/3412137648">Объект на карте</a></div>
-<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil83">Лукойл АЗС № 83</a> </div>
+<div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil83">Лукойл АЗС № 83</a> <a href="https://www.openstreetmap.org/way/82279813">Объект на карте</a></div>
 <div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil80">Лукойл АЗС № 80</a> </div>
 <div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil44">Лукойл АЗС № 44</a> <a href="https://www.openstreetmap.org/node/815566279">Объект на карте</a></div>
 <div class="history_item" id="container">2020-01-24 Новая заправка <a href="#stationlukoil78">Лукойл АЗС № 78</a> <a href="https://www.openstreetmap.org/node/6676655066">Объект на карте</a></div>
@@ -7417,33 +7417,6 @@ fuel:lpg=yes
 
 </div><hr/>
 
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationlukoil83" href="http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=8730"> № 83</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.5538/23.8722">Коптевский с/с, ул.Шоссейная, 34, 231710, Гродненский р-н а.г. Коптёвка</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Лукойл № 83
-brand=Лукойл
-<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:octane_92=yes</font>
-<font color=red>fuel:octane_95=yes</font>
-<font color=red>vacuum_cleaner=yes</font>
-<font color=red>contact:phone=+375 152 604477</font>
-<font color=red>contact:website=http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=8730</font>
-opening_hours=Mo-Su 00:10-23:40
-<font color=red>ref=83</font>
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
-contact:phone=+375 152 604477
-opening_hours=Mo-Su 00:10-23:40
-</pre></div>
-
-</div><hr/>
-
 <div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationlukoil55" href="http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=6035"> № 55</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.6775/23.8419">Красноармейская, 2а, Гродно</a>
     <br /><br/>
@@ -13028,7 +13001,6 @@ operator=РУП \"Белоруснефть-Брестоблнефтепроду�
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
-fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
@@ -25675,6 +25647,33 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 opening_hours=24/7
 <font color=red>contact:phone=+375 152 915167</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationlukoil83" href="http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=8730"> № 83</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.5538/23.8722">Коптевский с/с, ул.Шоссейная, 34, 231710, Гродненский р-н а.г. Коптёвка</a>
+    <br /><a href="https://www.openstreetmap.org/way/82279813">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл № 83
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+fuel:diesel=yes
+fuel:octane_92=yes
+fuel:octane_95=yes
+vacuum_cleaner=yes
+contact:phone=+375 152 604477
+contact:website=http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=8730
+opening_hours=Mo-Su 00:10-23:40
+ref=83
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+contact:phone=+375 152 604477
+opening_hours=Mo-Su 00:10-23:40
 </pre></div>
 
 </div><hr/>
