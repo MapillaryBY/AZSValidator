@@ -43,7 +43,7 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2020-03-23 23:12:56Z</p>
+    <p>Дата генерации файла 2020-03-24 11:11:01Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
@@ -51,7 +51,7 @@
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (0) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
     <font color=orange>Найден, но нет Guid</font> (138) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (640) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
+    OK (639) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
 		const notFoundColour = 'Red'
@@ -1226,8 +1226,6 @@ var marker = L.marker([55.914457,28.817991],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 39</b><br/><a href=#stationbelorusB89F84F7E2F24F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.823312,29.737078],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 4</b><br/><a href=#stationbelorusB89F84F7E2D14F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([53.760006,28.01817],{icon:iconNormal}).addTo(mymap);
-marker.bindPopup("<b>АЗС № 4</b><br/><a href=#stationbelorusB89F84F7E3BB4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([55.401867,30.708844],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 15</b><br/><a href=#stationbelorusB89F84F7E2D84F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([55.179332,28.635019],{icon:iconNormal}).addTo(mymap);
@@ -1687,8 +1685,9 @@ marker.bindPopup("<b>АЗС № 22</b><br/><a href=#stationlukoil22>Перейт
 
     </script>
     <h4>История изменений:</h4>
-    
-    <h4>Список  станций (778 шт.):</h4>
+    <div class="history_item" id="container">2020-03-24 Заправка демонтирована <a href="#stationbelorusB89F84F7E3BB4F70E043BF0BA8C03722">Белоруснефть АЗС № 4</a> <a href="https://www.openstreetmap.org/node/306063700">Объект на карте</a></div>
+
+    <h4>Список  станций (777 шт.):</h4>
     <div id="station_list">
         <div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorus875BD80305417B31E053BF0BA8C036CA" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=875BD80305417B31E053BF0BA8C036CA">ЭЗС № ГОБК,13</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.092992/23.667049">не указан</a>
@@ -22851,36 +22850,6 @@ operator=РУП \"Белоруснефть-Витебскоблнефтепро�
 opening_hours=24/7
 contact:website=https://www.belorusneft.by/catalog/category/850/
 contact:phone=+375 2135 42679
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E3BB4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E3BB4F70E043BF0BA8C03722">АЗС № 4</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.760006/28.01817">г.п. Смиловичи, автодорога Минск-Могилев, 36-й км (лево)</a>
-    <br /><a href="https://www.openstreetmap.org/node/306063700">Объект на карте</a><br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Белоруснефть № 4
-brand=Белоруснефть
-operator=ОАО \"Пуховичинефтепродукт\"
-contact:phone=+375 1714 23347
-contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3BB4F70E043BF0BA8C03722
-opening_hours=24/7
-fuel:diesel=yes
-fuel:octane_92=yes
-fuel:octane_95=yes
-<font color=red>fuel:adblue:canister=yes</font>
-<font color=red>ref=АЗС 4</font>
-guid:belorusneft=B89F84F7E3BB4F70E043BF0BA8C03722
-</pre></div>
-<div id="sidebar"><h4>Продажа шин</h4><pre>
-shop=tyres
-brand=Белшина
-operator=ОАО \"Пуховичинефтепродукт\"
-opening_hours=24/7
-contact:website=https://www.belorusneft.by/catalog/category/850/
-contact:phone=+375 1714 23347
 </pre></div>
 
 </div><hr/>
