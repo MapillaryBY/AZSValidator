@@ -43,15 +43,15 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2020-05-09 23:17:27Z</p>
+    <p>Дата генерации файла 2020-05-10 11:18:36Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
-    <font color=red>Not found</font> (18) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
-    <font color=orange>Найден, но нет Guid</font> (124) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (682) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
+    <font color=red>Not found</font> (15) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
+    <font color=orange>Найден, но нет Guid</font> (118) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
+    OK (691) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
 		const notFoundColour = 'Red'
@@ -132,12 +132,6 @@ const iconNormal = L.divIcon({
 marker.bindPopup("<b>ЭЗС № Кижеватова</b><br/><a href=#stationbelorus9DB7818E96A71A12E053BF0BA8C03E8D>Перейти</a>");
 var marker = L.marker([52.104554,23.78789],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС № Московская, 380А</b><br/><a href=#stationbelorus9D8A23B948F57D9DE053BF0BA8C01EAF>Перейти</a>");
-var marker = L.marker([53.880783,30.368014],{icon:iconNotFound}).addTo(mymap);
-marker.bindPopup("<b>ЭЗС № ЭЗС №1</b><br/><a href=#stationbelorusA37779071FC953C9E053BF0BA8C07047>Перейти</a>");
-var marker = L.marker([53.88779,30.329687],{icon:iconNotFound}).addTo(mymap);
-marker.bindPopup("<b>ЭЗС № ЭЗС №2</b><br/><a href=#stationbelorusA3F052B02A83721CE053BF0BA8C03631>Перейти</a>");
-var marker = L.marker([53.901467,30.341966],{icon:iconNotFound}).addTo(mymap);
-marker.bindPopup("<b>ЭЗС № ЭЗС №3</b><br/><a href=#stationbelorusA3F0269CB61A71B2E053BF0BA8C05B6D>Перейти</a>");
 var marker = L.marker([53.914616,27.493811],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС № 058</b><br/><a href=#stationbelorusA379B12464DB5BEBE053BF0BA8C09D30>Перейти</a>");
 var marker = L.marker([53.903064,27.503351],{icon:iconNotFound}).addTo(mymap);
@@ -164,18 +158,6 @@ var marker = L.marker([53.909418,27.485124],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС № 059</b><br/><a href=#stationbelorusA37646ADF24F4CB5E053BF0BA8C01623>Перейти</a>");
 var marker = L.marker([53.915491,27.565972],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС № 065</b><br/><a href=#stationbelorusA377790722CA53C9E053BF0BA8C07047>Перейти</a>");
-var marker = L.marker([55.179468,30.222975],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>ЭЗС № г. Витебск, пр. Московский, 60А</b><br/><a href=#stationbelorusA3F052B02B5D721CE053BF0BA8C03631>Перейти</a>");
-var marker = L.marker([55.176868,30.247535],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>ЭЗС № г. Витебск, пр. Московский, 86</b><br/><a href=#stationbelorusA402FB50DCDC3983E053BF0BA8C007F8>Перейти</a>");
-var marker = L.marker([55.171805,30.202559],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>ЭЗС № г. Витебск, пр. Строителей, 1Г</b><br/><a href=#stationbelorusA4D1915C7D1637B2E053BF0BA8C091A9>Перейти</a>");
-var marker = L.marker([55.187107,30.190773],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>ЭЗС № г. Витебск, ул. Димитрова, 31А</b><br/><a href=#stationbelorusA402FB50DCDD3983E053BF0BA8C007F8>Перейти</a>");
-var marker = L.marker([55.193956,30.185935],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>ЭЗС № г. Витебск, ул. Космонавтов, 10</b><br/><a href=#stationbelorusA402FB50DCDB3983E053BF0BA8C007F8>Перейти</a>");
-var marker = L.marker([55.191737,30.203859],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>ЭЗС № г. Витебск, ул. Ленина, 26А</b><br/><a href=#stationbelorusA4D085650A803034E053BF0BA8C0B7D9>Перейти</a>");
 var marker = L.marker([55.201829,30.208518],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС № г. Витебск, ул. Ленина, 69</b><br/><a href=#stationbelorusA3F0269CB61071B2E053BF0BA8C05B6D>Перейти</a>");
 var marker = L.marker([52.092992,23.667049],{icon:iconNotLinked}).addTo(mymap);
@@ -418,12 +400,30 @@ var marker = L.marker([53.903902,27.977725],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС № 02</b><br/><a href=#stationbelorus9F14E618709814F0E053BF0BA8C05925>Перейти</a>");
 var marker = L.marker([52.086524,23.682281],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС № Асстор-Вест</b><br/><a href=#stationbelorus875BCF5C0CFF7AD9E053BF0BA8C0BBAB>Перейти</a>");
+var marker = L.marker([55.179468,30.222975],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>ЭЗС № г. Витебск, пр. Московский, 60А</b><br/><a href=#stationbelorusA3F052B02B5D721CE053BF0BA8C03631>Перейти</a>");
+var marker = L.marker([55.176868,30.247535],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>ЭЗС № г. Витебск, пр. Московский, 86</b><br/><a href=#stationbelorusA402FB50DCDC3983E053BF0BA8C007F8>Перейти</a>");
+var marker = L.marker([55.171805,30.202559],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>ЭЗС № г. Витебск, пр. Строителей, 1Г</b><br/><a href=#stationbelorusA4D1915C7D1637B2E053BF0BA8C091A9>Перейти</a>");
+var marker = L.marker([55.187107,30.190773],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>ЭЗС № г. Витебск, ул. Димитрова, 31А</b><br/><a href=#stationbelorusA402FB50DCDD3983E053BF0BA8C007F8>Перейти</a>");
+var marker = L.marker([55.193956,30.185935],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>ЭЗС № г. Витебск, ул. Космонавтов, 10</b><br/><a href=#stationbelorusA402FB50DCDB3983E053BF0BA8C007F8>Перейти</a>");
+var marker = L.marker([55.191737,30.203859],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>ЭЗС № г. Витебск, ул. Ленина, 26А</b><br/><a href=#stationbelorusA4D085650A803034E053BF0BA8C0B7D9>Перейти</a>");
 var marker = L.marker([53.931666,25.770833],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС № г.Ивье</b><br/><a href=#stationbelorus873152EABCAC6B2FE053BF0BA8C03AE2>Перейти</a>");
 var marker = L.marker([52.086784,23.667582],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС № Зубачёва, 25</b><br/><a href=#stationbelorus875BCF5C0CFE7AD9E053BF0BA8C0BBAB>Перейти</a>");
 var marker = L.marker([52.097122,23.731063],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС № Пионерская,52</b><br/><a href=#stationbelorus875BC22E31C27A65E053BF0BA8C017AE>Перейти</a>");
+var marker = L.marker([53.880783,30.368014],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>ЭЗС № ЭЗС №1</b><br/><a href=#stationbelorusA37779071FC953C9E053BF0BA8C07047>Перейти</a>");
+var marker = L.marker([53.88779,30.329687],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>ЭЗС № ЭЗС №2</b><br/><a href=#stationbelorusA3F052B02A83721CE053BF0BA8C03631>Перейти</a>");
+var marker = L.marker([53.901467,30.341966],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>ЭЗС № ЭЗС №3</b><br/><a href=#stationbelorusA3F0269CB61A71B2E053BF0BA8C05B6D>Перейти</a>");
 var marker = L.marker([54.426667,25.905556],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 38</b><br/><a href=#stationbelorusB89F84F7E36A4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.44,25.965],{icon:iconNormal}).addTo(mymap);
@@ -1779,16 +1779,16 @@ marker.bindPopup("<b>АЗС № 22</b><br/><a href=#stationlukoil22>Перейт
 
     </script>
     <h4>История изменений:</h4>
-    <div class="history_item" id="container">2020-05-07 Новая заправка <a href="#stationbelorusA3F0269CB61A71B2E053BF0BA8C05B6D">Белоруснефть ЭЗС № ЭЗС №3</a> </div>
-<div class="history_item" id="container">2020-05-07 Новая заправка <a href="#stationbelorusA3F052B02A83721CE053BF0BA8C03631">Белоруснефть ЭЗС № ЭЗС №2</a> </div>
-<div class="history_item" id="container">2020-05-07 Новая заправка <a href="#stationbelorusA37779071FC953C9E053BF0BA8C07047">Белоруснефть ЭЗС № ЭЗС №1</a> </div>
+    <div class="history_item" id="container">2020-05-07 Новая заправка <a href="#stationbelorusA3F0269CB61A71B2E053BF0BA8C05B6D">Белоруснефть ЭЗС № ЭЗС №3</a> <a href="https://www.openstreetmap.org/node/7502113747">Объект на карте</a></div>
+<div class="history_item" id="container">2020-05-07 Новая заправка <a href="#stationbelorusA3F052B02A83721CE053BF0BA8C03631">Белоруснефть ЭЗС № ЭЗС №2</a> <a href="https://www.openstreetmap.org/node/7502065315">Объект на карте</a></div>
+<div class="history_item" id="container">2020-05-07 Новая заправка <a href="#stationbelorusA37779071FC953C9E053BF0BA8C07047">Белоруснефть ЭЗС № ЭЗС №1</a> <a href="https://www.openstreetmap.org/node/7502108099">Объект на карте</a></div>
 <div class="history_item" id="container">2020-05-06 Новая заправка <a href="#stationbelorusA4E6B392A2FF1657E053BF0BA8C07FEB">Белоруснефть ЭЗС № 071</a> <a href="https://www.openstreetmap.org/node/7500249134">Объект на карте</a></div>
-<div class="history_item" id="container">2020-05-04 Новая заправка <a href="#stationbelorusA4D1915C7D1637B2E053BF0BA8C091A9">Белоруснефть ЭЗС № г. Витебск, пр. Строителей, 1Г</a> </div>
-<div class="history_item" id="container">2020-05-04 Новая заправка <a href="#stationbelorusA4D085650A803034E053BF0BA8C0B7D9">Белоруснефть ЭЗС № г. Витебск, ул. Ленина, 26А</a> </div>
-<div class="history_item" id="container">2020-05-04 Новая заправка <a href="#stationbelorusA402FB50DCDD3983E053BF0BA8C007F8">Белоруснефть ЭЗС № г. Витебск, ул. Димитрова, 31А</a> </div>
-<div class="history_item" id="container">2020-05-04 Новая заправка <a href="#stationbelorusA402FB50DCDC3983E053BF0BA8C007F8">Белоруснефть ЭЗС № г. Витебск, пр. Московский, 86</a> </div>
-<div class="history_item" id="container">2020-05-04 Новая заправка <a href="#stationbelorusA402FB50DCDB3983E053BF0BA8C007F8">Белоруснефть ЭЗС № г. Витебск, ул. Космонавтов, 10</a> </div>
-<div class="history_item" id="container">2020-05-04 Новая заправка <a href="#stationbelorusA3F052B02B5D721CE053BF0BA8C03631">Белоруснефть ЭЗС № г. Витебск, пр. Московский, 60А</a> </div>
+<div class="history_item" id="container">2020-05-04 Новая заправка <a href="#stationbelorusA4D1915C7D1637B2E053BF0BA8C091A9">Белоруснефть ЭЗС № г. Витебск, пр. Строителей, 1Г</a> <a href="https://www.openstreetmap.org/node/6467940348">Объект на карте</a></div>
+<div class="history_item" id="container">2020-05-04 Новая заправка <a href="#stationbelorusA4D085650A803034E053BF0BA8C0B7D9">Белоруснефть ЭЗС № г. Витебск, ул. Ленина, 26А</a> <a href="https://www.openstreetmap.org/node/6754468824">Объект на карте</a></div>
+<div class="history_item" id="container">2020-05-04 Новая заправка <a href="#stationbelorusA402FB50DCDD3983E053BF0BA8C007F8">Белоруснефть ЭЗС № г. Витебск, ул. Димитрова, 31А</a> <a href="https://www.openstreetmap.org/node/7088291979">Объект на карте</a></div>
+<div class="history_item" id="container">2020-05-04 Новая заправка <a href="#stationbelorusA402FB50DCDC3983E053BF0BA8C007F8">Белоруснефть ЭЗС № г. Витебск, пр. Московский, 86</a> <a href="https://www.openstreetmap.org/node/7084612666">Объект на карте</a></div>
+<div class="history_item" id="container">2020-05-04 Новая заправка <a href="#stationbelorusA402FB50DCDB3983E053BF0BA8C007F8">Белоруснефть ЭЗС № г. Витебск, ул. Космонавтов, 10</a> <a href="https://www.openstreetmap.org/node/7082185185">Объект на карте</a></div>
+<div class="history_item" id="container">2020-05-04 Новая заправка <a href="#stationbelorusA3F052B02B5D721CE053BF0BA8C03631">Белоруснефть ЭЗС № г. Витебск, пр. Московский, 60А</a> <a href="https://www.openstreetmap.org/node/7088291980">Объект на карте</a></div>
 <div class="history_item" id="container">2020-05-04 Заправка исчезла с карты <a href="#stationlukoil54">Лукойл АЗС № 54</a> <a href="https://www.openstreetmap.org/node/3444378938">Объект на карте</a></div>
 <div class="history_item" id="container">2020-05-04 Заправке удалили ref <a href="#stationlukoil56">Лукойл МАЗС № 56</a> <a href="https://www.openstreetmap.org/node/5483202191">Объект на карте</a></div>
 <div class="history_item" id="container">2020-05-04 Заправке удалили ref <a href="#stationlukoil38">Лукойл АЗС № 38</a> <a href="https://www.openstreetmap.org/node/336085211">Объект на карте</a></div>
@@ -1839,62 +1839,6 @@ socket:type2_combo=1
 socket:chademo=1
 <font color=red>ref=ЭЗС Московская, 380А</font>
 <font color=red>guid:belorusneft=9D8A23B948F57D9DE053BF0BA8C01EAF</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationbelorusA37779071FC953C9E053BF0BA8C07047" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=A37779071FC953C9E053BF0BA8C07047">ЭЗС № ЭЗС №1</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.880783/30.368014">не указан</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Зарядка</h4><pre>
-amenity=charging_station
-name=Белоруснефть № ЭЗС №1
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Могилевоблнефтепродукт\"
-<font color=red>contact:phone=+375 232 793437</font>
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=A37779071FC953C9E053BF0BA8C07047</font>
-<font color=red>opening_hours=24/7</font>
-socket:type2_combo=1
-<font color=red>ref=ЭЗС ЭЗС №1</font>
-<font color=red>guid:belorusneft=A37779071FC953C9E053BF0BA8C07047</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationbelorusA3F052B02A83721CE053BF0BA8C03631" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=A3F052B02A83721CE053BF0BA8C03631">ЭЗС № ЭЗС №2</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.88779/30.329687">не указан</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Зарядка</h4><pre>
-amenity=charging_station
-name=Белоруснефть № ЭЗС №2
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Могилевоблнефтепродукт\"
-<font color=red>contact:phone=+375 232 793437</font>
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=A3F052B02A83721CE053BF0BA8C03631</font>
-<font color=red>opening_hours=24/7</font>
-socket:type2_combo=1
-<font color=red>ref=ЭЗС ЭЗС №2</font>
-<font color=red>guid:belorusneft=A3F052B02A83721CE053BF0BA8C03631</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationbelorusA3F0269CB61A71B2E053BF0BA8C05B6D" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=A3F0269CB61A71B2E053BF0BA8C05B6D">ЭЗС № ЭЗС №3</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.901467/30.341966">не указан</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Зарядка</h4><pre>
-amenity=charging_station
-name=Белоруснефть № ЭЗС №3
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Могилевоблнефтепродукт\"
-<font color=red>contact:phone=+375 232 793437</font>
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=A3F0269CB61A71B2E053BF0BA8C05B6D</font>
-<font color=red>opening_hours=24/7</font>
-<font color=red>ref=ЭЗС ЭЗС №3</font>
-<font color=red>guid:belorusneft=A3F0269CB61A71B2E053BF0BA8C05B6D</font>
 </pre></div>
 
 </div><hr/>
@@ -2159,120 +2103,6 @@ operator=РУП \"Белоруснефть-Минскавтозаправка\"
 socket:type2=1
 <font color=red>ref=ЭЗС 065</font>
 <font color=red>guid:belorusneft=A377790722CA53C9E053BF0BA8C07047</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorusA3F052B02B5D721CE053BF0BA8C03631" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=A3F052B02B5D721CE053BF0BA8C03631">ЭЗС № г. Витебск, пр. Московский, 60А</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.179468/30.222975">не указан</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Зарядка</h4><pre>
-amenity=charging_station
-name=Белоруснефть № г. Витебск, пр. Московский, 60А
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Витебскоблнефтепродукт\"
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=A3F052B02B5D721CE053BF0BA8C03631</font>
-<font color=red>opening_hours=24/7</font>
-socket:type2_combo=1
-socket:chademo=1
-<font color=red>ref=ЭЗС г. Витебск, пр. Московский, 60А</font>
-<font color=red>guid:belorusneft=A3F052B02B5D721CE053BF0BA8C03631</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorusA402FB50DCDC3983E053BF0BA8C007F8" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=A402FB50DCDC3983E053BF0BA8C007F8">ЭЗС № г. Витебск, пр. Московский, 86</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.176868/30.247535">не указан</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Зарядка</h4><pre>
-amenity=charging_station
-name=Белоруснефть № г. Витебск, пр. Московский, 86
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Витебскоблнефтепродукт\"
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=A402FB50DCDC3983E053BF0BA8C007F8</font>
-<font color=red>opening_hours=24/7</font>
-socket:type2_combo=1
-socket:chademo=1
-<font color=red>ref=ЭЗС г. Витебск, пр. Московский, 86</font>
-<font color=red>guid:belorusneft=A402FB50DCDC3983E053BF0BA8C007F8</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorusA4D1915C7D1637B2E053BF0BA8C091A9" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=A4D1915C7D1637B2E053BF0BA8C091A9">ЭЗС № г. Витебск, пр. Строителей, 1Г</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.171805/30.202559">не указан</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Зарядка</h4><pre>
-amenity=charging_station
-name=Белоруснефть № г. Витебск, пр. Строителей, 1Г
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Витебскоблнефтепродукт\"
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=A4D1915C7D1637B2E053BF0BA8C091A9</font>
-<font color=red>opening_hours=24/7</font>
-socket:type2=2
-<font color=red>ref=ЭЗС г. Витебск, пр. Строителей, 1Г</font>
-<font color=red>guid:belorusneft=A4D1915C7D1637B2E053BF0BA8C091A9</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorusA402FB50DCDD3983E053BF0BA8C007F8" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=A402FB50DCDD3983E053BF0BA8C007F8">ЭЗС № г. Витебск, ул. Димитрова, 31А</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.187107/30.190773">не указан</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Зарядка</h4><pre>
-amenity=charging_station
-name=Белоруснефть № г. Витебск, ул. Димитрова, 31А
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Витебскоблнефтепродукт\"
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=A402FB50DCDD3983E053BF0BA8C007F8</font>
-<font color=red>opening_hours=24/7</font>
-socket:type2_combo=1
-socket:chademo=1
-<font color=red>ref=ЭЗС г. Витебск, ул. Димитрова, 31А</font>
-<font color=red>guid:belorusneft=A402FB50DCDD3983E053BF0BA8C007F8</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorusA402FB50DCDB3983E053BF0BA8C007F8" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=A402FB50DCDB3983E053BF0BA8C007F8">ЭЗС № г. Витебск, ул. Космонавтов, 10</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.193956/30.185935">не указан</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Зарядка</h4><pre>
-amenity=charging_station
-name=Белоруснефть № г. Витебск, ул. Космонавтов, 10
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Витебскоблнефтепродукт\"
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=A402FB50DCDB3983E053BF0BA8C007F8</font>
-<font color=red>opening_hours=24/7</font>
-socket:type2_combo=1
-socket:chademo=1
-<font color=red>ref=ЭЗС г. Витебск, ул. Космонавтов, 10</font>
-<font color=red>guid:belorusneft=A402FB50DCDB3983E053BF0BA8C007F8</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorusA4D085650A803034E053BF0BA8C0B7D9" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=A4D085650A803034E053BF0BA8C0B7D9">ЭЗС № г. Витебск, ул. Ленина, 26А</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.191737/30.203859">не указан</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Зарядка</h4><pre>
-amenity=charging_station
-name=Белоруснефть № г. Витебск, ул. Ленина, 26А
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Витебскоблнефтепродукт\"
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=A4D085650A803034E053BF0BA8C0B7D9</font>
-<font color=red>opening_hours=24/7</font>
-socket:type2=1
-socket:type2_combo=1
-socket:chademo=1
-<font color=red>ref=ЭЗС г. Витебск, ул. Ленина, 26А</font>
-<font color=red>guid:belorusneft=A4D085650A803034E053BF0BA8C0B7D9</font>
 </pre></div>
 
 </div><hr/>
@@ -6834,6 +6664,120 @@ guid:belorusneft=875BCF5C0CFF7AD9E053BF0BA8C0BBAB
 
 </div><hr/>
 
+<div class="station" id="container"><b>OK</b>  <a id="stationbelorusA3F052B02B5D721CE053BF0BA8C03631" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=A3F052B02B5D721CE053BF0BA8C03631">ЭЗС № г. Витебск, пр. Московский, 60А</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.179468/30.222975">не указан</a>
+    <br /><a href="https://www.openstreetmap.org/node/7088291980">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Зарядка</h4><pre>
+amenity=charging_station
+name=Белоруснефть № г. Витебск, пр. Московский, 60А
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Витебскоблнефтепродукт\"
+contact:website=https://azs.belorusneft.by/beloil-map/station?id=A3F052B02B5D721CE053BF0BA8C03631
+opening_hours=24/7
+socket:type2_combo=1
+socket:chademo=1
+ref=ЭЗС г. Витебск, пр. Московский, 60А
+guid:belorusneft=A3F052B02B5D721CE053BF0BA8C03631
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationbelorusA402FB50DCDC3983E053BF0BA8C007F8" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=A402FB50DCDC3983E053BF0BA8C007F8">ЭЗС № г. Витебск, пр. Московский, 86</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.176868/30.247535">не указан</a>
+    <br /><a href="https://www.openstreetmap.org/node/7084612666">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Зарядка</h4><pre>
+amenity=charging_station
+name=Белоруснефть № г. Витебск, пр. Московский, 86
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Витебскоблнефтепродукт\"
+contact:website=https://azs.belorusneft.by/beloil-map/station?id=A402FB50DCDC3983E053BF0BA8C007F8
+opening_hours=24/7
+socket:type2_combo=1
+socket:chademo=1
+ref=ЭЗС г. Витебск, пр. Московский, 86
+guid:belorusneft=A402FB50DCDC3983E053BF0BA8C007F8
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationbelorusA4D1915C7D1637B2E053BF0BA8C091A9" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=A4D1915C7D1637B2E053BF0BA8C091A9">ЭЗС № г. Витебск, пр. Строителей, 1Г</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.171805/30.202559">не указан</a>
+    <br /><a href="https://www.openstreetmap.org/node/6467940348">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Зарядка</h4><pre>
+amenity=charging_station
+name=Белоруснефть № г. Витебск, пр. Строителей, 1Г
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Витебскоблнефтепродукт\"
+<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=A4D1915C7D1637B2E053BF0BA8C091A9</font>
+<font color=red>opening_hours=24/7</font>
+socket:type2=2
+<font color=red>ref=ЭЗС г. Витебск, пр. Строителей, 1Г</font>
+guid:belorusneft=A4D1915C7D1637B2E053BF0BA8C091A9
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationbelorusA402FB50DCDD3983E053BF0BA8C007F8" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=A402FB50DCDD3983E053BF0BA8C007F8">ЭЗС № г. Витебск, ул. Димитрова, 31А</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.187107/30.190773">не указан</a>
+    <br /><a href="https://www.openstreetmap.org/node/7088291979">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Зарядка</h4><pre>
+amenity=charging_station
+name=Белоруснефть № г. Витебск, ул. Димитрова, 31А
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Витебскоблнефтепродукт\"
+contact:website=https://azs.belorusneft.by/beloil-map/station?id=A402FB50DCDD3983E053BF0BA8C007F8
+opening_hours=24/7
+socket:type2_combo=1
+socket:chademo=1
+ref=ЭЗС г. Витебск, ул. Димитрова, 31А
+guid:belorusneft=A402FB50DCDD3983E053BF0BA8C007F8
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationbelorusA402FB50DCDB3983E053BF0BA8C007F8" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=A402FB50DCDB3983E053BF0BA8C007F8">ЭЗС № г. Витебск, ул. Космонавтов, 10</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.193956/30.185935">не указан</a>
+    <br /><a href="https://www.openstreetmap.org/node/7082185185">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Зарядка</h4><pre>
+amenity=charging_station
+name=Белоруснефть № г. Витебск, ул. Космонавтов, 10
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Витебскоблнефтепродукт\"
+contact:website=https://azs.belorusneft.by/beloil-map/station?id=A402FB50DCDB3983E053BF0BA8C007F8
+opening_hours=24/7
+socket:type2_combo=1
+socket:chademo=1
+ref=ЭЗС г. Витебск, ул. Космонавтов, 10
+guid:belorusneft=A402FB50DCDB3983E053BF0BA8C007F8
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationbelorusA4D085650A803034E053BF0BA8C0B7D9" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=A4D085650A803034E053BF0BA8C0B7D9">ЭЗС № г. Витебск, ул. Ленина, 26А</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.191737/30.203859">не указан</a>
+    <br /><a href="https://www.openstreetmap.org/node/6754468824">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Зарядка</h4><pre>
+amenity=charging_station
+name=Белоруснефть № г. Витебск, ул. Ленина, 26А
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Витебскоблнефтепродукт\"
+contact:website=https://azs.belorusneft.by/beloil-map/station?id=A4D085650A803034E053BF0BA8C0B7D9
+opening_hours=24/7
+socket:type2=1
+socket:type2_combo=1
+socket:chademo=1
+ref=ЭЗС г. Витебск, ул. Ленина, 26А
+guid:belorusneft=A4D085650A803034E053BF0BA8C0B7D9
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b>OK</b>  <a id="stationbelorus873152EABCAC6B2FE053BF0BA8C03AE2" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=873152EABCAC6B2FE053BF0BA8C03AE2">ЭЗС № г.Ивье</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.931666/25.770833">не указан</a>
     <br /><a href="https://www.openstreetmap.org/node/6097064344">Объект на карте</a><br/>
@@ -6884,6 +6828,62 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=875BC22E31C27A6
 socket:type2=2
 ref=ЭЗС Пионерская,52
 guid:belorusneft=875BC22E31C27A65E053BF0BA8C017AE
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationbelorusA37779071FC953C9E053BF0BA8C07047" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=A37779071FC953C9E053BF0BA8C07047">ЭЗС № ЭЗС №1</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.880783/30.368014">не указан</a>
+    <br /><a href="https://www.openstreetmap.org/node/7502108099">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Зарядка</h4><pre>
+amenity=charging_station
+name=Белоруснефть № ЭЗС №1
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Могилевоблнефтепродукт\"
+contact:phone=+375 232 793437
+contact:website=https://azs.belorusneft.by/beloil-map/station?id=A37779071FC953C9E053BF0BA8C07047
+opening_hours=24/7
+socket:type2_combo=1
+ref=ЭЗС ЭЗС №1
+guid:belorusneft=A37779071FC953C9E053BF0BA8C07047
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationbelorusA3F052B02A83721CE053BF0BA8C03631" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=A3F052B02A83721CE053BF0BA8C03631">ЭЗС № ЭЗС №2</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.88779/30.329687">не указан</a>
+    <br /><a href="https://www.openstreetmap.org/node/7502065315">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Зарядка</h4><pre>
+amenity=charging_station
+name=Белоруснефть № ЭЗС №2
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Могилевоблнефтепродукт\"
+contact:phone=+375 232 793437
+contact:website=https://azs.belorusneft.by/beloil-map/station?id=A3F052B02A83721CE053BF0BA8C03631
+opening_hours=24/7
+socket:type2_combo=1
+ref=ЭЗС ЭЗС №2
+guid:belorusneft=A3F052B02A83721CE053BF0BA8C03631
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationbelorusA3F0269CB61A71B2E053BF0BA8C05B6D" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=A3F0269CB61A71B2E053BF0BA8C05B6D">ЭЗС № ЭЗС №3</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.901467/30.341966">не указан</a>
+    <br /><a href="https://www.openstreetmap.org/node/7502113747">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Зарядка</h4><pre>
+amenity=charging_station
+name=Белоруснефть № ЭЗС №3
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Могилевоблнефтепродукт\"
+contact:phone=+375 232 793437
+contact:website=https://azs.belorusneft.by/beloil-map/station?id=A3F0269CB61A71B2E053BF0BA8C05B6D
+opening_hours=24/7
+ref=ЭЗС ЭЗС №3
+guid:belorusneft=A3F0269CB61A71B2E053BF0BA8C05B6D
 </pre></div>
 
 </div><hr/>
@@ -10976,7 +10976,7 @@ brand=Белоруснефть
 operator=РУП \"Белоруснефть-Брестоблнефтепродукт\"
 contact:phone=+375 1652 59590
 contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E41B4F70E043BF0BA8C03722
-opening_hours=24/7
+<font color=red>opening_hours=Mo-Su 07:00-23:00</font>
 fuel:diesel=yes
 fuel:octane_92=yes
 fuel:octane_95=yes
@@ -10987,7 +10987,7 @@ guid:belorusneft=B89F84F7E41B4F70E043BF0BA8C03722
 shop=tyres
 brand=Белшина
 operator=РУП \"Белоруснефть-Брестоблнефтепродукт\"
-opening_hours=24/7
+<font color=red>opening_hours=Mo-Su 07:00-23:00</font>
 contact:website=https://www.belorusneft.by/catalog/category/850/
 contact:phone=+375 1652 59590
 </pre></div>
@@ -25409,7 +25409,7 @@ brand=Белоруснефть
 operator=РУП \"Белоруснефть-Гроднооблнефтепродукт\"
 contact:phone=+375 1591 38679
 contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E46A4F70E043BF0BA8C03722
-<font color=red>opening_hours=24/7</font>
+opening_hours=Mo-Su 07:00-19:00
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
@@ -25421,7 +25421,7 @@ guid:belorusneft=B89F84F7E46A4F70E043BF0BA8C03722
 <div id="sidebar"><h4>Магазин</h4><pre>
 shop=convenience
 operator=РУП \"Белоруснефть-Гроднооблнефтепродукт\"
-<font color=red>opening_hours=24/7</font>
+opening_hours=Mo-Su 07:00-19:00
 contact:phone=+375 1591 38679
 </pre></div>
 
@@ -25701,7 +25701,7 @@ brand=Белоруснефть
 operator=РУП \"Белоруснефть-Витебскоблнефтепродукт\"
 contact:phone=+375 2131 61482
 contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2EF4F70E043BF0BA8C03722
-opening_hours=Mo-Su 08:00-16:00
+<font color=red>opening_hours=Mo-Fr 08:00-16:00</font>
 fuel:diesel=yes
 fuel:octane_92=yes
 fuel:octane_95=yes
