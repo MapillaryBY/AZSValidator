@@ -43,7 +43,7 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2020-06-18 11:22:32Z</p>
+    <p>Дата генерации файла 2020-06-18 23:13:08Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
@@ -51,7 +51,7 @@
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (2) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
     <font color=orange>Найден, но нет Guid</font> (117) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (706) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
+    OK (705) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
 		const notFoundColour = 'Red'
@@ -734,8 +734,6 @@ var marker = L.marker([53.081824,29.233442],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 36</b><br/><a href=#stationbelorusB89F84F7E3EA4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.200683,28.480333],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 4</b><br/><a href=#stationbelorusB89F84F7E3874F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([54.198683,28.472533],{icon:iconNormal}).addTo(mymap);
-marker.bindPopup("<b>АЗС № 2</b><br/><a href=#stationbelorusB89F84F7E3854F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.23895,28.474517],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 54</b><br/><a href=#stationbelorusB89F84F7E4594F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.1982,28.544967],{icon:iconNormal}).addTo(mymap);
@@ -1781,8 +1779,9 @@ marker.bindPopup("<b>АЗС № 22</b><br/><a href=#stationlukoil22>Перейт
 
     </script>
     <h4>История изменений:</h4>
-    
-    <h4>Список  станций (825 шт.):</h4>
+    <div class="history_item" id="container">2020-06-18 Заправка демонтирована <a href="#stationbelorusB89F84F7E3854F70E043BF0BA8C03722">Белоруснефть АЗС № 2</a> <a href="https://www.openstreetmap.org/node/4413871479">Объект на карте</a></div>
+
+    <h4>Список  станций (824 шт.):</h4>
     <div id="station_list">
         <div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationbelorusA379B12464DB5BEBE053BF0BA8C09D30" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=A379B12464DB5BEBE053BF0BA8C09D30">ЭЗС № 058</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.914616/27.493811">г. Минск, пр. Пушкина, 63</a>
@@ -13326,7 +13325,6 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3874F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
-fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -13343,53 +13341,6 @@ fuel:lpg=yes
 <font color=red>opening_hours=Проверить по ссылке</font>
 contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3874F70E043BF0BA8C03722
 contact:phone=+375 177 744890
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E3854F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E3854F70E043BF0BA8C03722">АЗС № 2</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.198683/28.472533">г. Борисов, ул. Гагарина, 72</a>
-    <br /><a href="https://www.openstreetmap.org/node/4413871479">Объект на карте</a><br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Белоруснефть № 2
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Минскоблнефтепродукт\"
-contact:phone=+375 177 744232
-contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3854F70E043BF0BA8C03722
-opening_hours=24/7
-fuel:diesel=yes
-fuel:octane_92=yes
-fuel:octane_95=yes
-fuel:adblue:canister=yes
-vacuum_cleaner=yes
-compressed_air=yes
-<font color=red>internet_access=yes</font>
-<font color=red>internet_access:fee=no</font>
-shop=convenience
-ref=АЗС 2
-guid:belorusneft=B89F84F7E3854F70E043BF0BA8C03722
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-operator=РУП \"Белоруснефть-Минскоблнефтепродукт\"
-opening_hours=24/7
-contact:phone=+375 177 744232
-</pre></div>
-<div id="sidebar"><h4>Кафе</h4><pre>
-amenity=fast_food
-brand=Белоруснефть
-cuisine=hot_dog;burger
-opening_hours=24/7
-contact:phone=+375 177 744232
-</pre></div>
-<div id="sidebar"><h4>Автомойка автоматическая</h4><pre>
-amenity=car_wash
-automated=yes
-operator=РУП \"Белоруснефть-Минскоблнефтепродукт\"
-opening_hours=24/7
-contact:phone=+375 177 744232
 </pre></div>
 
 </div><hr/>
@@ -24135,7 +24086,6 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3A84F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
-fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 internet_access=yes
@@ -27284,12 +27234,11 @@ amenity=fuel
 name=Белоруснефть № 5
 brand=Белоруснефть
 operator=РУП \"Белоруснефть-Минскоблнефтепродукт\"
-contact:phone=+375 1715 50937
+<font color=red>contact:phone=+375 1715 54512</font>
 contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3884F70E043BF0BA8C03722
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
-fuel:octane_95=yes
 fuel:adblue=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -27305,26 +27254,26 @@ brand=Белшина
 operator=РУП \"Белоруснефть-Минскоблнефтепродукт\"
 opening_hours=24/7
 contact:website=https://www.belorusneft.by/catalog/category/850/
-contact:phone=+375 1715 50937
+<font color=red>contact:phone=+375 1715 54512</font>
 </pre></div>
 <div id="sidebar"><h4>Магазин</h4><pre>
 shop=convenience
 operator=РУП \"Белоруснефть-Минскоблнефтепродукт\"
 opening_hours=24/7
-contact:phone=+375 1715 50937
+<font color=red>contact:phone=+375 1715 54512</font>
 </pre></div>
 <div id="sidebar"><h4>Кафе</h4><pre>
 amenity=fast_food
 brand=Белоруснефть
 cuisine=hot_dog;burger
 opening_hours=24/7
-contact:phone=+375 1715 50937
+<font color=red>contact:phone=+375 1715 54512</font>
 </pre></div>
 <div id="sidebar"><h4>Зарядка</h4><pre>
 amenity=charging_station
 operator=РУП \"Белоруснефть-Минскоблнефтепродукт\"
 brand=Белоруснефть
-contact:phone=+375 1715 50937
+<font color=red>contact:phone=+375 1715 54512</font>
 contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3884F70E043BF0BA8C03722
 opening_hours=24/7
 socket:type2_combo=1
@@ -30454,7 +30403,6 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3A74F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
-fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
