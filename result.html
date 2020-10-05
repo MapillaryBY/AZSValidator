@@ -43,15 +43,15 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2020-10-04 23:19:02Z</p>
+    <p>Дата генерации файла 2020-10-05 11:51:42Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (0) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
-    <font color=orange>Найден, но нет Guid</font> (72) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (758) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
+    <font color=orange>Найден, но нет Guid</font> (71) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
+    OK (759) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
 		const notFoundColour = 'Red'
@@ -192,8 +192,6 @@ var marker = L.marker([52.245556,27.859444],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 45</b><br/><a href=#stationbelorusB89F84F7E32E4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.911944,30.043333],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 72</b><br/><a href=#stationbelorusB89F84F7E4554F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([52.881944,30.009167],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>АЗС № 32</b><br/><a href=#stationbelorusB89F84F7E33F4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.922946,30.008640],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 33</b><br/><a href=#stationbelorusB89F84F7E3404F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.145395,29.341739],{icon:iconNotLinked}).addTo(mymap);
@@ -796,6 +794,8 @@ var marker = L.marker([51.811267,29.183107],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 42</b><br/><a href=#stationbelorusB89F84F7E44C4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.858844,29.995165],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 80</b><br/><a href=#stationbelorusCD6C586C3F6D3818E043BF0BA8C04310>Перейти</a>");
+var marker = L.marker([52.881944,30.009167],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 32</b><br/><a href=#stationbelorusB89F84F7E33F4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.107633,28.341417],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 8</b><br/><a href=#stationbelorusB89F84F7E41A4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.991944,27.303055],{icon:iconNormal}).addTo(mymap);
@@ -3095,28 +3095,6 @@ shop=convenience
 operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
 <font color=red>opening_hours=24/7</font>
 <font color=red>contact:phone=+375 2334 44446</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorusB89F84F7E33F4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E33F4F70E043BF0BA8C03722">АЗС № 32</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.881944/30.009167">г. Жлобин, ул. Промышленная, 19а</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Белоруснефть № 32
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-<font color=red>contact:phone=+375 2334 25006</font>
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E33F4F70E043BF0BA8C03722</font>
-<font color=red>opening_hours=24/7</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:octane_92=yes</font>
-<font color=red>vacuum_cleaner=yes</font>
-<font color=red>compressed_air=yes</font>
-<font color=red>ref=АЗС 32</font>
-<font color=red>guid:belorusneft=B89F84F7E33F4F70E043BF0BA8C03722</font>
 </pre></div>
 
 </div><hr/>
@@ -9976,6 +9954,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -14686,6 +14665,28 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 <font color=red>opening_hours=24/7</font>
 contact:phone=+375 2334 94002
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E33F4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E33F4F70E043BF0BA8C03722">АЗС № 32</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.881944/30.009167">г. Жлобин, ул. Промышленная, 19а</a>
+    <br /><a href="https://www.openstreetmap.org/node/637615421">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Белоруснефть № 32
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
+contact:phone=+375 2334 25006
+contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E33F4F70E043BF0BA8C03722
+opening_hours=24/7
+fuel:diesel=yes
+fuel:octane_92=yes
+vacuum_cleaner=yes
+compressed_air=yes
+ref=АЗС 32
+guid:belorusneft=B89F84F7E33F4F70E043BF0BA8C03722
 </pre></div>
 
 </div><hr/>
@@ -31647,6 +31648,7 @@ opening_hours=24/7
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
