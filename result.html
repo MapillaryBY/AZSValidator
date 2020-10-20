@@ -43,15 +43,15 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2020-10-20 11:11:40Z</p>
+    <p>Дата генерации файла 2020-10-20 23:15:58Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (3) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
-    <font color=orange>Найден, но нет Guid</font> (59) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (772) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
+    <font color=orange>Найден, но нет Guid</font> (58) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
+    OK (773) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
 		const notFoundColour = 'Red'
@@ -236,8 +236,6 @@ var marker = L.marker([52.021279,29.208011],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 37</b><br/><a href=#stationbelorusB89F84F7E3424F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([51.431388,30.558888],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>КАЗС № 61</b><br/><a href=#stationbelorusB89F84F7E33C4F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([52.805555,27.544166],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>МАЗС № 40</b><br/><a href=#stationbelorusB89F84F7E42E4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([51.907778,29.311111],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 50</b><br/><a href=#stationbelorusB89F84F7E3244F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.34,30.353889],{icon:iconNotLinked}).addTo(mymap);
@@ -1560,6 +1558,8 @@ var marker = L.marker([52.984169,27.503611],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 49</b><br/><a href=#stationbelorusB89F84F7E3A54F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.796884,27.53459],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 58</b><br/><a href=#stationgazprom58>Перейти</a>");
+var marker = L.marker([52.805555,27.544166],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>МАЗС № 40</b><br/><a href=#stationbelorusB89F84F7E42E4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.035277,28.285555],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 47</b><br/><a href=#stationbelorusB89F84F7E3A34F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.533611,26.764689],{icon:iconNormal}).addTo(mymap);
@@ -2390,6 +2390,7 @@ operator=РУП \"Белоруснефть-Брестоблнефтепроду�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
@@ -2627,6 +2628,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:HGV_diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
@@ -2666,6 +2668,7 @@ operator=РУП \"Белоруснефть-Могилевоблнефтепро�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
 <font color=red>self_service=yes</font>
@@ -2781,6 +2784,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
 <font color=red>internet_access=yes</font>
@@ -2950,6 +2954,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
@@ -2994,6 +2999,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
 <font color=red>internet_access=yes</font>
@@ -3107,6 +3113,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:HGV_diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
@@ -3140,6 +3147,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:HGV_diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>fuel:octane_98=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
@@ -3197,6 +3205,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
 <font color=red>internet_access=yes</font>
@@ -3242,6 +3251,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
 <font color=red>internet_access=yes</font>
@@ -3290,6 +3300,7 @@ operator=РУП \"Белоруснефть-Витебскоблнефтепро�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
@@ -3340,6 +3351,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
 <font color=red>ref=АЗС 67</font>
@@ -3370,6 +3382,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
@@ -3418,6 +3431,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
@@ -3512,6 +3526,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
 <font color=red>ref=МАЗС 66</font>
@@ -3579,6 +3594,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>fuel:octane_98=yes</font>
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
@@ -3636,6 +3652,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>fuel:octane_98=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
@@ -3676,6 +3693,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:HGV_diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
 <font color=red>internet_access=yes</font>
@@ -3715,6 +3733,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:HGV_diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>ref=АЗС 48</font>
 <font color=red>guid:belorusneft=B89F84F7E3224F70E043BF0BA8C03722</font>
@@ -3736,6 +3755,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>fuel:octane_98=yes</font>
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
@@ -3777,6 +3797,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
@@ -3817,6 +3838,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
 <font color=red>internet_access=yes</font>
@@ -3865,37 +3887,6 @@ contact:website=https://www.belorusneft.by/catalog/category/850/
 
 </div><hr/>
 
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorusB89F84F7E42E4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E42E4F70E043BF0BA8C03722">МАЗС № 40</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.805555/27.544166">Минская обл.,Солигорский р-н, Чижевский с/с, д.Чижевичи, ул. Шахтерская,16</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Белоруснефть № 40
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Минскоблнефтепродукт\"
-<font color=red>contact:phone=+375 1742 11103</font>
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E42E4F70E043BF0BA8C03722</font>
-<font color=red>opening_hours=24/7</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:octane_92=yes</font>
-<font color=red>vacuum_cleaner=yes</font>
-<font color=red>compressed_air=yes</font>
-<font color=red>ref=МАЗС 40</font>
-<font color=red>guid:belorusneft=B89F84F7E42E4F70E043BF0BA8C03722</font>
-</pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Минскоблнефтепродукт\"
-fuel:lpg=yes
-<font color=red>opening_hours=Проверить по ссылке</font>
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E42E4F70E043BF0BA8C03722</font>
-<font color=red>contact:phone=+375 1742 11103</font>
-</pre></div>
-
-</div><hr/>
-
 <div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorusB89F84F7E3244F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E3244F70E043BF0BA8C03722">АЗС № 50</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/51.907778/29.311111">Михалковский с-с., 74</a>
     <br /><br/>
@@ -3910,6 +3901,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
 <font color=red>ref=АЗС 50</font>
@@ -3962,6 +3954,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
@@ -4004,6 +3997,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>compressed_air=yes</font>
 <font color=red>internet_access=yes</font>
 <font color=red>internet_access:fee=no</font>
@@ -4027,6 +4021,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
@@ -4067,6 +4062,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
@@ -4114,6 +4110,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=Mo-Su 07:00-19:00</font>
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>ref=КАЗС 64</font>
 <font color=red>guid:belorusneft=B89F84F7E31D4F70E043BF0BA8C03722</font>
@@ -4555,6 +4552,7 @@ opening_hours=24/7
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
@@ -4668,6 +4666,7 @@ opening_hours=24/7
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -4736,6 +4735,7 @@ opening_hours=24/7
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -4950,6 +4950,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -4990,6 +4991,7 @@ opening_hours=24/7
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -5130,6 +5132,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=EB4A44A42255139
 <font color=red>opening_hours=24/7</font>
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -5171,6 +5174,7 @@ opening_hours=24/7
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -5291,6 +5295,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4014F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -5341,6 +5346,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3FC4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -5435,6 +5441,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3004F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue=yes
 <font color=red>fuel:adblue:canister=yes</font>
@@ -5514,6 +5521,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2FD4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 internet_access=yes
 internet_access:fee=no
 shop=convenience
@@ -5552,6 +5560,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -5591,6 +5600,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=C8CA261BF171401
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -5676,6 +5686,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4064F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
@@ -5728,6 +5739,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4054F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 internet_access=yes
 internet_access:fee=no
@@ -5841,6 +5853,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E45C4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -5902,6 +5915,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4354F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 internet_access=yes
@@ -5965,6 +5979,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E43B4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -6177,6 +6192,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3BD4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -6234,6 +6250,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -6284,6 +6301,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3BA4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -6448,6 +6466,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -6488,6 +6507,7 @@ opening_hours=24/7
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue=yes
 vacuum_cleaner=yes
@@ -6731,6 +6751,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2D94F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 ref=КАЗС 61
 guid:belorusneft=B89F84F7E2D94F70E043BF0BA8C03722
@@ -6753,6 +6774,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 internet_access=yes
@@ -6960,6 +6982,7 @@ opening_hours=24/7
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -7091,6 +7114,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -7130,6 +7154,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3AF4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 compressed_air=yes
 internet_access=yes
@@ -7178,6 +7203,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 internet_access=yes
@@ -7233,6 +7259,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3314F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 internet_access=yes
@@ -7265,6 +7292,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=E7A89C365A145CE
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -7459,6 +7487,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=45BD9615BC21249
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 self_service=yes
 ref=ААЗС 70
 guid:belorusneft=45BD9615BC212494E053BF0BA8C099B1
@@ -10160,6 +10189,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E30D4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -10202,6 +10232,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4624F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
@@ -10289,6 +10320,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E38E4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 compressed_air=yes
 ref=АЗС 14
 guid:belorusneft=B89F84F7E38E4F70E043BF0BA8C03722
@@ -10736,6 +10768,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -10793,6 +10826,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -10850,6 +10884,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -10911,6 +10946,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -11264,6 +11300,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3E34F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -11313,6 +11350,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3E04F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 <font color=red>internet_access=yes</font>
@@ -11392,6 +11430,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3EF4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -11504,6 +11543,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3ED4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 internet_access=yes
@@ -11604,6 +11644,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3874F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -11639,6 +11680,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -11685,6 +11727,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4594F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 <font color=red>internet_access=yes</font>
@@ -11732,6 +11775,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4214F7
 <font color=red>opening_hours=24/7</font>
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -11780,6 +11824,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=0D2E9106A7A005C
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -11945,6 +11990,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E30F4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
 internet_access=yes
@@ -12026,6 +12072,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E31C4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 ref=АЗС 34
@@ -12049,6 +12096,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 internet_access=yes
@@ -12087,6 +12135,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=5E8C9E7960D8753
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -12134,6 +12183,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E44B4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -12198,6 +12248,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2D24F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 self_service=yes
 ref=МАЗС 8
@@ -12237,6 +12288,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=341F07BFD889630
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 <font color=red>internet_access=yes</font>
@@ -12284,6 +12336,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=8B963449F22D715
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -12334,6 +12387,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4504F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -12367,6 +12421,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2D34F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 ref=АЗС 9
 guid:belorusneft=B89F84F7E2D34F70E043BF0BA8C03722
 </pre></div>
@@ -12396,6 +12451,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -12456,6 +12512,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2D74F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -12619,6 +12676,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E39A4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 ref=МАЗС 33
@@ -12650,6 +12708,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E44E4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -12707,6 +12766,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
 <font color=red>internet_access=yes</font>
@@ -12748,6 +12808,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=48B8F295B6D4655
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 self_service=yes
 <font color=red>ref=ААЗС 88</font>
 guid:belorusneft=48B8F295B6D46553E053BF0BA8C0DEC3
@@ -12769,6 +12830,7 @@ contact:phone=+375 232 561428
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
 <font color=red>ref=МАЗС 25</font>
@@ -12808,6 +12870,7 @@ contact:phone=+375 232 567335
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 internet_access=yes
 internet_access:fee=no
@@ -12845,6 +12908,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E47C4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -12901,6 +12965,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3094F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 self_service=yes
 <font color=red>ref=ААЗС 27</font>
 guid:belorusneft=B89F84F7E3094F70E043BF0BA8C03722
@@ -12922,6 +12987,7 @@ contact:phone=+375 232 258872
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>self_service=yes</font>
 shop=convenience
@@ -12966,6 +13032,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E43D4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+<font color=red>fuel:octane_95=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
 <font color=red>internet_access=yes</font>
@@ -13005,6 +13072,7 @@ contact:phone=+375 232 223641
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
 <font color=red>internet_access=yes</font>
@@ -13044,6 +13112,7 @@ contact:phone=+375 232 568364
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>ref=АЗС 31</font>
 guid:belorusneft=B89F84F7E3144F70E043BF0BA8C03722
 </pre></div>
@@ -13064,6 +13133,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -13112,6 +13182,7 @@ contact:phone=+375 232 513556
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 <font color=red>compressed_air=yes</font>
@@ -13151,6 +13222,7 @@ contact:phone=+375 232 563878
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
@@ -14181,6 +14253,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2EA4F7
 <font color=red>opening_hours=24/7</font>
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -14228,6 +14301,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2E24F7
 opening_hours=Mo-Su 07:00-18:00
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 ref=КАЗС 24
 guid:belorusneft=B89F84F7E2E24F70E043BF0BA8C03722
 </pre></div>
@@ -14291,6 +14365,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E44C4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -14340,6 +14415,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4554F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -14381,6 +14457,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=CD6C586C3F6D381
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 internet_access=yes
@@ -14441,6 +14518,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E33F4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 ref=АЗС 32
@@ -14463,6 +14541,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3404F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -14511,6 +14590,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E41A4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -14553,6 +14633,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4024F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -14659,6 +14740,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E32D4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 <font color=red>internet_access=yes</font>
@@ -14863,6 +14945,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2EC4F7
 <font color=red>opening_hours=24/7</font>
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -15246,6 +15329,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3F84F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 self_service=yes
@@ -15277,6 +15361,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4714F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -15341,6 +15426,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4744F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -15451,6 +15537,7 @@ opening_hours=24/7
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -15500,6 +15587,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3F94F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -15559,6 +15647,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=64FFAF11CB4B475
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 ref=ААЗС 61
 guid:belorusneft=64FFAF11CB4B4756E053BF0BA8C02A4E
 </pre></div>
@@ -15579,6 +15668,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3F64F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -15637,6 +15727,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=FEB4868BD6DC58A
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -15720,6 +15811,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3F74F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 self_service=yes
@@ -15752,6 +15844,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4234F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -15817,6 +15910,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3F44F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 internet_access=yes
@@ -16079,6 +16173,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E40F4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -16157,6 +16252,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E40A4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 compressed_air=yes
 self_service=yes
@@ -16497,6 +16593,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4124F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 internet_access=yes
@@ -16552,6 +16649,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=0A0228AA92231EF
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -16797,6 +16895,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4334F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -16900,6 +16999,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=0A0228AA921C1EF
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -16970,6 +17070,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E43E4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -17025,6 +17126,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4034F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 self_service=yes
 ref=ААЗС 32
 guid:belorusneft=B89F84F7E4034F70E043BF0BA8C03722
@@ -17046,6 +17148,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4134F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -17137,6 +17240,7 @@ contact:phone=+375 17 3962468
 contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4414F70E043BF0BA8C03722
 opening_hours=24/7
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -17178,6 +17282,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=5EB806F75AD41DD
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -17428,6 +17533,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4044F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -17496,6 +17602,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3F24F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 ref=АЗС 1
 guid:belorusneft=B89F84F7E3F24F70E043BF0BA8C03722
 </pre></div>
@@ -17629,7 +17736,9 @@ operator=РУП \"Белоруснефть-Минскавтозаправка\"
 contact:phone=+375 17 3409853
 contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E40D4F70E043BF0BA8C03722
 opening_hours=24/7
+fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 compressed_air=yes
 self_service=yes
 ref=ААЗС 35
@@ -17652,6 +17761,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E40B4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -17720,6 +17830,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3FA4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 shop=convenience
@@ -17777,6 +17888,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3FE4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 <font color=red>internet_access=yes</font>
@@ -17874,6 +17986,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4514F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -17921,6 +18034,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E41E4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -18106,6 +18220,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=944C7A85DB803D0
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 <font color=red>vacuum_cleaner=yes</font>
@@ -18146,6 +18261,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3F34F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 vacuum_cleaner=yes
 <font color=red>internet_access=yes</font>
@@ -18209,6 +18325,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E42B4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -18248,6 +18365,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4154F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 compressed_air=yes
 <font color=red>ref=ААЗС 36</font>
 guid:belorusneft=B89F84F7E4154F70E043BF0BA8C03722
@@ -18401,6 +18519,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4104F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -18466,6 +18585,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3FB4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -18629,6 +18749,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4114F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 <font color=red>internet_access=yes</font>
@@ -18716,6 +18837,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4144F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:octane_98=yes</font>
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -18739,6 +18861,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E40C4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
@@ -18778,6 +18901,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4084F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 <font color=red>internet_access=yes</font>
@@ -18816,6 +18940,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4074F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 <font color=red>internet_access=yes</font>
@@ -18862,6 +18987,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4364F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -19525,6 +19651,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B90123D41C5D208
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
@@ -19595,6 +19722,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3994F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 ref=АЗС 32
 guid:belorusneft=B89F84F7E3994F70E043BF0BA8C03722
 </pre></div>
@@ -19616,6 +19744,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 internet_access=yes
@@ -19654,6 +19783,7 @@ operator=РУП \"Белоруснефть-Минскоблнефтепроду�
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>compressed_air=yes</font>
 <font color=red>internet_access=yes</font>
@@ -19701,6 +19831,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E39D4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 internet_access=yes
@@ -19984,6 +20115,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2FA4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>ref=КАЗС 47</font>
 guid:belorusneft=B89F84F7E2FA4F70E043BF0BA8C03722
 </pre></div>
@@ -20004,6 +20136,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=EB4F0920EE6A139
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
@@ -20060,6 +20193,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2F54F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
@@ -20101,6 +20235,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3014F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>internet_access=yes</font>
 <font color=red>internet_access:fee=no</font>
 shop=convenience
@@ -20138,6 +20273,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2FE4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -20209,6 +20345,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3F04F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 self_service=yes
@@ -20307,6 +20444,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4304F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
@@ -20356,6 +20494,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2F94F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
@@ -20413,6 +20552,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2E04F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -20460,6 +20600,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=EA7EE7218CBF521
 <font color=red>opening_hours=24/7</font>
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
@@ -20514,6 +20655,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3434F7
 opening_hours=Mo-Su 07:00-22:00
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
@@ -20545,6 +20687,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3444F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -20585,6 +20728,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -20636,6 +20780,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3354F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -20996,6 +21141,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4644F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -21043,6 +21189,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=C860F40D2C9B146
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -21099,6 +21246,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3034F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 <font color=red>internet_access=yes</font>
@@ -21140,6 +21288,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=04C0DF080F340A0
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 self_service=yes
 ref=ААЗС 85
 guid:belorusneft=04C0DF080F340A00E053BF0BA8C0E777
@@ -21161,6 +21310,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2DB4F7
 <font color=red>opening_hours=24/7</font>
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 ref=АЗС 63
 guid:belorusneft=B89F84F7E2DB4F70E043BF0BA8C03722
@@ -21247,6 +21397,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3164F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -21278,6 +21429,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2E34F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 ref=КАЗС 25
 guid:belorusneft=B89F84F7E2E34F70E043BF0BA8C03722
 </pre></div>
@@ -21349,6 +21501,7 @@ operator=РУП \"Белоруснефть-Могилевоблнефтепро�
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -21406,6 +21559,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3E84F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 internet_access=yes
@@ -21444,6 +21598,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E38A4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 compressed_air=yes
 <font color=red>internet_access=yes</font>
@@ -21608,6 +21763,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=79EB024514A7292
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 ref=ААЗС 62
 guid:belorusneft=79EB024514A72920E053BF0BA8C034FB
 </pre></div>
@@ -21629,6 +21785,7 @@ opening_hours=24/7
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>self_service=yes</font>
 <font color=red>ref=ААЗС 84</font>
 guid:belorusneft=EF99AD6707857C44E043BF0BA8C04095
@@ -21928,6 +22085,7 @@ opening_hours=24/7
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
@@ -22016,6 +22174,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E45F4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -22190,6 +22349,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2E44F7
 <font color=red>opening_hours=Mo-Su 08:00-16:00</font>
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 ref=КАЗС 27
 guid:belorusneft=B89F84F7E2E44F70E043BF0BA8C03722
 </pre></div>
@@ -22311,6 +22471,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2D64F7
 opening_hours=Mo-Su 00:10-24:00
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -22420,6 +22581,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E39B4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 ref=АЗС 34
 guid:belorusneft=B89F84F7E39B4F70E043BF0BA8C03722
 </pre></div>
@@ -22539,6 +22701,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3414F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 ref=АЗС 36
@@ -22617,6 +22780,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3044F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>ref=МАЗС 58</font>
 guid:belorusneft=B89F84F7E3044F70E043BF0BA8C03722
 </pre></div>
@@ -22655,6 +22819,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -22711,6 +22876,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E33A4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -22811,6 +22977,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E32B4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+<font color=red>fuel:octane_95=yes</font>
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -22958,6 +23125,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2F24F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 compressed_air=yes
 ref=АЗС 39
 guid:belorusneft=B89F84F7E2F24F70E043BF0BA8C03722
@@ -22987,6 +23155,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2D14F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 ref=АЗС 4
 guid:belorusneft=B89F84F7E2D14F70E043BF0BA8C03722
 </pre></div>
@@ -23016,6 +23185,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+<font color=red>fuel:octane_95=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
 <font color=red>internet_access=yes</font>
@@ -23073,6 +23243,7 @@ contact:phone=+375 2158 57960
 contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2ED4F70E043BF0BA8C03722
 opening_hours=24/7
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -23114,6 +23285,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4254F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -23161,6 +23333,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=EB4F0920EF39139
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 internet_access=yes
@@ -23267,6 +23440,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3A84F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 internet_access=yes
@@ -23344,6 +23518,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2DF4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 self_service=yes
 ref=АЗС 21
@@ -23708,6 +23883,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue=yes
 vacuum_cleaner=yes
@@ -23776,6 +23952,7 @@ opening_hours=24/7
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -24390,6 +24567,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3984F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 internet_access=yes
@@ -24653,6 +24831,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E42D4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -24693,6 +24872,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2EB4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 ref=АЗС 16
 guid:belorusneft=B89F84F7E2EB4F70E043BF0BA8C03722
 </pre></div>
@@ -24921,6 +25101,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2F04F7
 opening_hours=Mo-Su 07:00-19:00
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 ref=КАЗС 37
 guid:belorusneft=B89F84F7E2F04F70E043BF0BA8C03722
@@ -24964,6 +25145,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2EF4F7
 <font color=red>opening_hours=Mo-Fr 08:00-16:00</font>
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 ref=КАЗС 36
 guid:belorusneft=B89F84F7E2EF4F70E043BF0BA8C03722
 </pre></div>
@@ -25039,6 +25221,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3AD4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 internet_access=yes
@@ -25094,6 +25277,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=C8CA261BF6F0401
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -25150,6 +25334,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2DC4F7
 <font color=red>opening_hours=24/7</font>
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -25224,6 +25409,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3184F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
 <font color=red>internet_access=yes</font>
@@ -25791,6 +25977,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 compressed_air=yes
 <font color=red>internet_access=yes</font>
@@ -25978,6 +26165,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3124F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -26400,6 +26588,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=E74A8961F672047
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -26461,6 +26650,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3274F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 ref=АЗС 65
 guid:belorusneft=B89F84F7E3274F70E043BF0BA8C03722
@@ -26482,6 +26672,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4444F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -26567,6 +26758,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue=yes
 vacuum_cleaner=yes
@@ -26607,6 +26799,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=AA107361C643777
 <font color=red>opening_hours=</font>
 fuel:diesel=yes
 fuel:octane_92=yes
+<font color=red>fuel:octane_95=yes</font>
 ref=АЗС 61
 guid:belorusneft=AA107361C6437775E053BF0BA8C0067C
 </pre></div>
@@ -26801,6 +26994,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E46D4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 <font color=red>internet_access=yes</font>
@@ -26841,6 +27035,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3A14F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>ref=АЗС 36</font>
 guid:belorusneft=B89F84F7E3A14F70E043BF0BA8C03722
@@ -26871,6 +27066,7 @@ opening_hours=24/7
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -26985,6 +27181,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3AE4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -27053,6 +27250,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=E186F5704A3863E
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
@@ -27114,6 +27312,7 @@ opening_hours=24/7
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue=yes
 fuel:adblue:canister=yes
@@ -27185,6 +27384,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=DADAA2A3CDC313D
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -27251,6 +27451,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=FE06625628C6112
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -27303,6 +27504,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=CD68392A655324C
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -27350,6 +27552,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=FCA68431B132735
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -27390,6 +27593,7 @@ opening_hours=24/7
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -27429,6 +27633,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=0BE230E9C6E3021
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -27516,6 +27721,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3A24F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 shop=convenience
@@ -27587,6 +27793,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3924F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 ref=АЗС 21
 guid:belorusneft=B89F84F7E3924F70E043BF0BA8C03722
@@ -27608,6 +27815,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=BC257E0D324E61D
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>internet_access=yes</font>
 <font color=red>internet_access:fee=no</font>
 shop=convenience
@@ -27645,6 +27853,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3934F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 <font color=red>internet_access=yes</font>
 <font color=red>internet_access:fee=no</font>
@@ -27683,6 +27892,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3A44F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 ref=АЗС 48
@@ -27726,6 +27936,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3944F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 <font color=red>internet_access=yes</font>
@@ -27782,6 +27993,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E39E4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -27838,6 +28050,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4544F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 internet_access=yes
@@ -27885,6 +28098,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3A54F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 ref=МАЗС 49
 guid:belorusneft=B89F84F7E3A54F70E043BF0BA8C03722
@@ -27946,6 +28160,38 @@ opening_hours=24/7
 
 </div><hr/>
 
+<div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E42E4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E42E4F70E043BF0BA8C03722">МАЗС № 40</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.805555/27.544166">Минская обл.,Солигорский р-н, Чижевский с/с, д.Чижевичи, ул. Шахтерская,16</a>
+    <br /><a href="https://www.openstreetmap.org/node/8026273473">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Белоруснефть № 40
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Минскоблнефтепродукт\"
+contact:phone=+375 1742 11103
+contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E42E4F70E043BF0BA8C03722
+opening_hours=24/7
+fuel:diesel=yes
+fuel:octane_92=yes
+fuel:octane_95=yes
+vacuum_cleaner=yes
+compressed_air=yes
+ref=МАЗС 40
+guid:belorusneft=B89F84F7E42E4F70E043BF0BA8C03722
+</pre></div>
+<div id="sidebar"><h4>Газ</h4><pre>
+amenity=fuel
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Минскоблнефтепродукт\"
+fuel:lpg=yes
+<font color=red>opening_hours=Проверить по ссылке</font>
+contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E42E4F70E043BF0BA8C03722
+contact:phone=+375 1742 11103
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E3A34F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E3A34F70E043BF0BA8C03722">АЗС № 47</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.035277/28.285555">Минская обл.,Стародорожский р-н,г. Старые Дороги, ул. Московская,1В</a>
     <br /><a href="https://www.openstreetmap.org/node/1477970546">Объект на карте</a><br/>
@@ -27982,6 +28228,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3964F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 internet_access=yes
 internet_access:fee=no
@@ -28023,6 +28270,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3954F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -28568,6 +28816,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=0CBE15E8D7313C9
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -28624,6 +28873,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=BF7FDDD5514F246
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -28681,6 +28931,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E46E4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -28725,6 +28976,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4094F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -28764,6 +29016,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=E186F5704BEC63E
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 <font color=red>internet_access=yes</font>
@@ -28831,6 +29084,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2F84F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 compressed_air=yes
 ref=АЗС 45
 guid:belorusneft=B89F84F7E2F84F70E043BF0BA8C03722
@@ -29413,6 +29667,7 @@ opening_hours=24/7
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
@@ -29519,6 +29774,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2E54F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 ref=АЗС 28
 guid:belorusneft=B89F84F7E2E54F70E043BF0BA8C03722
 </pre></div>
@@ -29539,6 +29795,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E40E4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 <font color=red>ref=АЗС 46</font>
@@ -29561,6 +29818,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3B44F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
@@ -29617,6 +29875,7 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
@@ -29698,6 +29957,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2FF4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue=yes
 vacuum_cleaner=yes
@@ -29766,6 +30026,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3E54F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue=yes
 vacuum_cleaner=yes
@@ -29806,6 +30067,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=EB572C9D9521139
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -29868,6 +30130,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3EE4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 compressed_air=yes
 <font color=red>internet_access=yes</font>
@@ -29936,6 +30199,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=EECF4F0748ED70A
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
@@ -30071,6 +30335,7 @@ opening_hours=24/7
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
@@ -30119,6 +30384,7 @@ operator=РУП \"Белоруснефть-Минскоблнефтепроду�
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
@@ -30167,6 +30433,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E32A4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -30206,6 +30473,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3A74F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -30281,6 +30549,7 @@ operator=РУП \"Белоруснефть-Гроднооблнефтепрод�
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -30555,6 +30824,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3FD4F7
 <font color=red>opening_hours=24/7</font>
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue=yes
 fuel:adblue:canister=yes
@@ -30661,6 +30931,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -30709,6 +30980,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3B64F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
@@ -30823,6 +31095,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4004F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 <font color=red>fuel:adblue:canister=yes</font>
 vacuum_cleaner=yes
 compressed_air=yes
@@ -30871,6 +31144,7 @@ opening_hours=24/7
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -30961,6 +31235,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3384F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 ref=АЗС 56
@@ -30992,6 +31267,7 @@ opening_hours=24/7
 fuel:diesel=yes
 fuel:HGV_diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -31152,6 +31428,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3A94F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 internet_access=yes
@@ -31390,6 +31667,7 @@ opening_hours=24/7
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue=yes
 fuel:adblue:canister=yes
@@ -31448,6 +31726,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3064F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:adblue:canister=yes
 internet_access=yes
@@ -31496,6 +31775,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3054F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -31545,6 +31825,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E33E4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -31602,6 +31883,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E33B4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -31641,6 +31923,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E30A4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+<font color=red>fuel:octane_95=yes</font>
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -31707,6 +31990,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3204F7
 <font color=red>opening_hours=Mo-Su 07:00-12:00,13:00-19:00</font>
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 ref=АЗС 13
@@ -31835,6 +32119,7 @@ opening_hours=24/7
 fuel:diesel=yes
 <font color=red>fuel:HGV_diesel=yes</font>
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 internet_access=yes
 internet_access:fee=no
@@ -31928,6 +32213,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3AB4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -31984,6 +32270,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3B34F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 compressed_air=yes
 <font color=red>internet_access=yes</font>
@@ -32133,6 +32420,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2DA4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 internet_access=yes
 internet_access:fee=no
@@ -32285,6 +32573,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3324F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -32388,6 +32677,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=5E8EDB62BA367FD
 opening_hours=Mo-Su 00:10-24:00
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
@@ -32435,6 +32725,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3B54F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 vacuum_cleaner=yes
 compressed_air=yes
 internet_access=yes
@@ -32468,6 +32759,7 @@ contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3AA4F7
 opening_hours=24/7
 fuel:diesel=yes
 fuel:octane_92=yes
+fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
