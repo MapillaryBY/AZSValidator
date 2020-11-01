@@ -43,15 +43,15 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2020-10-31 23:12:06Z</p>
+    <p>Дата генерации файла 2020-11-01 21:30:18Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
-    <font color=red>Not found</font> (4) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
-    <font color=orange>Найден, но нет Guid</font> (54) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (777) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
+    <font color=red>Not found</font> (7) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
+    <font color=orange>Найден, но нет Guid</font> (73) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
+    OK (784) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
 		const notFoundColour = 'Red'
@@ -136,6 +136,18 @@ var marker = L.marker([53.874954,27.597862],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС № 076</b><br/><a href=#stationbelorusAD3BC119E80E4EB6E053BF0BA8C08AE9>Перейти</a>");
 var marker = L.marker([53.904348,27.633686],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 64</b><br/><a href=#stationbelorusAE46BB185EAB6EC2E053BF0BA8C0A62F>Перейти</a>");
+var marker = L.marker([53.960875387228,27.627336425742],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 34</b><br/><a href=#stationa10034>Перейти</a>");
+var marker = L.marker([53.802145424896,27.792479463351],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 36</b><br/><a href=#stationa10036>Перейти</a>");
+var marker = L.marker([53.869707234321,27.690267795439],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 4</b><br/><a href=#stationa1004>Перейти</a>");
+var marker = L.marker([53.852443,27.675906],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 15</b><br/><a href=#stationa10015>Перейти</a>");
+var marker = L.marker([53.890881045093,27.646094728836],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 13</b><br/><a href=#stationa10013>Перейти</a>");
+var marker = L.marker([53.822958,27.531437],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 25</b><br/><a href=#stationa10025>Перейти</a>");
 var marker = L.marker([52.397533,23.785266],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 88</b><br/><a href=#stationbelorusB9BB261C6E621803E043BF0BA8C0126A>Перейти</a>");
 var marker = L.marker([52.244722,24.411389],{icon:iconNotLinked}).addTo(mymap);
@@ -220,6 +232,8 @@ var marker = L.marker([51.999676,29.255232],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 49</b><br/><a href=#stationbelorusB89F84F7E3234F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.3676,31.003],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 83</b><br/><a href=#stationbelorusEF72423D62853AA8E043BF0BA8C0C086>Перейти</a>");
+var marker = L.marker([53.965024736236,27.537507797622],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 33</b><br/><a href=#stationa10033>Перейти</a>");
 var marker = L.marker([51.636111,29.081667],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 48</b><br/><a href=#stationbelorusB89F84F7E3224F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.333611,30.440277],{icon:iconNotLinked}).addTo(mymap);
@@ -230,18 +244,48 @@ var marker = L.marker([52.021279,29.208011],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 37</b><br/><a href=#stationbelorusB89F84F7E3424F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([51.431388,30.558888],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>КАЗС № 61</b><br/><a href=#stationbelorusB89F84F7E33C4F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.851879,27.647263],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 11</b><br/><a href=#stationa10011>Перейти</a>");
+var marker = L.marker([53.964348798837,27.64371652513],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 2</b><br/><a href=#stationa1002>Перейти</a>");
+var marker = L.marker([53.832581,27.615861],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 35</b><br/><a href=#stationa10035>Перейти</a>");
+var marker = L.marker([53.832214,27.736282],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 18</b><br/><a href=#stationa10018>Перейти</a>");
 var marker = L.marker([51.907778,29.311111],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 50</b><br/><a href=#stationbelorusB89F84F7E3244F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.98488,27.534739],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 10</b><br/><a href=#stationa10010>Перейти</a>");
 var marker = L.marker([52.34,30.353889],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 1</b><br/><a href=#stationbelorusB89F84F7E32F4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.266944,30.254444],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 2</b><br/><a href=#stationbelorusB89F84F7E3304F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.881215,27.597893],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 7</b><br/><a href=#stationa1007>Перейти</a>");
 var marker = L.marker([52.127874,29.421591],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 5</b><br/><a href=#stationbelorusB89F84F7E3294F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.382764,31.347252],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 4</b><br/><a href=#stationbelorusB89F84F7E3074F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.239839,27.607698],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 7</b><br/><a href=#stationbelorusB89F84F7E31F4F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.907662060524,27.611556313492],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 31</b><br/><a href=#stationa10031>Перейти</a>");
+var marker = L.marker([53.906340411418,27.633405186508],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 30</b><br/><a href=#stationa10030>Перейти</a>");
+var marker = L.marker([53.90501,27.409028],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 19</b><br/><a href=#stationa10019>Перейти</a>");
+var marker = L.marker([53.916578,27.413609],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 23</b><br/><a href=#stationa10023>Перейти</a>");
+var marker = L.marker([53.837901,27.514032],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 16</b><br/><a href=#stationa10016>Перейти</a>");
+var marker = L.marker([53.93643,27.579859],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 17</b><br/><a href=#stationa10017>Перейти</a>");
+var marker = L.marker([53.938236,27.546218],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 1</b><br/><a href=#stationa1001>Перейти</a>");
+var marker = L.marker([53.907887740526,27.461565974869],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 12</b><br/><a href=#stationa10012>Перейти</a>");
+var marker = L.marker([53.878946,27.58693],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 14</b><br/><a href=#stationa10014>Перейти</a>");
 var marker = L.marker([52.458771,30.800321],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>КАЗС № 64</b><br/><a href=#stationbelorusB89F84F7E31D4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.154996,27.834638],{icon:iconNormal}).addTo(mymap);
@@ -374,6 +418,8 @@ var marker = L.marker([53.12035,29.570633],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 26</b><br/><a href=#stationbelorusB89F84F7E3E14F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.929783,31.461417],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 50</b><br/><a href=#stationbelorusB89F84F7E3D84F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.839553,27.463559],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 24</b><br/><a href=#stationa10024>Перейти</a>");
 var marker = L.marker([53.1642,26.0248],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 20</b><br/><a href=#stationlukoil20>Перейти</a>");
 var marker = L.marker([53.1287,29.2007],{icon:iconNormal}).addTo(mymap);
@@ -410,6 +456,8 @@ var marker = L.marker([54.27025,28.690266],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 3</b><br/><a href=#stationbelorusB89F84F7E3864F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.97054,27.599722],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 75</b><br/><a href=#stationbelorusB89F84F7E3AF4F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.966317272551,27.64269385899],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 8</b><br/><a href=#stationa1008>Перейти</a>");
 var marker = L.marker([55.504921,28.739658],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 38</b><br/><a href=#stationbelorusB89F84F7E2F14F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.338333,30.550833],{icon:iconNormal}).addTo(mymap);
@@ -1402,6 +1450,8 @@ var marker = L.marker([54.716111,28.043333],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 18</b><br/><a href=#stationbelorusB89F84F7E2DC4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.92352,27.358073],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>КАЗС № 31</b><br/><a href=#stationbelorusB89F84F7E2E84F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.968911,27.550343],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 20</b><br/><a href=#stationa10020>Перейти</a>");
 var marker = L.marker([52.489167,30.965556],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 17</b><br/><a href=#stationbelorusB89F84F7E3184F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.595,24.992222],{icon:iconNormal}).addTo(mymap);
@@ -1756,14 +1806,22 @@ var marker = L.marker([52.3475,27.452222],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 13</b><br/><a href=#stationbelorusB89F84F7E3204F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.878,27.5968],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 5</b><br/><a href=#stationlukoil5>Перейти</a>");
+var marker = L.marker([53.9009559148,27.661249940475],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 21</b><br/><a href=#stationa10021>Перейти</a>");
 var marker = L.marker([53.649263,23.807933],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 54</b><br/><a href=#stationlukoil54>Перейти</a>");
 var marker = L.marker([53.107222,26.000277],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 23</b><br/><a href=#stationbelorusB89F84F7E2A74F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.93729504239,27.428848560004],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 5</b><br/><a href=#stationa1005>Перейти</a>");
 var marker = L.marker([54.811667,26.149722],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 39</b><br/><a href=#stationbelorusB89F84F7E36B4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.473889,26.415],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 42</b><br/><a href=#stationbelorusB89F84F7E36E4F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.89457,27.499335],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 6</b><br/><a href=#stationa1006>Перейти</a>");
+var marker = L.marker([53.878429069398,27.420834128167],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 3</b><br/><a href=#stationa1003>Перейти</a>");
 var marker = L.marker([53.736352,27.308009],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 71</b><br/><a href=#stationbelorusB89F84F7E3AB4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.426551,27.496169],{icon:iconNormal}).addTo(mymap);
@@ -1801,14 +1859,30 @@ marker.bindPopup("<b>АЗС № 22</b><br/><a href=#stationlukoil22>Перейт
 
     </script>
     <h4>История изменений:</h4>
-    <div class="history_item" id="container">2020-10-29 Новая заправка <a href="#stationbelorusAE46BB185EAB6EC2E053BF0BA8C0A62F">Белоруснефть АЗС № 64</a> </div>
-<div class="history_item" id="container">2020-10-22 Заправка демонтирована <a href="#stationbelorusB89F84F7E3F84F70E043BF0BA8C03722">Белоруснефть АЗС № 9</a> <a href="https://www.openstreetmap.org/node/255581631">Объект на карте</a></div>
-<div class="history_item" id="container">2020-10-12 Новая заправка <a href="#stationbelorusB06D39C328332EBFE053BF0BA8C0EEE9">Белоруснефть ЭЗС № 079</a> </div>
-<div class="history_item" id="container">2020-10-12 Новая заправка <a href="#stationbelorusAF18EA91B5803853E053BF0BA8C021B7">Белоруснефть ЭЗС № 078</a> </div>
-<div class="history_item" id="container">2020-10-12 Новая заправка <a href="#stationbelorusAF18EA91B57B3853E053BF0BA8C021B7">Белоруснефть ЭЗС № 077</a> </div>
-<div class="history_item" id="container">2020-10-12 Новая заправка <a href="#stationbelorusAD3BC119E80E4EB6E053BF0BA8C08AE9">Белоруснефть ЭЗС № 076</a> </div>
+    <div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10023">А-100 АЗС № 23</a> </div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10017">А-100 АЗС № 17</a> </div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10019">А-100 АЗС № 19</a> </div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10016">А-100 АЗС № 16</a> </div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10015">А-100 АЗС № 15</a> </div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10014">А-100 АЗС № 14</a> </div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa1008">А-100 АЗС № 8</a> <a href="https://www.openstreetmap.org/node/2579746811">Объект на карте</a></div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10010">А-100 АЗС № 10</a> </div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa1007">А-100 АЗС № 7</a> </div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa1005">А-100 АЗС № 5</a> <a href="https://www.openstreetmap.org/node/305673912">Объект на карте</a></div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa1006">А-100 АЗС № 6</a> <a href="https://www.openstreetmap.org/way/25392632">Объект на карте</a></div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10011">А-100 АЗС № 11</a> </div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa1002">А-100 АЗС № 2</a> </div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10035">А-100 АЗС № 35</a> </div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10025">А-100 АЗС № 25</a> </div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10024">А-100 АЗС № 24</a> <a href="https://www.openstreetmap.org/way/206825241">Объект на карте</a></div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10033">А-100 АЗС № 33</a> </div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10018">А-100 АЗС № 18</a> </div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa1004">А-100 АЗС № 4</a> </div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa1003">А-100 АЗС № 3</a> <a href="https://www.openstreetmap.org/node/4972382000">Объект на карте</a></div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10034">А-100 АЗС № 34</a> </div>
+и еще больше...
 
-    <h4>Список  станций (835 шт.):</h4>
+    <h4>Список  станций (864 шт.):</h4>
     <div id="station_list">
         <div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationbelorusB06D39C328332EBFE053BF0BA8C0EEE9" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B06D39C328332EBFE053BF0BA8C0EEE9">ЭЗС № 079</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.916986/27.549686">г. Минск, пр. Машерова, 35</a>
@@ -1904,6 +1978,200 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 <font color=red>opening_hours=24/7</font>
 <font color=red>contact:phone=+375 17 2703654</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationa10034" href="https://azs.a-100.by/set-azs/map-azs/?query=Логойский тракт, 47"> № 34</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.960875387228/27.627336425742">Логойский тракт, 47</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 34
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>self_service=yes</font>
+<font color=red>contact:phone=+375 44 500-45-36</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=Логойский тракт, 47</font>
+opening_hours=24/7
+<font color=red>ref=34</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationa10036" href="https://azs.a-100.by/set-azs/map-azs/?query=п. Привольный, ул. Мира, 2А/2-1"> № 36</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.802145424896/27.792479463351">п. Привольный, ул. Мира, 2А/2-1</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 36
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>self_service=yes</font>
+<font color=red>contact:phone=+375 44 500 45 36</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=п. Привольный, ул. Мира, 2А/2-1</font>
+opening_hours=24/7
+<font color=red>ref=36</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationa1004" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Герасименко, 2"> № 4</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.869707234321/27.690267795439">ул. Герасименко, 2</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 4
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>self_service=yes</font>
+<font color=red>contact:phone=+375 44 500-45-36</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Герасименко, 2</font>
+opening_hours=24/7
+<font color=red>ref=4</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa10015" href="https://azs.a-100.by/set-azs/map-azs/?query= ул. Промышленная, 2Б (МКАД)"> № 15</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.852443/27.675906"> ул. Промышленная, 2Б (МКАД)</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 15
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:lpg=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:adblue=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>internet_access=yes</font>
+<font color=red>internet_access:fee=no</font>
+<font color=red>contact:phone=+375 17 345-51-40</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query= ул. Промышленная, 2Б (МКАД)</font>
+opening_hours=24/7
+<font color=red>ref=15</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 17 345-51-40
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa10013" href="https://azs.a-100.by/set-azs/map-azs/?query= ул. Радиальная, 13а"> № 13</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.890881045093/27.646094728836"> ул. Радиальная, 13а</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 13
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>internet_access=yes</font>
+<font color=red>internet_access:fee=no</font>
+<font color=red>contact:phone=+375 17 345-93-86</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query= ул. Радиальная, 13а</font>
+opening_hours=24/7
+<font color=red>ref=13</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 17 345-93-86
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa10025" href="https://azs.a-100.by/set-azs/map-azs/?query=а/г Сеница, ул. Зелёная"> № 25</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.822958/27.531437">а/г Сеница, ул. Зелёная</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 25
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>internet_access=yes</font>
+<font color=red>internet_access:fee=no</font>
+<font color=red>contact:phone=+375 17 510-86-44</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=а/г Сеница, ул. Зелёная</font>
+opening_hours=24/7
+<font color=red>ref=25</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 17 510-86-44
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=no
+self_service=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
 </pre></div>
 
 </div><hr/>
@@ -3617,6 +3885,27 @@ cuisine=hot_dog;burger
 
 </div><hr/>
 
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa10033" href="https://azs.a-100.by/set-azs/map-azs/?query=Долгиновский тракт, 178/1"> № 33</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.965024736236/27.537507797622">Долгиновский тракт, 178/1</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 33
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>self_service=yes</font>
+<font color=red>contact:phone=+375 44 500-45-36</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=Долгиновский тракт, 178/1</font>
+opening_hours=24/7
+<font color=red>ref=33</font>
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorusB89F84F7E3224F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E3224F70E043BF0BA8C03722">АЗС № 48</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/51.636111/29.081667">Ельский р-н., Добрынский с-с., 11</a>
     <br /><br/>
@@ -3786,6 +4075,177 @@ contact:website=https://www.belorusneft.by/catalog/category/850/
 
 </div><hr/>
 
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa10011" href="https://azs.a-100.by/set-azs/map-azs/?query=Машиностроителей, 7Б"> № 11</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.851879/27.647263">Машиностроителей, 7Б</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 11
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>internet_access=yes</font>
+<font color=red>internet_access:fee=no</font>
+<font color=red>contact:phone=+375 17 340-29-55</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=Машиностроителей, 7Б</font>
+opening_hours=24/7
+<font color=red>ref=11</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 17 340-29-55
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa1002" href="https://azs.a-100.by/set-azs/map-azs/?query=Минский р-н, Боровая, 7"> № 2</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.964348798837/27.64371652513">Минский р-н, Боровая, 7</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 2
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:lpg=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>internet_access=yes</font>
+<font color=red>internet_access:fee=no</font>
+<font color=red>contact:phone=+375 17 266-46-06</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=Минский р-н, Боровая, 7</font>
+opening_hours=24/7
+<font color=red>ref=2</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 17 266-46-06
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=no
+self_service=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa10035" href="https://azs.a-100.by/set-azs/map-azs/?query=Минский р-н, Новодворский с/с, 82"> № 35</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.832581/27.615861">Минский р-н, Новодворский с/с, 82</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 35
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>internet_access=yes</font>
+<font color=red>internet_access:fee=no</font>
+<font color=red>contact:phone=+375 17 340-11-41</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=Минский р-н, Новодворский с/с, 82</font>
+opening_hours=24/7
+<font color=red>ref=35</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 17 340-11-41
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=no
+self_service=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa10018" href="https://azs.a-100.by/set-azs/map-azs/?query=Минский р-н, трасса на г. Могилев (М4), 4 км от МКАД"> № 18</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.832214/27.736282">Минский р-н, трасса на г. Могилев (М4), 4 км от МКАД</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 18
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:lpg=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>internet_access=yes</font>
+<font color=red>internet_access:fee=no</font>
+<font color=red>contact:phone=+375 25 720-48-54</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=Минский р-н, трасса на г. Могилев (М4), 4 км от МКАД</font>
+opening_hours=24/7
+<font color=red>ref=18</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 25 720-48-54
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=no
+self_service=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorusB89F84F7E3244F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E3244F70E043BF0BA8C03722">АЗС № 50</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/51.907778/29.311111">Михалковский с-с., 74</a>
     <br /><br/>
@@ -3804,6 +4264,27 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>compressed_air=yes</font>
 <font color=red>ref=АЗС 50</font>
 <font color=red>guid:belorusneft=B89F84F7E3244F70E043BF0BA8C03722</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa10010" href="https://azs.a-100.by/set-azs/map-azs/?query=Папернянский с/с, район деревни Цнянка"> № 10</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.98488/27.534739">Папернянский с/с, район деревни Цнянка</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 10
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>self_service=yes</font>
+<font color=red>contact:phone=+375 44 500 45 36</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=Папернянский с/с, район деревни Цнянка</font>
+opening_hours=24/7
+<font color=red>ref=10</font>
 </pre></div>
 
 </div><hr/>
@@ -3877,6 +4358,54 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>opening_hours=24/7</font>
 contact:website=https://www.belorusneft.by/catalog/category/850/
 <font color=red>contact:phone=+375 2340 25214</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa1007" href="https://azs.a-100.by/set-azs/map-azs/?query=пр. Партизанский, 8Б"> № 7</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.881215/27.597893">пр. Партизанский, 8Б</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 7
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:lpg=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>internet_access=yes</font>
+<font color=red>internet_access:fee=no</font>
+<font color=red>contact:phone=+375 17 291-12-16</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=пр. Партизанский, 8Б</font>
+opening_hours=24/7
+<font color=red>ref=7</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 17 291-12-16
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=no
+self_service=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
 </pre></div>
 
 </div><hr/>
@@ -3990,6 +4519,337 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 <font color=red>opening_hours=24/7</font>
 <font color=red>contact:phone=+375 2353 30146</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa10031" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Академическая, 34"> № 31</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.907662060524/27.611556313492">ул. Академическая, 34</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 31
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>internet_access=yes</font>
+<font color=red>internet_access:fee=no</font>
+<font color=red>contact:phone=+375 17 332-15-66</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Академическая, 34</font>
+opening_hours=24/7
+<font color=red>ref=31</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 17 332-15-66
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa10030" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Аннаева, 47"> № 30</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.906340411418/27.633405186508">ул. Аннаева, 47</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 30
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>internet_access=yes</font>
+<font color=red>internet_access:fee=no</font>
+<font color=red>contact:phone=+375 17 299-97-57</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Аннаева, 47</font>
+opening_hours=24/7
+<font color=red>ref=30</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 17 299-97-57
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa10019" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Брикета, 23 (МКАД)"> № 19</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.90501/27.409028">ул. Брикета, 23 (МКАД)</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 19
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>internet_access=yes</font>
+<font color=red>internet_access:fee=no</font>
+<font color=red>contact:phone=+375 17 508-87-27</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Брикета, 23 (МКАД)</font>
+opening_hours=24/7
+<font color=red>ref=19</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 17 508-87-27
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=no
+self_service=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa10023" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Казимировская, 39 (МКАД)"> № 23</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.916578/27.413609">ул. Казимировская, 39 (МКАД)</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 23
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>internet_access=yes</font>
+<font color=red>internet_access:fee=no</font>
+<font color=red>contact:phone=+375 17 313-27-48</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Казимировская, 39 (МКАД)</font>
+opening_hours=24/7
+<font color=red>ref=23</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 17 313-27-48
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa10016" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Казинца, 133 (МКАД)"> № 16</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.837901/27.514032">ул. Казинца, 133 (МКАД)</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 16
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>internet_access=yes</font>
+<font color=red>internet_access:fee=no</font>
+<font color=red>contact:phone=+375 17 377-56-43</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Казинца, 133 (МКАД)</font>
+opening_hours=24/7
+<font color=red>ref=16</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 17 377-56-43
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa10017" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Некрасова, 41"> № 17</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.93643/27.579859">ул. Некрасова, 41</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 17
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>internet_access=yes</font>
+<font color=red>internet_access:fee=no</font>
+<font color=red>contact:phone=+375 29 195-78-18</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Некрасова, 41</font>
+opening_hours=24/7
+<font color=red>ref=17</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 29 195-78-18
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa1001" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Пригородная, 69"> № 1</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.938236/27.546218">ул. Пригородная, 69</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 1
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>internet_access=yes</font>
+<font color=red>internet_access:fee=no</font>
+<font color=red>contact:phone=+375 17 233-66-57</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Пригородная, 69</font>
+opening_hours=24/7
+<font color=red>ref=1</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 17 233-66-57
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=no
+self_service=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa10012" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Притыцкого, 62в"> № 12</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.907887740526/27.461565974869">ул. Притыцкого, 62в</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 12
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>internet_access=yes</font>
+<font color=red>internet_access:fee=no</font>
+<font color=red>contact:phone=+375 17 350-40-67</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Притыцкого, 62в</font>
+opening_hours=24/7
+<font color=red>ref=12</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 17 350-40-67
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa10014" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Тростенецкая, 16"> № 14</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.878946/27.58693">ул. Тростенецкая, 16</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 14
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>self_service=yes</font>
+<font color=red>contact:phone=+375 44 500-45-36</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Тростенецкая, 16</font>
+opening_hours=24/7
+<font color=red>ref=14</font>
 </pre></div>
 
 </div><hr/>
@@ -6294,6 +7154,54 @@ guid:belorusneft=B89F84F7E3D84F70E043BF0BA8C03722
 
 </div><hr/>
 
+<div class="station" id="container"><b>OK</b>  <a id="stationa10024" href="https://azs.a-100.by/set-azs/map-azs/?query=АД Р1 "Брест-Минск ", 9-ый км"> № 24</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.839553/27.463559">АД Р1 "Брест-Минск ", 9-ый км</a>
+    <br /><a href="https://www.openstreetmap.org/way/206825241">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 24
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+fuel:adblue=yes
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+internet_access=yes
+internet_access:fee=no
+<font color=red>contact:phone=+375 17 509-30-70</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=АД Р1 "Брест-Минск ", 9-ый км</font>
+opening_hours=24/7
+ref=24
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 17 509-30-70
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=no
+self_service=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b>OK</b>  <a id="stationlukoil20" href="http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=6060"> № 20</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.1642/26.0248">Барановичский р-н, д. Малая Колпеница</a>
     <br /><a href="https://www.openstreetmap.org/node/306069322">Объект на карте</a><br/>
@@ -7081,6 +7989,27 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 opening_hours=24/7
 contact:phone=+375 17 2685548
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationa1008" href="https://azs.a-100.by/set-azs/map-azs/?query=Боровлянский с/с, M3, 7-й км, 1"> № 8</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.966317272551/27.64269385899">Боровлянский с/с, M3, 7-й км, 1</a>
+    <br /><a href="https://www.openstreetmap.org/node/2579746811">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 8
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+self_service=yes
+<font color=red>contact:phone=+375 44 500-45-36</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=Боровлянский с/с, M3, 7-й км, 1</font>
+opening_hours=24/7
+ref=8
 </pre></div>
 
 </div><hr/>
@@ -25426,6 +26355,54 @@ guid:belorusneft=B89F84F7E2E84F70E043BF0BA8C03722
 
 </div><hr/>
 
+<div class="station" id="container"><b>OK</b>  <a id="stationa10020" href="https://azs.a-100.by/set-azs/map-azs/?query=Долгиновский тракт, 190 (МКАД)"> № 20</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.968911/27.550343">Долгиновский тракт, 190 (МКАД)</a>
+    <br /><a href="https://www.openstreetmap.org/way/140177982">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 20
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:lpg=yes
+fuel:diesel=yes
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+internet_access=yes
+internet_access:fee=no
+<font color=red>contact:phone=+375 17 335-34-47</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=Долгиновский тракт, 190 (МКАД)</font>
+opening_hours=24/7
+ref=20
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 17 335-34-47
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=no
+self_service=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E3184F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E3184F70E043BF0BA8C03722">МАЗС № 17</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.489167/30.965556">Ереминский с/с., ул. Советская, 179а</a>
     <br /><a href="https://www.openstreetmap.org/node/7134299182">Объект на карте</a><br/>
@@ -30652,8 +31629,7 @@ fuel:octane_98=yes
 fuel:HGV_diesel=yes
 vacuum_cleaner=yes
 compressed_air=yes
-<font color=red>contact:phone=+375173977932
-</font>
+<font color=red>contact:phone=+375173977932</font>
 contact:website=http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=6065
 opening_hours=Mo-Su 00:10-23:40
 ref=64
@@ -30662,7 +31638,6 @@ ref=64
 shop=convenience
 <font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
 contact:phone=+375173977932
-
 opening_hours=Mo-Su 00:10-23:40
 </pre></div>
 <div id="sidebar"><h4>Мойка</h4><pre>
@@ -32067,6 +33042,47 @@ automated=yes
 
 </div><hr/>
 
+<div class="station" id="container"><b>OK</b>  <a id="stationa10021" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Ваупшасова, 40"> № 21</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.9009559148/27.661249940475">ул. Ваупшасова, 40</a>
+    <br /><a href="https://www.openstreetmap.org/way/351690423">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 21
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+internet_access=yes
+internet_access:fee=no
+<font color=red>contact:phone=+375 17 328-03-48</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Ваупшасова, 40</font>
+opening_hours=24/7
+ref=21
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 17 328-03-48
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b>OK</b>  <a id="stationlukoil54" href="http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=71807"> № 54</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.649263/23.807933">ул. Издательская, 11, 230001, г. Гродно, Беларусь</a>
     <br /><a href="https://www.openstreetmap.org/node/3444378938">Объект на карте</a><br/>
@@ -32133,6 +33149,41 @@ shop=convenience
 operator=РУП \"Белоруснефть-Брестоблнефтепродукт\"
 opening_hours=24/7
 contact:phone=+375 163 490904
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationa1005" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Масюковщина, 2а, корп.3"> № 5</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.93729504239/27.428848560004">ул. Масюковщина, 2а, корп.3</a>
+    <br /><a href="https://www.openstreetmap.org/node/305673912">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 5
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>internet_access=yes</font>
+<font color=red>internet_access:fee=no</font>
+<font color=red>contact:phone=+375 17 509-56-01</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Масюковщина, 2а, корп.3</font>
+opening_hours=24/7
+ref=5
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 17 509-56-01
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
 </pre></div>
 
 </div><hr/>
@@ -32228,6 +33279,69 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 opening_hours=24/7
 contact:phone=+375 1592 37792
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationa1006" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Харьковская, 81"> № 6</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.89457/27.499335">ул. Харьковская, 81</a>
+    <br /><a href="https://www.openstreetmap.org/way/25392632">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 6
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:lpg=yes
+fuel:diesel=yes
+vacuum_cleaner=yes
+compressed_air=yes
+internet_access=yes
+internet_access:fee=no
+<font color=red>contact:phone=+375 17 253-03-18</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Харьковская, 81</font>
+opening_hours=24/7
+ref=6
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 17 253-03-18
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationa1003" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Шаранговича, 81"> № 3</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.878429069398/27.420834128167">ул. Шаранговича, 81</a>
+    <br /><a href="https://www.openstreetmap.org/node/4972382000">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 3
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+self_service=yes
+contact:phone=+375 44 500-45-36
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Шаранговича, 81</font>
+opening_hours=24/7
+ref=3
 </pre></div>
 
 </div><hr/>
