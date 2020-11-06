@@ -43,13 +43,13 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2020-11-05 23:17:53Z</p>
+    <p>Дата генерации файла 2020-11-06 11:13:12Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
-    <font color=red>Not found</font> (4) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
+    <font color=red>Not found</font> (5) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
     <font color=orange>Найден, но нет Guid</font> (67) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
     OK (795) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
@@ -136,6 +136,8 @@ var marker = L.marker([53.874954,27.597862],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС № 076</b><br/><a href=#stationbelorusAD3BC119E80E4EB6E053BF0BA8C08AE9>Перейти</a>");
 var marker = L.marker([53.904348,27.633686],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 64</b><br/><a href=#stationbelorusAE46BB185EAB6EC2E053BF0BA8C0A62F>Перейти</a>");
+var marker = L.marker([51.631838,27.868565],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>КАЗС № 90</b><br/><a href=#stationbelorusB1BB62A989A34820E053BF0BA8C0ABC7>Перейти</a>");
 var marker = L.marker([52.397533,23.785266],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 88</b><br/><a href=#stationbelorusB9BB261C6E621803E043BF0BA8C0126A>Перейти</a>");
 var marker = L.marker([52.244722,24.411389],{icon:iconNotLinked}).addTo(mymap);
@@ -1863,7 +1865,8 @@ marker.bindPopup("<b>АЗС № 22</b><br/><a href=#stationlukoil22>Перейт
 
     </script>
     <h4>История изменений:</h4>
-    <div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10023">А-100 АЗС № 23</a> </div>
+    <div class="history_item" id="container">2020-11-06 Новая заправка <a href="#stationbelorusB1BB62A989A34820E053BF0BA8C0ABC7">Белоруснефть КАЗС № 90</a> </div>
+<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10023">А-100 АЗС № 23</a> </div>
 <div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10017">А-100 АЗС № 17</a> </div>
 <div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10019">А-100 АЗС № 19</a> <a href="https://www.openstreetmap.org/way/189804663">Объект на карте</a></div>
 <div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10016">А-100 АЗС № 16</a> </div>
@@ -1883,10 +1886,9 @@ marker.bindPopup("<b>АЗС № 22</b><br/><a href=#stationlukoil22>Перейт
 <div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10018">А-100 АЗС № 18</a> <a href="https://www.openstreetmap.org/way/225409216">Объект на карте</a></div>
 <div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa1004">А-100 АЗС № 4</a> <a href="https://www.openstreetmap.org/way/542478334">Объект на карте</a></div>
 <div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa1003">А-100 АЗС № 3</a> <a href="https://www.openstreetmap.org/node/4972382000">Объект на карте</a></div>
-<div class="history_item" id="container">2020-11-01 Новая заправка <a href="#stationa10034">А-100 АЗС № 34</a> <a href="https://www.openstreetmap.org/way/166482561">Объект на карте</a></div>
 и еще больше...
 
-    <h4>Список  станций (866 шт.):</h4>
+    <h4>Список  станций (867 шт.):</h4>
     <div id="station_list">
         <div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationbelorusB06D39C328332EBFE053BF0BA8C0EEE9" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B06D39C328332EBFE053BF0BA8C0EEE9">ЭЗС № 079</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.916986/27.549686">г. Минск, пр. Машерова, 35</a>
@@ -1982,6 +1984,27 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 <font color=red>opening_hours=24/7</font>
 <font color=red>contact:phone=+375 17 2703654</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationbelorusB1BB62A989A34820E053BF0BA8C0ABC7" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B1BB62A989A34820E053BF0BA8C0ABC7">КАЗС № 90</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/51.631838/27.868565">Лельчицкий р-н, вблизи перекрестка автомобильных дорог Р-36 «Мозырь – Лельчицы – Милошевичи – граница Украины (Глушкевичи)» и Н-4510 «Приболовичи – Горка»</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Белоруснефть № 90
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
+<font color=red>contact:phone=+375 44 7769513</font>
+<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B1BB62A989A34820E053BF0BA8C0ABC7</font>
+<font color=red>opening_hours=Mo-Su 07:00-12:00,13:00-18:00</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>compressed_air=yes</font>
+<font color=red>ref=КАЗС 90</font>
+<font color=red>guid:belorusneft=B1BB62A989A34820E053BF0BA8C0ABC7</font>
 </pre></div>
 
 </div><hr/>
@@ -33688,15 +33711,6 @@ internet_access=yes
 internet_access:fee=no
 ref=МАЗС 62
 guid:belorusneft=B89F84F7E2DA4F70E043BF0BA8C03722
-</pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Витебскоблнефтепродукт\"
-fuel:lpg=yes
-<font color=red>opening_hours=Проверить по ссылке</font>
-contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2DA4F70E043BF0BA8C03722
-<font color=red>contact:phone=+375 2133 67239</font>
 </pre></div>
 <div id="sidebar"><h4>Продажа шин</h4><pre>
 shop=tyres
