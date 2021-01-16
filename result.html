@@ -43,15 +43,15 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2021-01-16 11:11:04Z</p>
+    <p>Дата генерации файла 2021-01-16 23:11:26Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (6) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
-    <font color=orange>Найден, но нет Guid</font> (67) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (798) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
+    <font color=orange>Найден, но нет Guid</font> (66) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
+    OK (799) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
 		const notFoundColour = 'Red'
@@ -262,8 +262,6 @@ var marker = L.marker([53.907662060524,27.611556313492],{icon:iconNotLinked}).ad
 marker.bindPopup("<b>АЗС № 31</b><br/><a href=#stationa10031>Перейти</a>");
 var marker = L.marker([53.906340411418,27.633405186508],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 30</b><br/><a href=#stationa10030>Перейти</a>");
-var marker = L.marker([53.916578,27.413609],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>АЗС № 23</b><br/><a href=#stationa10023>Перейти</a>");
 var marker = L.marker([53.93643,27.579859],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 17</b><br/><a href=#stationa10017>Перейти</a>");
 var marker = L.marker([53.938236,27.546218],{icon:iconNotLinked}).addTo(mymap);
@@ -1822,6 +1820,8 @@ var marker = L.marker([53.869707234321,27.690267795439],{icon:iconNormal}).addTo
 marker.bindPopup("<b>АЗС № 4</b><br/><a href=#stationa1004>Перейти</a>");
 var marker = L.marker([53.649263,23.807933],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 54</b><br/><a href=#stationlukoil54>Перейти</a>");
+var marker = L.marker([53.916578,27.413609],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 23</b><br/><a href=#stationa10023>Перейти</a>");
 var marker = L.marker([53.837901,27.514032],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 16</b><br/><a href=#stationa10016>Перейти</a>");
 var marker = L.marker([53.107222,26.000277],{icon:iconNormal}).addTo(mymap);
@@ -3246,15 +3246,6 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>ref=МАЗС 47</font>
 <font color=red>guid:belorusneft=B89F84F7E4794F70E043BF0BA8C03722</font>
 </pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-fuel:lpg=yes
-<font color=red>opening_hours=Проверить по ссылке</font>
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4794F70E043BF0BA8C03722</font>
-<font color=red>contact:phone=+375 236 254703</font>
-</pre></div>
 <div id="sidebar"><h4>Продажа шин</h4><pre>
 shop=tyres
 brand=Белшина
@@ -3399,15 +3390,6 @@ operator=РУП \"Белоруснефть-Витебскоблнефтепро�
 <font color=red>ref=МАЗС 48</font>
 <font color=red>guid:belorusneft=B89F84F7E2FB4F70E043BF0BA8C03722</font>
 </pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Витебскоблнефтепродукт\"
-fuel:lpg=yes
-<font color=red>opening_hours=Проверить по ссылке</font>
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2FB4F70E043BF0BA8C03722</font>
-<font color=red>contact:phone=+375 216 561082</font>
-</pre></div>
 <div id="sidebar"><h4>Продажа шин</h4><pre>
 shop=tyres
 brand=Белшина
@@ -3481,15 +3463,6 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>shop=convenience</font>
 <font color=red>ref=АЗС 23</font>
 <font color=red>guid:belorusneft=B89F84F7E3344F70E043BF0BA8C03722</font>
-</pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-fuel:lpg=yes
-<font color=red>opening_hours=Проверить по ссылке</font>
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3344F70E043BF0BA8C03722</font>
-<font color=red>contact:phone=+375 2340 99219</font>
 </pre></div>
 <div id="sidebar"><h4>Магазин</h4><pre>
 shop=convenience
@@ -3696,15 +3669,6 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 <font color=red>shop=convenience</font>
 <font color=red>ref=МАЗС 49</font>
 <font color=red>guid:belorusneft=B89F84F7E3234F70E043BF0BA8C03722</font>
-</pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-fuel:lpg=yes
-<font color=red>opening_hours=Проверить по ссылке</font>
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3234F70E043BF0BA8C03722</font>
-<font color=red>contact:phone=+375 236 212451</font>
 </pre></div>
 <div id="sidebar"><h4>Продажа шин</h4><pre>
 shop=tyres
@@ -4379,47 +4343,6 @@ shop=convenience
 <font color=red>operator=ГК «А-100 АЗС»</font>
 contact:phone=+375 44 541-05-64
 opening_hours=24/7
-</pre></div>
-<div id="sidebar"><h4>Кафе</h4><pre>
-amenity=fast_food
-<font color=red>operator=ГК «А-100 АЗС»</font>
-cuisine=hot_dog
-opening_hours=24/7
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa10023" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Казимировская, 39 (МКАД)"> № 23</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.916578/27.413609">ул. Казимировская, 39 (МКАД)</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=А-100 № 23
-brand=А-100
-<font color=red>operator=ГК «А-100 АЗС»</font>
-<font color=red>fuel:octane_92=yes</font>
-<font color=red>fuel:octane_95=yes</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>vacuum_cleaner=yes</font>
-<font color=red>compressed_air=yes</font>
-<font color=red>internet_access=yes</font>
-<font color=red>internet_access:fee=no</font>
-<font color=red>contact:phone=+375 44 541-06-63</font>
-<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Казимировская, 39 (МКАД)</font>
-opening_hours=24/7
-<font color=red>ref=23</font>
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-<font color=red>operator=ГК «А-100 АЗС»</font>
-contact:phone=+375 44 541-06-63
-opening_hours=24/7
-</pre></div>
-<div id="sidebar"><h4>Мойка</h4><pre>
-amenity=car_wash
-automated=yes
-<font color=red>operator=ГК «А-100 АЗС»</font>
 </pre></div>
 <div id="sidebar"><h4>Кафе</h4><pre>
 amenity=fast_food
@@ -6216,15 +6139,6 @@ self_service=yes
 <font color=red>shop=convenience</font>
 ref=МАЗС 19
 guid:belorusneft=C8CA261BF1714013E043BF0BA8C0A7AE
-</pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Минскавтозаправка\"
-fuel:lpg=yes
-<font color=red>opening_hours=Основная заправка уже содержит газ в списке топлива. Добавлять отдельной точкой только если время работы отличается.</font>
-contact:website=https://azs.belorusneft.by/beloil-map/station?id=C8CA261BF1714013E043BF0BA8C0A7AE
-contact:phone=+375 17 5089053
 </pre></div>
 <div id="sidebar"><h4>Продажа шин</h4><pre>
 shop=tyres
@@ -10866,15 +10780,6 @@ fuel:octane_92=yes
 <font color=red>ref=МАЗС 55</font>
 guid:belorusneft=B89F84F7E3374F70E043BF0BA8C03722
 </pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-fuel:lpg=yes
-<font color=red>opening_hours=Основная заправка уже содержит газ в списке топлива. Добавлять отдельной точкой только если время работы отличается.</font>
-contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3374F70E043BF0BA8C03722
-contact:phone=+375 2342 64106
-</pre></div>
 
 </div><hr/>
 
@@ -13532,15 +13437,6 @@ fuel:octane_95=yes
 <font color=red>ref=МАЗС 10</font>
 guid:belorusneft=B89F84F7E3174F70E043BF0BA8C03722
 </pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-fuel:lpg=yes
-<font color=red>opening_hours=Основная заправка уже содержит газ в списке топлива. Добавлять отдельной точкой только если время работы отличается.</font>
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3174F70E043BF0BA8C03722</font>
-<font color=red>contact:phone=+375 232 519039</font>
-</pre></div>
 <div id="sidebar"><h4>Продажа шин</h4><pre>
 shop=tyres
 brand=Белшина
@@ -13593,15 +13489,6 @@ fuel:octane_95=yes
 <font color=red>compressed_air=yes</font>
 <font color=red>ref=МАЗС 25</font>
 guid:belorusneft=B89F84F7E31A4F70E043BF0BA8C03722
-</pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-fuel:lpg=yes
-<font color=red>opening_hours=Основная заправка уже содержит газ в списке топлива. Добавлять отдельной точкой только если время работы отличается.</font>
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E31A4F70E043BF0BA8C03722</font>
-contact:phone=+375 232 561428
 </pre></div>
 <div id="sidebar"><h4>Продажа шин</h4><pre>
 shop=tyres
@@ -13943,15 +13830,6 @@ internet_access:fee=no
 <font color=red>ref=МАЗС 15</font>
 guid:belorusneft=B89F84F7E3084F70E043BF0BA8C03722
 </pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-fuel:lpg=yes
-<font color=red>opening_hours=Основная заправка уже содержит газ в списке топлива. Добавлять отдельной точкой только если время работы отличается.</font>
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3084F70E043BF0BA8C03722</font>
-<font color=red>contact:phone=+375 232 565390</font>
-</pre></div>
 <div id="sidebar"><h4>Магазин</h4><pre>
 shop=convenience
 operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
@@ -14031,15 +13909,6 @@ fuel:adblue:canister=yes
 <font color=red>shop=convenience</font>
 <font color=red>ref=МАЗС 16</font>
 guid:belorusneft=B89F84F7E30B4F70E043BF0BA8C03722
-</pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-fuel:lpg=yes
-<font color=red>opening_hours=Основная заправка уже содержит газ в списке топлива. Добавлять отдельной точкой только если время работы отличается.</font>
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E30B4F70E043BF0BA8C03722</font>
-contact:phone=+375 232 563878
 </pre></div>
 <div id="sidebar"><h4>Магазин</h4><pre>
 shop=convenience
@@ -15267,15 +15136,6 @@ shop=convenience
 ref=МАЗС 80
 guid:belorusneft=CD6C586C3F6D3818E043BF0BA8C04310
 </pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-fuel:lpg=yes
-<font color=red>opening_hours=Проверить по ссылке</font>
-contact:website=https://azs.belorusneft.by/beloil-map/station?id=CD6C586C3F6D3818E043BF0BA8C04310
-contact:phone=+375 2334 94002
-</pre></div>
 <div id="sidebar"><h4>Душ</h4><pre>
 amenity=shower
 operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
@@ -16140,15 +16000,6 @@ shop=convenience
 ref=МАЗС 12
 guid:belorusneft=B89F84F7E4714F70E043BF0BA8C03722
 </pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Минскавтозаправка\"
-fuel:lpg=yes
-<font color=red>opening_hours=Проверить по ссылке</font>
-contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4714F70E043BF0BA8C03722
-<font color=red>contact:phone=+375 17 3702224</font>
-</pre></div>
 <div id="sidebar"><h4>Продажа шин</h4><pre>
 shop=tyres
 brand=Белшина
@@ -16167,13 +16018,6 @@ opening_hours=24/7
 amenity=fast_food
 brand=Белоруснефть
 cuisine=hot_dog;burger
-opening_hours=24/7
-<font color=red>contact:phone=+375 17 3702224</font>
-</pre></div>
-<div id="sidebar"><h4>Автомойка автоматическая</h4><pre>
-amenity=car_wash
-automated=yes
-operator=РУП \"Белоруснефть-Минскавтозаправка\"
 opening_hours=24/7
 <font color=red>contact:phone=+375 17 3702224</font>
 </pre></div>
@@ -18656,15 +18500,6 @@ shop=convenience
 ref=МАЗС 17
 guid:belorusneft=B89F84F7E3FE4F70E043BF0BA8C03722
 </pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Минскавтозаправка\"
-fuel:lpg=yes
-<font color=red>opening_hours=Основная заправка уже содержит газ в списке топлива. Добавлять отдельной точкой только если время работы отличается.</font>
-contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3FE4F70E043BF0BA8C03722
-contact:phone=+375 17 2015336
-</pre></div>
 <div id="sidebar"><h4>Продажа шин</h4><pre>
 shop=tyres
 brand=Белшина
@@ -19243,15 +19078,6 @@ compressed_air=yes
 shop=convenience
 ref=МАЗС 53
 guid:belorusneft=B89F84F7E4424F70E043BF0BA8C03722
-</pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Минскавтозаправка\"
-fuel:lpg=yes
-<font color=red>opening_hours=Основная заправка уже содержит газ в списке топлива. Добавлять отдельной точкой только если время работы отличается.</font>
-contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4424F70E043BF0BA8C03722
-contact:phone=+375 17 2090407
 </pre></div>
 <div id="sidebar"><h4>Продажа шин</h4><pre>
 shop=tyres
@@ -21390,15 +21216,6 @@ fuel:octane_95=yes
 <font color=red>ref=АЗС 81</font>
 guid:belorusneft=EA7EE7218CBF5214E043BF0BA8C01964
 </pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-fuel:lpg=yes
-<font color=red>opening_hours=Проверить по ссылке</font>
-contact:website=https://azs.belorusneft.by/beloil-map/station?id=EA7EE7218CBF5214E043BF0BA8C01964
-contact:phone=+375 2339 20870
-</pre></div>
 <div id="sidebar"><h4>Душ</h4><pre>
 amenity=shower
 operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
@@ -21519,15 +21336,6 @@ shop=convenience
 ref=МАЗС 74
 guid:belorusneft=B89F84F7E45B4F70E043BF0BA8C03722
 </pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-fuel:lpg=yes
-<font color=red>opening_hours=Проверить по ссылке</font>
-contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E45B4F70E043BF0BA8C03722
-contact:phone=+375 2342 75813
-</pre></div>
 <div id="sidebar"><h4>Продажа шин</h4><pre>
 shop=tyres
 brand=Белшина
@@ -21568,15 +21376,6 @@ compressed_air=yes
 shop=convenience
 ref=МАЗС 24
 guid:belorusneft=B89F84F7E3354F70E043BF0BA8C03722
-</pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-fuel:lpg=yes
-<font color=red>opening_hours=Проверить по ссылке</font>
-contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3354F70E043BF0BA8C03722
-contact:phone=+375 2342 76891
 </pre></div>
 <div id="sidebar"><h4>Продажа шин</h4><pre>
 shop=tyres
@@ -22964,15 +22763,6 @@ self_service=yes
 shop=convenience
 ref=МАЗС 56
 guid:belorusneft=B89F84F7E45F4F70E043BF0BA8C03722
-</pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Минскавтозаправка\"
-fuel:lpg=yes
-<font color=red>opening_hours=Основная заправка уже содержит газ в списке топлива. Добавлять отдельной точкой только если время работы отличается.</font>
-contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E45F4F70E043BF0BA8C03722
-contact:phone=+375 17 3326017
 </pre></div>
 <div id="sidebar"><h4>Продажа шин</h4><pre>
 shop=tyres
@@ -24766,7 +24556,7 @@ amenity=fuel
 name=Белоруснефть № 19
 brand=Белоруснефть
 operator=РУП \"Белоруснефть-Минскоблнефтепродукт\"
-contact:phone=+375 17 5420759
+<font color=red>contact:phone=+375 17 5420748</font>
 contact:website=https://azs.belorusneft.by/beloil-map/station?id=CD6C586C3FBC3818E043BF0BA8C04310
 opening_hours=24/7
 fuel:diesel=yes
@@ -24787,14 +24577,14 @@ guid:belorusneft=CD6C586C3FBC3818E043BF0BA8C04310
 shop=convenience
 operator=РУП \"Белоруснефть-Минскоблнефтепродукт\"
 opening_hours=24/7
-contact:phone=+375 17 5420759
+<font color=red>contact:phone=+375 17 5420748</font>
 </pre></div>
 <div id="sidebar"><h4>Кафе</h4><pre>
 amenity=fast_food
 brand=Белоруснефть
 cuisine=hot_dog;burger
 opening_hours=24/7
-contact:phone=+375 17 5420759
+<font color=red>contact:phone=+375 17 5420748</font>
 </pre></div>
 
 </div><hr/>
@@ -26147,15 +25937,6 @@ shop=convenience
 ref=МАЗС 78
 guid:belorusneft=C8CA261BF6F04013E043BF0BA8C0A7AE
 </pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-fuel:lpg=yes
-<font color=red>opening_hours=Проверить по ссылке</font>
-contact:website=https://azs.belorusneft.by/beloil-map/station?id=C8CA261BF6F04013E043BF0BA8C0A7AE
-contact:phone=+375 2339 77307
-</pre></div>
 <div id="sidebar"><h4>Продажа шин</h4><pre>
 shop=tyres
 brand=Белшина
@@ -26346,15 +26127,6 @@ fuel:octane_95=yes
 <font color=red>self_service=yes</font>
 <font color=red>ref=МАЗС 17</font>
 guid:belorusneft=B89F84F7E3184F70E043BF0BA8C03722
-</pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-fuel:lpg=yes
-<font color=red>opening_hours=Основная заправка уже содержит газ в списке топлива. Добавлять отдельной точкой только если время работы отличается.</font>
-contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3184F70E043BF0BA8C03722
-contact:phone=+375 232 997792
 </pre></div>
 
 </div><hr/>
@@ -27102,15 +26874,6 @@ compressed_air=yes
 <font color=red>internet_access:fee=no</font>
 ref=МАЗС 26
 guid:belorusneft=B89F84F7E3124F70E043BF0BA8C03722
-</pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-fuel:lpg=yes
-<font color=red>opening_hours=Основная заправка уже содержит газ в списке топлива. Добавлять отдельной точкой только если время работы отличается.</font>
-contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3124F70E043BF0BA8C03722
-contact:phone=+375 232 939249
 </pre></div>
 
 </div><hr/>
@@ -32768,15 +32531,6 @@ shop=convenience
 <font color=red>ref=МАЗС 28</font>
 guid:belorusneft=B89F84F7E3134F70E043BF0BA8C03722
 </pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-fuel:lpg=yes
-<font color=red>opening_hours=Основная заправка уже содержит газ в списке топлива. Добавлять отдельной точкой только если время работы отличается.</font>
-contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3134F70E043BF0BA8C03722
-contact:phone=+375 232 929873
-</pre></div>
 <div id="sidebar"><h4>Продажа шин</h4><pre>
 shop=tyres
 brand=Белшина
@@ -32924,15 +32678,6 @@ self_service=yes
 shop=convenience
 ref=МАЗС 8
 guid:belorusneft=B89F84F7E33E4F70E043BF0BA8C03722
-</pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-fuel:lpg=yes
-<font color=red>opening_hours=Основная заправка уже содержит газ в списке топлива. Добавлять отдельной точкой только если время работы отличается.</font>
-contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E33E4F70E043BF0BA8C03722
-contact:phone=+375 2334 35529
 </pre></div>
 <div id="sidebar"><h4>Продажа шин</h4><pre>
 shop=tyres
@@ -33258,6 +33003,47 @@ shop=convenience
 <font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
 contact:phone=+375 152 651987
 opening_hours=Mo-Su 00:10-23:40
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationa10023" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Казимировская, 39 (МКАД)"> № 23</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.916578/27.413609">ул. Казимировская, 39 (МКАД)</a>
+    <br /><a href="https://www.openstreetmap.org/way/564000884">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 23
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>compressed_air=yes</font>
+internet_access=yes
+internet_access:fee=no
+<font color=red>contact:phone=+375 44 541-06-63</font>
+contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Казимировская, 39 (МКАД)
+opening_hours=24/7
+ref=23
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 44 541-06-63
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+<font color=red>operator=ГК «А-100 АЗС»</font>
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
 </pre></div>
 
 </div><hr/>
