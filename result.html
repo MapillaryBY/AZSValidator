@@ -43,13 +43,13 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2021-01-26 23:11:41Z</p>
+    <p>Дата генерации файла 2021-01-27 11:17:33Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
-    <font color=red>Not found</font> (5) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
+    <font color=red>Not found</font> (6) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
     <font color=orange>Найден, но нет Guid</font> (66) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
     OK (800) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
@@ -138,6 +138,8 @@ var marker = L.marker([53.874954,27.597862],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС № 076</b><br/><a href=#stationbelorusAD3BC119E80E4EB6E053BF0BA8C08AE9>Перейти</a>");
 var marker = L.marker([53.904348,27.633686],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 64</b><br/><a href=#stationbelorusAE46BB185EAB6EC2E053BF0BA8C0A62F>Перейти</a>");
+var marker = L.marker([54.0125,28.18456],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 87</b><br/><a href=#stationlukoil87>Перейти</a>");
 var marker = L.marker([52.397533,23.785266],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 88</b><br/><a href=#stationbelorusB9BB261C6E621803E043BF0BA8C0126A>Перейти</a>");
 var marker = L.marker([52.244722,24.411389],{icon:iconNotLinked}).addTo(mymap);
@@ -1873,10 +1875,11 @@ marker.bindPopup("<b>АЗС № 22</b><br/><a href=#stationlukoil22>Перейт
 
     </script>
     <h4>История изменений:</h4>
-    <div class="history_item" id="container">2021-01-12 Новая заправка <a href="#stationbelorusB578BEDDAA495190E053BF0BA8C03600">Белоруснефть ЭЗС № 081</a> </div>
+    <div class="history_item" id="container">2021-01-27 Новая заправка <a href="#stationlukoil87">Лукойл АЗС № 87</a> </div>
+<div class="history_item" id="container">2021-01-12 Новая заправка <a href="#stationbelorusB578BEDDAA495190E053BF0BA8C03600">Белоруснефть ЭЗС № 081</a> </div>
 <div class="history_item" id="container">2021-01-12 Новая заправка <a href="#stationbelorusB578BEDDAA475190E053BF0BA8C03600">Белоруснефть ЭЗС № 080</a> </div>
 
-    <h4>Список  станций (871 шт.):</h4>
+    <h4>Список  станций (872 шт.):</h4>
     <div id="station_list">
         <div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationbelorusB06D39C328332EBFE053BF0BA8C0EEE9" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B06D39C328332EBFE053BF0BA8C0EEE9">ЭЗС № 079</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.916986/27.549686">г. Минск, пр. Машерова, 35</a>
@@ -1995,6 +1998,26 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 <font color=red>opening_hours=24/7</font>
 <font color=red>contact:phone=+375 17 2703654</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationlukoil87" href="http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=5009406"> № 87</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.0125/28.18456">Минская обл, Смолевичский р-н, Плисский с\с, д.Малые Липки</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл № 87
+brand=Лукойл
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>contact:phone=++375177666508</font>
+<font color=red>contact:website=http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=5009406</font>
+opening_hours=Mo-Su 00:10-23:40
+<font color=red>ref=87</font>
 </pre></div>
 
 </div><hr/>
