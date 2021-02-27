@@ -43,15 +43,15 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2021-02-26 23:12:43Z</p>
+    <p>Дата генерации файла 2021-02-27 11:12:13Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (6) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
-    <font color=orange>Найден, но нет Guid</font> (61) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (805) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
+    <font color=orange>Найден, но нет Guid</font> (62) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
+    OK (804) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
 		const notFoundColour = 'Red'
@@ -256,6 +256,8 @@ var marker = L.marker([52.382764,31.347252],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 4</b><br/><a href=#stationbelorusB89F84F7E3074F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.239839,27.607698],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 7</b><br/><a href=#stationbelorusB89F84F7E31F4F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.906340411418,27.633405186508],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 30</b><br/><a href=#stationa10030>Перейти</a>");
 var marker = L.marker([53.938236,27.546218],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 1</b><br/><a href=#stationa1001>Перейти</a>");
 var marker = L.marker([53.907887740526,27.461565974869],{icon:iconNotLinked}).addTo(mymap);
@@ -1808,8 +1810,6 @@ var marker = L.marker([53.878,27.5968],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 5</b><br/><a href=#stationlukoil5>Перейти</a>");
 var marker = L.marker([53.907662060524,27.611556313492],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 31</b><br/><a href=#stationa10031>Перейти</a>");
-var marker = L.marker([53.906340411418,27.633405186508],{icon:iconNormal}).addTo(mymap);
-marker.bindPopup("<b>АЗС № 30</b><br/><a href=#stationa10030>Перейти</a>");
 var marker = L.marker([53.90501,27.409028],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 19</b><br/><a href=#stationa10019>Перейти</a>");
 var marker = L.marker([53.9009559148,27.661249940475],{icon:iconNormal}).addTo(mymap);
@@ -1875,7 +1875,8 @@ marker.bindPopup("<b>АЗС № 22</b><br/><a href=#stationlukoil22>Перейт
 
     </script>
     <h4>История изменений:</h4>
-    <div class="history_item" id="container">2021-02-26 Заправка демонтирована <a href="#stationbelorusB89F84F7E3124F70E043BF0BA8C03722">Белоруснефть МАЗС № 26</a> <a href="https://www.openstreetmap.org/node/7143450294">Объект на карте</a></div>
+    <div class="history_item" id="container">2021-02-27 Заправке удалили ref <a href="#stationa10030">А-100 АЗС № 30</a> </div>
+<div class="history_item" id="container">2021-02-26 Заправка демонтирована <a href="#stationbelorusB89F84F7E3124F70E043BF0BA8C03722">Белоруснефть МАЗС № 26</a> <a href="https://www.openstreetmap.org/node/7143450294">Объект на карте</a></div>
 <div class="history_item" id="container">2021-02-23 Заправке удалили ref <a href="#stationa10014">А-100 АЗС № 14</a> <a href="https://www.openstreetmap.org/way/351690421">Объект на карте</a></div>
 <div class="history_item" id="container">2021-02-03 Заправка демонтирована <a href="#stationbelorus3F5A109503D070EFE053BF0BA8C098CF">Белоруснефть ПАЗС № 90 (1)</a> <a href="https://www.openstreetmap.org/node/4646528295">Объект на карте</a></div>
 <div class="history_item" id="container">2021-02-03 Заправка демонтирована <a href="#stationbelorus41E05B19FFCD53CAE053BF0BA8C07A9A">Белоруснефть ПАЗС № 90 (2)</a> <a href="https://www.openstreetmap.org/node/6807860432">Объект на карте</a></div>
@@ -4297,6 +4298,41 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 <font color=red>opening_hours=24/7</font>
 <font color=red>contact:phone=+375 2353 30146</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa10030" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Аннаева, 47"> № 30</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.906340411418/27.633405186508">ул. Аннаева, 47</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 30
+brand=А-100
+<font color=red>operator=ГК «А-100 АЗС»</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>vacuum_cleaner=yes</font>
+<font color=red>internet_access=yes</font>
+<font color=red>internet_access:fee=no</font>
+<font color=red>contact:phone=+375 44 541-05-64</font>
+<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Аннаева, 47</font>
+opening_hours=24/7
+<font color=red>ref=30</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ГК «А-100 АЗС»</font>
+contact:phone=+375 44 541-05-64
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ГК «А-100 АЗС»</font>
+cuisine=hot_dog
+opening_hours=24/7
 </pre></div>
 
 </div><hr/>
@@ -17525,13 +17561,6 @@ cuisine=hot_dog;burger
 opening_hours=24/7
 <font color=red>contact:phone=+375 17 2497456</font>
 </pre></div>
-<div id="sidebar"><h4>Автомойка автоматическая</h4><pre>
-amenity=car_wash
-automated=yes
-operator=РУП \"Белоруснефть-Минскавтозаправка\"
-opening_hours=24/7
-<font color=red>contact:phone=+375 17 2497456</font>
-</pre></div>
 
 </div><hr/>
 
@@ -17674,13 +17703,6 @@ opening_hours=24/7
 amenity=fast_food
 brand=Белоруснефть
 cuisine=hot_dog;burger
-opening_hours=24/7
-<font color=red>contact:phone=+375 17 3708461</font>
-</pre></div>
-<div id="sidebar"><h4>Автомойка автоматическая</h4><pre>
-amenity=car_wash
-automated=yes
-operator=РУП \"Белоруснефть-Минскавтозаправка\"
 opening_hours=24/7
 <font color=red>contact:phone=+375 17 3708461</font>
 </pre></div>
@@ -32959,41 +32981,6 @@ opening_hours=24/7
 amenity=car_wash
 automated=yes
 operator=ГК «А-100 АЗС»
-</pre></div>
-<div id="sidebar"><h4>Кафе</h4><pre>
-amenity=fast_food
-operator=ГК «А-100 АЗС»
-cuisine=hot_dog
-opening_hours=24/7
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b>OK</b>  <a id="stationa10030" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Аннаева, 47"> № 30</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.906340411418/27.633405186508">ул. Аннаева, 47</a>
-    <br /><a href="https://www.openstreetmap.org/way/351715935">Объект на карте</a><br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=А-100 № 30
-brand=А-100
-operator=ГК «А-100 АЗС»
-fuel:octane_92=yes
-fuel:octane_95=yes
-fuel:diesel=yes
-vacuum_cleaner=yes
-<font color=red>internet_access=yes</font>
-<font color=red>internet_access:fee=no</font>
-contact:phone=+375 44 541-05-64
-contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Аннаева, 47
-opening_hours=24/7
-ref=30
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-operator=ГК «А-100 АЗС»
-contact:phone=+375 44 541-05-64
-opening_hours=24/7
 </pre></div>
 <div id="sidebar"><h4>Кафе</h4><pre>
 amenity=fast_food
