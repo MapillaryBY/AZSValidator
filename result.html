@@ -44,10 +44,13 @@
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
     <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
 
+    <!-- TO MARK CURRENT USER'S COORDINATS -->
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/topojson.v0.min.js"></script>
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2021-03-25 13:34:05Z</p>
+    <p>Дата генерации файла 2021-03-25 18:52:36Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
@@ -122,7 +125,11 @@
             html: `<span style="${normalStyles}" />`
         })
 
-
+        navigator.geolocation.getCurrentPosition(function (location) {
+            var latlng = new L.LatLng(location.coords.latitude, location.coords.longitude);
+            var marker = L.marker(latlng).addTo(mymap);
+            mymap.setView(latlng, 14);
+        });
 
 
         var mymap = L.map('mapid', {
@@ -6305,6 +6312,13 @@ opening_hours=24/7
 amenity=fast_food
 brand=Белоруснефть
 cuisine=hot_dog;burger
+opening_hours=24/7
+<font color=red>contact:phone=+375 17 5174999</font>
+</pre></div>
+<div id="sidebar"><h4>Автомойка автоматическая</h4><pre>
+amenity=car_wash
+automated=yes
+operator=РУП \"Белоруснефть-Минскавтозаправка\"
 opening_hours=24/7
 <font color=red>contact:phone=+375 17 5174999</font>
 </pre></div>
@@ -28086,13 +28100,6 @@ opening_hours=24/7
 amenity=fast_food
 brand=Белоруснефть
 cuisine=hot_dog;burger
-opening_hours=24/7
-<font color=red>contact:phone=+375 17 5420912</font>
-</pre></div>
-<div id="sidebar"><h4>Автомойка автоматическая</h4><pre>
-amenity=car_wash
-automated=yes
-operator=РУП \"Белоруснефть-Минскавтозаправка\"
 opening_hours=24/7
 <font color=red>contact:phone=+375 17 5420912</font>
 </pre></div>
