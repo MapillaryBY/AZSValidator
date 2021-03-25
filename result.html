@@ -50,7 +50,7 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2021-03-25 18:52:36Z</p>
+    <p>Дата генерации файла 2021-03-25 18:54:53Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
@@ -124,12 +124,6 @@
             popupAnchor: [0, -36],
             html: `<span style="${normalStyles}" />`
         })
-
-        navigator.geolocation.getCurrentPosition(function (location) {
-            var latlng = new L.LatLng(location.coords.latitude, location.coords.longitude);
-            var marker = L.marker(latlng).addTo(mymap);
-            mymap.setView(latlng, 14);
-        });
 
 
         var mymap = L.map('mapid', {
@@ -1888,6 +1882,12 @@ marker.bindPopup("<b>МАЗС № 69</b><br/><a href=#stationlukoil69>Перей
 var marker = L.marker([52.1129,23.7706],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 22</b><br/><a href=#stationlukoil22>Перейти</a>");
 
+
+        navigator.geolocation.getCurrentPosition(function (location) {
+            var latlng = new L.LatLng(location.coords.latitude, location.coords.longitude);
+            var marker = L.marker(latlng).addTo(mymap);
+            mymap.setView(latlng, 14);
+        });
     </script>
     <h4>История изменений:</h4>
     <div class="history_item" id="container">2021-03-16 Заправка демонтирована <a href="#stationbelorusB89F84F7E29F4F70E043BF0BA8C03722">Белоруснефть АЗС № 16</a> <a href="https://www.openstreetmap.org/node/306062256">Объект на карте</a></div>
