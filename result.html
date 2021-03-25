@@ -40,88 +40,96 @@
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
             integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
             crossorigin=""></script>
+
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2021-03-25 11:11:59Z</p>
+    <p>Дата генерации файла 2021-03-25 13:34:05Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (6) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
-    <font color=orange>Найден, но нет Guid</font> (59) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (807) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
+    <font color=orange>Найден, но нет Guid</font> (58) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
+    OK (808) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
-		const notFoundColour = 'Red'
-	const notLinkedColour = 'Orange'
-	const noramlColour = '#2981ca'
+        const notFoundColour = 'Red'
+        const notLinkedColour = 'Orange'
+        const noramlColour = '#2981ca'
 
-const notFoundStyles = `
-  background-color: ${notFoundColour};
-  width: 1rem;
-  height: 1rem;
-  display: block;
-  left: -0.0rem;
-  top: -0.0rem;
-  position: relative;
-  border-radius: 1rem 1rem 0;
-  transform: rotate(45deg);
-  border: 1px solid #FFFFFF`
+        const notFoundStyles = `
+      background-color: ${notFoundColour};
+      width: 1rem;
+      height: 1rem;
+      display: block;
+      left: -0.0rem;
+      top: -0.0rem;
+      position: relative;
+      border-radius: 1rem 1rem 0;
+      transform: rotate(45deg);
+      border: 1px solid #FFFFFF`
 
-const iconNotFound = L.divIcon({
-  className: "my-custom-pin",
-  iconAnchor: [9, 19],
-  labelAnchor: [-6, 0],
-  popupAnchor: [0, -36],
-  html: `<span style="${notFoundStyles}" />`
-})
+        const iconNotFound = L.divIcon({
+            className: "my-custom-pin",
+            iconAnchor: [9, 19],
+            labelAnchor: [-6, 0],
+            popupAnchor: [0, -36],
+            html: `<span style="${notFoundStyles}" />`
+        })
 
-const notLinkedStyles = `
-  background-color: ${notLinkedColour};
-  width: 1rem;
-  height: 1rem;
-  display: block;
-  left: -0.0rem;
-  top: -0.0rem;
-  position: relative;
-  border-radius: 1rem 1rem 0;
-  transform: rotate(45deg);
-  border: 1px solid #FFFFFF`
+        const notLinkedStyles = `
+      background-color: ${notLinkedColour};
+      width: 1rem;
+      height: 1rem;
+      display: block;
+      left: -0.0rem;
+      top: -0.0rem;
+      position: relative;
+      border-radius: 1rem 1rem 0;
+      transform: rotate(45deg);
+      border: 1px solid #FFFFFF`
 
-const iconNotLinked = L.divIcon({
-  className: "my-custom-pin",
-  iconAnchor: [9, 19],
-  labelAnchor: [-6, 0],
-  popupAnchor: [0, -36],
-  html: `<span style="${notLinkedStyles}" />`
-})
+        const iconNotLinked = L.divIcon({
+            className: "my-custom-pin",
+            iconAnchor: [9, 19],
+            labelAnchor: [-6, 0],
+            popupAnchor: [0, -36],
+            html: `<span style="${notLinkedStyles}" />`
+        })
 
-const normalStyles = `
-  background-color: ${noramlColour};
-  width: 1rem;
-  height: 1rem;
-  display: block;
-  left: -0.0rem;
-  top: -0.0rem;
-  position: relative;
-  border-radius: 1rem 1rem 0;
-  transform: rotate(45deg);
-  border: 1px solid #FFFFFF`
+        const normalStyles = `
+      background-color: ${noramlColour};
+      width: 1rem;
+      height: 1rem;
+      display: block;
+      left: -0.0rem;
+      top: -0.0rem;
+      position: relative;
+      border-radius: 1rem 1rem 0;
+      transform: rotate(45deg);
+      border: 1px solid #FFFFFF`
 
-const iconNormal = L.divIcon({
-  className: "my-custom-pin",
-  iconAnchor: [9, 19],
-  labelAnchor: [-6, 0],
-  popupAnchor: [0, -36],
-  html: `<span style="${normalStyles}" />`
-})
-
-
+        const iconNormal = L.divIcon({
+            className: "my-custom-pin",
+            iconAnchor: [9, 19],
+            labelAnchor: [-6, 0],
+            popupAnchor: [0, -36],
+            html: `<span style="${normalStyles}" />`
+        })
 
 
-        var mymap = L.map('mapid').setView([53.896057, 27.556896], 9);
+
+
+        var mymap = L.map('mapid', {
+            fullscreenControl: {
+                pseudoFullscreen: true // if true, fullscreen to page width and height
+            }
+        }).setView([53.896057, 27.556896], 9);
         L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
             maxZoom: 18,
@@ -234,8 +242,6 @@ var marker = L.marker([52.181326,29.865517],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 68</b><br/><a href=#stationbelorusB89F84F7E4184F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.021279,29.208011],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 37</b><br/><a href=#stationbelorusB89F84F7E3424F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([51.431388,30.558888],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>КАЗС № 61</b><br/><a href=#stationbelorusB89F84F7E33C4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.804722,27.510833],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 42</b><br/><a href=#stationbelorusB89F84F7E39F4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([51.907778,29.311111],{icon:iconNotLinked}).addTo(mymap);
@@ -1468,6 +1474,8 @@ var marker = L.marker([53.478667,29.342556],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 31</b><br/><a href=#stationbelorusB89F84F7E3E64F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.4442,25.9169],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 47</b><br/><a href=#stationlukoil47>Перейти</a>");
+var marker = L.marker([51.431388,30.558888],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>КАЗС № 61</b><br/><a href=#stationbelorusB89F84F7E33C4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.1325,23.7687],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 21</b><br/><a href=#stationlukoil21>Перейти</a>");
 var marker = L.marker([52.615278,30.853611],{icon:iconNormal}).addTo(mymap);
@@ -3949,37 +3957,6 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 
 </div><hr/>
 
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorusB89F84F7E33C4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E33C4F70E043BF0BA8C03722">КАЗС № 61</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/51.431388/30.558888">Комаринский с/с, гп Комарин, ул. Карла Маркса, 37</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Белоруснефть № 61
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-<font color=red>contact:phone=+375 2344 30788</font>
-<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E33C4F70E043BF0BA8C03722</font>
-<font color=red>opening_hours=24/7</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:octane_92=yes</font>
-<font color=red>fuel:adblue:canister=yes</font>
-<font color=red>vacuum_cleaner=yes</font>
-<font color=red>compressed_air=yes</font>
-<font color=red>ref=КАЗС 61</font>
-<font color=red>guid:belorusneft=B89F84F7E33C4F70E043BF0BA8C03722</font>
-</pre></div>
-<div id="sidebar"><h4>Продажа шин</h4><pre>
-shop=tyres
-brand=Белшина
-operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
-<font color=red>opening_hours=24/7</font>
-contact:website=https://www.belorusneft.by/catalog/category/850/
-<font color=red>contact:phone=+375 2344 30788</font>
-</pre></div>
-
-</div><hr/>
-
 <div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorusB89F84F7E39F4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E39F4F70E043BF0BA8C03722">АЗС № 42</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.804722/27.510833">Минская область, Солигорский р-н, Чижевичский с/с, 53, (р-он д.Кулаки)</a>
     <br /><br/>
@@ -6328,13 +6305,6 @@ opening_hours=24/7
 amenity=fast_food
 brand=Белоруснефть
 cuisine=hot_dog;burger
-opening_hours=24/7
-<font color=red>contact:phone=+375 17 5174999</font>
-</pre></div>
-<div id="sidebar"><h4>Автомойка автоматическая</h4><pre>
-amenity=car_wash
-automated=yes
-operator=РУП \"Белоруснефть-Минскавтозаправка\"
 opening_hours=24/7
 <font color=red>contact:phone=+375 17 5174999</font>
 </pre></div>
@@ -26548,6 +26518,37 @@ opening_hours=Mo-Su 00:10-23:40
 
 </div><hr/>
 
+<div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E33C4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B89F84F7E33C4F70E043BF0BA8C03722">КАЗС № 61</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/51.431388/30.558888">Комаринский с/с, гп Комарин, ул. Карла Маркса, 37</a>
+    <br /><a href="https://www.openstreetmap.org/node/1208598003">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Белоруснефть № 61
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
+contact:phone=+375 2344 30788
+contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E33C4F70E043BF0BA8C03722
+opening_hours=24/7
+fuel:diesel=yes
+fuel:octane_92=yes
+fuel:adblue:canister=yes
+vacuum_cleaner=yes
+compressed_air=yes
+ref=КАЗС 61
+guid:belorusneft=B89F84F7E33C4F70E043BF0BA8C03722
+</pre></div>
+<div id="sidebar"><h4>Продажа шин</h4><pre>
+shop=tyres
+brand=Белшина
+operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
+opening_hours=24/7
+contact:website=https://www.belorusneft.by/catalog/category/850/
+contact:phone=+375 2344 30788
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b>OK</b>  <a id="stationlukoil21" href="http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=6048"> № 21</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.1325/23.7687">Коммерческая, 34, Брест</a>
     <br /><a href="https://www.openstreetmap.org/node/1186571361">Объект на карте</a><br/>
@@ -34164,5 +34165,5 @@ ref=22
     </div>
 
 </body>
-</html >
+</html>
 
