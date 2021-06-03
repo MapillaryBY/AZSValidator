@@ -50,15 +50,15 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2021-06-02 23:12:13Z</p>
+    <p>Дата генерации файла 2021-06-03 11:12:06Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (6) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
-    <font color=orange>Найден, но нет Guid</font> (55) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (805) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
+    <font color=orange>Найден, но нет Guid</font> (54) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
+    OK (806) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
         const notFoundColour = 'Red'
@@ -255,8 +255,6 @@ var marker = L.marker([52.382764,31.347252],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 4</b><br/><a href=#stationbelorusB89F84F7E3074F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.239839,27.607698],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 7</b><br/><a href=#stationbelorusB89F84F7E31F4F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([53.938236,27.546218],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>АЗС № 1</b><br/><a href=#stationa1001>Перейти</a>");
 var marker = L.marker([52.458771,30.800321],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>КАЗС № 64</b><br/><a href=#stationbelorusB89F84F7E31D4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.154996,27.834638],{icon:iconNormal}).addTo(mymap);
@@ -1825,6 +1823,8 @@ var marker = L.marker([53.93643,27.579859],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 17</b><br/><a href=#stationa10017>Перейти</a>");
 var marker = L.marker([54.811667,26.149722],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 39</b><br/><a href=#stationbelorusB89F84F7E36B4F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.938236,27.546218],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>АЗС № 1</b><br/><a href=#stationa1001>Перейти</a>");
 var marker = L.marker([53.907887740526,27.461565974869],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 12</b><br/><a href=#stationa10012>Перейти</a>");
 var marker = L.marker([54.473889,26.415],{icon:iconNormal}).addTo(mymap);
@@ -4100,53 +4100,6 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 <font color=red>opening_hours=24/7</font>
 <font color=red>contact:phone=+375 2353 30146</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationa1001" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Пригородная, 69"> № 1</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.938236/27.546218">ул. Пригородная, 69</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=А-100 № 1
-brand=А-100
-<font color=red>operator=ГК «А-100 АЗС»</font>
-<font color=red>fuel:octane_92=yes</font>
-<font color=red>fuel:octane_95=yes</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>vacuum_cleaner=yes</font>
-<font color=red>compressed_air=yes</font>
-<font color=red>internet_access=yes</font>
-<font color=red>internet_access:fee=no</font>
-<font color=red>contact:phone=+375 44 541-06-91</font>
-<font color=red>contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Пригородная, 69</font>
-opening_hours=24/7
-<font color=red>ref=1</font>
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-<font color=red>operator=ГК «А-100 АЗС»</font>
-contact:phone=+375 44 541-06-91
-opening_hours=24/7
-</pre></div>
-<div id="sidebar"><h4>Мойка</h4><pre>
-amenity=car_wash
-automated=yes
-<font color=red>operator=ГК «А-100 АЗС»</font>
-</pre></div>
-<div id="sidebar"><h4>Мойка</h4><pre>
-amenity=car_wash
-automated=no
-self_service=yes
-<font color=red>operator=ГК «А-100 АЗС»</font>
-</pre></div>
-<div id="sidebar"><h4>Кафе</h4><pre>
-amenity=fast_food
-<font color=red>operator=ГК «А-100 АЗС»</font>
-cuisine=hot_dog
-opening_hours=24/7
 </pre></div>
 
 </div><hr/>
@@ -13100,6 +13053,15 @@ internet_access:fee=no
 <font color=red>self_service=yes</font>
 <font color=red>ref=МАЗС 39</font>
 guid:belorusneft=B89F84F7E3154F70E043BF0BA8C03722
+</pre></div>
+<div id="sidebar"><h4>Газ</h4><pre>
+amenity=fuel
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
+fuel:lpg=yes
+<font color=red>opening_hours=Основная заправка уже содержит газ в списке топлива. Добавлять отдельной точкой только если время работы отличается.</font>
+<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E3154F70E043BF0BA8C03722</font>
+contact:phone=+375 232 502673
 </pre></div>
 <div id="sidebar"><h4>Автомойка автоматическая</h4><pre>
 amenity=car_wash
@@ -33025,6 +32987,53 @@ shop=convenience
 operator=РУП \"Белоруснефть-Гроднооблнефтепродукт\"
 opening_hours=24/7
 <font color=red>contact:phone=+375 1591 30825</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationa1001" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Пригородная, 69"> № 1</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.938236/27.546218">ул. Пригородная, 69</a>
+    <br /><a href="https://www.openstreetmap.org/node/306066617">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 1
+brand=А-100
+operator=ГК «А-100 АЗС»
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+vacuum_cleaner=yes
+compressed_air=yes
+<font color=red>internet_access=yes</font>
+<font color=red>internet_access:fee=no</font>
+contact:phone=+375 44 541-06-91
+contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Пригородная, 69
+opening_hours=24/7
+ref=1
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ГК «А-100 АЗС»
+contact:phone=+375 44 541-06-91
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=yes
+operator=ГК «А-100 АЗС»
+</pre></div>
+<div id="sidebar"><h4>Мойка</h4><pre>
+amenity=car_wash
+automated=no
+self_service=yes
+operator=ГК «А-100 АЗС»
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+operator=ГК «А-100 АЗС»
+cuisine=hot_dog
+opening_hours=24/7
 </pre></div>
 
 </div><hr/>
