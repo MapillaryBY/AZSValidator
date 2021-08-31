@@ -50,13 +50,13 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2021-08-31 11:20:42Z</p>
+    <p>Дата генерации файла 2021-08-31 23:20:32Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
-    <font color=red>Not found</font> (7) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
+    <font color=red>Not found</font> (10) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
     <font color=orange>Найден, но нет Guid</font> (56) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
     OK (806) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
@@ -137,7 +137,9 @@
             id: 'streets-v11',
             accessToken: 'pk.eyJ1IjoiYmlnb3Blbm1hYyIsImEiOiJjazF2cGsxd20xMWMyM2JxeWx3N2NvMzExIn0.aMyRwzXDhGqu7yRy85wkow'
         }).addTo(mymap);
-        var marker = L.marker([53.916986,27.549686],{icon:iconNotFound}).addTo(mymap);
+        var marker = L.marker([52.439492,31.002055],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>ЭЗС № Зарядная станция для элктромобилей Гомель (Макдональдс)</b><br/><a href=#stationbelorusC890869F4CC87BDCE053BF0BA8C0ED84>Перейти</a>");
+var marker = L.marker([53.916986,27.549686],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС № 079</b><br/><a href=#stationbelorusB06D39C328332EBFE053BF0BA8C0EEE9>Перейти</a>");
 var marker = L.marker([53.906947,27.573833],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>ЭЗС № 078</b><br/><a href=#stationbelorusAF18EA91B5803853E053BF0BA8C021B7>Перейти</a>");
@@ -151,6 +153,10 @@ var marker = L.marker([52.423878,30.942166],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 30</b><br/><a href=#stationbelorusC4E17CF0D62D40F7E053BF0BA8C04176>Перейти</a>");
 var marker = L.marker([52.4595,30.99387],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>АЗС № 52</b><br/><a href=#stationbelorusB89F84F7E30E4F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([52.435255,31.008511],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>ЭЗС № Зарядная станция для элктромобилей Гомель Площадь Восстания</b><br/><a href=#stationbelorusC890869F4CC77BDCE053BF0BA8C0ED84>Перейти</a>");
+var marker = L.marker([52.426581,31.012008],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>ЭЗС № Зарядная станция для элктромобилей Гомель ул. Коммунаров</b><br/><a href=#stationbelorusC890869F4CCC7BDCE053BF0BA8C0ED84>Перейти</a>");
 var marker = L.marker([52.1181,26.0635],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>МАЗС № 25</b><br/><a href=#stationlukoil25>Перейти</a>");
 var marker = L.marker([52.397533,23.785266],{icon:iconNotLinked}).addTo(mymap);
@@ -1884,11 +1890,31 @@ marker.bindPopup("<b>АЗС № 22</b><br/><a href=#stationlukoil22>Перейт
         });
     </script>
     <h4>История изменений:</h4>
-    <div class="history_item" id="container">2021-08-26 Заправка демонтирована <a href="#stationbelorusB89F84F7E3B34F70E043BF0BA8C03722">Белоруснефть АЗС № 80</a> <a href="https://www.openstreetmap.org/way/806034428">Объект на карте</a></div>
+    <div class="history_item" id="container">2021-08-31 Новая заправка <a href="#stationbelorusC890869F4CC87BDCE053BF0BA8C0ED84">Белоруснефть ЭЗС № Зарядная станция для элктромобилей Гомель (Макдональдс)</a> </div>
+<div class="history_item" id="container">2021-08-31 Новая заправка <a href="#stationbelorusC890869F4CCC7BDCE053BF0BA8C0ED84">Белоруснефть ЭЗС № Зарядная станция для элктромобилей Гомель ул. Коммунаров</a> </div>
+<div class="history_item" id="container">2021-08-31 Новая заправка <a href="#stationbelorusC890869F4CC77BDCE053BF0BA8C0ED84">Белоруснефть ЭЗС № Зарядная станция для элктромобилей Гомель Площадь Восстания</a> </div>
+<div class="history_item" id="container">2021-08-26 Заправка демонтирована <a href="#stationbelorusB89F84F7E3B34F70E043BF0BA8C03722">Белоруснефть АЗС № 80</a> <a href="https://www.openstreetmap.org/way/806034428">Объект на карте</a></div>
 
-    <h4>Список  станций (869 шт.):</h4>
+    <h4>Список  станций (872 шт.):</h4>
     <div id="station_list">
-        <div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationbelorusB06D39C328332EBFE053BF0BA8C0EEE9" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B06D39C328332EBFE053BF0BA8C0EEE9">ЭЗС № 079</a>
+        <div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationbelorusC890869F4CC87BDCE053BF0BA8C0ED84" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=C890869F4CC87BDCE053BF0BA8C0ED84">ЭЗС № Зарядная станция для элктромобилей Гомель (Макдональдс)</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.439492/31.002055">г. Гомель, ул. Советская, стоянка УП СКБ Виктори Рестораны Макдональдс</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Зарядка</h4><pre>
+amenity=charging_station
+name=Белоруснефть № Зарядная станция для элктромобилей Гомель (Макдональдс)
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
+<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=C890869F4CC87BDCE053BF0BA8C0ED84</font>
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=ЭЗС Зарядная станция для элктромобилей Гомель (Макдональдс)</font>
+<font color=red>guid:belorusneft=C890869F4CC87BDCE053BF0BA8C0ED84</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationbelorusB06D39C328332EBFE053BF0BA8C0EEE9" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=B06D39C328332EBFE053BF0BA8C0EEE9">ЭЗС № 079</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.916986/27.549686">г. Минск, пр. Машерова, 35</a>
     <br /><br/>
 
@@ -2058,6 +2084,40 @@ shop=convenience
 operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
 <font color=red>opening_hours=24/7</font>
 <font color=red>contact:phone=+375 232 606190</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationbelorusC890869F4CC77BDCE053BF0BA8C0ED84" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=C890869F4CC77BDCE053BF0BA8C0ED84">ЭЗС № Зарядная станция для элктромобилей Гомель Площадь Восстания</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.435255/31.008511">Гомель, Площадь Восстания</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Зарядка</h4><pre>
+amenity=charging_station
+name=Белоруснефть № Зарядная станция для элктромобилей Гомель Площадь Восстания
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
+<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=C890869F4CC77BDCE053BF0BA8C0ED84</font>
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=ЭЗС Зарядная станция для элктромобилей Гомель Площадь Восстания</font>
+<font color=red>guid:belorusneft=C890869F4CC77BDCE053BF0BA8C0ED84</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationbelorusC890869F4CCC7BDCE053BF0BA8C0ED84" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=C890869F4CCC7BDCE053BF0BA8C0ED84">ЭЗС № Зарядная станция для элктромобилей Гомель ул. Коммунаров</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.426581/31.012008">Гомель, ул Коммунаров</a>
+    <br /><br/>
+
+    <div id="sidebar"><h4>Зарядка</h4><pre>
+amenity=charging_station
+name=Белоруснефть № Зарядная станция для элктромобилей Гомель ул. Коммунаров
+brand=Белоруснефть
+operator=РУП \"Белоруснефть-Гомельоблнефтепродукт\"
+<font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=C890869F4CCC7BDCE053BF0BA8C0ED84</font>
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=ЭЗС Зарядная станция для элктромобилей Гомель ул. Коммунаров</font>
+<font color=red>guid:belorusneft=C890869F4CCC7BDCE053BF0BA8C0ED84</font>
 </pre></div>
 
 </div><hr/>
@@ -16957,9 +17017,6 @@ operator=РУП \"Белоруснефть-Минскавтозаправка\"
 <font color=red>contact:phone=+375 17 3787458</font>
 contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4334F70E043BF0BA8C03722
 opening_hours=24/7
-fuel:diesel=yes
-fuel:octane_92=yes
-fuel:octane_95=yes
 fuel:adblue:canister=yes
 vacuum_cleaner=yes
 compressed_air=yes
@@ -16968,15 +17025,6 @@ compressed_air=yes
 shop=convenience
 ref=МАЗС 27
 guid:belorusneft=B89F84F7E4334F70E043BF0BA8C03722
-</pre></div>
-<div id="sidebar"><h4>Газ</h4><pre>
-amenity=fuel
-brand=Белоруснефть
-operator=РУП \"Белоруснефть-Минскавтозаправка\"
-fuel:lpg=yes
-<font color=red>opening_hours=Основная заправка уже содержит газ в списке топлива. Добавлять отдельной точкой только если время работы отличается.</font>
-contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E4334F70E043BF0BA8C03722
-<font color=red>contact:phone=+375 17 3787458</font>
 </pre></div>
 <div id="sidebar"><h4>Продажа шин</h4><pre>
 shop=tyres
