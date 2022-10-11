@@ -50,15 +50,15 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2022-10-10 17:33:39Z</p>
+    <p>Дата генерации файла 2022-10-11 14:41:44Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (1) автозаправка Белоруснефть не найдена в ожидаемом месте</br>
-    <font color=orange>Найден, но нет Guid</font> (61) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (848) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
+    <font color=orange>Найден, но нет Guid</font> (59) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
+    OK (850) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным
     <div id="mapid"></div>
     <script>
         const notFoundColour = 'Red'
@@ -209,8 +209,6 @@ var marker = L.marker([52.352478,30.405840],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>Беларуснефть МАЗС № 22</b><br/><a href=#stationbelorusB89F84F7E3334F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([51.905259,30.009648],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>Беларуснефть АЗС № 57</b><br/><a href=#stationbelorusB89F84F7E3394F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([52.464716,30.944805],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>Газпром АЗС № 11</b><br/><a href=#stationgazprom11>Перейти</a>");
 var marker = L.marker([52.476785,30.985387],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>Беларуснефть ЭЗС № Зарядная станция для электромобилей</b><br/><a href=#stationbelorus86286272D55C6518E053BF0BA8C0D098>Перейти</a>");
 var marker = L.marker([53.933499,27.502708],{icon:iconNotLinked}).addTo(mymap);
@@ -227,8 +225,6 @@ var marker = L.marker([53.900295,27.446976],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>Беларуснефть ЭЗС № 109</b><br/><a href=#stationbelorusCB67EB6BD9637105E053BF0BA8C0EEFD>Перейти</a>");
 var marker = L.marker([53.891821,27.421152],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>Беларуснефть ЭЗС № 108</b><br/><a href=#stationbelorusCB67DEF7B040701AE053BF0BA8C0C720>Перейти</a>");
-var marker = L.marker([52.40814,31.03886],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>Газпром АЗС № 52</b><br/><a href=#stationgazprom52>Перейти</a>");
 var marker = L.marker([51.999713,29.254654],{icon:iconNotLinked}).addTo(mymap);
 marker.bindPopup("<b>Беларуснефть МАЗС № 49</b><br/><a href=#stationbelorusB89F84F7E3234F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.367317,31.003057],{icon:iconNotLinked}).addTo(mymap);
@@ -1227,6 +1223,8 @@ var marker = L.marker([52.121982,23.672683],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Беларуснефть АЗС № 92</b><br/><a href=#stationbelorus8510ADFED3DB6BD8E053BF0BA8C0EC07>Перейти</a>");
 var marker = L.marker([52.424876,31.015411],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Беларуснефть ЭЗС № Зарядная станция для электромобилей площадь Ленина</b><br/><a href=#stationbelorus8B1FB7DD8D605741E053BF0BA8C01172>Перейти</a>");
+var marker = L.marker([52.464716,30.944805],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>Газпром АЗС № 11</b><br/><a href=#stationgazprom11>Перейти</a>");
 var marker = L.marker([52.423809,30.942263],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Беларуснефть АЗС № 30</b><br/><a href=#stationbelorusC4E17CF0D62D40F7E053BF0BA8C04176>Перейти</a>");
 var marker = L.marker([52.427017,31.016831],{icon:iconNormal}).addTo(mymap);
@@ -1405,6 +1403,8 @@ var marker = L.marker([52.426581,31.012008],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Беларуснефть ЭЗС № Зарядная станция для элктромобилей Гомель ул. Коммунаров</b><br/><a href=#stationbelorusC890869F4CCC7BDCE053BF0BA8C0ED84>Перейти</a>");
 var marker = L.marker([52.404985,30.90655],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Газпром АЗС № 17</b><br/><a href=#stationgazprom17>Перейти</a>");
+var marker = L.marker([52.40814,31.03886],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>Газпром АЗС № 52</b><br/><a href=#stationgazprom52>Перейти</a>");
 var marker = L.marker([52.386457,31.270909],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Газпром АЗС № 9</b><br/><a href=#stationgazprom9>Перейти</a>");
 var marker = L.marker([52.901813,30.058197],{icon:iconNormal}).addTo(mymap);
@@ -2959,7 +2959,6 @@ operator=РУП \"Белоруснефть-Витебскоблнефтепро�
 <font color=red>contact:website=https://azs.belorusneft.by/beloil-map/station?id=B89F84F7E2FB4F70E043BF0BA8C03722</font>
 <font color=red>opening_hours=24/7</font>
 <font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:octane_92=yes</font>
 <font color=red>fuel:adblue:canister=yes</font>
 <font color=red>vacuum_cleaner=yes</font>
 <font color=red>compressed_air=yes</font>
@@ -3123,42 +3122,6 @@ operator=РУП \"Белоруснефть-Гомельоблнефтепрод�
 
 </div><hr/>
 
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationgazprom11" href="https://www.gpnbonus.by/nashiazs">Газпром  № 11</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.464716/30.944805">г.Гомель, ул. Могилевская, д.1 Ж</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Газпромнефть № 11
-brand=Газпромнефть
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>fuel:octane_95=yes</font>
-<font color=red>fuel:octane_98=yes</font>
-<font color=red>fuel:octane_92=yes</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:HGV_diesel=yes</font>
-<font color=red>compressed_air=yes</font>
-<font color=red>full_service=yes</font>
-<font color=red>contact:phone=+375 17 2390609</font>
-<font color=red>contact:website=https://gpnbonus.by/</font>
-<font color=red>opening_hours=24/7</font>
-<font color=red>ref=11</font>
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-contact:phone=+375 17 2390609
-<font color=red>opening_hours=24/7</font>
-</pre></div>
-<div id="sidebar"><h4>Кафе</h4><pre>
-amenity=fast_food
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-cuisine=hot_dog
-<font color=red>opening_hours=24/7</font>
-</pre></div>
-
-</div><hr/>
-
 <div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationbelorus86286272D55C6518E053BF0BA8C0D098" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=86286272D55C6518E053BF0BA8C0D098">Беларуснефть ЭЗС № Зарядная станция для электромобилей</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.476785/30.985387">г.Гомель, ул.Федюнинского, 9</a>
     <br /><br/>
@@ -3313,34 +3276,6 @@ socket:type2_combo=1
 socket:chademo=1
 <font color=red>ref=ЭЗС 108</font>
 <font color=red>guid:belorusneft=CB67DEF7B040701AE053BF0BA8C0C720</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationgazprom52" href="https://www.gpnbonus.by/nashiazs">Газпром  № 52</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.40814/31.03886">Гомельская обл., г.Гомель, ул.Луначарского А.В. 1-ая, 60А</a>
-    <br /><br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Газпромнефть № 52
-brand=Газпромнефть
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>fuel:octane_95=yes</font>
-<font color=red>fuel:octane_92=yes</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:HGV_diesel=yes</font>
-<font color=red>vacuum_cleaner=yes</font>
-<font color=red>contact:phone=+375 17 2390609</font>
-<font color=red>contact:website=https://gpnbonus.by/</font>
-<font color=red>opening_hours=24/7</font>
-<font color=red>ref=52</font>
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-contact:phone=+375 17 2390609
-<font color=red>opening_hours=24/7</font>
 </pre></div>
 
 </div><hr/>
@@ -19062,6 +18997,42 @@ guid:belorusneft=8B1FB7DD8D605741E053BF0BA8C01172
 
 </div><hr/>
 
+<div class="station" id="container"><b>OK</b>  <a id="stationgazprom11" href="https://www.gpnbonus.by/nashiazs">Газпром  № 11</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.464716/30.944805">г.Гомель, ул. Могилевская, д.1 Ж</a>
+    <br /><a href="https://www.openstreetmap.org/way/752141753">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Газпромнефть № 11
+brand=Газпромнефть
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+fuel:octane_95=yes
+fuel:octane_98=yes
+fuel:octane_92=yes
+fuel:diesel=yes
+fuel:HGV_diesel=yes
+compressed_air=yes
+full_service=yes
+contact:phone=+375 17 2390609
+contact:website=https://gpnbonus.by/
+opening_hours=24/7
+ref=11
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+contact:phone=+375 17 2390609
+opening_hours=24/7
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b>OK</b>  <a id="stationbelorusC4E17CF0D62D40F7E053BF0BA8C04176" href="https://azs.belorusneft.by/beloil-map/station?lang=ru&id=C4E17CF0D62D40F7E053BF0BA8C04176">Беларуснефть АЗС № 30</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.423809/30.942263">г.Гомель, ул.Барыкина, 271</a>
     <br /><a href="https://www.openstreetmap.org/way/323684097">Объект на карте</a><br/>
@@ -21344,6 +21315,34 @@ opening_hours=24/7
 amenity=fast_food
 <font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationgazprom52" href="https://www.gpnbonus.by/nashiazs">Газпром  № 52</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.40814/31.03886">Гомельская обл., г.Гомель, ул.Луначарского А.В. 1-ая, 60А</a>
+    <br /><a href="https://www.openstreetmap.org/node/306068099">Объект на карте</a><br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Газпромнефть № 52
+brand=Газпромнефть
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+fuel:octane_95=yes
+fuel:octane_92=yes
+fuel:diesel=yes
+fuel:HGV_diesel=yes
+vacuum_cleaner=yes
+contact:phone=+375 17 2390609
+contact:website=https://gpnbonus.by/
+opening_hours=24/7
+ref=52
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+contact:phone=+375 17 2390609
 opening_hours=24/7
 </pre></div>
 
