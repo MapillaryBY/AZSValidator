@@ -50,15 +50,15 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2025-08-20 21:58:23Z</p>
+    <p>Дата генерации файла 2025-08-21 09:04:50Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (0) автозаправка не найдена в ожидаемом месте</br>
-    <font color=orange>Найден, но нет Guid</font> (0) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (183) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
+    <font color=orange>Найден, но нет Guid</font> (1) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
+    OK (182) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
     <font color=green>Нет проблем</font> (1) все тэги в порядке'</br>
     <div id="mapid"></div>
     <script>
@@ -158,7 +158,9 @@
             id: 'streets-v11',
             accessToken: 'pk.eyJ1IjoiYmlnb3Blbm1hYyIsImEiOiJjazF2cGsxd20xMWMyM2JxeWx3N2NvMzExIn0.aMyRwzXDhGqu7yRy85wkow'
         }).addTo(mymap);
-        var marker = L.marker([53.852443,27.675906],{icon:iconNormal}).addTo(mymap);
+        var marker = L.marker([54.0125,28.18456],{icon:iconNotLinked}).addTo(mymap);
+marker.bindPopup("<b>Лукойл АЗС № 87</b><br/><a href=#stationlukoil87>Перейти</a>");
+var marker = L.marker([53.852443,27.675906],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>A100 АЗС № 15</b><br/><a href=#stationa10015>Перейти</a>");
 var marker = L.marker([53.890881045093,27.646094728836],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>A100 АЗС № 13</b><br/><a href=#stationa10013>Перейти</a>");
@@ -372,8 +374,6 @@ var marker = L.marker([53.851879,27.647263],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>A100 АЗС № 11</b><br/><a href=#stationa10011>Перейти</a>");
 var marker = L.marker([53.96888,27.74547],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Газпром АЗС № 71</b><br/><a href=#stationgazprom71>Перейти</a>");
-var marker = L.marker([54.0125,28.18456],{icon:iconNormal}).addTo(mymap);
-marker.bindPopup("<b>Лукойл АЗС № 87</b><br/><a href=#stationlukoil87>Перейти</a>");
 var marker = L.marker([53.200657,26.69137],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Татнефть АЗС № 12</b><br/><a href=#stationtatneft12>Перейти</a>");
 var marker = L.marker([53.356381,26.46666],{icon:iconNormal}).addTo(mymap);
@@ -538,7 +538,27 @@ marker.bindPopup("<b>Лукойл АЗС № 88</b><br/><a href=#stationlukoil88
     
     <h4>Список  станций (184 шт.):</h4>
     <div id="station_list">
-        <div class="station" id="container"><b>OK</b>  <a id="stationa10015" href="https://azs.a-100.by/set-azs/map-azs/?query= ул. Промышленная, 2Б (МКАД)">A100  № 15</a>
+        <div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationlukoil87" href="http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=5009406">Лукойл  № 87</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.0125/28.18456">Минская обл, Смолевичский р-н, Плисский с\с, д.Малые Липки</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Лукойл № 87</font>
+<font color=red>brand=Лукойл</font>
+<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
+<font color=red>fuel:octane_92=yes</font>
+<font color=red>fuel:octane_95=yes</font>
+<font color=red>fuel:diesel=yes</font>
+<font color=red>contact:phone=++375173092887</font>
+<font color=red>contact:website=http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=5009406</font>
+<font color=red>opening_hours=Mo-Su 00:10-23:40</font>
+<font color=red>ref=87</font>
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationa10015" href="https://azs.a-100.by/set-azs/map-azs/?query= ул. Промышленная, 2Б (МКАД)">A100  № 15</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.852443/27.675906"> ул. Промышленная, 2Б (МКАД)</a>
     <br /><a href="https://www.openstreetmap.org/node/5378160274">Объект на карте</a> <br/>
 
@@ -3322,26 +3342,6 @@ fuel:octane_92=yes
 <font color=red>contact:phone=</font>
 contact:website=https://gpnbonus.by/
 ref=71
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b>OK</b>  <a id="stationlukoil87" href="http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=5009406">Лукойл  № 87</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.0125/28.18456">Минская обл, Смолевичский р-н, Плисский с\с, д.Малые Липки</a>
-    <br /><a href="https://www.openstreetmap.org/node/306065823">Объект на карте</a> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-<font color=red>name=Лукойл № 87</font>
-brand=Лукойл
-<font color=red>operator=ИООО \"ЛУКОЙЛ Белоруссия\"</font>
-fuel:octane_92=yes
-fuel:octane_95=yes
-fuel:diesel=yes
-<font color=red>contact:phone=++375173092887</font>
-<font color=red>contact:website=http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=5009406</font>
-opening_hours=Mo-Su 00:10-23:40
-ref=87
 </pre></div>
 
 </div><hr/>
