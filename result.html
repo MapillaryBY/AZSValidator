@@ -50,15 +50,15 @@
 </head>
 <body>
     <h1>Валидатор заправок Белоруснефть, Газпромнефть, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2025-08-22 09:16:27Z</p>
+    <p>Дата генерации файла 2025-08-22 22:10:06Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/beloil-map/?lang=ru">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
-    <font color=red>Not found</font> (4) автозаправка не найдена в ожидаемом месте</br>
-    <font color=orange>Найден, но нет Guid</font> (3) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (176) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
+    <font color=red>Not found</font> (1) автозаправка не найдена в ожидаемом месте</br>
+    <font color=orange>Найден, но нет Guid</font> (0) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
+    OK (182) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
     <font color=green>Нет проблем</font> (1) все тэги в порядке'</br>
     <div id="mapid"></div>
     <script>
@@ -158,20 +158,8 @@
             id: 'streets-v11',
             accessToken: 'pk.eyJ1IjoiYmlnb3Blbm1hYyIsImEiOiJjazF2cGsxd20xMWMyM2JxeWx3N2NvMzExIn0.aMyRwzXDhGqu7yRy85wkow'
         }).addTo(mymap);
-        var marker = L.marker([54.19402,28.51869],{icon:iconNotFound}).addTo(mymap);
-marker.bindPopup("<b>Газпром АЗС № 27</b><br/><a href=#stationgazprom27>Перейти</a>");
-var marker = L.marker([52.14194,23.6869],{icon:iconNotFound}).addTo(mymap);
-marker.bindPopup("<b>Газпром АЗС № 29</b><br/><a href=#stationgazprom29>Перейти</a>");
-var marker = L.marker([52.80908,28.01144],{icon:iconNotFound}).addTo(mymap);
-marker.bindPopup("<b>Газпром АЗС № 23</b><br/><a href=#stationgazprom23>Перейти</a>");
-var marker = L.marker([53.84555,27.44385],{icon:iconNotFound}).addTo(mymap);
-marker.bindPopup("<b>Газпром АЗС № 24</b><br/><a href=#stationgazprom24>Перейти</a>");
-var marker = L.marker([53.93167,25.26339],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>Газпром АЗС № 50</b><br/><a href=#stationgazprom50>Перейти</a>");
-var marker = L.marker([52.46471,30.94481],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>Газпром АЗС № 11</b><br/><a href=#stationgazprom11>Перейти</a>");
-var marker = L.marker([52.78318,27.51653],{icon:iconNotLinked}).addTo(mymap);
-marker.bindPopup("<b>Газпром АЗС № 35</b><br/><a href=#stationgazprom35>Перейти</a>");
+        var marker = L.marker([52.38621,31.27643],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Газпром АЗС № 9</b><br/><a href=#stationgazprom9>Перейти</a>");
 var marker = L.marker([53.852443,27.675906],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>A100 АЗС № 15</b><br/><a href=#stationa10015>Перейти</a>");
 var marker = L.marker([53.890881045093,27.646094728836],{icon:iconNormal}).addTo(mymap);
@@ -216,6 +204,8 @@ var marker = L.marker([55.15934,30.16423],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Газпром АЗС № 40</b><br/><a href=#stationgazprom40>Перейти</a>");
 var marker = L.marker([53.7106,23.81],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Лукойл МАЗС № 51</b><br/><a href=#stationlukoil51>Перейти</a>");
+var marker = L.marker([54.19402,28.51869],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>Газпром АЗС № 27</b><br/><a href=#stationgazprom27>Перейти</a>");
 var marker = L.marker([54.16701,28.5697],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Газпром АЗС № 59</b><br/><a href=#stationgazprom59>Перейти</a>");
 var marker = L.marker([54.243,28.53443],{icon:iconNormal}).addTo(mymap);
@@ -286,8 +276,6 @@ var marker = L.marker([53.8355,30.3599],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Лукойл АЗС № 30</b><br/><a href=#stationlukoil30>Перейти</a>");
 var marker = L.marker([54.721576,25.760086],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Татнефть АЗС № 18</b><br/><a href=#stationtatneft18>Перейти</a>");
-var marker = L.marker([52.38621,31.27643],{icon:iconNormal}).addTo(mymap);
-marker.bindPopup("<b>Газпром АЗС № 9</b><br/><a href=#stationgazprom9>Перейти</a>");
 var marker = L.marker([53.965024736236,27.537507797622],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>A100 АЗС № 33</b><br/><a href=#stationa10033>Перейти</a>");
 var marker = L.marker([53.968911,27.550343],{icon:iconNormal}).addTo(mymap);
@@ -352,6 +340,8 @@ var marker = L.marker([53.84129,27.53196],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Газпром АЗС № 48</b><br/><a href=#stationgazprom48>Перейти</a>");
 var marker = L.marker([52.1386,23.6748],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Лукойл МАЗС № 14</b><br/><a href=#stationlukoil14>Перейти</a>");
+var marker = L.marker([52.14194,23.6869],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>Газпром АЗС № 29</b><br/><a href=#stationgazprom29>Перейти</a>");
 var marker = L.marker([53.046,27.6119],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Лукойл АЗС № 76</b><br/><a href=#stationlukoil76>Перейти</a>");
 var marker = L.marker([53.1323,26.0379],{icon:iconNormal}).addTo(mymap);
@@ -360,10 +350,14 @@ var marker = L.marker([55.2089,30.1496],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Лукойл МАЗС № 39</b><br/><a href=#stationlukoil39>Перейти</a>");
 var marker = L.marker([53.9074,27.4541],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Лукойл АЗС № 1</b><br/><a href=#stationlukoil1>Перейти</a>");
+var marker = L.marker([53.93167,25.26339],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>Газпром АЗС № 50</b><br/><a href=#stationgazprom50>Перейти</a>");
 var marker = L.marker([53.960875387228,27.627336425742],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>A100 АЗС № 34</b><br/><a href=#stationa10034>Перейти</a>");
 var marker = L.marker([52.40813,31.03927],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Газпром АЗС № 52</b><br/><a href=#stationgazprom52>Перейти</a>");
+var marker = L.marker([52.80908,28.01144],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>Газпром АЗС № 23</b><br/><a href=#stationgazprom23>Перейти</a>");
 var marker = L.marker([52.1255,23.8912],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Лукойл МАЗС № 12</b><br/><a href=#stationlukoil12>Перейти</a>");
 var marker = L.marker([54.6913,30.943],{icon:iconNormal}).addTo(mymap);
@@ -398,6 +392,10 @@ var marker = L.marker([53.12041,23.91149],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Газпром АЗС № 1</b><br/><a href=#stationgazprom1>Перейти</a>");
 var marker = L.marker([53.8904,25.313],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Лукойл АЗС № 48</b><br/><a href=#stationlukoil48>Перейти</a>");
+var marker = L.marker([53.84555,27.44385],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>Газпром АЗС № 24</b><br/><a href=#stationgazprom24>Перейти</a>");
+var marker = L.marker([52.46471,30.94481],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>Газпром АЗС № 11</b><br/><a href=#stationgazprom11>Перейти</a>");
 var marker = L.marker([55.17591,30.25116],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Газпром АЗС № 80</b><br/><a href=#stationgazprom80>Перейти</a>");
 var marker = L.marker([53.45052,26.600071],{icon:iconNormal}).addTo(mymap);
@@ -460,6 +458,8 @@ var marker = L.marker([53.8994,25.2979],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Лукойл МАЗС № 45</b><br/><a href=#stationlukoil45>Перейти</a>");
 var marker = L.marker([52.79446,27.54719],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Газпром АЗС № 34</b><br/><a href=#stationgazprom34>Перейти</a>");
+var marker = L.marker([52.78318,27.51653],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>Газпром АЗС № 35</b><br/><a href=#stationgazprom35>Перейти</a>");
 var marker = L.marker([52.79698,27.53454],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Газпром АЗС № 58</b><br/><a href=#stationgazprom58>Перейти</a>");
 var marker = L.marker([52.1018,26.1123],{icon:iconNormal}).addTo(mymap);
@@ -538,37 +538,13 @@ marker.bindPopup("<b>Лукойл АЗС № 88</b><br/><a href=#stationlukoil88
     
     <h4>Список  станций (184 шт.):</h4>
     <div id="station_list">
-        <div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationgazprom27" href="https://www.gpnbonus.by/nashiazs">Газпром  № 27</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.19402/28.51869">Борисов Зеленый Городок, 2</a>
+        <div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationgazprom9" href="https://www.gpnbonus.by/nashiazs">Газпром  № 9</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.38621/31.27643">Добруш М10 (25 КМ, СПРАВА)</a>
     <br /> <br/>
 
     <div id="sidebar"><h4>Заправка</h4><pre>
 amenity=fuel
-name=Газпромнефть № 27
-brand=Газпромнефть
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>fuel:octane_95=yes</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:octane_92=yes</font>
-contact:phone=
-<font color=red>contact:website=https://gpnbonus.by/</font>
-<font color=red>ref=27</font>
-</pre></div>
-<div id="sidebar"><h4>Кафе</h4><pre>
-amenity=fast_food
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-cuisine=hot_dog
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationgazprom29" href="https://www.gpnbonus.by/nashiazs">Газпром  № 29</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.14194/23.6869">Лейтенанта Рябцева, 39</a>
-    <br /> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Газпромнефть № 29
+name=Газпромнефть № 9
 brand=Газпромнефть
 <font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
 <font color=red>fuel:octane_98=yes</font>
@@ -576,142 +552,10 @@ brand=Газпромнефть
 <font color=red>fuel:diesel=yes</font>
 <font color=red>fuel:octane_92=yes</font>
 <font color=red>compressed_air=yes</font>
-<font color=red>full_service=yes</font>
 contact:phone=
 <font color=red>contact:website=https://gpnbonus.by/</font>
 <font color=red>opening_hours=24/7</font>
-<font color=red>ref=29</font>
-</pre></div>
-<div id="sidebar"><h4>Кафе</h4><pre>
-amenity=fast_food
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-cuisine=hot_dog
-<font color=red>opening_hours=24/7</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationgazprom23" href="https://www.gpnbonus.by/nashiazs">Газпром  № 23</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.80908/28.01144">Любань Боровика, 1</a>
-    <br /> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Газпромнефть № 23
-brand=Газпромнефть
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>fuel:octane_95=yes</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:octane_92=yes</font>
-contact:phone=
-<font color=red>contact:website=https://gpnbonus.by/</font>
-<font color=red>ref=23</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationgazprom24" href="https://www.gpnbonus.by/nashiazs">Газпром  № 24</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.84555/27.44385">МКАД, 27 км (внешняя сторона)</a>
-    <br /> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Газпромнефть № 24
-brand=Газпромнефть
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>fuel:octane_98=yes</font>
-<font color=red>fuel:octane_95=yes</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:octane_92=yes</font>
-<font color=red>fuel:HGV_diesel=yes</font>
-<font color=red>compressed_air=yes</font>
-<font color=red>full_service=yes</font>
-contact:phone=
-<font color=red>contact:website=https://gpnbonus.by/</font>
-<font color=red>opening_hours=24/7</font>
-<font color=red>ref=24</font>
-</pre></div>
-<div id="sidebar"><h4>Кафе</h4><pre>
-amenity=fast_food
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-cuisine=hot_dog
-<font color=red>opening_hours=24/7</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationgazprom50" href="https://www.gpnbonus.by/nashiazs">Газпром  № 50</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.93167/25.26339">Лида Свердлова, 187А</a>
-    <br /> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Газпромнефть № 50
-brand=Газпромнефть
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>fuel:octane_95=yes</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:octane_92=yes</font>
-<font color=red>fuel:HGV_diesel=yes</font>
-contact:phone=
-<font color=red>contact:website=https://gpnbonus.by/</font>
-<font color=red>opening_hours=24/7</font>
-<font color=red>ref=50</font>
-</pre></div>
-<div id="sidebar"><h4>Кафе</h4><pre>
-amenity=fast_food
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-cuisine=hot_dog
-<font color=red>opening_hours=24/7</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationgazprom11" href="https://www.gpnbonus.by/nashiazs">Газпром  № 11</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.46471/30.94481">Могилёвская, 1ж</a>
-    <br /> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Газпромнефть № 11
-brand=Газпромнефть
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>fuel:octane_98=yes</font>
-<font color=red>fuel:octane_95=yes</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:octane_92=yes</font>
-<font color=red>compressed_air=yes</font>
-<font color=red>full_service=yes</font>
-contact:phone=
-<font color=red>contact:website=https://gpnbonus.by/</font>
-<font color=red>opening_hours=24/7</font>
-<font color=red>ref=11</font>
-</pre></div>
-<div id="sidebar"><h4>Кафе</h4><pre>
-amenity=fast_food
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-cuisine=hot_dog
-<font color=red>opening_hours=24/7</font>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=orange>Найден, но нет Guid</font></b>  <a id="stationgazprom35" href="https://www.gpnbonus.by/nashiazs">Газпром  № 35</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.78318/27.51653">Солигорск Константина Заслонова, 68</a>
-    <br /> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Газпромнефть № 35
-brand=Газпромнефть
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-<font color=red>fuel:octane_95=yes</font>
-<font color=red>fuel:diesel=yes</font>
-<font color=red>fuel:octane_92=yes</font>
-contact:phone=
-<font color=red>contact:website=https://gpnbonus.by/</font>
-<font color=red>opening_hours=24/7</font>
-<font color=red>ref=35</font>
+<font color=red>ref=9</font>
 </pre></div>
 <div id="sidebar"><h4>Кафе</h4><pre>
 amenity=fast_food
@@ -1302,6 +1146,30 @@ vacuum_cleaner=yes
 <font color=red>contact:website=http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=6043</font>
 opening_hours=Mo-Su 00:10-23:40
 ref=51
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationgazprom27" href="https://www.gpnbonus.by/nashiazs">Газпром  № 27</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.19402/28.51869">Борисов Зеленый Городок, 2</a>
+    <br /><a href="https://www.openstreetmap.org/node/2972031120">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Газпромнефть № 27
+brand=Газпромнефть
+operator=ИООО \"Газпромнефть-Белнефтепродукт\"
+fuel:octane_95=yes
+fuel:diesel=yes
+fuel:octane_92=yes
+<font color=red>contact:phone=</font>
+contact:website=https://gpnbonus.by/
+ref=27
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+operator=ИООО \"Газпромнефть-Белнефтепродукт\"
+cuisine=hot_dog
 </pre></div>
 
 </div><hr/>
@@ -2297,34 +2165,6 @@ cuisine=coffee_shop
 
 </div><hr/>
 
-<div class="station" id="container"><b>OK</b>  <a id="stationgazprom9" href="https://www.gpnbonus.by/nashiazs">Газпром  № 9</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.38621/31.27643">Добруш М10 (25 КМ, СПРАВА)</a>
-    <br /><a href="https://www.openstreetmap.org/node/6923987089">Объект на карте</a> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Газпромнефть № 9
-brand=Газпромнефть
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-fuel:octane_98=yes
-fuel:octane_95=yes
-fuel:diesel=yes
-fuel:octane_92=yes
-compressed_air=yes
-<font color=red>contact:phone=</font>
-contact:website=https://gpnbonus.by/
-opening_hours=24/7
-ref=9
-</pre></div>
-<div id="sidebar"><h4>Кафе</h4><pre>
-amenity=fast_food
-<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
-cuisine=hot_dog
-opening_hours=24/7
-</pre></div>
-
-</div><hr/>
-
 <div class="station" id="container"><b>OK</b>  <a id="stationa10033" href="https://azs.a-100.by/set-azs/map-azs/?query=Долгиновский тракт, 178/1">A100  № 33</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.965024736236/27.537507797622">Долгиновский тракт, 178/1</a>
     <br /><a href="https://www.openstreetmap.org/node/4955649325">Объект на карте</a> <br/>
@@ -3112,6 +2952,35 @@ ref=14
 
 </div><hr/>
 
+<div class="station" id="container"><b>OK</b>  <a id="stationgazprom29" href="https://www.gpnbonus.by/nashiazs">Газпром  № 29</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.14194/23.6869">Лейтенанта Рябцева, 39</a>
+    <br /><a href="https://www.openstreetmap.org/way/759212444">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Газпромнефть № 29
+brand=Газпромнефть
+operator=ИООО \"Газпромнефть-Белнефтепродукт\"
+fuel:octane_98=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+fuel:octane_92=yes
+compressed_air=yes
+full_service=yes
+<font color=red>contact:phone=</font>
+contact:website=https://gpnbonus.by/
+opening_hours=24/7
+ref=29
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+operator=ИООО \"Газпромнефть-Белнефтепродукт\"
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b>OK</b>  <a id="stationlukoil76" href="http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=6032">Лукойл  № 76</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.046/27.6119">Ленина, 294 a, Слуцк, Беларусь</a>
     <br /><a href="https://www.openstreetmap.org/way/502150934">Объект на карте</a> <br/>
@@ -3199,6 +3068,33 @@ ref=1
 
 </div><hr/>
 
+<div class="station" id="container"><b>OK</b>  <a id="stationgazprom50" href="https://www.gpnbonus.by/nashiazs">Газпром  № 50</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.93167/25.26339">Лида Свердлова, 187А</a>
+    <br /><a href="https://www.openstreetmap.org/way/378441938">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Газпромнефть № 50
+brand=Газпромнефть
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+fuel:octane_95=yes
+fuel:diesel=yes
+fuel:octane_92=yes
+fuel:HGV_diesel=yes
+<font color=red>contact:phone=</font>
+contact:website=https://gpnbonus.by/
+opening_hours=24/7
+ref=50
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b>OK</b>  <a id="stationa10034" href="https://azs.a-100.by/set-azs/map-azs/?query=Логойский тракт, 47">A100  № 34</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.960875387228/27.627336425742">Логойский тракт, 47</a>
     <br /><a href="https://www.openstreetmap.org/way/166482561">Объект на карте</a> <br/>
@@ -3243,6 +3139,25 @@ amenity=fast_food
 operator=ИООО \"Газпромнефть-Белнефтепродукт\"
 cuisine=hot_dog
 opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationgazprom23" href="https://www.gpnbonus.by/nashiazs">Газпром  № 23</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.80908/28.01144">Любань Боровика, 1</a>
+    <br /><a href="https://www.openstreetmap.org/node/3975762482">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Газпромнефть № 23
+brand=Газпромнефть
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+fuel:octane_95=yes
+fuel:diesel=yes
+fuel:octane_92=yes
+<font color=red>contact:phone=</font>
+contact:website=https://gpnbonus.by/
+ref=23
 </pre></div>
 
 </div><hr/>
@@ -3705,6 +3620,65 @@ vacuum_cleaner=yes
 <font color=red>contact:website=http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=6030</font>
 <font color=red>opening_hours=Mo-Su 00:10-23:40</font>
 ref=48
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationgazprom24" href="https://www.gpnbonus.by/nashiazs">Газпром  № 24</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.84555/27.44385">МКАД, 27 км (внешняя сторона)</a>
+    <br /><a href="https://www.openstreetmap.org/node/255481016">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Газпромнефть № 24
+brand=Газпромнефть
+operator=ИООО \"Газпромнефть-Белнефтепродукт\"
+fuel:octane_98=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+fuel:octane_92=yes
+fuel:HGV_diesel=yes
+compressed_air=yes
+full_service=yes
+<font color=red>contact:phone=</font>
+contact:website=https://gpnbonus.by/
+opening_hours=24/7
+ref=24
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+operator=ИООО \"Газпромнефть-Белнефтепродукт\"
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationgazprom11" href="https://www.gpnbonus.by/nashiazs">Газпром  № 11</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.46471/30.94481">Могилёвская, 1ж</a>
+    <br /><a href="https://www.openstreetmap.org/way/752141753">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Газпромнефть № 11
+brand=Газпромнефть
+operator=ИООО \"Газпромнефть-Белнефтепродукт\"
+fuel:octane_98=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+fuel:octane_92=yes
+compressed_air=yes
+full_service=yes
+<font color=red>contact:phone=</font>
+contact:website=https://gpnbonus.by/
+opening_hours=24/7
+ref=11
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+operator=ИООО \"Газпромнефть-Белнефтепродукт\"
+cuisine=hot_dog
+opening_hours=24/7
 </pre></div>
 
 </div><hr/>
@@ -4468,6 +4442,32 @@ fuel:octane_92=yes
 contact:website=https://gpnbonus.by/
 opening_hours=24/7
 ref=34
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+cuisine=hot_dog
+opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationgazprom35" href="https://www.gpnbonus.by/nashiazs">Газпром  № 35</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.78318/27.51653">Солигорск Константина Заслонова, 68</a>
+    <br /><a href="https://www.openstreetmap.org/node/475594693">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Газпромнефть № 35
+brand=Газпромнефть
+<font color=red>operator=ИООО \"Газпромнефть-Белнефтепродукт\"</font>
+fuel:octane_95=yes
+fuel:diesel=yes
+fuel:octane_92=yes
+<font color=red>contact:phone=</font>
+contact:website=https://gpnbonus.by/
+opening_hours=24/7
+ref=35
 </pre></div>
 <div id="sidebar"><h4>Кафе</h4><pre>
 amenity=fast_food
