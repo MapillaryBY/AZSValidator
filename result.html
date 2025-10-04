@@ -50,7 +50,7 @@
 </head>
 <body>
     <h1>Валидатор заправок <s>Белoруснефть</s>, A100, Газпром, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2025-10-04 13:35:09Z</p>
+    <p>Дата генерации файла 2025-10-04 22:03:00Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/web-azs/ru/azs-map">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
@@ -58,8 +58,8 @@
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (0) автозаправка не найдена в ожидаемом месте</br>
     <font color=orange>Найден, но нет Guid</font> (0) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (88) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
-    <font color=green>Нет проблем</font> (96) все тэги в порядке'</br>
+    OK (85) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
+    <font color=green>Нет проблем</font> (99) все тэги в порядке'</br>
     <div id="mapid"></div>
     <script>
         const notFoundColour = 'Red'
@@ -222,10 +222,6 @@ var marker = L.marker([54.0125,28.18456],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Лукойл АЗС № 87</b><br/><a href=#stationlukoil87>Перейти</a>");
 var marker = L.marker([54.11404,28.349627],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Лукойл АЗС № 88</b><br/><a href=#stationlukoil88>Перейти</a>");
-var marker = L.marker([53.200657,26.69137],{icon:iconNormal}).addTo(mymap);
-marker.bindPopup("<b>Татнефть АЗС № 12</b><br/><a href=#stationtatneft12>Перейти</a>");
-var marker = L.marker([53.356381,26.46666],{icon:iconNormal}).addTo(mymap);
-marker.bindPopup("<b>Татнефть АЗС № 11</b><br/><a href=#stationtatneft11>Перейти</a>");
 var marker = L.marker([54.1944,27.8337],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Лукойл МАЗС № 74</b><br/><a href=#stationlukoil74>Перейти</a>");
 var marker = L.marker([53.964348798837,27.64371652513],{icon:iconNormal}).addTo(mymap);
@@ -332,8 +328,6 @@ var marker = L.marker([53.9493,27.599],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Лукойл АЗС № 62</b><br/><a href=#stationlukoil62>Перейти</a>");
 var marker = L.marker([53.9131,27.6833],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Лукойл МАЗС № 69</b><br/><a href=#stationlukoil69>Перейти</a>");
-var marker = L.marker([52.1129,23.7706],{icon:iconNormal}).addTo(mymap);
-marker.bindPopup("<b>Лукойл АЗС № 22</b><br/><a href=#stationlukoil22>Перейти</a>");
 var marker = L.marker([53.852443,27.675906],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>A100 АЗС № 15</b><br/><a href=#stationa10015>Перейти</a>");
 var marker = L.marker([53.890881045093,27.646094728836],{icon:iconGood}).addTo(mymap);
@@ -488,6 +482,10 @@ var marker = L.marker([53.91648,27.4569],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Газпром АЗС № 19</b><br/><a href=#stationgazprom19>Перейти</a>");
 var marker = L.marker([53.96888,27.74547],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Газпром АЗС № 71</b><br/><a href=#stationgazprom71>Перейти</a>");
+var marker = L.marker([53.200657,26.69137],{icon:iconGood}).addTo(mymap);
+marker.bindPopup("<b>Татнефть АЗС № 12</b><br/><a href=#stationtatneft12>Перейти</a>");
+var marker = L.marker([53.356381,26.46666],{icon:iconGood}).addTo(mymap);
+marker.bindPopup("<b>Татнефть АЗС № 11</b><br/><a href=#stationtatneft11>Перейти</a>");
 var marker = L.marker([53.12041,23.91149],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Газпром АЗС № 1</b><br/><a href=#stationgazprom1>Перейти</a>");
 var marker = L.marker([53.84555,27.44385],{icon:iconGood}).addTo(mymap);
@@ -526,6 +524,8 @@ var marker = L.marker([53.89457,27.499335],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>A100 АЗС № 6</b><br/><a href=#stationa1006>Перейти</a>");
 var marker = L.marker([53.72476,28.4084],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Газпром АЗС № 74</b><br/><a href=#stationgazprom74>Перейти</a>");
+var marker = L.marker([52.1129,23.7706],{icon:iconGood}).addTo(mymap);
+marker.bindPopup("<b>Лукойл АЗС № 22</b><br/><a href=#stationlukoil22>Перейти</a>");
 
 
         navigator.geolocation.getCurrentPosition(function (location) {
@@ -1311,72 +1311,6 @@ contact:phone=++375177543853
 contact:website=http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=5013212
 opening_hours=24/7
 ref=88
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b>OK</b>  <a id="stationtatneft12" href="https://tatbelneft.by/azs/map-azs/">Татнефть  № 12</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.200657/26.69137">Минская область, Несвижский район,  Р-12, 6-й км.,1.</a>
-    <br /><a href="https://www.openstreetmap.org/node/3707485370">Объект на карте</a> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-<font color=red>name=Татнефть № 12</font>
-brand=TATNEFT
-operator="ИООО \"Татбелнефтепродукт\""
-fuel:octane_92=yes
-fuel:octane_95=yes
-fuel:diesel=yes
-<font color=red>fuel:lpg=yes</font>
-fuel:adblue:canister=yes
-vacuum_cleaner=yes
-compressed_air=yes
-<font color=red>internet_access=wlan</font>
-contact:phone=+375 44 5086012
-contact:website=https://tatbelneft.by/azs/spisok-azs/
-ref=12
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-operator="ИООО \"Татбелнефтепродукт\""
-contact:phone=+375 44 5086012
-</pre></div>
-<div id="sidebar"><h4>Кафетерий</h4><pre>
-amenity=fast_food
-operator="ИООО \"Татбелнефтепродукт\""
-cuisine=coffee_shop
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b>OK</b>  <a id="stationtatneft11" href="https://tatbelneft.by/azs/map-azs/">Татнефть  № 11</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.356381/26.46666">Минская область, Несвижский район, М-1, 258-й км.,1.</a>
-    <br /><a href="https://www.openstreetmap.org/node/4156384813">Объект на карте</a> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-<font color=red>name=Татнефть № 11</font>
-brand=TATNEFT
-operator="ИООО \"Татбелнефтепродукт\""
-fuel:octane_92=yes
-fuel:octane_95=yes
-<font color=red>fuel:octane_98=yes</font>
-fuel:diesel=yes
-fuel:adblue:canister=yes
-<font color=red>internet_access=wlan</font>
-contact:phone=+375 44 5086005
-contact:website=https://tatbelneft.by/azs/spisok-azs/
-ref=11
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-operator="ИООО \"Татбелнефтепродукт\""
-contact:phone=+375 44 5086005
-</pre></div>
-<div id="sidebar"><h4>Кафетерий</h4><pre>
-amenity=fast_food
-operator="ИООО \"Татбелнефтепродукт\""
-cuisine=coffee_shop
 </pre></div>
 
 </div><hr/>
@@ -2764,27 +2698,6 @@ vacuum_cleaner=yes
 contact:website=http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=6067
 opening_hours=Mo-Su 00:10-23:40
 ref=69
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b>OK</b>  <a id="stationlukoil22" href="http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=6042">Лукойл  № 22</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.1129/23.7706">Янки Купалы, 117, Брест, Беларусь</a>
-    <br /><a href="https://www.openstreetmap.org/way/1232785454">Объект на карте</a> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-<font color=red>name=Лукойл № 22</font>
-brand=Лукойл
-operator="ИООО \"ЛУКОЙЛ Белоруссия\""
-fuel:octane_92=yes
-fuel:octane_95=yes
-fuel:diesel=yes
-fuel:HGV_diesel=yes
-<font color=red>contact:phone=+375 162 408618</font>
-<font color=red>contact:website=http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=6042</font>
-opening_hours=Mo-Su 00:10-23:40
-ref=22
 </pre></div>
 
 </div><hr/>
@@ -4817,6 +4730,72 @@ ref=71
 
 </div><hr/>
 
+<div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationtatneft12" href="https://tatbelneft.by/azs/map-azs/">Татнефть  № 12</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.200657/26.69137">Минская область, Несвижский район,  Р-12, 6-й км.,1.</a>
+    <br /><a href="https://www.openstreetmap.org/node/3707485370">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Татнефть № 12
+brand=TATNEFT
+operator="ИООО \"Татбелнефтепродукт\""
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+fuel:lpg=yes
+fuel:adblue:canister=yes
+vacuum_cleaner=yes
+compressed_air=yes
+internet_access=wlan
+contact:phone=+375 44 5086012
+contact:website=https://tatbelneft.by/azs/spisok-azs/
+ref=12
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator="ИООО \"Татбелнефтепродукт\""
+contact:phone=+375 44 5086012
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator="ИООО \"Татбелнефтепродукт\""
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationtatneft11" href="https://tatbelneft.by/azs/map-azs/">Татнефть  № 11</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.356381/26.46666">Минская область, Несвижский район, М-1, 258-й км.,1.</a>
+    <br /><a href="https://www.openstreetmap.org/node/4156384813">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Татнефть № 11
+brand=TATNEFT
+operator="ИООО \"Татбелнефтепродукт\""
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:octane_98=yes
+fuel:diesel=yes
+fuel:adblue:canister=yes
+internet_access=wlan
+contact:phone=+375 44 5086005
+contact:website=https://tatbelneft.by/azs/spisok-azs/
+ref=11
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator="ИООО \"Татбелнефтепродукт\""
+contact:phone=+375 44 5086005
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator="ИООО \"Татбелнефтепродукт\""
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationgazprom1" href="https://gpnbonus.by/ru/azs/map">Газпром  № 1</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.12041/23.91149">Минчики Р99 (1 км, справа, вблизи д.Минчики)</a>
     <br /><a href="https://www.openstreetmap.org/node/2407105214">Объект на карте</a> <br/>
@@ -5328,6 +5307,27 @@ amenity=fast_food
 operator="ИООО \"Газпромнефть-Белнефтепродукт\""
 cuisine=hot_dog
 opening_hours=24/7
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationlukoil22" href="http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=6042">Лукойл  № 22</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.1129/23.7706">Янки Купалы, 117, Брест, Беларусь</a>
+    <br /><a href="https://www.openstreetmap.org/way/1232785454">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл № 22
+brand=Лукойл
+operator="ИООО \"ЛУКОЙЛ Белоруссия\""
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+fuel:HGV_diesel=yes
+contact:phone=+375 162 408618
+contact:website=http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=6042
+opening_hours=Mo-Su 00:10-23:40
+ref=22
 </pre></div>
 
 </div><hr/>
