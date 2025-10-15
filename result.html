@@ -50,16 +50,16 @@
 </head>
 <body>
     <h1>Валидатор заправок Роснефть, Белoруснефть, A100, Газпром, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2025-10-15 17:29:31Z</p>
+    <p>Дата генерации файла 2025-10-15 17:38:52Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/web-azs/ru/azs-map">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
-    <font color=red>Not found</font> (30) автозаправка не найдена в ожидаемом месте</br>
+    <font color=red>Not found</font> (29) автозаправка не найдена в ожидаемом месте</br>
     <font color=orange>Найден, но нет Guid</font> (0) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
     OK (325) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
-    <font color=green>Нет проблем</font> (438) все тэги в порядке'</br>
+    <font color=green>Нет проблем</font> (439) все тэги в порядке'</br>
     <div id="mapid"></div>
     <script>
         const notFoundColour = 'Red'
@@ -176,8 +176,6 @@ var marker = L.marker([55.61801,27.10367],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>Роснефть АЗС № 42</b><br/><a href=#stationrosneft42>Перейти</a>");
 var marker = L.marker([55.47238,28.74379],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>Роснефть АЗС № 31</b><br/><a href=#stationrosneft31>Перейти</a>");
-var marker = L.marker([55.11133,26.87341],{icon:iconNotFound}).addTo(mymap);
-marker.bindPopup("<b>Роснефть АЗС № 64</b><br/><a href=#stationrosneft64>Перейти</a>");
 var marker = L.marker([53.88619,27.6231],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>Роснефть АЗС № 1</b><br/><a href=#stationrosneft1>Перейти</a>");
 var marker = L.marker([53.891721,27.459302],{icon:iconNotFound}).addTo(mymap);
@@ -1130,6 +1128,8 @@ var marker = L.marker([54.3142,26.8575],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Лукойл АЗС № 72</b><br/><a href=#stationlukoil72>Перейти</a>");
 var marker = L.marker([54.842223,30.239463],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 73</b><br/><a href=#stationbelorusDF48CD5A0D7653F6E053BF0BA8C000F6>Перейти</a>");
+var marker = L.marker([55.11133,26.87341],{icon:iconGood}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 64</b><br/><a href=#stationrosneft64>Перейти</a>");
 var marker = L.marker([55.682926,26.907256],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Татнефть АЗС № 15</b><br/><a href=#stationtatneft15>Перейти</a>");
 var marker = L.marker([54.507249,30.451195],{icon:iconGood}).addTo(mymap);
@@ -1949,26 +1949,6 @@ contact:phone=+375 214 779669
 contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
 <font color=red>opening_hours=24/7</font>
 <font color=red>ref=31</font>
-fuel:octane_92=yes
-fuel:octane_95=yes
-fuel:diesel=yes
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft64" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 64</a><a href="#stationrosneft64" title="Ссылка">🔗</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.11133/26.87341">Витебская обл.,г.Поставы, ул.Красноармейская, 163А</a>
-    <br /> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-<font color=red>name=Славнефть № 64</font>
-<font color=red>brand=Славнефть</font>
-operator=ИООО "РН-Запад"
-contact:phone=+375 2155 29524
-contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
-<font color=red>opening_hours=24/7</font>
-<font color=red>ref=64</font>
 fuel:octane_92=yes
 fuel:octane_95=yes
 fuel:diesel=yes
@@ -20810,6 +20790,26 @@ fuel:octane_92=yes
 fuel:diesel=yes
 ref=АЗС 73
 guid:belorusneft=DF48CD5A0D7653F6E053BF0BA8C000F6
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationrosneft64" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 64</a><a href="#stationrosneft64" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.11133/26.87341">Витебская обл.,г.Поставы, ул.Красноармейская, 163А</a>
+    <br /><a href="https://www.openstreetmap.org/way/363774934">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Славнефть № 64
+brand=Славнефть
+operator=ИООО "РН-Запад"
+contact:phone=+375 2155 29524
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+opening_hours=24/7
+ref=64
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
 </pre></div>
 
 </div><hr/>
