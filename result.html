@@ -49,17 +49,17 @@
     <script src="https://d3js.org/topojson.v0.min.js"></script>
 </head>
 <body>
-    <h1>Валидатор заправок Белoруснефть, A100, Газпром, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2025-10-15 08:56:02Z</p>
+    <h1>Валидатор заправок Роснефть, Белoруснефть, A100, Газпром, Татнефть, Лукойл</h1>
+    <p>Дата генерации файла 2025-10-15 17:18:50Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/web-azs/ru/azs-map">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
-    <font color=red>Not found</font> (0) автозаправка не найдена в ожидаемом месте</br>
+    <font color=red>Not found</font> (30) автозаправка не найдена в ожидаемом месте</br>
     <font color=orange>Найден, но нет Guid</font> (0) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
     OK (325) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
-    <font color=green>Нет проблем</font> (437) все тэги в порядке'</br>
+    <font color=green>Нет проблем</font> (438) все тэги в порядке'</br>
     <div id="mapid"></div>
     <script>
         const notFoundColour = 'Red'
@@ -158,7 +158,67 @@
             id: 'streets-v11',
             accessToken: 'pk.eyJ1IjoiYmlnb3Blbm1hYyIsImEiOiJjazF2cGsxd20xMWMyM2JxeWx3N2NvMzExIn0.aMyRwzXDhGqu7yRy85wkow'
         }).addTo(mymap);
-        var marker = L.marker([53.822286,23.873757],{icon:iconNormal}).addTo(mymap);
+        var marker = L.marker([53.13282,25.9471],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 76</b><br/><a href=#stationrosneft76>Перейти</a>");
+var marker = L.marker([53.11081,26.0128],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 77</b><br/><a href=#stationrosneft77>Перейти</a>");
+var marker = L.marker([53.14772,26.03769],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 70</b><br/><a href=#stationrosneft70>Перейти</a>");
+var marker = L.marker([52.102874,23.719665],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 29</b><br/><a href=#stationrosneft29>Перейти</a>");
+var marker = L.marker([52.187789,25.17746],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 32</b><br/><a href=#stationrosneft32>Перейти</a>");
+var marker = L.marker([52.70661,25.33179],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 78</b><br/><a href=#stationrosneft78>Перейти</a>");
+var marker = L.marker([52.57015,24.48485],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 69</b><br/><a href=#stationrosneft69>Перейти</a>");
+var marker = L.marker([55.61801,27.10367],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 42</b><br/><a href=#stationrosneft42>Перейти</a>");
+var marker = L.marker([55.47238,28.74379],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 31</b><br/><a href=#stationrosneft31>Перейти</a>");
+var marker = L.marker([55.11133,26.87341],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 64</b><br/><a href=#stationrosneft64>Перейти</a>");
+var marker = L.marker([53.88619,27.6231],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 1</b><br/><a href=#stationrosneft1>Перейти</a>");
+var marker = L.marker([53.891721,27.459302],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 45</b><br/><a href=#stationrosneft45>Перейти</a>");
+var marker = L.marker([53.92631,30.27064],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 26</b><br/><a href=#stationrosneft26>Перейти</a>");
+var marker = L.marker([53.87851,30.39033],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 17</b><br/><a href=#stationrosneft17>Перейти</a>");
+var marker = L.marker([53.947103,30.353899],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 14</b><br/><a href=#stationrosneft14>Перейти</a>");
+var marker = L.marker([53.88914,30.28735],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 19</b><br/><a href=#stationrosneft19>Перейти</a>");
+var marker = L.marker([53.852694,27.42706],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 61</b><br/><a href=#stationrosneft61>Перейти</a>");
+var marker = L.marker([53.799182,27.763036],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 11</b><br/><a href=#stationrosneft11>Перейти</a>");
+var marker = L.marker([53.796125,27.760309],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 10</b><br/><a href=#stationrosneft10>Перейти</a>");
+var marker = L.marker([53.922488,27.175662],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 3</b><br/><a href=#stationrosneft3>Перейти</a>");
+var marker = L.marker([53.92333,27.16551],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 2</b><br/><a href=#stationrosneft2>Перейти</a>");
+var marker = L.marker([54.170556,27.211767],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 8</b><br/><a href=#stationrosneft8>Перейти</a>");
+var marker = L.marker([53.47977,26.74639],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 68</b><br/><a href=#stationrosneft68>Перейти</a>");
+var marker = L.marker([53.53217,30.22825],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 12</b><br/><a href=#stationrosneft12>Перейти</a>");
+var marker = L.marker([53.17277,29.1791],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 5</b><br/><a href=#stationrosneft5>Перейти</a>");
+var marker = L.marker([53.18529,29.18899],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 9</b><br/><a href=#stationrosneft9>Перейти</a>");
+var marker = L.marker([53.13299,29.22234],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 6</b><br/><a href=#stationrosneft6>Перейти</a>");
+var marker = L.marker([53.15399,29.2052],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 4</b><br/><a href=#stationrosneft4>Перейти</a>");
+var marker = L.marker([53.91571,30.37287],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 21</b><br/><a href=#stationrosneft21>Перейти</a>");
+var marker = L.marker([53.8537,30.33587],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 16</b><br/><a href=#stationrosneft16>Перейти</a>");
+var marker = L.marker([53.822286,23.873757],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 53</b><br/><a href=#stationbelorusB89F84F7E4344F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([55.038358,27.789656],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть КАЗС № 20</b><br/><a href=#stationbelorusB89F84F7E2DE4F70E043BF0BA8C03722>Перейти</a>");
@@ -286,8 +346,6 @@ var marker = L.marker([52.71225,30.57022],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 19</b><br/><a href=#stationbelorusB89F84F7E30F4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.57172999310462,31.161471939325466],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 34</b><br/><a href=#stationbelorusB89F84F7E31C4F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([55.152046,30.127077],{icon:iconNormal}).addTo(mymap);
-marker.bindPopup("<b>Белoруснефть МАЗС № 1</b><br/><a href=#stationbelorusB89F84F7E44B4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([55.170284,30.248054],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть МАЗС № 8</b><br/><a href=#stationbelorusB89F84F7E2D24F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([55.231916,30.272093],{icon:iconNormal}).addTo(mymap);
@@ -392,6 +450,8 @@ var marker = L.marker([53.878457,27.513855],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть ААЗС № 61</b><br/><a href=#stationbelorus64FFAF11CB4B4756E053BF0BA8C02A4E>Перейти</a>");
 var marker = L.marker([53.956396,27.723853],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 59</b><br/><a href=#stationbelorusFEB4868BD6DC58ADE043BF0BA8C099E6>Перейти</a>");
+var marker = L.marker([53.885867,27.501063],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 7</b><br/><a href=#stationrosneft7>Перейти</a>");
 var marker = L.marker([53.858208,27.678105],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 4</b><br/><a href=#stationbelorusB89F84F7E3F44F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.95247,27.713392],{icon:iconNormal}).addTo(mymap);
@@ -1120,6 +1180,8 @@ var marker = L.marker([54.510676,26.958977],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 12</b><br/><a href=#stationbelorusB89F84F7E38C4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([55.203964,30.269865],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 77</b><br/><a href=#stationbelorus5E8C9E7960D8753EE053BF0BA8C0FD07>Перейти</a>");
+var marker = L.marker([55.152046,30.127077],{icon:iconGood}).addTo(mymap);
+marker.bindPopup("<b>Белoруснефть МАЗС № 1</b><br/><a href=#stationbelorusB89F84F7E44B4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([55.179892,30.142729],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 75</b><br/><a href=#stationbelorus341F07BFD8896303E053BF0BA8C09F67>Перейти</a>");
 var marker = L.marker([55.16386,30.284694],{icon:iconGood}).addTo(mymap);
@@ -1692,9 +1754,829 @@ marker.bindPopup("<b>Лукойл АЗС № 22</b><br/><a href=#stationlukoil22
     </script>
     <h4>История изменений:</h4>
     
-    <h4>Список  станций (762 шт.):</h4>
+    <h4>Список  станций (793 шт.):</h4>
     <div id="station_list">
-        <div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E4344F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть АЗС № 53</a><a href="#stationbelorusB89F84F7E4344F70E043BF0BA8C03722" title="Ссылка">🔗</a>
+        <div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft76" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 76</a><a href="#stationrosneft76" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.13282/25.9471">Брестская обл., г. Барановичи, ул. Вильчковского, 220</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Славнефть № 76</font>
+<font color=red>brand=Славнефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 163 419971
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=76</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft77" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 77</a><a href="#stationrosneft77" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.11081/26.0128">Брестская обл., г. Барановичи, ул. Калинина, 121</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Славнефть № 77</font>
+<font color=red>brand=Славнефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 163 614835
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=77</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft70" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 70</a><a href="#stationrosneft70" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.14772/26.03769">Брестская обл., г. Барановичи, ул. Кирова, 75/1</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Славнефть № 70</font>
+<font color=red>brand=Славнефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 163 647169
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=70</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+375 163 647169
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator=ИООО "РН-Запад"
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft29" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 29</a><a href="#stationrosneft29" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.102874/23.719665">Брестская обл., г. Брест, ул. Пионерская, 37/1</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Славнефть № 29</font>
+<font color=red>brand=Славнефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 162 592825
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=29</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft32" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 32</a><a href="#stationrosneft32" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.187789/25.17746">Брестская обл., г. Дрогичин, ул. Юбилейная, 45</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Славнефть № 32</font>
+<font color=red>brand=Славнефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 1644 30790
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=32</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft78" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 78</a><a href="#stationrosneft78" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.70661/25.33179">Брестская обл., Ивацевичский р-н, г. Ивацевичи, ул.Ленина, д. 19</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Славнефть № 78</font>
+<font color=red>brand=Славнефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 1645 24928
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=78</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft69" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 69</a><a href="#stationrosneft69" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.57015/24.48485">Брестская обл., Пружанский р-н, г. Пружаны, ул. Интернациональная</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Славнефть № 69</font>
+<font color=red>brand=Славнефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375163241728;+375163241181;+375333334569
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=69</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft42" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 42</a><a href="#stationrosneft42" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.61801/27.10367">Витебская обл., Браславский р-н, Р-14, 112-й км, 1</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Славнефть № 42</font>
+<font color=red>brand=Славнефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 2153 26625
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=42</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+375 2153 26625
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator=ИООО "РН-Запад"
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft31" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 31</a><a href="#stationrosneft31" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.47238/28.74379">Витебская обл., г. Полоцк, Вильнюсское шоссе, 5</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Славнефть № 31</font>
+<font color=red>brand=Славнефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 214 779669
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=31</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft64" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 64</a><a href="#stationrosneft64" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.11133/26.87341">Витебская обл.,г.Поставы, ул.Красноармейская, 163А</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Славнефть № 64</font>
+<font color=red>brand=Славнефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 2155 29524
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=64</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft1" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 1</a><a href="#stationrosneft1" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.88619/27.6231">г. Минск, ул. Ваупшасова, 3Б</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Роснефть № 1</font>
+<font color=red>brand=Роснефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 17 3989599
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=1</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:octane_98=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+375 17 3989599
+</pre></div>
+<div id="sidebar"><h4>Автомойка</h4><pre>
+amenity=car_wash
+automated=yes
+operator=ИООО "РН-Запад"
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator=ИООО "РН-Запад"
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft45" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 45</a><a href="#stationrosneft45" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.891721/27.459302">г. Минск, ул. Шаранговича, 3</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Славнефть № 45</font>
+<font color=red>brand=Славнефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 17 3744956
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=45</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:octane_98=yes
+fuel:diesel=yes
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft26" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 26</a><a href="#stationrosneft26" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.92631/30.27064">г. Могилёв, Минское шоссе, д. 2в</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Роснефть № 26</font>
+<font color=red>brand=Роснефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 222 746507
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=26</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:octane_98=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+375 222 746507
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator=ИООО "РН-Запад"
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft17" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 17</a><a href="#stationrosneft17" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.87851/30.39033">г. Могилёв, пр-т Димитрова, 69а</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Роснефть № 17</font>
+<font color=red>brand=Роснефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 222 602264
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=17</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+375 222 602264
+</pre></div>
+<div id="sidebar"><h4>Автомойка</h4><pre>
+amenity=car_wash
+automated=yes
+operator=ИООО "РН-Запад"
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator=ИООО "РН-Запад"
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft14" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 14</a><a href="#stationrosneft14" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.947103/30.353899">г. Могилев, ул. Криулина, 1А</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Роснефть № 14</font>
+<font color=red>brand=Роснефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 222 729928
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=14</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+375 222 729928
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator=ИООО "РН-Запад"
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft19" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 19</a><a href="#stationrosneft19" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.88914/30.28735">г. Могилёв, ул. Челюскинцев, 121б</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Роснефть № 19</font>
+<font color=red>brand=Роснефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 222 744483
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=19</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:octane_98=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+375 222 744483
+</pre></div>
+<div id="sidebar"><h4>Автомойка</h4><pre>
+amenity=car_wash
+automated=yes
+operator=ИООО "РН-Запад"
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator=ИООО "РН-Запад"
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft61" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 61</a><a href="#stationrosneft61" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.852694/27.42706">Минская обл., Минский р-н, Щомыслицкий с/с, 112, район аг. Озерцо</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Славнефть № 61</font>
+<font color=red>brand=Славнефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 17 5076603
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=61</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+375 17 5076603
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator=ИООО "РН-Запад"
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft11" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 11</a><a href="#stationrosneft11" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.799182/27.763036">Минская обл., Минский р-н., 365 км (лево) автодороги М1/Е 30 Брест (Козловичи) Минск – гр. РФ (Редьки)</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Роснефть № 11</font>
+<font color=red>brand=Роснефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 17 5010731
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=11</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+375 17 5010731
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator=ИООО "РН-Запад"
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft10" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 10</a><a href="#stationrosneft10" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.796125/27.760309">Минская обл., Минский р-н., 365 км (право) автодороги М1/Е 30 Брест (Козловичи) Минск – гр. РФ (Редьки)</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Роснефть № 10</font>
+<font color=red>brand=Роснефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 17 5010734
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=10</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+375 17 5010734
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator=ИООО "РН-Запад"
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft3" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 3</a><a href="#stationrosneft3" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.922488/27.175662">Минская обл., Минский р-н., Горанский с/с, д. Горани, 27-й км автодороги (право)</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Роснефть № 3</font>
+<font color=red>brand=Роснефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 17 5026285
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=3</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+375 17 5026285
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator=ИООО "РН-Запад"
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft2" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 2</a><a href="#stationrosneft2" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.92333/27.16551">Минская обл., Минский р-н., Горанский с/с, д. Горани, 27-й км автодороги Минск – Гродно (лево)</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Роснефть № 2</font>
+<font color=red>brand=Роснефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 17 5026284
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=2</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+375 17 5026284
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator=ИООО "РН-Запад"
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft8" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 8</a><a href="#stationrosneft8" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.170556/27.211767">Минская обл., Молодечненский р-н, 45-й км, Р-28, 1</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Роснефть № 8</font>
+<font color=red>brand=Роснефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+3750176706070
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=8</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+3750176706070
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator=ИООО "РН-Запад"
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft68" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 68</a><a href="#stationrosneft68" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.47977/26.74639">Минская обл., Столбцовский р-н., г. Столбцы, пер. Товарный</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Славнефть № 68</font>
+<font color=red>brand=Славнефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 1717 78235
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=68</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+375 1717 78235
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft12" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 12</a><a href="#stationrosneft12" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.53217/30.22825">Могилевская обл., Быховский р-н, г. Быхов, ул. Советская, 73</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Славнефть № 12</font>
+<font color=red>brand=Славнефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 2231 75093
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=12</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+375 2231 75093
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator=ИООО "РН-Запад"
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft5" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 5</a><a href="#stationrosneft5" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.17277/29.1791">Могилевская обл., г. Бобруйск, ул. Гагарина, 36</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Роснефть № 5</font>
+<font color=red>brand=Роснефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 225 725345
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=5</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+375 225 725345
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator=ИООО "РН-Запад"
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft9" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 9</a><a href="#stationrosneft9" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.18529/29.18899">Могилевская обл., г. Бобруйск, ул. Минская, 169</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Славнефть № 9</font>
+<font color=red>brand=Славнефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 225 725796
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=9</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+375 225 725796
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator=ИООО "РН-Запад"
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft6" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 6</a><a href="#stationrosneft6" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.13299/29.22234">Могилевская обл., г. Бобруйск, ул. Пушкина, 155/80</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Роснефть № 6</font>
+<font color=red>brand=Роснефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 225 590730
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=6</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:octane_98=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+375 225 590730
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator=ИООО "РН-Запад"
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft4" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 4</a><a href="#stationrosneft4" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.15399/29.2052">Могилевская обл., г. Бобруйск, ул. Шевченко, 3</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Славнефть № 4</font>
+<font color=red>brand=Славнефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 225 724909
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=4</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft21" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 21</a><a href="#stationrosneft21" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.91571/30.37287">Могилёвская обл., г. Могилёв пр-т Мира,дом 71А</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Роснефть № 21</font>
+<font color=red>brand=Роснефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 222 738802
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=21</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+375 222 738802
+</pre></div>
+<div id="sidebar"><h4>Автомойка</h4><pre>
+amenity=car_wash
+automated=yes
+operator=ИООО "РН-Запад"
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator=ИООО "РН-Запад"
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft16" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 16</a><a href="#stationrosneft16" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.8537/30.33587">Могилевская обл., г. Могилев, пр-т Шмидта, д. 29</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Роснефть № 16</font>
+<font color=red>brand=Роснефть</font>
+operator=ИООО "РН-Запад"
+contact:phone=+375 222 709544
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+<font color=red>opening_hours=24/7</font>
+<font color=red>ref=16</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+375 222 709544
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator=ИООО "РН-Запад"
+cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E4344F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть АЗС № 53</a><a href="#stationbelorusB89F84F7E4344F70E043BF0BA8C03722" title="Ссылка">🔗</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.822286/23.873757">а/г Гожа,Р-42,17-й км,4</a>
     <br /><a href="https://www.openstreetmap.org/node/12851118543">Объект на карте</a> <br/>
 
@@ -4169,55 +5051,6 @@ contact:phone=+375 2330 44941
 
 </div><hr/>
 
-<div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E44B4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть МАЗС № 1</a><a href="#stationbelorusB89F84F7E44B4F70E043BF0BA8C03722" title="Ссылка">🔗</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.152046/30.127077">г. Витебск, Бешенковичское шоссе, 52</a>
-    <br /><a href="https://www.openstreetmap.org/node/990399131">Объект на карте</a> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Беларуснафта № 1
-name:be=Беларуснафта № 1
-name:ru=Белоруснефть № 1
-brand=Белоруснефть
-brand:wikidata=Q4082693
-operator="РУП "Белоруснефть-Витебскоблнефтепродукт""
-<font color=red>contact:phone=+375 212 651141</font>
-contact:website=https://azs.belorusneft.by/web-azs/
-opening_hours=24/7
-vacuum_cleaner=yes
-compressed_air=yes
-fuel:octane_92=yes
-fuel:octane_95=yes
-fuel:diesel=yes
-fuel:adblue:canister=yes
-fuel:lpg=yes
-ref=МАЗС 1
-guid:belorusneft=B89F84F7E44B4F70E043BF0BA8C03722
-</pre></div>
-<div id="sidebar"><h4>Продажа шин</h4><pre>
-shop=tyres
-brand=Белшина
-operator="РУП "Белоруснефть-Витебскоблнефтепродукт""
-opening_hours=24/7
-contact:website=https://www.belorusneft.by/catalog/category/850/
-contact:phone=+375 212 651141
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-operator="РУП "Белоруснефть-Витебскоблнефтепродукт""
-opening_hours=24/7
-contact:phone=+375 212 651141
-</pre></div>
-<div id="sidebar"><h4>Кафе</h4><pre>
-amenity=fast_food
-brand=Белоруснефть
-cuisine=hot_dog;burger
-opening_hours=24/7
-contact:phone=+375 212 651141
-</pre></div>
-
-</div><hr/>
-
 <div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E2D24F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть МАЗС № 8</a><a href="#stationbelorusB89F84F7E2D24F70E043BF0BA8C03722" title="Ссылка">🔗</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.170284/30.248054">г. Витебск, Старобабиновичский тракт, 1</a>
     <br /><a href="https://www.openstreetmap.org/node/334322226">Объект на карте</a> <br/>
@@ -6460,6 +7293,42 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 opening_hours=24/7
 contact:phone=+375 17 2502798
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationrosneft7" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 7</a><a href="#stationrosneft7" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.885867/27.501063">г. Минск, пр-т, Жукова, 20</a>
+    <br /><a href="https://www.openstreetmap.org/node/13081570124">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+<font color=red>name=Славнефть № 7</font>
+brand=Славнефть
+<font color=red>operator=ИООО "РН-Запад"</font>
+contact:phone=+375 17 3424482
+<font color=red>contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html</font>
+opening_hours=24/7
+ref=7
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:octane_98=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ИООО "РН-Запад"
+contact:phone=+375 17 3424482
+</pre></div>
+<div id="sidebar"><h4>Автомойка</h4><pre>
+amenity=car_wash
+automated=yes
+operator=ИООО "РН-Запад"
+</pre></div>
+<div id="sidebar"><h4>Кафетерий</h4><pre>
+amenity=fast_food
+operator=ИООО "РН-Запад"
+cuisine=coffee_shop
 </pre></div>
 
 </div><hr/>
@@ -20851,6 +21720,55 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 opening_hours=24/7
 contact:phone=+375 212 652077
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationbelorusB89F84F7E44B4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть МАЗС № 1</a><a href="#stationbelorusB89F84F7E44B4F70E043BF0BA8C03722" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.152046/30.127077">г. Витебск, Бешенковичское шоссе, 52</a>
+    <br /><a href="https://www.openstreetmap.org/node/990399131">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Беларуснафта № 1
+name:be=Беларуснафта № 1
+name:ru=Белоруснефть № 1
+brand=Белоруснефть
+brand:wikidata=Q4082693
+operator="РУП "Белоруснефть-Витебскоблнефтепродукт""
+contact:phone=+375 212 651141
+contact:website=https://azs.belorusneft.by/web-azs/
+opening_hours=24/7
+vacuum_cleaner=yes
+compressed_air=yes
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+fuel:adblue:canister=yes
+fuel:lpg=yes
+ref=МАЗС 1
+guid:belorusneft=B89F84F7E44B4F70E043BF0BA8C03722
+</pre></div>
+<div id="sidebar"><h4>Продажа шин</h4><pre>
+shop=tyres
+brand=Белшина
+operator="РУП "Белоруснефть-Витебскоблнефтепродукт""
+opening_hours=24/7
+contact:website=https://www.belorusneft.by/catalog/category/850/
+contact:phone=+375 212 651141
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator="РУП "Белоруснефть-Витебскоблнефтепродукт""
+opening_hours=24/7
+contact:phone=+375 212 651141
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+brand=Белоруснефть
+cuisine=hot_dog;burger
+opening_hours=24/7
+contact:phone=+375 212 651141
 </pre></div>
 
 </div><hr/>
