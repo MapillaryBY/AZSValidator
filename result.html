@@ -50,16 +50,16 @@
 </head>
 <body>
     <h1>Валидатор заправок Роснефть, Белoруснефть, A100, Газпром, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2025-10-15 19:54:21Z</p>
+    <p>Дата генерации файла 2025-10-15 21:56:04Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/web-azs/ru/azs-map">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
-    <font color=red>Not found</font> (24) автозаправка не найдена в ожидаемом месте</br>
+    <font color=red>Not found</font> (22) автозаправка не найдена в ожидаемом месте</br>
     <font color=orange>Найден, но нет Guid</font> (0) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
     OK (325) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
-    <font color=green>Нет проблем</font> (444) все тэги в порядке'</br>
+    <font color=green>Нет проблем</font> (446) все тэги в порядке'</br>
     <div id="mapid"></div>
     <script>
         const notFoundColour = 'Red'
@@ -158,11 +158,7 @@
             id: 'streets-v11',
             accessToken: 'pk.eyJ1IjoiYmlnb3Blbm1hYyIsImEiOiJjazF2cGsxd20xMWMyM2JxeWx3N2NvMzExIn0.aMyRwzXDhGqu7yRy85wkow'
         }).addTo(mymap);
-        var marker = L.marker([53.13282,25.9471],{icon:iconNotFound}).addTo(mymap);
-marker.bindPopup("<b>Роснефть АЗС № 76</b><br/><a href=#stationrosneft76>Перейти</a>");
-var marker = L.marker([53.11081,26.0128],{icon:iconNotFound}).addTo(mymap);
-marker.bindPopup("<b>Роснефть АЗС № 77</b><br/><a href=#stationrosneft77>Перейти</a>");
-var marker = L.marker([53.14772,26.03769],{icon:iconNotFound}).addTo(mymap);
+        var marker = L.marker([53.14772,26.03769],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>Роснефть АЗС № 70</b><br/><a href=#stationrosneft70>Перейти</a>");
 var marker = L.marker([52.102874,23.719665],{icon:iconNotFound}).addTo(mymap);
 marker.bindPopup("<b>Роснефть АЗС № 29</b><br/><a href=#stationrosneft29>Перейти</a>");
@@ -1028,8 +1024,12 @@ var marker = L.marker([53.149875,26.070881],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 34</b><br/><a href=#stationbelorusB89F84F7E4664F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.118611,25.950278],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть МАЗС № 35</b><br/><a href=#stationbelorusB89F84F7E2B14F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.13282,25.9471],{icon:iconGood}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 76</b><br/><a href=#stationrosneft76>Перейти</a>");
 var marker = L.marker([53.155278,25.9925],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 30</b><br/><a href=#stationbelorusB89F84F7E2AE4F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.11081,26.0128],{icon:iconGood}).addTo(mymap);
+marker.bindPopup("<b>Роснефть АЗС № 77</b><br/><a href=#stationrosneft77>Перейти</a>");
 var marker = L.marker([53.114722,26.061667],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть МАЗС № 22</b><br/><a href=#stationbelorusB89F84F7E2A64F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.1005782,23.6751524],{icon:iconGood}).addTo(mymap);
@@ -1756,47 +1756,7 @@ marker.bindPopup("<b>Лукойл АЗС № 22</b><br/><a href=#stationlukoil22
     
     <h4>Список  станций (793 шт.):</h4>
     <div id="station_list">
-        <div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft76" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 76</a><a href="#stationrosneft76" title="Ссылка">🔗</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.13282/25.9471">Брестская обл., г. Барановичи, ул. Вильчковского, 220</a>
-    <br /> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-<font color=red>name=Славнефть № 76</font>
-<font color=red>brand=Славнефть</font>
-operator=ИООО "РН-Запад"
-contact:phone=+375 163 419971
-contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
-<font color=red>opening_hours=24/7</font>
-<font color=red>ref=76</font>
-fuel:octane_92=yes
-fuel:octane_95=yes
-fuel:diesel=yes
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft77" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 77</a><a href="#stationrosneft77" title="Ссылка">🔗</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.11081/26.0128">Брестская обл., г. Барановичи, ул. Калинина, 121</a>
-    <br /> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-<font color=red>name=Славнефть № 77</font>
-<font color=red>brand=Славнефть</font>
-operator=ИООО "РН-Запад"
-contact:phone=+375 163 614835
-contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
-<font color=red>opening_hours=24/7</font>
-<font color=red>ref=77</font>
-fuel:octane_92=yes
-fuel:octane_95=yes
-fuel:diesel=yes
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft70" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 70</a><a href="#stationrosneft70" title="Ссылка">🔗</a>
+        <div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationrosneft70" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 70</a><a href="#stationrosneft70" title="Ссылка">🔗</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.14772/26.03769">Брестская обл., г. Барановичи, ул. Кирова, 75/1</a>
     <br /> <br/>
 
@@ -18821,6 +18781,26 @@ contact:phone=+375 163 468478
 
 </div><hr/>
 
+<div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationrosneft76" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 76</a><a href="#stationrosneft76" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.13282/25.9471">Брестская обл., г. Барановичи, ул. Вильчковского, 220</a>
+    <br /><a href="https://www.openstreetmap.org/node/5221106422">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Славнефть № 76
+brand=Славнефть
+operator=ИООО "РН-Запад"
+contact:phone=+375 163 419971
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+opening_hours=24/7
+ref=76
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationbelorusB89F84F7E2AE4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть АЗС № 30</a><a href="#stationbelorusB89F84F7E2AE4F70E043BF0BA8C03722" title="Ссылка">🔗</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.155278/25.9925">Брестская обл., г. Барановичи, ул. Доменикана, 4</a>
     <br /><a href="https://www.openstreetmap.org/node/9253418788">Объект на карте</a> <br/>
@@ -18868,6 +18848,26 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 opening_hours=24/7
 contact:phone=+375 163 657899
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationrosneft77" href="https://www.rn-west.by/nasha-set/adresa-azs.html">Роснефть  № 77</a><a href="#stationrosneft77" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.11081/26.0128">Брестская обл., г. Барановичи, ул. Калинина, 121</a>
+    <br /><a href="https://www.openstreetmap.org/way/380315401">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Славнефть № 77
+brand=Славнефть
+operator=ИООО "РН-Запад"
+contact:phone=+375 163 614835
+contact:website=https://www.rn-west.by/nasha-set/adresa-azs.html
+opening_hours=24/7
+ref=77
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
 </pre></div>
 
 </div><hr/>
