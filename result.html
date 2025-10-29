@@ -50,16 +50,16 @@
 </head>
 <body>
     <h1>Валидатор заправок Роснефть, Белoруснефть, A100, Газпром, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2025-10-28 21:58:47Z</p>
+    <p>Дата генерации файла 2025-10-29 09:00:13Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/web-azs/ru/azs-map">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
-    <font color=red>Not found</font> (1) автозаправка не найдена в ожидаемом месте</br>
+    <font color=red>Not found</font> (0) автозаправка не найдена в ожидаемом месте</br>
     <font color=orange>Найден, но нет Guid</font> (0) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
     OK (272) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
-    <font color=green>Нет проблем</font> (520) все тэги в порядке'</br>
+    <font color=green>Нет проблем</font> (521) все тэги в порядке'</br>
     <div id="mapid"></div>
     <script>
         const notFoundColour = 'Red'
@@ -158,9 +158,7 @@
             id: 'streets-v11',
             accessToken: 'pk.eyJ1IjoiYmlnb3Blbm1hYyIsImEiOiJjazF2cGsxd20xMWMyM2JxeWx3N2NvMzExIn0.aMyRwzXDhGqu7yRy85wkow'
         }).addTo(mymap);
-        var marker = L.marker([53.955347,27.724444],{icon:iconNotFound}).addTo(mymap);
-marker.bindPopup("<b>A100 АЗС № 38</b><br/><a href=#stationa10038>Перейти</a>");
-var marker = L.marker([52.700621,25.319135],{icon:iconNormal}).addTo(mymap);
+        var marker = L.marker([52.700621,25.319135],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть МАЗС № 27</b><br/><a href=#stationbelorusB89F84F7E2AB4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.3046,25.6135],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 77</b><br/><a href=#stationbelorusB89F84F7E41B4F70E043BF0BA8C03722>Перейти</a>");
@@ -1692,6 +1690,8 @@ var marker = L.marker([53.90501,27.409028],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>A100 АЗС № 19</b><br/><a href=#stationa10019>Перейти</a>");
 var marker = L.marker([53.9009559148,27.661249940475],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>A100 АЗС № 21</b><br/><a href=#stationa10021>Перейти</a>");
+var marker = L.marker([53.955347,27.724444],{icon:iconGood}).addTo(mymap);
+marker.bindPopup("<b>A100 АЗС № 38</b><br/><a href=#stationa10038>Перейти</a>");
 var marker = L.marker([53.647823,23.811695],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Лукойл АЗС № 54</b><br/><a href=#stationlukoil54>Перейти</a>");
 var marker = L.marker([53.916578,27.413609],{icon:iconGood}).addTo(mymap);
@@ -1756,37 +1756,7 @@ marker.bindPopup("<b>Лукойл АЗС № 22</b><br/><a href=#stationlukoil22
     
     <h4>Список  станций (793 шт.):</h4>
     <div id="station_list">
-        <div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationa10038" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Героев Сталинграда, 2">A100  № 38</a><a href="#stationa10038" title="Ссылка">🔗</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.955347/27.724444">ул. Героев Сталинграда, 2</a>
-    <br /> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=А-100 № 38
-brand=А-100
-operator=ГК «А-100 АЗС»
-vacuum_cleaner=yes
-<font color=red>internet_access=wlan</font>
-<font color=red>internet_access:fee=no</font>
-contact:phone=+375 44 5216090
-contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Героев Сталинграда, 2
-<font color=red>opening_hours=24/7</font>
-<font color=red>ref=38</font>
-fuel:octane_92=yes
-fuel:octane_95=yes
-fuel:octane_98=yes
-fuel:diesel=yes
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-<font color=red>operator=ГК «А-100 АЗС»</font>
-contact:phone=+375 44 5216090
-opening_hours=24/7
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E2AB4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть МАЗС № 27</a><a href="#stationbelorusB89F84F7E2AB4F70E043BF0BA8C03722" title="Ссылка">🔗</a>
+        <div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E2AB4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть МАЗС № 27</a><a href="#stationbelorusB89F84F7E2AB4F70E043BF0BA8C03722" title="Ссылка">🔗</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.700621/25.319135">Брестская обл., г.Ивацевичи, ул.Ленина 1Г</a>
     <br /><a href="https://www.openstreetmap.org/node/3310367528">Объект на карте</a> <br/>
 
@@ -30812,6 +30782,36 @@ opening_hours=24/7
 amenity=car_wash
 automated=yes
 operator=ГК «А-100 АЗС»
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationa10038" href="https://azs.a-100.by/set-azs/map-azs/?query=ул. Героев Сталинграда, 2">A100  № 38</a><a href="#stationa10038" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.955347/27.724444">ул. Героев Сталинграда, 2</a>
+    <br /><a href="https://www.openstreetmap.org/way/648740926">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 38
+brand=А-100
+operator=ГК «А-100 АЗС»
+vacuum_cleaner=yes
+internet_access=wlan
+internet_access:fee=no
+contact:phone=+375 44 5216090
+contact:website=https://azs.a-100.by/set-azs/map-azs/?query=ул. Героев Сталинграда, 2
+opening_hours=24/7
+ref=38
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:octane_98=yes
+fuel:diesel=yes
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=ГК «А-100 АЗС»
+contact:phone=+375 44 5216090
+opening_hours=24/7
 </pre></div>
 
 </div><hr/>
