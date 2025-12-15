@@ -50,7 +50,7 @@
 </head>
 <body>
     <h1>Валидатор заправок Роснефть, Белoруснефть, A100, Газпром, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2025-12-15 08:56:07Z</p>
+    <p>Дата генерации файла 2025-12-15 21:56:21Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/web-azs/ru/azs-map">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
@@ -58,8 +58,8 @@
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (0) автозаправка не найдена в ожидаемом месте</br>
     <font color=orange>Найден, но нет Guid</font> (0) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (96) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
-    <font color=green>Нет проблем</font> (696) все тэги в порядке'</br>
+    OK (90) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
+    <font color=green>Нет проблем</font> (702) все тэги в порядке'</br>
     <div id="mapid"></div>
     <script>
         const notFoundColour = 'Red'
@@ -158,22 +158,10 @@
             id: 'streets-v11',
             accessToken: 'pk.eyJ1IjoiYmlnb3Blbm1hYyIsImEiOiJjazF2cGsxd20xMWMyM2JxeWx3N2NvMzExIn0.aMyRwzXDhGqu7yRy85wkow'
         }).addTo(mymap);
-        var marker = L.marker([55.525315,28.649322],{icon:iconNormal}).addTo(mymap);
-marker.bindPopup("<b>Белoруснефть МАЗС № 70</b><br/><a href=#stationbelorusEB4F0920EE6A139BE043BF0BA8C02124>Перейти</a>");
-var marker = L.marker([55.534422,28.630608],{icon:iconNormal}).addTo(mymap);
-marker.bindPopup("<b>Белoруснефть АЗС № 42</b><br/><a href=#stationbelorusB89F84F7E2F54F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([55.514838,28.685022],{icon:iconNormal}).addTo(mymap);
+        var marker = L.marker([55.514838,28.685022],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть КАЗС № 47</b><br/><a href=#stationbelorusB89F84F7E2FA4F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([54.4825,30.38],{icon:iconNormal}).addTo(mymap);
-marker.bindPopup("<b>Белoруснефть АЗС № 49</b><br/><a href=#stationbelorusB89F84F7E2FC4F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([53.323454,28.651137],{icon:iconNormal}).addTo(mymap);
-marker.bindPopup("<b>Белoруснефть МАЗС № 56</b><br/><a href=#stationbelorusB89F84F7E3F04F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.307014,28.66154],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 38</b><br/><a href=#stationbelorusB89F84F7E3EC4F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([55.500029,28.768873],{icon:iconNormal}).addTo(mymap);
-marker.bindPopup("<b>Белoруснефть МАЗС № 54</b><br/><a href=#stationbelorusB89F84F7E4304F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([55.48436,28.800306],{icon:iconNormal}).addTo(mymap);
-marker.bindPopup("<b>Белoруснефть МАЗС № 46</b><br/><a href=#stationbelorusB89F84F7E2F94F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.119530893885305,30.07062559825722],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть МАЗС № 81</b><br/><a href=#stationbelorusEA7EE7218CBF5214E043BF0BA8C01964>Перейти</a>");
 var marker = L.marker([53.102847725985136,30.04487102773681],{icon:iconNormal}).addTo(mymap);
@@ -1118,16 +1106,28 @@ var marker = L.marker([53.598333,25.847778],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть МАЗС № 11</b><br/><a href=#stationbelorusB89F84F7E37F4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([55.543055555555554,28.66583333333333],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 40</b><br/><a href=#stationbelorusD274E24530EB77E3E053BF0BA8C0C66C>Перейти</a>");
+var marker = L.marker([55.525315,28.649322],{icon:iconGood}).addTo(mymap);
+marker.bindPopup("<b>Белoруснефть МАЗС № 70</b><br/><a href=#stationbelorusEB4F0920EE6A139BE043BF0BA8C02124>Перейти</a>");
+var marker = L.marker([55.534422,28.630608],{icon:iconGood}).addTo(mymap);
+marker.bindPopup("<b>Белoруснефть АЗС № 42</b><br/><a href=#stationbelorusB89F84F7E2F54F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.54138888888889,30.4475],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть МАЗС № 48</b><br/><a href=#stationbelorusB89F84F7E2FB4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.486974,30.436866],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 65</b><br/><a href=#stationbelorusB89F84F7E3014F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.521708,30.403893],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть МАЗС № 51</b><br/><a href=#stationbelorusB89F84F7E2FE4F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([54.4825,30.38],{icon:iconGood}).addTo(mymap);
+marker.bindPopup("<b>Белoруснефть АЗС № 49</b><br/><a href=#stationbelorusB89F84F7E2FC4F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.323454,28.651137],{icon:iconGood}).addTo(mymap);
+marker.bindPopup("<b>Белoруснефть МАЗС № 56</b><br/><a href=#stationbelorusB89F84F7E3F04F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.405483,32.552601],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 52</b><br/><a href=#stationbelorusB89F84F7E3DA4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.14064736654697,28.49703260473812],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 67</b><br/><a href=#stationbelorusB89F84F7E4164F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([55.500029,28.768873],{icon:iconGood}).addTo(mymap);
+marker.bindPopup("<b>Белoруснефть МАЗС № 54</b><br/><a href=#stationbelorusB89F84F7E4304F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([55.48436,28.800306],{icon:iconGood}).addTo(mymap);
+marker.bindPopup("<b>Белoруснефть МАЗС № 46</b><br/><a href=#stationbelorusB89F84F7E2F94F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([55.098414,26.838948],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть МАЗС № 22</b><br/><a href=#stationbelorusB89F84F7E2E04F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.3675,30.34513],{icon:iconGood}).addTo(mymap);
@@ -1754,114 +1754,7 @@ marker.bindPopup("<b>Лукойл АЗС № 22</b><br/><a href=#stationlukoil22
     
     <h4>Список  станций (792 шт.):</h4>
     <div id="station_list">
-        <div class="station" id="container"><b>OK</b>  <a id="stationbelorusEB4F0920EE6A139BE043BF0BA8C02124" href="https://azs.belorusneft.by/web-azs/">Белoруснефть МАЗС № 70</a><a href="#stationbelorusEB4F0920EE6A139BE043BF0BA8C02124" title="Ссылка">🔗</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.525315/28.649322">г. Новополоцк, ул. Калинина, 24</a>
-    <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=4461226739">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/4461226739">Объект на карте</a> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Беларуснафта № 70
-name:be=Беларуснафта № 70
-name:ru=Белоруснефть № 70
-brand=Белоруснефть
-brand:wikidata=Q4082693
-operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
-contact:phone=+375 214 509055
-contact:website=https://azs.belorusneft.by/web-azs/
-opening_hours=24/7
-vacuum_cleaner=yes
-compressed_air=yes
-internet_access=wlan
-internet_access:fee=no
-fuel:octane_92=yes
-fuel:octane_95=yes
-fuel:diesel=yes
-fuel:fuel:diesel:class2=yes
-fuel:adblue:canister=yes
-fuel:lpg=yes
-ref=МАЗС 70
-guid:belorusneft=EB4F0920EE6A139BE043BF0BA8C02124
-
-<font color=red><b>Tags to delete:</b></font>
-<s>
-fuel:adblue=yes
-</s>
-</pre></div>
-<div id="sidebar"><h4>Продажа шин</h4><pre>
-shop=tyres
-brand=Белшина
-operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
-opening_hours=24/7
-contact:website=https://www.belorusneft.by/catalog/category/850/
-contact:phone=+375 214 509055
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
-opening_hours=24/7
-contact:phone=+375 214 509055
-</pre></div>
-<div id="sidebar"><h4>Кафе</h4><pre>
-amenity=fast_food
-brand=Белоруснефть
-cuisine=hot_dog;burger
-opening_hours=24/7
-contact:phone=+375 214 509055
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E2F54F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть АЗС № 42</a><a href="#stationbelorusB89F84F7E2F54F70E043BF0BA8C03722" title="Ссылка">🔗</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.534422/28.630608">г. Новополоцк, ул. Ктаторова 31</a>
-    <br /><a target=_blank href="https://www.openstreetmap.org/edit?way=227117773">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/way/227117773">Объект на карте</a> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Беларуснафта № 42
-name:be=Беларуснафта № 42
-name:ru=Белоруснефть № 42
-brand=Белоруснефть
-brand:wikidata=Q4082693
-operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
-contact:phone=+375 214 501699
-contact:website=https://azs.belorusneft.by/web-azs/
-opening_hours=24/7
-vacuum_cleaner=yes
-compressed_air=yes
-internet_access=wlan
-internet_access:fee=no
-fuel:octane_92=yes
-fuel:octane_95=yes
-fuel:octane_98=yes
-fuel:diesel=yes
-fuel:adblue:canister=yes
-fuel:HGV_diesel=yes
-ref=АЗС 42
-guid:belorusneft=B89F84F7E2F54F70E043BF0BA8C03722
-
-<font color=red><b>Tags to delete:</b></font>
-<s>
-fuel:adblue=yes
-</s>
-</pre></div>
-<div id="sidebar"><h4>Продажа шин</h4><pre>
-shop=tyres
-brand=Белшина
-operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
-opening_hours=24/7
-contact:website=https://www.belorusneft.by/catalog/category/850/
-contact:phone=+375 214 501699
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
-opening_hours=24/7
-contact:phone=+375 214 501699
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E2FA4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть КАЗС № 47</a><a href="#stationbelorusB89F84F7E2FA4F70E043BF0BA8C03722" title="Ссылка">🔗</a>
+        <div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E2FA4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть КАЗС № 47</a><a href="#stationbelorusB89F84F7E2FA4F70E043BF0BA8C03722" title="Ссылка">🔗</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.514838/28.685022">г. Новополоцк,р-н завода "Измеритель"</a>
     <br /><a target=_blank href="https://www.openstreetmap.org/edit?way=93359828">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/way/93359828">Объект на карте</a> <br/>
 
@@ -1898,80 +1791,6 @@ contact:phone=+375 214 580990
 
 </div><hr/>
 
-<div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E2FC4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть АЗС № 49</a><a href="#stationbelorusB89F84F7E2FC4F70E043BF0BA8C03722" title="Ссылка">🔗</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.4825/30.38">г. Орша, ул.2-я Шкловская, 4А</a>
-    <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=306065910">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/306065910">Объект на карте</a> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Беларуснафта № 49
-name:be=Беларуснафта № 49
-name:ru=Белоруснефть № 49
-brand=Белоруснефть
-brand:wikidata=Q4082693
-operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
-contact:phone=+375 216 506281
-contact:website=https://azs.belorusneft.by/web-azs/
-<font color=red>opening_hours=Mo-Su 08:00-20:00</font>
-<font color=red>self_service=yes</font>
-fuel:octane_92=yes
-fuel:diesel=yes
-ref=АЗС 49
-guid:belorusneft=B89F84F7E2FC4F70E043BF0BA8C03722
-
-<font color=red><b>Tags to delete:</b></font>
-<s>
-fuel:octane_95=yes
-</s>
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E3F04F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть МАЗС № 56</a><a href="#stationbelorusB89F84F7E3F04F70E043BF0BA8C03722" title="Ссылка">🔗</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.323454/28.651137">г. Осиповичи, ул. Сумченко 91</a>
-    <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=7161706203">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/7161706203">Объект на карте</a> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Беларуснафта № 56
-name:be=Беларуснафта № 56
-name:ru=Белоруснефть № 56
-brand=Белоруснефть
-brand:wikidata=Q4082693
-operator=РУП "Белоруснефть-Могилевоблнефтепродукт"
-contact:phone=+375 2235 31163
-contact:website=https://azs.belorusneft.by/web-azs/
-opening_hours=24/7
-vacuum_cleaner=yes
-compressed_air=yes
-<font color=red>internet_access=wlan</font>
-<font color=red>internet_access:fee=no</font>
-self_service=yes
-fuel:octane_92=yes
-fuel:octane_95=yes
-fuel:diesel=yes
-fuel:adblue:canister=yes
-fuel:lpg=yes
-fuel:HGV_diesel=yes
-ref=МАЗС 56
-guid:belorusneft=B89F84F7E3F04F70E043BF0BA8C03722
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-operator=РУП "Белоруснефть-Могилевоблнефтепродукт"
-opening_hours=24/7
-contact:phone=+375 2235 31163
-</pre></div>
-<div id="sidebar"><h4>Кафе</h4><pre>
-amenity=fast_food
-brand=Белоруснефть
-cuisine=hot_dog;burger
-opening_hours=24/7
-contact:phone=+375 2235 31163
-</pre></div>
-
-</div><hr/>
-
 <div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E3EC4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть АЗС № 38</a><a href="#stationbelorusB89F84F7E3EC4F70E043BF0BA8C03722" title="Ссылка">🔗</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.307014/28.66154">г. Осиповичи, ул. Юбилейная, 43Б</a>
     <br /><a target=_blank href="https://www.openstreetmap.org/edit?way=698316738">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/way/698316738">Объект на карте</a> <br/>
@@ -2002,113 +1821,6 @@ operator=РУП "Белоруснефть-Могилевоблнефтепрод
 opening_hours=24/7
 contact:website=https://www.belorusneft.by/catalog/category/850/
 contact:phone=+375 2235 51298
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E4304F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть МАЗС № 54</a><a href="#stationbelorusB89F84F7E4304F70E043BF0BA8C03722" title="Ссылка">🔗</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.500029/28.768873">г. Полоцк, ул. Ефросиньи Полоцкой, 47</a>
-    <br /><a target=_blank href="https://www.openstreetmap.org/edit?way=312832621">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/way/312832621">Объект на карте</a> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Беларуснафта № 54
-name:be=Беларуснафта № 54
-name:ru=Белоруснефть № 54
-brand=Белоруснефть
-brand:wikidata=Q4082693
-operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
-contact:phone=+375 214 465376
-contact:website=https://azs.belorusneft.by/web-azs/
-opening_hours=24/7
-vacuum_cleaner=yes
-compressed_air=yes
-internet_access=wlan
-internet_access:fee=no
-fuel:octane_92=yes
-fuel:octane_95=yes
-fuel:octane_98=yes
-fuel:diesel=yes
-fuel:adblue:canister=yes
-fuel:lpg=yes
-ref=МАЗС 54
-guid:belorusneft=B89F84F7E4304F70E043BF0BA8C03722
-
-<font color=red><b>Tags to delete:</b></font>
-<s>
-fuel:adblue=yes
-</s>
-</pre></div>
-<div id="sidebar"><h4>Продажа шин</h4><pre>
-shop=tyres
-brand=Белшина
-operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
-opening_hours=24/7
-contact:website=https://www.belorusneft.by/catalog/category/850/
-contact:phone=+375 214 465376
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
-opening_hours=24/7
-contact:phone=+375 214 465376
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E2F94F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть МАЗС № 46</a><a href="#stationbelorusB89F84F7E2F94F70E043BF0BA8C03722" title="Ссылка">🔗</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.48436/28.800306">г. Полоцк, ул.Гагарина,32</a>
-    <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=3187338841">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/3187338841">Объект на карте</a> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Беларуснафта № 46
-name:be=Беларуснафта № 46
-name:ru=Белоруснефть № 46
-brand=Белоруснефть
-brand:wikidata=Q4082693
-operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
-contact:phone=+375 214 493224
-contact:website=https://azs.belorusneft.by/web-azs/
-opening_hours=24/7
-vacuum_cleaner=yes
-compressed_air=yes
-internet_access=wlan
-internet_access:fee=no
-fuel:octane_92=yes
-fuel:octane_95=yes
-fuel:octane_98=yes
-fuel:diesel=yes
-fuel:adblue:canister=yes
-fuel:lpg=yes
-ref=МАЗС 46
-guid:belorusneft=B89F84F7E2F94F70E043BF0BA8C03722
-
-<font color=red><b>Tags to delete:</b></font>
-<s>
-fuel:adblue=yes
-</s>
-</pre></div>
-<div id="sidebar"><h4>Продажа шин</h4><pre>
-shop=tyres
-brand=Белшина
-operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
-opening_hours=24/7
-contact:website=https://www.belorusneft.by/catalog/category/850/
-contact:phone=+375 214 493224
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
-opening_hours=24/7
-contact:phone=+375 214 493224
-</pre></div>
-<div id="sidebar"><h4>Кафе</h4><pre>
-amenity=fast_food
-brand=Белоруснефть
-cuisine=hot_dog;burger
-opening_hours=24/7
-contact:phone=+375 214 493224
 </pre></div>
 
 </div><hr/>
@@ -20906,6 +20618,103 @@ guid:belorusneft=D274E24530EB77E3E053BF0BA8C0C66C
 
 </div><hr/>
 
+<div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationbelorusEB4F0920EE6A139BE043BF0BA8C02124" href="https://azs.belorusneft.by/web-azs/">Белoруснефть МАЗС № 70</a><a href="#stationbelorusEB4F0920EE6A139BE043BF0BA8C02124" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.525315/28.649322">г. Новополоцк, ул. Калинина, 24</a>
+    <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=4461226739">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/4461226739">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Беларуснафта № 70
+name:be=Беларуснафта № 70
+name:ru=Белоруснефть № 70
+brand=Белоруснефть
+brand:wikidata=Q4082693
+operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
+contact:phone=+375 214 509055
+contact:website=https://azs.belorusneft.by/web-azs/
+opening_hours=24/7
+vacuum_cleaner=yes
+compressed_air=yes
+internet_access=wlan
+internet_access:fee=no
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+fuel:fuel:diesel:class2=yes
+fuel:adblue:canister=yes
+fuel:lpg=yes
+ref=МАЗС 70
+guid:belorusneft=EB4F0920EE6A139BE043BF0BA8C02124
+</pre></div>
+<div id="sidebar"><h4>Продажа шин</h4><pre>
+shop=tyres
+brand=Белшина
+operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
+opening_hours=24/7
+contact:website=https://www.belorusneft.by/catalog/category/850/
+contact:phone=+375 214 509055
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
+opening_hours=24/7
+contact:phone=+375 214 509055
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+brand=Белоруснефть
+cuisine=hot_dog;burger
+opening_hours=24/7
+contact:phone=+375 214 509055
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationbelorusB89F84F7E2F54F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть АЗС № 42</a><a href="#stationbelorusB89F84F7E2F54F70E043BF0BA8C03722" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.534422/28.630608">г. Новополоцк, ул. Ктаторова 31</a>
+    <br /><a target=_blank href="https://www.openstreetmap.org/edit?way=227117773">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/way/227117773">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Беларуснафта № 42
+name:be=Беларуснафта № 42
+name:ru=Белоруснефть № 42
+brand=Белоруснефть
+brand:wikidata=Q4082693
+operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
+contact:phone=+375 214 501699
+contact:website=https://azs.belorusneft.by/web-azs/
+opening_hours=24/7
+vacuum_cleaner=yes
+compressed_air=yes
+internet_access=wlan
+internet_access:fee=no
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:octane_98=yes
+fuel:diesel=yes
+fuel:adblue:canister=yes
+fuel:HGV_diesel=yes
+ref=АЗС 42
+guid:belorusneft=B89F84F7E2F54F70E043BF0BA8C03722
+</pre></div>
+<div id="sidebar"><h4>Продажа шин</h4><pre>
+shop=tyres
+brand=Белшина
+operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
+opening_hours=24/7
+contact:website=https://www.belorusneft.by/catalog/category/850/
+contact:phone=+375 214 501699
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
+opening_hours=24/7
+contact:phone=+375 214 501699
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationbelorusB89F84F7E2FB4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть МАЗС № 48</a><a href="#stationbelorusB89F84F7E2FB4F70E043BF0BA8C03722" title="Ссылка">🔗</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.54138888888889/30.4475">г. Орша, ул. Ленина, 232Б</a>
     <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=306066017">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/306066017">Объект на карте</a> <br/>
@@ -21030,6 +20839,75 @@ contact:phone=+375 216 568823
 
 </div><hr/>
 
+<div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationbelorusB89F84F7E2FC4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть АЗС № 49</a><a href="#stationbelorusB89F84F7E2FC4F70E043BF0BA8C03722" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.4825/30.38">г. Орша, ул.2-я Шкловская, 4А</a>
+    <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=306065910">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/306065910">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Беларуснафта № 49
+name:be=Беларуснафта № 49
+name:ru=Белоруснефть № 49
+brand=Белоруснефть
+brand:wikidata=Q4082693
+operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
+contact:phone=+375 216 506281
+contact:website=https://azs.belorusneft.by/web-azs/
+opening_hours=Mo-Su 08:00-20:00
+self_service=yes
+fuel:octane_92=yes
+fuel:diesel=yes
+ref=АЗС 49
+guid:belorusneft=B89F84F7E2FC4F70E043BF0BA8C03722
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationbelorusB89F84F7E3F04F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть МАЗС № 56</a><a href="#stationbelorusB89F84F7E3F04F70E043BF0BA8C03722" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.323454/28.651137">г. Осиповичи, ул. Сумченко 91</a>
+    <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=7161706203">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/7161706203">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Беларуснафта № 56
+name:be=Беларуснафта № 56
+name:ru=Белоруснефть № 56
+brand=Белоруснефть
+brand:wikidata=Q4082693
+operator=РУП "Белоруснефть-Могилевоблнефтепродукт"
+contact:phone=+375 2235 31163
+contact:website=https://azs.belorusneft.by/web-azs/
+opening_hours=24/7
+vacuum_cleaner=yes
+compressed_air=yes
+internet_access=wlan
+internet_access:fee=no
+self_service=yes
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+fuel:adblue:canister=yes
+fuel:lpg=yes
+fuel:HGV_diesel=yes
+ref=МАЗС 56
+guid:belorusneft=B89F84F7E3F04F70E043BF0BA8C03722
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=РУП "Белоруснефть-Могилевоблнефтепродукт"
+opening_hours=24/7
+contact:phone=+375 2235 31163
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+brand=Белоруснефть
+cuisine=hot_dog;burger
+opening_hours=24/7
+contact:phone=+375 2235 31163
+</pre></div>
+
+</div><hr/>
+
 <div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationbelorusB89F84F7E3DA4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть АЗС № 52</a><a href="#stationbelorusB89F84F7E3DA4F70E043BF0BA8C03722" title="Ссылка">🔗</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.405483/32.552601">г. п.Хотимск. ул Гагарина. 25а</a>
     <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=2265587343">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/2265587343">Объект на карте</a> <br/>
@@ -21111,6 +20989,103 @@ brand=Белоруснефть
 cuisine=hot_dog;burger
 opening_hours=24/7
 contact:phone=+375 2350 26353
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationbelorusB89F84F7E4304F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть МАЗС № 54</a><a href="#stationbelorusB89F84F7E4304F70E043BF0BA8C03722" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.500029/28.768873">г. Полоцк, ул. Ефросиньи Полоцкой, 47</a>
+    <br /><a target=_blank href="https://www.openstreetmap.org/edit?way=312832621">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/way/312832621">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Беларуснафта № 54
+name:be=Беларуснафта № 54
+name:ru=Белоруснефть № 54
+brand=Белоруснефть
+brand:wikidata=Q4082693
+operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
+contact:phone=+375 214 465376
+contact:website=https://azs.belorusneft.by/web-azs/
+opening_hours=24/7
+vacuum_cleaner=yes
+compressed_air=yes
+internet_access=wlan
+internet_access:fee=no
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:octane_98=yes
+fuel:diesel=yes
+fuel:adblue:canister=yes
+fuel:lpg=yes
+ref=МАЗС 54
+guid:belorusneft=B89F84F7E4304F70E043BF0BA8C03722
+</pre></div>
+<div id="sidebar"><h4>Продажа шин</h4><pre>
+shop=tyres
+brand=Белшина
+operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
+opening_hours=24/7
+contact:website=https://www.belorusneft.by/catalog/category/850/
+contact:phone=+375 214 465376
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
+opening_hours=24/7
+contact:phone=+375 214 465376
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationbelorusB89F84F7E2F94F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть МАЗС № 46</a><a href="#stationbelorusB89F84F7E2F94F70E043BF0BA8C03722" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/55.48436/28.800306">г. Полоцк, ул.Гагарина,32</a>
+    <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=3187338841">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/3187338841">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Беларуснафта № 46
+name:be=Беларуснафта № 46
+name:ru=Белоруснефть № 46
+brand=Белоруснефть
+brand:wikidata=Q4082693
+operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
+contact:phone=+375 214 493224
+contact:website=https://azs.belorusneft.by/web-azs/
+opening_hours=24/7
+vacuum_cleaner=yes
+compressed_air=yes
+internet_access=wlan
+internet_access:fee=no
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:octane_98=yes
+fuel:diesel=yes
+fuel:adblue:canister=yes
+fuel:lpg=yes
+ref=МАЗС 46
+guid:belorusneft=B89F84F7E2F94F70E043BF0BA8C03722
+</pre></div>
+<div id="sidebar"><h4>Продажа шин</h4><pre>
+shop=tyres
+brand=Белшина
+operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
+opening_hours=24/7
+contact:website=https://www.belorusneft.by/catalog/category/850/
+contact:phone=+375 214 493224
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
+opening_hours=24/7
+contact:phone=+375 214 493224
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+brand=Белоруснефть
+cuisine=hot_dog;burger
+opening_hours=24/7
+contact:phone=+375 214 493224
 </pre></div>
 
 </div><hr/>
