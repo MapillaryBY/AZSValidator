@@ -50,7 +50,7 @@
 </head>
 <body>
     <h1>Валидатор заправок Роснефть, Белoруснефть, A100, Газпром, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2026-04-08 08:59:58Z</p>
+    <p>Дата генерации файла 2026-04-08 21:58:01Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/web-azs/ru/azs-map">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
@@ -58,8 +58,8 @@
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (0) автозаправка не найдена в ожидаемом месте</br>
     <font color=orange>Найден, но нет Guid</font> (0) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (46) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
-    <font color=green>Нет проблем</font> (744) все тэги в порядке'</br>
+    OK (47) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
+    <font color=green>Нет проблем</font> (743) все тэги в порядке'</br>
     <div id="mapid"></div>
     <script>
         const notFoundColour = 'Red'
@@ -168,6 +168,8 @@ var marker = L.marker([53.620225,28.05086],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 7</b><br/><a href=#stationbelorusB89F84F7E4724F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.929749,31.461067],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 50</b><br/><a href=#stationbelorusB89F84F7E3D84F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([52.1568,25.5597],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>Белoруснефть АЗС № 76</b><br/><a href=#stationbelorusB89F84F7E2CF4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.71225,30.57022],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 19</b><br/><a href=#stationbelorusB89F84F7E30F4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([55.152046,30.127077],{icon:iconNormal}).addTo(mymap);
@@ -498,8 +500,6 @@ var marker = L.marker([52.188957,25.122952],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть МАЗС № 54</b><br/><a href=#stationbelorusB89F84F7E2C04F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.2288006,24.786636],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть МАЗС № 57</b><br/><a href=#stationbelorusB89F84F7E4404F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([52.1568,25.5597],{icon:iconGood}).addTo(mymap);
-marker.bindPopup("<b>Белoруснефть АЗС № 76</b><br/><a href=#stationbelorusB89F84F7E2CF4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.3046,25.6135],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 77</b><br/><a href=#stationbelorusB89F84F7E41B4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.70661,25.33179],{icon:iconGood}).addTo(mymap);
@@ -1966,6 +1966,61 @@ fuel:octane_92=yes
 fuel:diesel=yes
 ref=АЗС 50
 guid:belorusneft=B89F84F7E3D84F70E043BF0BA8C03722
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E2CF4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть АЗС № 76</a><a href="#stationbelorusB89F84F7E2CF4F70E043BF0BA8C03722" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.1568/25.5597">Брестская обл., Ивановский р-н, Лясковичский с/с, М-10, 438 км., 10</a>
+    <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=1336026915">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/1336026915">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Беларуснафта № 76
+name:be=Беларуснафта № 76
+name:ru=Белоруснефть № 76
+brand=Белоруснефть
+brand:wikidata=Q4082693
+operator=РУП "Белоруснефть-Брестоблнефтепродукт"
+contact:phone=+375 1652 22909
+contact:website=https://azs.belorusneft.by/web-azs/
+opening_hours=24/7
+vacuum_cleaner=yes
+compressed_air=yes
+internet_access=wlan
+internet_access:fee=no
+<font color=red>self_service=yes</font>
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+fuel:fuel:diesel:class2=yes
+fuel:adblue:canister=yes
+ref=АЗС 76
+guid:belorusneft=B89F84F7E2CF4F70E043BF0BA8C03722
+</pre></div>
+<div id="sidebar"><h4>Продажа шин</h4><pre>
+shop=tyres
+brand=Белшина
+operator=РУП "Белоруснефть-Брестоблнефтепродукт"
+opening_hours=24/7
+contact:website=https://www.belorusneft.by/catalog/category/850/
+contact:phone=+375 1652 22909
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=РУП "Белоруснефть-Брестоблнефтепродукт"
+opening_hours=24/7
+contact:phone=+375 1652 22909
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+brand=Заўжды цікаVа
+name=Заўжды цікаVа
+name:be=Заўжды цікава
+brand:wikidata=Q136565015
+cuisine=hot_dog;burger
+opening_hours=24/7
+contact:phone=+375 1652 22909
 </pre></div>
 
 </div><hr/>
@@ -6789,7 +6844,6 @@ internet_access:fee=no
 fuel:octane_92=yes
 fuel:octane_95=yes
 fuel:diesel=yes
-fuel:fuel:diesel:class2=yes
 fuel:lpg=yes
 fuel:HGV_diesel=yes
 ref=МАЗС 38
@@ -8836,60 +8890,6 @@ contact:phone=+375 1644 77119
 
 </div><hr/>
 
-<div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationbelorusB89F84F7E2CF4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть АЗС № 76</a><a href="#stationbelorusB89F84F7E2CF4F70E043BF0BA8C03722" title="Ссылка">🔗</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.1568/25.5597">Брестская обл., Ивановский р-н, Лясковичский с/с, М-10, 438 км., 10</a>
-    <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=1336026915">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/1336026915">Объект на карте</a> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Беларуснафта № 76
-name:be=Беларуснафта № 76
-name:ru=Белоруснефть № 76
-brand=Белоруснефть
-brand:wikidata=Q4082693
-operator=РУП "Белоруснефть-Брестоблнефтепродукт"
-contact:phone=+375 1652 22909
-contact:website=https://azs.belorusneft.by/web-azs/
-opening_hours=24/7
-vacuum_cleaner=yes
-compressed_air=yes
-internet_access=wlan
-internet_access:fee=no
-fuel:octane_92=yes
-fuel:octane_95=yes
-fuel:diesel=yes
-fuel:fuel:diesel:class2=yes
-fuel:adblue:canister=yes
-ref=АЗС 76
-guid:belorusneft=B89F84F7E2CF4F70E043BF0BA8C03722
-</pre></div>
-<div id="sidebar"><h4>Продажа шин</h4><pre>
-shop=tyres
-brand=Белшина
-operator=РУП "Белоруснефть-Брестоблнефтепродукт"
-opening_hours=24/7
-contact:website=https://www.belorusneft.by/catalog/category/850/
-contact:phone=+375 1652 22909
-</pre></div>
-<div id="sidebar"><h4>Магазин</h4><pre>
-shop=convenience
-operator=РУП "Белоруснефть-Брестоблнефтепродукт"
-opening_hours=24/7
-contact:phone=+375 1652 22909
-</pre></div>
-<div id="sidebar"><h4>Кафе</h4><pre>
-amenity=fast_food
-brand=Заўжды цікаVа
-name=Заўжды цікаVа
-name:be=Заўжды цікава
-brand:wikidata=Q136565015
-cuisine=hot_dog;burger
-opening_hours=24/7
-contact:phone=+375 1652 22909
-</pre></div>
-
-</div><hr/>
-
 <div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationbelorusB89F84F7E41B4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть АЗС № 77</a><a href="#stationbelorusB89F84F7E41B4F70E043BF0BA8C03722" title="Ссылка">🔗</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.3046/25.6135">Брестская обл., Ивановский р-н, Мотольский с/с, аг. Мотоль, ул. О. Мироновой, д. 27А</a>
     <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=2390568713">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/2390568713">Объект на карте</a> <br/>
@@ -10126,7 +10126,6 @@ fuel:octane_92=yes
 fuel:octane_95=yes
 fuel:octane_98=yes
 fuel:diesel=yes
-fuel:fuel:diesel:class2=yes
 fuel:adblue:canister=yes
 fuel:lpg=yes
 ref=МАЗС 50
