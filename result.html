@@ -50,7 +50,7 @@
 </head>
 <body>
     <h1>Валидатор заправок Роснефть, Белoруснефть, A100, Газпром, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2026-04-16 08:57:51Z</p>
+    <p>Дата генерации файла 2026-04-16 21:58:31Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/web-azs/ru/azs-map">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
@@ -58,8 +58,8 @@
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (0) автозаправка не найдена в ожидаемом месте</br>
     <font color=orange>Найден, но нет Guid</font> (0) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (50) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
-    <font color=green>Нет проблем</font> (739) все тэги в порядке'</br>
+    OK (51) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
+    <font color=green>Нет проблем</font> (738) все тэги в порядке'</br>
     <div id="mapid"></div>
     <script>
         const notFoundColour = 'Red'
@@ -204,6 +204,8 @@ var marker = L.marker([53.884543,27.53285],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 43</b><br/><a href=#stationbelorusB89F84F7E4084F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.760006,28.01817],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 4</b><br/><a href=#stationbelorusB89F84F7E3BB4F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([53.965024736236,27.537507797622],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>A100 АЗС № 33</b><br/><a href=#stationa10033>Перейти</a>");
 var marker = L.marker([53.552554,23.864581],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 64</b><br/><a href=#stationbelorusB89F84F7E46F4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.844658,25.183266],{icon:iconNormal}).addTo(mymap);
@@ -1224,8 +1226,6 @@ var marker = L.marker([54.71611111111111,28.043333333333333],{icon:iconGood}).ad
 marker.bindPopup("<b>Белoруснефть АЗС № 18</b><br/><a href=#stationbelorusB89F84F7E2DC4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.92352,27.358073],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть КАЗС № 31</b><br/><a href=#stationbelorusB89F84F7E2E84F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([53.965024736236,27.537507797622],{icon:iconGood}).addTo(mymap);
-marker.bindPopup("<b>A100 АЗС № 33</b><br/><a href=#stationa10033>Перейти</a>");
 var marker = L.marker([53.968911,27.550343],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>A100 АЗС № 20</b><br/><a href=#stationa10020>Перейти</a>");
 var marker = L.marker([54.59134,30.67346],{icon:iconGood}).addTo(mymap);
@@ -2868,6 +2868,32 @@ brand:wikidata=Q136565015
 cuisine=hot_dog;burger
 opening_hours=24/7
 contact:phone=+375 1714 23347
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationa10033" href="https://azs.a-100.by/set-azs/map-azs/?query=Долгиновский тракт, 178/1">A100  № 33</a><a href="#stationa10033" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.965024736236/27.537507797622">Долгиновский тракт, 178/1</a>
+    <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=4955649325">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/4955649325">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=А-100 № 33
+brand=А-100
+operator=ГК «А-100 АЗС»
+self_service=only
+contact:phone=+375 44 5410265
+contact:website=https://azs.a-100.by/set-azs/map-azs/?query=Долгиновский тракт, 178/1
+opening_hours=24/7
+ref=33
+fuel:octane_95=yes
+fuel:octane_98=yes
+fuel:diesel=yes
+
+<font color=red><b>Tags to delete:</b></font>
+<s>
+fuel:octane_92=yes
+</s>
 </pre></div>
 
 </div><hr/>
@@ -24020,27 +24046,6 @@ fuel:octane_92=yes
 fuel:diesel=yes
 ref=КАЗС 31
 guid:belorusneft=B89F84F7E2E84F70E043BF0BA8C03722
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationa10033" href="https://azs.a-100.by/set-azs/map-azs/?query=Долгиновский тракт, 178/1">A100  № 33</a><a href="#stationa10033" title="Ссылка">🔗</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.965024736236/27.537507797622">Долгиновский тракт, 178/1</a>
-    <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=4955649325">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/4955649325">Объект на карте</a> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=А-100 № 33
-brand=А-100
-operator=ГК «А-100 АЗС»
-self_service=only
-contact:phone=+375 44 5410265
-contact:website=https://azs.a-100.by/set-azs/map-azs/?query=Долгиновский тракт, 178/1
-opening_hours=24/7
-ref=33
-fuel:octane_92=yes
-fuel:octane_95=yes
-fuel:diesel=yes
 </pre></div>
 
 </div><hr/>
