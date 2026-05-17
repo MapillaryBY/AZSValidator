@@ -50,7 +50,7 @@
 </head>
 <body>
     <h1>Валидатор заправок Роснефть, Белoруснефть, A100, Газпром, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2026-05-17 08:56:15Z</p>
+    <p>Дата генерации файла 2026-05-17 21:56:32Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/web-azs/ru/azs-map">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
@@ -58,8 +58,8 @@
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (2) автозаправка не найдена в ожидаемом месте</br>
     <font color=orange>Найден, но нет Guid</font> (0) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (66) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
-    <font color=green>Нет проблем</font> (723) все тэги в порядке'</br>
+    OK (67) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
+    <font color=green>Нет проблем</font> (722) все тэги в порядке'</br>
     <div id="mapid"></div>
     <script>
         const notFoundColour = 'Red'
@@ -180,6 +180,8 @@ var marker = L.marker([53.298267,26.37052],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Татнефть АЗС № 5</b><br/><a href=#stationtatneft5>Перейти</a>");
 var marker = L.marker([52.189597,24.233864],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Татнефть АЗС № 13</b><br/><a href=#stationtatneft13>Перейти</a>");
+var marker = L.marker([53.8743,27.5275],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>Лукойл МАЗС № 4</b><br/><a href=#stationlukoil4>Перейти</a>");
 var marker = L.marker([55.682926,26.907256],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Татнефть АЗС № 15</b><br/><a href=#stationtatneft15>Перейти</a>");
 var marker = L.marker([54.7635,28.138184],{icon:iconNormal}).addTo(mymap);
@@ -632,8 +634,6 @@ var marker = L.marker([52.74719,25.17168],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 36</b><br/><a href=#stationbelorus403FE4BA469C33B0E053BF0BA8C00789>Перейти</a>");
 var marker = L.marker([52.2456,27.0837],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 67</b><br/><a href=#stationbelorusB89F84F7E2C84F70E043BF0BA8C03722>Перейти</a>");
-var marker = L.marker([53.8743,27.5275],{icon:iconGood}).addTo(mymap);
-marker.bindPopup("<b>Лукойл МАЗС № 4</b><br/><a href=#stationlukoil4>Перейти</a>");
 var marker = L.marker([53.525116,30.341306],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть МАЗС № 15</b><br/><a href=#stationbelorusB89F84F7E3C94F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([53.517609,29.822113],{icon:iconGood}).addTo(mymap);
@@ -2195,6 +2195,30 @@ contact:phone=+375 44 5086013
 amenity=fast_food
 operator="ИООО \"Татбелнефтепродукт\""
 cuisine=coffee_shop
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationlukoil4" href="http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=6063">Лукойл  № 4</a><a href="#stationlukoil4" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.8743/27.5275">Брилевская, 28, Минск</a>
+    <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=1784633747">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/1784633747">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Лукойл № 4
+brand=Лукойл
+operator="ИООО \"ЛУКОЙЛ Белоруссия\""
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:octane_100=yes
+fuel:diesel=yes
+fuel:lpg=yes
+fuel:HGV_diesel=yes
+vacuum_cleaner=yes
+<font color=red>contact:phone=+375 17 3545194</font>
+contact:website=http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=6063
+opening_hours=Mo-Su 00:10-23:40
+ref=4
 </pre></div>
 
 </div><hr/>
@@ -11517,30 +11541,6 @@ brand:wikidata=Q136565015
 cuisine=hot_dog;burger
 opening_hours=24/7
 contact:phone=+375 1647 63745
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationlukoil4" href="http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=6063">Лукойл  № 4</a><a href="#stationlukoil4" title="Ссылка">🔗</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.8743/27.5275">Брилевская, 28, Минск</a>
-    <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=1784633747">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/1784633747">Объект на карте</a> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Лукойл № 4
-brand=Лукойл
-operator="ИООО \"ЛУКОЙЛ Белоруссия\""
-fuel:octane_92=yes
-fuel:octane_95=yes
-fuel:octane_100=yes
-fuel:diesel=yes
-fuel:lpg=yes
-fuel:HGV_diesel=yes
-vacuum_cleaner=yes
-contact:phone=+375 17 3730381
-contact:website=http://lukoil.by/ru/ForMotorists/PetrolStation?type=gasStation&id=6063
-opening_hours=Mo-Su 00:10-23:40
-ref=4
 </pre></div>
 
 </div><hr/>
