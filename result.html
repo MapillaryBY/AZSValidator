@@ -50,7 +50,7 @@
 </head>
 <body>
     <h1>Валидатор заправок Роснефть, Белoруснефть, A100, Газпром, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2026-06-03 08:56:21Z</p>
+    <p>Дата генерации файла 2026-06-03 21:57:48Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/web-azs/ru/azs-map">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
@@ -58,8 +58,8 @@
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (0) автозаправка не найдена в ожидаемом месте</br>
     <font color=orange>Найден, но нет Guid</font> (0) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (53) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
-    <font color=green>Нет проблем</font> (738) все тэги в порядке'</br>
+    OK (54) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
+    <font color=green>Нет проблем</font> (737) все тэги в порядке'</br>
     <div id="mapid"></div>
     <script>
         const notFoundColour = 'Red'
@@ -158,7 +158,9 @@
             id: 'streets-v11',
             accessToken: 'pk.eyJ1IjoiYmlnb3Blbm1hYyIsImEiOiJjazF2cGsxd20xMWMyM2JxeWx3N2NvMzExIn0.aMyRwzXDhGqu7yRy85wkow'
         }).addTo(mymap);
-        var marker = L.marker([52.955828,26.305506],{icon:iconNormal}).addTo(mymap);
+        var marker = L.marker([52.461333,23.366505],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>Белoруснефть ААЗС № 89</b><br/><a href=#stationbelorusE3055F44ACCB2525E043BF0BA8C08589>Перейти</a>");
+var marker = L.marker([52.955828,26.305506],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 26</b><br/><a href=#stationbelorusB89F84F7E2AA4F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.406123322321235,30.91792200052169],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть МАЗС № 39</b><br/><a href=#stationbelorusB89F84F7E3154F70E043BF0BA8C03722>Перейти</a>");
@@ -540,8 +542,6 @@ var marker = L.marker([52.554375,23.795293],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 18</b><br/><a href=#stationbelorusB89F84F7E2A14F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.397565,23.786525],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 88</b><br/><a href=#stationbelorusB9BB261C6E621803E043BF0BA8C0126A>Перейти</a>");
-var marker = L.marker([52.461333,23.366505],{icon:iconGood}).addTo(mymap);
-marker.bindPopup("<b>Белoруснефть ААЗС № 89</b><br/><a href=#stationbelorusE3055F44ACCB2525E043BF0BA8C08589>Перейти</a>");
 var marker = L.marker([52.244361,24.411333],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть МАЗС № 41</b><br/><a href=#stationbelorusB89F84F7E2B34F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.189167,24.336667],{icon:iconGood}).addTo(mymap);
@@ -1752,7 +1752,32 @@ marker.bindPopup("<b>Лукойл АЗС № 22</b><br/><a href=#stationlukoil22
     
     <h4>Список  станций (791 шт.):</h4>
     <div id="station_list">
-        <div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E2AA4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть АЗС № 26</a><a href="#stationbelorusB89F84F7E2AA4F70E043BF0BA8C03722" title="Ссылка">🔗</a>
+        <div class="station" id="container"><b>OK</b>  <a id="stationbelorusE3055F44ACCB2525E043BF0BA8C08589" href="https://azs.belorusneft.by/web-azs/">Белoруснефть ААЗС № 89</a><a href="#stationbelorusE3055F44ACCB2525E043BF0BA8C08589" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.461333/23.366505">Брестская обл., Каменецкий р-н, Рясненский с/с, 11, в 0,35 км севернее д. Пограничная</a>
+    <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=6849587199">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/6849587199">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Беларуснафта № 89
+name:be=Беларуснафта № 89
+name:ru=Белоруснефть № 89
+brand=Белоруснефть
+brand:wikidata=Q4082693
+operator=РУП "Белоруснефть-Брестоблнефтепродукт"
+<font color=red>contact:phone=+375 1631 92604</font>
+contact:website=https://azs.belorusneft.by/web-azs/
+opening_hours=24/7
+self_service=yes
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:diesel=yes
+ref=ААЗС 89
+guid:belorusneft=E3055F44ACCB2525E043BF0BA8C08589
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E2AA4F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть АЗС № 26</a><a href="#stationbelorusB89F84F7E2AA4F70E043BF0BA8C03722" title="Ссылка">🔗</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.955828/26.305506">Брестская обл., Ляховичский р-н, Р-43, 434-й км, 1</a>
     <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=7927583005">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/7927583005">Объект на карте</a> <br/>
 
@@ -9698,31 +9723,6 @@ contact:phone=+375 1631 90060
 
 </div><hr/>
 
-<div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationbelorusE3055F44ACCB2525E043BF0BA8C08589" href="https://azs.belorusneft.by/web-azs/">Белoруснефть ААЗС № 89</a><a href="#stationbelorusE3055F44ACCB2525E043BF0BA8C08589" title="Ссылка">🔗</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.461333/23.366505">Брестская обл., Каменецкий р-н, Рясненский с/с, 11, в 0,35 км севернее д. Пограничная</a>
-    <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=6849587199">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/6849587199">Объект на карте</a> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Беларуснафта № 89
-name:be=Беларуснафта № 89
-name:ru=Белоруснефть № 89
-brand=Белоруснефть
-brand:wikidata=Q4082693
-operator=РУП "Белоруснефть-Брестоблнефтепродукт"
-contact:phone=+375 1631 32186
-contact:website=https://azs.belorusneft.by/web-azs/
-opening_hours=24/7
-self_service=yes
-fuel:octane_92=yes
-fuel:octane_95=yes
-fuel:diesel=yes
-ref=ААЗС 89
-guid:belorusneft=E3055F44ACCB2525E043BF0BA8C08589
-</pre></div>
-
-</div><hr/>
-
 <div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationbelorusB89F84F7E2B34F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть МАЗС № 41</a><a href="#stationbelorusB89F84F7E2B34F70E043BF0BA8C03722" title="Ссылка">🔗</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/52.244361/24.411333">Брестская обл., Кобринский р-н, Буховичский с/с, д. Луцевичи</a>
     <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=2845986315">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/2845986315">Объект на карте</a> <br/>
@@ -14012,6 +14012,7 @@ contact:phone=+375 232 223641
 contact:website=https://azs.belorusneft.by/web-azs/
 opening_hours=24/7
 vacuum_cleaner=yes
+compressed_air=yes
 internet_access=wlan
 internet_access:fee=no
 fuel:octane_92=yes
