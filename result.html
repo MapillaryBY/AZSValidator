@@ -50,7 +50,7 @@
 </head>
 <body>
     <h1>Валидатор заправок Роснефть, Белoруснефть, A100, Газпром, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2026-06-12 08:57:33Z</p>
+    <p>Дата генерации файла 2026-06-12 21:57:29Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/web-azs/ru/azs-map">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
@@ -58,8 +58,8 @@
     <h4>Условные обозначения</h4>
     <font color=red>Not found</font> (0) автозаправка не найдена в ожидаемом месте</br>
     <font color=orange>Найден, но нет Guid</font> (0) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
-    OK (54) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
-    <font color=green>Нет проблем</font> (737) все тэги в порядке'</br>
+    OK (55) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
+    <font color=green>Нет проблем</font> (736) все тэги в порядке'</br>
     <div id="mapid"></div>
     <script>
         const notFoundColour = 'Red'
@@ -162,6 +162,8 @@
 marker.bindPopup("<b>Белoруснефть ААЗС № 89</b><br/><a href=#stationbelorusE3055F44ACCB2525E043BF0BA8C08589>Перейти</a>");
 var marker = L.marker([52.955828,26.305506],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 26</b><br/><a href=#stationbelorusB89F84F7E2AA4F70E043BF0BA8C03722>Перейти</a>");
+var marker = L.marker([54.842223,30.239463],{icon:iconNormal}).addTo(mymap);
+marker.bindPopup("<b>Белoруснефть АЗС № 73</b><br/><a href=#stationbelorusDF48CD5A0D7653F6E053BF0BA8C000F6>Перейти</a>");
 var marker = L.marker([52.406123322321235,30.91792200052169],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть МАЗС № 39</b><br/><a href=#stationbelorusB89F84F7E3154F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([52.47897540478122,31.02732393994955],{icon:iconNormal}).addTo(mymap);
@@ -640,8 +642,6 @@ var marker = L.marker([55.61801,27.10367],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Роснефть АЗС № 42</b><br/><a href=#stationrosneft42>Перейти</a>");
 var marker = L.marker([55.47238,28.74379],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Роснефть АЗС № 31</b><br/><a href=#stationrosneft31>Перейти</a>");
-var marker = L.marker([54.842223,30.239463],{icon:iconGood}).addTo(mymap);
-marker.bindPopup("<b>Белoруснефть АЗС № 73</b><br/><a href=#stationbelorusDF48CD5A0D7653F6E053BF0BA8C000F6>Перейти</a>");
 var marker = L.marker([55.11133,26.87341],{icon:iconGood}).addTo(mymap);
 marker.bindPopup("<b>Роснефть АЗС № 64</b><br/><a href=#stationrosneft64>Перейти</a>");
 var marker = L.marker([55.34136,27.890583],{icon:iconGood}).addTo(mymap);
@@ -1816,6 +1816,29 @@ brand:wikidata=Q136565015
 cuisine=hot_dog;burger
 <font color=red>opening_hours=24/7</font>
 contact:phone=+375 1633 42423
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationbelorusDF48CD5A0D7653F6E053BF0BA8C000F6" href="https://azs.belorusneft.by/web-azs/">Белoруснефть АЗС № 73</a><a href="#stationbelorusDF48CD5A0D7653F6E053BF0BA8C000F6" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.842223/30.239463">Витебская обл., Сенненский р-н, г.п. Богушевск на а/д Р-86 км 12+500 (лево)</a>
+    <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=4624604298">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/4624604298">Объект на карте</a> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Беларуснафта № 73
+name:be=Беларуснафта № 73
+name:ru=Белоруснефть № 73
+brand=Белоруснефть
+brand:wikidata=Q4082693
+operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
+contact:phone=+375 29 2900182
+contact:website=https://azs.belorusneft.by/web-azs/
+<font color=red>opening_hours=Mo,Th,Su 11:00-16:30</font>
+fuel:octane_92=yes
+fuel:diesel=yes
+ref=АЗС 73
+guid:belorusneft=DF48CD5A0D7653F6E053BF0BA8C000F6
 </pre></div>
 
 </div><hr/>
@@ -11669,29 +11692,6 @@ ref=31
 fuel:octane_92=yes
 fuel:octane_95=yes
 fuel:diesel=yes
-</pre></div>
-
-</div><hr/>
-
-<div class="station" id="container"><b><font color=green>Нет проблем</font></b>  <a id="stationbelorusDF48CD5A0D7653F6E053BF0BA8C000F6" href="https://azs.belorusneft.by/web-azs/">Белoруснефть АЗС № 73</a><a href="#stationbelorusDF48CD5A0D7653F6E053BF0BA8C000F6" title="Ссылка">🔗</a>
-    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.842223/30.239463">Витебская обл., Сенненский р-н, г.п. Богушевск на а/д Р-86 км 12+500 (лево)</a>
-    <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=4624604298">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/4624604298">Объект на карте</a> <br/>
-
-    <div id="sidebar"><h4>Заправка</h4><pre>
-amenity=fuel
-name=Беларуснафта № 73
-name:be=Беларуснафта № 73
-name:ru=Белоруснефть № 73
-brand=Белоруснефть
-brand:wikidata=Q4082693
-operator=РУП "Белоруснефть-Витебскоблнефтепродукт"
-contact:phone=+375 29 2900182
-contact:website=https://azs.belorusneft.by/web-azs/
-opening_hours=Mo,Th,Fr,Su 11:00-16:30
-fuel:octane_92=yes
-fuel:diesel=yes
-ref=АЗС 73
-guid:belorusneft=DF48CD5A0D7653F6E053BF0BA8C000F6
 </pre></div>
 
 </div><hr/>
