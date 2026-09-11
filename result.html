@@ -50,13 +50,13 @@
 </head>
 <body>
     <h1>Валидатор заправок Роснефть, Белoруснефть, A100, Газпром, Татнефть, Лукойл</h1>
-    <p>Дата генерации файла 2026-09-11 08:57:38Z</p>
+    <p>Дата генерации файла 2026-09-11 21:58:48Z</p>
     <p>
         <a href="https://github.com/MapillaryBY/AZSValidator">Описание валидатора</a>, <a href="https://github.com/MapillaryBY/AZSValidator/issues/new">задать вопрос</a>,
         <a href="https://t.me/joinchat/JYayRBUhYdCNnsuWmxU2xA">обсудить в телеграмме</a>,     <a href="https://azs.belorusneft.by/web-azs/ru/azs-map">Карта на сайте Белоруснефть</a>,    <a href="https://t.me/byosm">Телеграм чат OpenStreetMap Беларусь</a>
     </p>
     <h4>Условные обозначения</h4>
-    <font color=red>Not found</font> (0) автозаправка не найдена в ожидаемом месте</br>
+    <font color=red>Not found</font> (1) автозаправка не найдена в ожидаемом месте</br>
     <font color=orange>Найден, но нет Guid</font> (0) у автозаправки не проставлен ключ <b>guid:belorusneft</b> или <b>ref</b><br />
     OK (131) заправка  найдена, но могут отсутствовать некоторые тэги, они выделены красным <br />
     <font color=green>Нет проблем</font> (657) все тэги в порядке'</br>
@@ -158,7 +158,9 @@
             id: 'streets-v11',
             accessToken: 'pk.eyJ1IjoiYmlnb3Blbm1hYyIsImEiOiJjazF2cGsxd20xMWMyM2JxeWx3N2NvMzExIn0.aMyRwzXDhGqu7yRy85wkow'
         }).addTo(mymap);
-        var marker = L.marker([54.27025,28.690266666666666],{icon:iconNormal}).addTo(mymap);
+        var marker = L.marker([53.86884878,27.55809817],{icon:iconNotFound}).addTo(mymap);
+marker.bindPopup("<b>Белoруснефть АЗС № 69</b><br/><a href=#stationbelorus54D1BF3DF55043E1E063BF0BA8C0451C>Перейти</a>");
+var marker = L.marker([54.27025,28.690266666666666],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 3</b><br/><a href=#stationbelorusB89F84F7E3864F70E043BF0BA8C03722>Перейти</a>");
 var marker = L.marker([54.198683,28.472533],{icon:iconNormal}).addTo(mymap);
 marker.bindPopup("<b>Белoруснефть АЗС № 2</b><br/><a href=#stationbelorusAE69E080FEBA6989E053BF0BA8C09DD6>Перейти</a>");
@@ -1744,9 +1746,53 @@ marker.bindPopup("<b>Лукойл АЗС № 22</b><br/><a href=#stationlukoil22
     </script>
     <h4>История изменений:</h4>
     
-    <h4>Список  станций (788 шт.):</h4>
+    <h4>Список  станций (789 шт.):</h4>
     <div id="station_list">
-        <div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E3864F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть АЗС № 3</a><a href="#stationbelorusB89F84F7E3864F70E043BF0BA8C03722" title="Ссылка">🔗</a>
+        <div class="station" id="container"><b><font color=red>Not found</font></b>  <a id="stationbelorus54D1BF3DF55043E1E063BF0BA8C0451C" href="https://azs.belorusneft.by/web-azs/">Белoруснефть АЗС № 69</a><a href="#stationbelorus54D1BF3DF55043E1E063BF0BA8C0451C" title="Ссылка">🔗</a>
+    <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/53.86884878/27.55809817">г. Минск, ул. Леонида Щемелёва, 2</a>
+    <br /> <br/>
+
+    <div id="sidebar"><h4>Заправка</h4><pre>
+amenity=fuel
+name=Беларуснафта № 69
+name:be=Беларуснафта № 69
+name:ru=Белоруснефть № 69
+brand=Белоруснефть
+brand:wikidata=Q4082693
+<font color=red>operator=РУП "Белоруснефть-Минскавтозаправка"</font>
+contact:phone=+375 17 2522406
+contact:website=https://azs.belorusneft.by/web-azs/
+<font color=red>opening_hours=24/7</font>
+vacuum_cleaner=yes
+compressed_air=yes
+fuel:octane_92=yes
+fuel:octane_95=yes
+fuel:octane_98=yes
+fuel:diesel=yes
+fuel:HGV_diesel=yes
+<font color=red>ref=АЗС 69</font>
+<font color=red>guid:belorusneft=54D1BF3DF55043E1E063BF0BA8C0451C</font>
+</pre></div>
+<div id="sidebar"><h4>Магазин</h4><pre>
+shop=convenience
+operator=РУП "Белоруснефть-Минскавтозаправка"
+<font color=red>opening_hours=24/7</font>
+contact:phone=+375 17 2522406
+</pre></div>
+<div id="sidebar"><h4>Кафе</h4><pre>
+amenity=fast_food
+brand=Заўжды цікаVа
+name=Заўжды цікаVа
+name:be=Заўжды цікава
+brand:wikidata=Q136565015
+cuisine=hot_dog;burger
+<font color=red>opening_hours=24/7</font>
+contact:phone=+375 17 2522406
+</pre></div>
+
+</div><hr/>
+
+<div class="station" id="container"><b>OK</b>  <a id="stationbelorusB89F84F7E3864F70E043BF0BA8C03722" href="https://azs.belorusneft.by/web-azs/">Белoруснефть АЗС № 3</a><a href="#stationbelorusB89F84F7E3864F70E043BF0BA8C03722" title="Ссылка">🔗</a>
     <br>Адрес:<a href="https://www.openstreetmap.org/#map=17/54.27025/28.690266666666666"> Борисовский район , М1,443-й км,4,а/д Брест-Минск-граница  РФ.</a>
     <br /><a target=_blank href="https://www.openstreetmap.org/edit?node=306067967">&#x270e; </a><a target=_blank href="https://www.openstreetmap.org/node/306067967">Объект на карте</a> <br/>
 
